@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Learning C#</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>Learning C#</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Overzicht van C#</h2>
+                
+                <div class="chapter__group">
+                    <h3>Hello World C#</h3>
+                    <p>Het traditionele &quot;Hello World&quot;-voorbeeld helpt bij het leren van een nieuwe programmeertaal. In dit geval wordt een C# console-applicatie gecreëerd met behulp van de dotnet-CLI en worden de minimale programmastructuur, invoer- en uitvoermethoden, en de mogelijkheid om boilerplate-code te verminderen via toplevel statements belicht.</p>
+                    <p>In de terminal wordt naar de volgende map genavigeerd:</p>
+                    <pre><code>cd start/overview/hello-world</code></pre>
+                    <p>Vervolgens wordt het volgende commando uitgevoerd, om een nieuwe console-app te genereren:</p>
+                    <pre><code>dotnet new console</code></pre>
+                    <p>Hiermee wordt een .csproj-projectbestand, een lege obj-map en een program.cs met auto-gegenereerde code aangemaakt. De gegenereerde program.cs ziet er als volgt uit:</p>
+                    <pre><code>using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(&quot;Hello World!&quot;);
+        }
+    }
+}</code></pre>
+                    <p>&quot;Using System;&quot; importeert de System-namespace en &quot;namespace HelloWorld&quot; voorkomt naamconflicten met andere libraries. Alle methoden komen in &quot;class Program&quot; en &quot;static void Main(string[] args)&quot; is het entry-point van de applicatie. Ten slot wordt het geheel verplicht met het &quot;;&quot; teken afgesloten.</p>
+                    <p>Met de Console-klasse kan tekst naar de terminal worden overgebracht en de invoer worden gelezen:</p>
+                    <pre><code>Console.WriteLine(&quot;What is your name?&quot;);
+string str = Console.ReadLine();
+Console.WriteLine(&quot;Why hello there &quot; + str);</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>WriteLine(text)</td>
+                                <td>Schrijft een regel tekst naar de console</td>
+                                <td><pre>Console.WriteLine(&quot;Wat is je naam?&quot;);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>ReadLine()</td>
+                                <td>Leest een regel tekst van de gebruiker</td>
+                                <td><pre>string naam = Console.ReadLine();</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om het programma uit te voeren wordt in de terminal het volgende getypt:</p>
+                    <pre><code>dotnet run</code></pre>
+                    <p>Dit bouwt en start de applicatie. Na invoer van de naam verschijnt de aangepaste groet. Om boilerplate te verminderen, kunnen ten slot toplevel statements worden gebruikt. Hierdoor blijven alleen de statements over:</p>
+                    <pre><code>Console.WriteLine(&quot;Hello World!&quot;);
+Console.WriteLine(&quot;Wat is je naam?&quot;);
+string naam = Console.ReadLine();
+Console.WriteLine(&quot;Why hello there, &quot; + naam);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Variabelen en datatypen</h3>
+                    <p>In C# wordt v&oacute;&oacute;r de variabele naam het datatype vermeld, wat helpt fouten tijdens het compileren te voorkomen. Hieronder staan de belangrijkste datatypes in C# beschreven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Datatype</th>
+                                <th>Beschrijving</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>Geheel getal</td>
+                                <td><pre>int i = 10;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>Drijvend kommagetal (eenvoudig precisie)</td>
+                                <td><pre>float f = 2.5f;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>decimal</td>
+                                <td>Drijvend kommagetal (hoge precisie, financieel)</td>
+                                <td><pre>decimal d = 3.14m;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>bool</td>
+                                <td>Waar (true) of onwaar (false)</td>
+                                <td><pre>bool b = false;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>Enkel teken, omsloten door enkele aanhalingstekens</td>
+                                <td><pre>char c = &apos;X&apos;;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>string</td>
+                                <td>Reeks tekens, omsloten door dubbele aanhalingstekens</td>
+                                <td><pre>string s = &quot;abc&quot;;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het sleutelwoord var kan gebruikt worden om de compiler het type te laten afleiden.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>var</td>
+                                <td>Declareert een impliciete variabele</td>
+                                <td><pre>var z = &quot;tekst&quot;;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Arrays worden gedeclareerd met [] en kunnen meteen met waarden worden ge&iuml;nitialiseerd:</p>
+                    <pre><code>int[] vals = new int[5];                   
+int[] nums = { 1, 2, 3 };          
+string[] strs = { &quot;one&quot;, &quot;two&quot;, &quot;three&quot; };</code></pre>
+                    <p>Met &eacute;&eacute;n Console.WriteLine en een format string kunnen meerdere variabelen tegelijk worden getoond. Dit gaat aan de hand van placeholders in de string, waarna variabelen als argumenten volgen:</p>
+                    <pre><code>Console.WriteLine(&quot;{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}&quot;,
+    i, c, flag, s, f, d, x, z);</code></pre>
+                    <p>Variabelen van referentie types kunnen null zijn, wat inhoudt dat een variabele geen waarde bevat:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>null</td>
+                                <td>Definieert dat een variabele geen waarde bevat.</td>
+                                <td><pre>object obj = null;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Bij het afdrukken van een null waarde wordt een lege regel teruggegeven.</p>
+                    <p>Binnen C# zijn er twee vormen van typeconversies die kunnen worden toegepast als een datatype om wordt gezet naar een ander datatype. De impliciete conversie vindt plaats tussen datatypes die verenigbaar zijn zoals int naar long. Expliciete conversies vinden plaats bij conversies die niet verenigbaar zijn en waar potentieel dataverlies mogelijk is:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Conversie</th>
+                                <th>Impliciet/Expliciet</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>int naar long</td>
+                                <td>Impliciet</td>
+                                <td><pre>long big = i;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>int naar float</td>
+                                <td>Expliciet</td>
+                                <td><pre>float f2 = (float)i;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>float naar int</td>
+                                <td>Expliciet</td>
+                                <td><pre>int i2 = (int)f;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Operatoren</h3>
+                    <p>Aritmetische operatoren werken op numerieke waarden en bieden ondersteuning voor het optellen, aftrekken, vermenigvuldigen, delen, en modulus:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Beschrijving</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>Optelling</td>
+                                <td><pre>x + y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Aftrekking</td>
+                                <td><pre>x - y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Vermenigvuldiging</td>
+                                <td><pre>x * y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Deling</td>
+                                <td><pre>x / y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Remainder (modulus)</td>
+                                <td><pre>x % y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>++</td>
+                                <td>Increment (met 1 verhogen)</td>
+                                <td><pre>x++ (x wordt 11)</pre></td>
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>Decrement (met 1 verlagen)</td>
+                                <td><pre>y-- (y wordt 4)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een shorthand toekenning combineert een operator en een toekenning in &eacute;&eacute;n expressie, zoals:</p>
+                    <pre><code>int a = 2;
+a += 3;   // gelijk aan: a = a + 3  &rarr;  a is nu 5
+a *= 2;   // gelijk aan: a = a * 2  &rarr;  a is nu 10</code></pre>
+                    <p>De shorthand toekenningen die beschikbaar zijn in c# zijn hieronder weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>+=</td>
+                                <td>Optellen &eacute;n toekennen</td>
+                                <td><pre>a += b is a = a + b</pre></td>
+                            </tr>
+                            <tr>
+                                <td>-=</td>
+                                <td>Aftrekken &eacute;n toekennen</td>
+                                <td><pre>a -= b is a = a - b</pre></td>
+                            </tr>
+                            <tr>
+                                <td>*=</td>
+                                <td>Vermenigvuldigen &eacute;n toekennen</td>
+                                <td><pre>a *= b is a = a * b</pre></td>
+                            </tr>
+                            <tr>
+                                <td>/=</td>
+                                <td>Delen &eacute;n toekennen</td>
+                                <td><pre>a /= b is a = a / b</pre></td>
+                            </tr>
+                            <tr>
+                                <td>%=</td>
+                                <td>Modulus &eacute;n toekennen</td>
+                                <td><pre>a %= b is a = a % b</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Logische operatoren produceren een boolean waarde van true of false op basis van de gedefinieerde voorwaarden. De logische operatoren staan zijn als volgt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Betekenis</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>&amp;&amp;</td>
+                                <td>EN (allebei voorwaarden waar)</td>
+                                <td><pre>cond1 &amp;&amp; cond2</pre></td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>OF (minstens &eacute;&eacute;n waar)</td>
+                                <td><pre>cond1 || cond2</pre></td>
+                            </tr>
+                            <tr>
+                                <td>!</td>
+                                <td>NIET (boolean omkeren)</td>
+                                <td><pre>!cond</pre></td>
+                            </tr>
+                            <tr>
+                                <td>==</td>
+                                <td>Gelijk aan</td>
+                                <td><pre>x == y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Niet gelijk aan</td>
+                                <td><pre>x != y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>&gt; &lt;</td>
+                                <td>Groter dan / Kleiner dan</td>
+                                <td><pre>x &gt; y, x &lt; y</pre></td>
+                            </tr>
+                            <tr>
+                                <td>&gt;= &lt;=</td>
+                                <td>Groter of gelijk / Kleiner of gelijk</td>
+                                <td><pre>x &gt;= y, x &lt;= y</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Null-coalescing maakt het mogelijk om met null-variabelen te werken door standaardwaarden of toekenningen te bieden:</p>
+                    <pre><code>string str = null;
+
+// ?? gebruikt linkerdeel als niet-null, anders rechterdeel
+Console.WriteLine(str ?? &quot;unknown string&quot;);  
+// Output: unknown string
+
+// ??= kent alleen toe als linkerdeel null is
+str ??= &quot;hello&quot;;
+Console.WriteLine(str);  
+// Output: hello</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>??</td>
+                                <td>Geeft de waarde van het linkerdeel van de voorwaarde terug als het niet-null is; anders wordt het rechterdeel ge&euml;valueerd</td>
+                                <td><pre>x = str ?? &quot;default&quot;;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>??=</td>
+                                <td>Evalueert het rechterdeel van de voorwaarde niet als linkerdeel null is</td>
+                                <td><pre>str ??= &quot;new value&quot;;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>C# Commentaar schrijven</h3>
+                    <p>C# biedt drie verschillende manieren om commentaar om aan code toe te voegen, om daarmee de code te verduidelijken en documentatie te genereren: single-line, multi-line en XML-documentatie commentaar.</p>
+                    <p>Single-line commentaar begint met //, loopt tot het einde van de regel en is daarmee geschikt voor korte toelichtingen bij &eacute;&eacute;n regel of directe aantekeningen:</p>
+                    <pre><code>// Dit is een single-line comment
+int x = 5;  // Variabele x wordt op 5 gezet</code></pre>
+                    <p>Multi-line commentaar begint met /* en eindigen met */ en is ideaal voor langere toelichtingen of voor het tijdelijk uitschakelen van codeblokken:</p>
+                    <pre><code>/*
+    Dit is een multi-line comment.
+    Hij kan meerdere regels beslaan
+    zonder telkens // te gebruiken.
+*/
+int y = 10;</code></pre>
+                    <p>XML-documentatie commentaar begint met /// en is opgebouwd uit XML-tags. Dit commentaar wordt door het .NET-bouwproces ge&euml;xtraheerd voor automatische documentatie:</p>
+                    <pre><code>/// &lt;summary&gt;
+/// De hoofd&shy;methode van de sample applicatie.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;args&quot;&gt;
+/// Array van string-argumenten van de commandline.
+/// &lt;/param&gt;
+/// &lt;returns&gt;
+/// Geen returnwaarde.
+/// &lt;/returns&gt;
+static void Main(string[] args)
+{
+    // implementatie&hellip;
+}</code></pre>
+                    <p>Een aantal van de meest gebruikte tags die in XML-documentatie commentaar worden gebruikt, staan hieronder weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>&amp;lt;summary&amp;gt;</td>
+                                <td>Beschrijft wat een methode of klasse doet.</td>
+                            </tr>
+                            <tr>
+                                <td>&amp;lt;param&amp;gt;</td>
+                                <td>Uitleg per parameter, met attribuut name=&quot;...&quot;</td>
+                            </tr>
+                            <tr>
+                                <td>&amp;lt;returns&amp;gt;</td>
+                                <td>Omschrijft de returnwaarde</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om automatisch documentatie te genereren op basis van XML-documentatie commentaar wordt eer het project&shy;bestand aangepast (.csproj):</p>
+                    <pre><code>&amp;lt;PropertyGroup&amp;gt;
+    &amp;lt;GenerateDocumentationFile&amp;gt;true&amp;lt;/GenerateDocumentationFile&amp;gt;
+    &amp;lt;DocumentationFile&amp;gt;Comments.xml&amp;lt;/DocumentationFile&amp;gt;
+&amp;lt;/PropertyGroup&amp;gt;</code></pre>
+                    <p>En vervolgens wordt de build uitgevoerd, waardoor er een Comments.xml verschijnt met alle XML-comments, klaar voor gebruik in documentatietools:</p>
+                    <pre><code>dotnet build</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>C# Programma flow</h2>
+                
+                <div class="chapter__group">
+                    <h3>Voorwaardelijke logica met &quot;if&quot;</h3>
+                    <p>Met behulp van een if-statement en de optionele else if-takken is het mogelijk om beslissingen in C#-programma&apos;s te nemen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>If</td>
+                                <td>Voert bij overeenkomst de code ut.</td>
+                                <td><pre>int theVal = 55;
+
+if (theVal == 50)
+{
+    Console.WriteLine(&quot;theVal is 50&quot;);
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>else if</td>
+                                <td>Voert de code uit als de voorgaande voorwaarde(s) onwaar is &eacute;n de eigen voorwaarde waar is</td>
+                                <td><pre>int time = 22;
+
+if (time &lt; 10) 
+{
+    Console.WriteLine("Good morning.");
+} 
+else if (time &lt; 20) 
+{
+    Console.WriteLine("Good day.");
+} 
+else 
+{
+    Console.WriteLine("Good evening.");
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>else</td>
+                                <td>Definieert het gedrag als alle voorgaande voorwaarden onwaar zijn.</td>
+                                <td><pre>int time = 20;
+if (time &lt; 18)
+
+{
+    Console.WriteLine("Good day.");
+} 
+else 
+{
+    Console.WriteLine("Good evening.");
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Er kan een ongelimiteerde hoeveelheid extra voorwaarden worden toegevoegd met else if, maar bij meer dan ~4&ndash;5 takken wordt het onoverzichtelijk.</p>
+                    <p>De ternary-operator is een verkorte voorwaarde die de if&ndash;else-constructies verkleint tot &eacute;&eacute;n expressie. Het ziet er bijvoorbeeld als volgt uit:</p>
+                    <pre><code>resultaat = (conditie) ? waardeBijTrue : waardeBijFalse;</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Voorwaardelijke logica met &quot;switch&quot;</h3>
+                    <p>Met behulp van een switch-statement is het mogelijk om beslissingen in C#-programma&apos;s te nemen. Een switch statement wordt toegepast wanneer het aantal vergelijkingen hoog is, omdat het in deze gevallen de leesbaarheid en onderhoudbaarheid verbeterd. De if&ndash;else statement is doorgaans overzichtelijker, als de hoeveelheid vergelijkingen lager is dan vier.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>switch</td>
+                                <td>Evalueert &eacute;&eacute;nmalig de expressie.</td>
+                                <td><pre>int val = 3;
+switch (theVal)
+{
+    case 50:
+        Console.WriteLine(&quot;theVal is 50&quot;);
+        break;
+    case 51:
+        Console.WriteLine(&quot;theVal is 51&quot;);
+        break;
+    default:
+        Console.WriteLine(&quot;theVal is something else&quot;);
+        break;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>case</td>
+                                <td>Voert bij overeenkomst de code tot de volgende break uit.</td>
+                                <td><pre>int day = 4;
+switch (day) 
+{
+case 1:
+    Console.WriteLine("Monday");
+    break;
+case 2:
+    Console.WriteLine("Tuesday");
+    break;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>break</td>
+                                <td>Verlaat de switch-block, zodat volgende cases niet meedraaien.</td>
+                                <td><pre>int day = 4;
+switch (day) 
+{
+    case 7:
+    Console.WriteLine("Sunday");
+    break;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>default</td>
+                                <td>Definieert het gedrag van alle niet-afgehandelde gevallen in de switch statement (vergelijkbaar met else).</td>
+                                <td><pre>int day = 4;
+switch (day) 
+{
+    case 7:
+        Console.WriteLine("Today is Sunday.");
+        break;
+    default:
+        Console.WriteLine("Looking forward to the Weekend.");
+        break;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is tevens mogelijk om met meerdere labels naar dezelfde code te verwijzen door de cases opeenvolgend achter elkaar te plaatsen. Dit kan er bijvoorbeeld als volgt uitzien:</p>
+                    <pre><code>case 52:
+case 53:
+case 54:
+    Console.WriteLine(&quot;theVal is between 52 and 54&quot;);
+    break;</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>For loops</h3>
+                    <p>In C# kunnen herhalende bewerkingen worden uitgevoerd met de for&ndash; en foreach&ndash;loop. De for-loop is bedoeld voor een vooraf bepaald aantal iteraties, terwijl foreach ideaal is voor het doorlopen van verzamelingen. Een standaard for-loop ziet er als volgt uit:</p>
+                    <pre><code>int myVal = 15;
+
+for (int i = 0; i &lt; myVal; i++)
+{
+    Console.WriteLine(&quot;i is currently {0}&quot;, i);
+}</code></pre>
+                    <p>In het bovenstaande voorbeeld wordt de startwaarde van de teller geinitialiseerd met (int i = 0):, terwijl (i &lt; myVal): de voorwaarde is waaronder de loop blijft draaien zolang de conditie True is. Met (i++): wordt aangegeven dat de loop opnieuw wordt uitgevoerd na elke rondgang (telt i met 1 op).</p>
+                    <p>Een foreach&ndash;loop herhaalt voor elk element in de collectie. Voor verzamelingen (arrays, strings, lijsten) is de foreach-loop daarom eenvoudiger en minder foutgevoelig. Een standaard foreach&ndash;loop kan er als volgt uitzien:</p>
+                    <pre><code>int[] nums = { 3, 14, 15, 92, 6 };
+
+foreach (int num in nums)
+{
+    Console.WriteLine(&quot;num is currently {0}&quot;, num);
+}
+
+// Ook op strings toepasbaar, bijvoorbeeld om &apos;O&apos;-tekens te tellen:
+string str = &quot;Hello, World! C# for loops&quot;;
+int count = 0;
+
+foreach (char c in str)
+{
+    if (c == &apos;O&apos; || c == &apos;o&apos;)
+        count++;
+}
+
+Console.WriteLine(&quot;Aantal O-tekens: {0}&quot;, count);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>While loops</h3>
+                    <p>Met while loops kan een blok code worden herhaald zolang de gedefinieerde voorwaarde waar is. De voorwaarde waarop wordt getoetst staat bovenaan en wordt v&oacute;&oacute;r elke iteratie ge&euml;valueerd. Daarnaast heeft een while-loop een stopconditie, waarmee de loop wordt be&euml;indigd:</p>
+                    <pre><code>string inputStr = &quot;&quot;;
+
+while (inputStr != &quot;exit&quot;)
+{
+    inputStr = Console.ReadLine();
+    Console.WriteLine(&quot;You entered: {0}&quot;, inputStr);
+}</code></pre>
+                    <p>De do-while-lus is een variant van de while loop die minimaal &eacute;&eacute;n iteratie garandeert. Bij deze variant staat de voorwaarde onderin en deze loopvorm wordt altijd minimaal &eacute;&eacute;n keer uitgevoerd. Daarna is deze loop alleen doorlopend als de voorwaarde waar blijft. Een standaard while loop ziet er bijvoorbeeld zo uit:</p>
+                    <pre><code>string inputStr = &quot;&quot;;
+
+do
+{
+    inputStr = Console.ReadLine();
+    Console.WriteLine(&quot;You entered: {0}&quot;, inputStr);
+}
+while (inputStr != &quot;exit&quot;);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Break en continue gebruiken</h3>
+                    <p>De uitvoering van loops in C# nauwkeuriger worden aangestuurd met de break en continue statements. Break wordt toegepast om de code te stoppen wanneer de eerste waarde die aan een criterium voldoet, terwijl continue tijdelijk ongewenste waarden negeert en de rest wel verwerkt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>break</td>
+                                <td>Stopt de volledige lus direct, ongeacht van de oorspronkelijke stopvoorwaarde.</td>
+                                <td><pre>int[] values = { 15, 7, 12, 23, 41, 28, 9 };
+
+foreach (int val in values)
+{
+    Console.WriteLine(val);
+    if (val &gt;= 40)
+        break;  // bij eerste waarde &ge; 40, lus be&euml;indigen
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>continue</td>
+                                <td>Slaat de rest van de iteratie over als de gedefinieerde voorwaarde wordt voldaan en gaat verder met de volgende iteratie in de lus.</td>
+                                <td><pre>int[] values = { 15, 7, 12, 23, 41, 28, 9 };
+
+foreach (int val in values)
+{
+    if (val &gt;= 20 &amp;&amp; val &lt;= 29)
+        continue;  // sla waarde in de jaren &apos;20 over
+
+    Console.WriteLine(val);
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Uitzonderingen</h3>
+                    <p>Het afhandelen van uitzonderingen verwijst naar het opvangen en afhandelen van fouten zonder dat de gebruiker een onbegrijpelijke foutmelding ziet. E&eacute;n van de manieren waarmee fout afhandeling kan worden verwezenlijkt, is het gebruik van try, catch, throw en finally:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Statement</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>try</td>
+                                <td>Omringt de code die een exception kan opleveren.</td>
+                                <td><pre>try
+{
+    ProcessShapes(shapeAmount);
+}
+catch (Exception e)
+{
+    LogError(e, "Shape processing failed.");
+    throw;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>catch</td>
+                                <td>Vangt &eacute;&eacute;n type uitzondering op; kan meerdere catch-blokken hebben.</td>
+                                <td><pre>try
+{
+    int[] myNumbers = {1, 2, 3};
+    Console.WriteLine(myNumbers[10]);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Something went wrong.");
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>throw</td>
+                                <td>Creert handmatig een uitzondering</td>
+                                <td><pre>string first = args.Length >= 1 
+    ? args[0]
+    : throw new ArgumentException("Please supply at least one argument.");</pre></td>
+                            </tr>
+                            <tr>
+                                <td>finally</td>
+                                <td>Wordt altijd uitgevoerd, ongeacht of een exception optrad of niet.</td>
+                                <td><pre>try
+{
+    int[] myNumbers = {1, 2, 3};
+    Console.WriteLine(myNumbers[10]);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Something went wrong.");
+}
+finally
+{
+    Console.WriteLine("The 'try catch' is finished.");
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is tevens mogelijk om meerdere catch-blokken toe te voegen, zodat verschillende fouttypes anders worden af gehandeld:</p>
+                    <pre><code>try
+{
+    int x = 1500;
+    if (x &gt; 1000)
+        throw new ArgumentOutOfRangeException(
+            &quot;x&quot;, &quot;x must be 1000 or less&quot;);
+}
+catch (DivideByZeroException e)
+{
+    Console.WriteLine(&quot;Delen door nul: &quot; + e.Message);
+}
+catch (ArgumentOutOfRangeException e)
+{
+    Console.WriteLine(&quot;Waarde te hoog: &quot; + e.ParamName);
+    Console.WriteLine(e.Message);
+}
+catch (Exception e)  // generieke handler voor alle andere exceptions
+{
+    Console.WriteLine(&quot;Algemene fout: &quot; + e.Message);
+}
+finally
+{
+    Console.WriteLine(&quot;Opruimcode of afsluitmeldingen hier.&quot;);
+}</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>C# Strings</h2>
+                
+                <div class="chapter__group">
+                    <h3>String operaties</h3>
+                    <p>Strings bieden een set aan eigenschappen en methoden om tekst te verwerken en worden in C# als objecten behandeld. Strings bieden daarnaast directe toegang tot lengte en individuele karakters, &eacute;n kunnen als een sequentie worden doorlopen.</p>
+                    <p>Met het Length-eigenschap kan het aantal tekens in de string worden teruggegeven, terwijl indexering toegang tot een specifiek teken biedt via vierkante haken ([]), beginnend bij index 0. Met een foreach(char ch in str1)-lus kunnen alle karakters &eacute;&eacute;n voor &eacute;&eacute;n worden verwerkt.</p>
+                    <p>Strings kunnen met elkaar worden samengevoegd of juist van een scheidingsteken worden voorzien, doormiddel van de volgende methodes:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Concat()</td>
+                                <td>Voegt een of meer strings aan elkaar tot &eacute;&eacute;n geheel.</td>
+                                <td><pre>outStr = String.Concat(strs);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Join()</td>
+                                <td>Voegt meerdere strings samen met een opgegeven scheidingsteken of -reeks.</td>
+                                <td><pre>outStr = String.Join(&quot;.&quot;, strs); // &quot;een.twee.drie&quot;
+outStr = String.Join(&quot;---&quot;, strs); // &quot;een---twee---drie&quot;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Daarnaast biedt C# statische en instantie-methoden om strings op uiteenlopende manieren te vergelijken:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Compare()</td>
+                                <td>Vergelijkt de waarden volgens de Unicode-waarde. Retourneert &lt;0 als waarde a v&oacute;&oacute;r b komt, 0 als het gelijk is en &gt;0 als a n&aacute; b komt.</td>
+                                <td><pre>int cmp = String.Compare(str2, &quot;This is a string&quot;);
+Console.WriteLine(cmp); // 0</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Equals()</td>
+                                <td>Controleert of twee strings exact gelijk zijn (bool).</td>
+                                <td><pre>bool isEqual = str2.Equals(str3);
+Console.WriteLine(isEqual); // false (hoofdletterverschil)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Ook bestaan er speciale methoden waarmee tekst in een string kan worden opgezocht en (gedeeltelijk) kan worden vervangen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>IndexOf()</td>
+                                <td>Geeft de index van de eerste instantie van een waarde, of &ndash;1 als deze niet voorkomt.</td>
+                                <td><pre>int idxE = str1.IndexOf(&apos;e&apos;);
+int idxFox = str1.IndexOf(&quot;fox&quot;);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>LastIndexOf()</td>
+                                <td>Geeft de index van de laatste instantie van een waarde, of &ndash;1 als deze niet voorkomt.</td>
+                                <td><pre>int lastE = str1.LastIndexOf(&apos;e&apos;);
+int lastThe = str1.LastIndexOf(&quot;the&quot;);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Replace()</td>
+                                <td>Vervangt alle instanties van een waarde met de nieuwe waarde en retourneert een nieuwe string.</td>
+                                <td><pre>string replaced = str1.Replace(&quot;fox&quot;, &quot;cat&quot;);
+Console.WriteLine(replaced); // &quot;The quick brown cat &hellip;&quot;
+Console.WriteLine(replaced.IndexOf(&quot;fox&quot;)); // -1</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>String formateren</h3>
+                    <p>De functie voor samengestelde .NET-opmaak neemt een lijst met objecten en een tekenreeks met samengestelde opmaak als invoer. In C# biedt de samengestelde opmaak-syntax uitgebreide controle over de weergave van variabelen in een string. De algemene structuur hiervoor is:</p>
+                    <pre><code>{index[,alignment][:formatSpecifier[precision]]}</code></pre>
+                    <p>Standaardtekenreeksen voor numerieke notatie worden gebruikt om algemene numerieke typen op te maken. Een standaardtekenreeks voor numerieke notatie heeft de volgende notatie:</p>
+                    <pre><code>[format specifier][precision specifier]</code></pre>
+                    <p>In de onderstaande tabel worden de standaardaanduidingen voor numerieke notaties beschreven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Standaardtekenreeks</th>
+                                <th>Beschrijving</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>Decimaal (integer)</td>
+                                <td><pre>{0:D4} &rarr; 0007</pre></td>
+                            </tr>
+                            <tr>
+                                <td>N</td>
+                                <td>Getal met duizendtalscheiding</td>
+                                <td><pre>{0:N} &rarr; 1 234,00</pre></td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>Fixed-point (vast aantal decimalen)</td>
+                                <td><pre>{0:F2} &rarr; 1234,00</pre></td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>General (kortste notatie)</td>
+                                <td><pre>{0:G} &rarr; 1234</pre></td>
+                            </tr>
+                            <tr>
+                                <td>E</td>
+                                <td>Exponenti&euml;le notatie</td>
+                                <td><pre>{0:E3} &rarr; 1,234E+003</pre></td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Valuta (locale settings)</td>
+                                <td><pre>{0:C} &rarr; &euro; 1 234,00</pre></td>
+                            </tr>
+                            <tr>
+                                <td>P</td>
+                                <td>Procent (vermenigvuldigd met 100%)</td>
+                                <td><pre>{0:P0} &rarr; 12 345 678 %</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Na de standaardtekenreeks kan een geheel getal volgen om het aantal cijfers/de breedte aan te geven, bijvoorbeeld:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Format</th>
+                                <th>Uitleg</th>
+                                <th>Output</th>
+                            </tr>
+                            <tr>
+                                <td>D6</td>
+                                <td>Minimaal 6 cijfers (leading zeros)</td>
+                                <td>001234</td>
+                            </tr>
+                            <tr>
+                                <td>N2</td>
+                                <td>2 cijfers na de komma, duizendtalscheiding</td>
+                                <td>1 234,57</td>
+                            </tr>
+                            <tr>
+                                <td>F1</td>
+                                <td>Vast 1 cijfer na de komma</td>
+                                <td>1234,6</td>
+                            </tr>
+                            <tr>
+                                <td>G3</td>
+                                <td>Maximaal 3 significante cijfers, anders expo</td>
+                                <td>1,23E+03</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Ten slot kan met de alignment-optie de kolombreedte worden bepaald:</p>
+                    <pre><code>string[] quarters = { &quot;Q1&quot;, &quot;Q2&quot;, &quot;Q3&quot;, &quot;Q4&quot; };
+
+Console.WriteLine(
+    &quot;{0,12}{1,12}{2,12}{3,12}&quot;,
+    quarters[0], quarters[1], quarters[2], quarters[3]);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>String interpolatie</h3>
+                    <p>Doormiddel van stringinterpolatie kunnen variabelen en expressies direct in een string worden opgenomen door een $ v&oacute;&oacute;r de openingsquote te plaatsen. Binnen de string worden variabelen tussen accolades {} gezet, zonder gebruik van index-notatie, zoals:</p>
+                    <pre>Console.WriteLine($&quot;Auto: {year} {make} {model}, {miles} miles, {price}&quot;);</pre>
+                    <p>Alle standaard format-specifiers kunnen binnen interpolatie gebruikt worden na een dubbele punt en complexere berekeningen of methode-calls kunnen direct binnen de {} worden uitgevoerd:</p>
+                    <pre><code>Console.WriteLine($&quot;Afstand: {miles * 1.6:F2} km&quot;);</code></pre>
+                    <p>Om een letterlijke accolades in de uitvoer op te nemen, worden dubbele accolades gebruikt:</p>
+                    <pre><code>Console.WriteLine($&quot;Afstand: {{ {miles} }} miles&quot;);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De StringBuilder gebruiken</h3>
+                    <p>In .NET is string onveranderlijk waardoor er bij bewerkingen telkens een nieuwe string ontstaat. Bij veel concatenaties gaat dit echter ten koste gaat van prestaties en geheugen. De StringBuilder-klasse (in System.Text) biedt een effici&euml;nte buffer voor het opbouwen en manipuleren van tekst zonder telkens nieuwe string-instanties aan te maken.</p>
+                    <pre><code>using System.Text;
+
+var sb = new StringBuilder(
+    &quot;The quick brown fox&quot;, // initi&euml;le inhoud
+    200                    // initi&euml;le capaciteit
+);
+
+Console.WriteLine($&quot;Capacity: {sb.Capacity}, Length: {sb.Length}&quot;);</code></pre>
+                    <p>De belangrijkste methoden die bij de StingBuilder worden toegepast staan hieronder weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>sb.Append(string)</td>
+                                <td>Voegt achteraan tekst toe zonder regeleinde</td>
+                                <td><pre>sb.Append(&quot; jumped over the lazy dog.&quot;);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>sb.AppendLine(string)</td>
+                                <td>Zelfde als Append, plus een CRLF</td>
+                                <td><pre>sb.AppendLine(&quot;And then he ran away.&quot;);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>sb.AppendFormat(fmt,&hellip;)</td>
+                                <td>Voegt een geformatteerde string toe (index-notatie)</td>
+                                <td><pre>sb.AppendFormat(&quot;He did this {0} times.&quot;, jumpCount);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>sb.AppendJoin(sep,&hellip;)</td>
+                                <td>Voegt een reeks samen met een scheidingsteken</td>
+                                <td><pre>sb.AppendJoin(&quot;, &quot;, new[] { &quot;goats&quot;,&quot;cats&quot;,&quot;pigs&quot; });</pre></td>
+                            </tr>
+                            <tr>
+                                <td>sb.Replace(old, new)</td>
+                                <td>Vervangt alle voorvallen van old door new</td>
+                                <td><pre>sb.Replace(&quot;fox&quot;, &quot;cat&quot;);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>sb.Insert(idx, text)</td>
+                                <td>Voegt text in op positie idx</td>
+                                <td><pre>sb.Insert(0, &quot;This is the &quot;);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>sb.ToString()</td>
+                                <td>Converteert de opgebouwde inhoud naar een reguliere string</td>
+                                <td><pre>string result = sb.ToString(); Console.WriteLine(result);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Strings parsen</h3>
+                    <p>Het omzetten van tekstuele getallen of booleans naar native C#-typen is een veelvoorkomende taak. Elk van de standaard datatypen beschikt over een Parse-methodes die hierbij directe ondersteuning biedt.</p>
+                    <pre><code>int    i = int.Parse(&quot;123&quot;);
+float  f = float.Parse(&quot;3.14&quot;);
+bool   b = bool.Parse(&quot;True&quot;);
+decimal d = decimal.Parse(&quot;1,234.56&quot;);</code></pre>
+                    <p>Wanneer een Parse-methodes een ongeldige invoer verwerkt, ontstaat er een FormatException. Daarom wordt er doorgaans een gebruik gemaakt van een try&ndash;catch-blok, zoals:</p>
+                    <pre><code>try
+{
+    int i = int.Parse(numStr1);
+    Console.WriteLine(i);
+}
+catch (FormatException)
+{
+    Console.WriteLine(&quot;Ongeldige notatie&quot;);
+}</code></pre>
+                    <p>Met NumberStyles kan worden aangeven welke opmaak de parser mag accepteren (bijvoorbeeld duizendtallen of decimalen) en bevindt zich in System.Globalization:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>NumberStyles.Integer</td>
+                                <td>Neemt alleen gehele getallen</td>
+                                <td>&quot;1234&quot;</td>
+                            </tr>
+                            <tr>
+                                <td>NumberStyles.Float</td>
+                                <td>Neemt alleen getallen met een komma of punt voor decimalen</td>
+                                <td>&quot;3.0&quot;</td>
+                            </tr>
+                            <tr>
+                                <td>NumberStyles.AllowThousands</td>
+                                <td>Neemt alleen getallen met een komma of punt als duizendtalscheiding</td>
+                                <td>&quot;1,234&quot;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>TryParse geeft true of false terug en gebruikt een out-parameter voor het resultaat, zodat er geen try&ndash;catch nodig is:</p>
+                    <pre><code>string input = &quot;123&quot;;
+if (Int32.TryParse(input, out int result))
+{
+    Console.WriteLine($&quot;Parsed: {result}&quot;);
+}
+else
+{
+    Console.WriteLine(&quot;Parse mislukt&quot;);
+}</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>C# Functies</h2>
+                
+                <div class="chapter__group">
+                    <h3>Basisprincipes van functies</h3>
+                    <p>Functies, oftewel methoden, bundelen herbruikbare code in logisch afgebakende blokken. Een functie kent een returntype, een naam, een optionele parameterlijst en een body tussen accolades, zoals:</p>
+                    <pre><code>float MilesToKm(float miles)
+{
+    float result = miles * 1.6f;
+    return result;
+}
+
+Console.WriteLine($&quot;8 mi = {MilesToKm(8.0)} km&quot;);
+Console.WriteLine($&quot;52 mi = {MilesToKm(52.0)} km&quot;);</code></pre>
+                    <p>Met het returntype geeft de functie de gegevenstype van de waarde terug. Bij een functie zonder returnwaarde zijn de parameters optioneel, wordt er geen waarde teruggegeven en is er geen return nodig. Dit ziet er als volgt uit:</p>
+                    <pre><code>void PrintWithPrefix(string theStr)
+{
+    Console.WriteLine($&quot;[PREFIX]: {theStr}&quot;);
+}
+
+PrintWithPrefix(&quot;Test String&quot;);
+PrintWithPrefix(&quot;Another Test String&quot;);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Benaamde en standaard parameters</h3>
+                    <p>C# ondersteunt standaard parameters en benaamde argumenten waarmee de leesbaarheid en flexibiliteit van functieroepen kan worden verhoogd. Bij het defini&euml;ren van een parameter kan een standaardwaarde worden opgegeven. Als de argumentwaarde bij het aanroepen wordt weggelaten, dan geldt deze default.</p>
+                    <p>Bij het defini&euml;ren van een parameter kan een standaardwaarde worden opgegeven. Als de argumentwaarde bij het aanroepen wordt weggelaten, dan geldt deze default:</p>
+                    <pre><code>void PrintWithPrefix(string theStr, string prefix = &quot;[DEFAULT]&quot;)
+{
+    Console.WriteLine($&quot;{prefix} {theStr}&quot;);
+}
+
+// Aanroepen zonder prefix &rarr; gebruikt &quot;[DEFAULT]&quot;
+PrintWithPrefix(&quot;Hello there&quot;);              // [DEFAULT] Hello there
+
+// Aanroepen met expliciete prefix
+PrintWithPrefix(&quot;Hello there&quot;, &quot;[PREFIX]&quot;);  // [PREFIX] Hello there</code></pre>
+                    <p>Met benaamde argumenten kan er bij het aanroepen expliciet worden aangeven voor welke parameter welke waarde geldt. Dit verbetert de leesbaarheid en maakt argumentvolgorde onbelangrijk:</p>
+                    <pre><code>void PrintWithPrefix(string theStr, string prefix = &quot;[DEFAULT]&quot;) { &hellip; }
+
+// Gewone volgorde
+PrintWithPrefix(&quot;Hi&quot;, &quot;[!]&quot;);
+
+// Named arguments, volgorde omwisselbaar
+PrintWithPrefix(prefix: &quot;[!]&quot;, theStr: &quot;Hi&quot;);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Referentie en out-parameters</h3>
+                    <p>In C# kunnen parameters ook met behulp van een referentie of met out worden doorgegeven. Hierdoor kunnen de functies waarden in de aanroepende scope meerdere waarden kunnen teruggeven en worden aangepast.</p>
+                    <p>Wanneer een parameter met ref wordt doorgegeven, ontvangt de functie geen kopie, maar een verwijzing naar de originele variabele. Wijzigingen in de functie worden daarom ook buiten de functie zichtbaar:</p>
+                    <pre><code>// Zonder ref: alleen wijziging binnen de functie
+int val1 = 10;
+void TestFunc(int arg)
+{
+    arg += 10;
+}
+TestFunc(val1);
+Console.WriteLine(val1);  // 10
+
+// Met ref: wijziging ook buiten de functie zichtbaar
+val1 = 10;
+void TestFunc2(ref int arg)
+{
+    arg += 10;
+}
+TestFunc2(ref val1);
+Console.WriteLine(val1);  // 20</code></pre>
+                    <p>Een parameter met out dient uitsluitend om waarden terug te geven; de functie vult deze variabele en geeft zo meerdere waarden terug. De parametervariabele hoeft hierbij niet v&oacute;&oacute;r de aanroep ge&iuml;nitialiseerd te zijn.</p>
+                    <pre><code>// out-parameters voor meerdere resultaten
+void PlusTimes(int x, int y, out int sum, out int product)
+{
+    sum = x + y;
+    product = x * y;
+}
+
+int a, b;
+PlusTimes(20, 20, out a, out b);
+Console.WriteLine($&quot;Sum = {a}, Product = {b}&quot;);  // Sum = 40, Product = 400</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Meerdere waarden teruggeven</h3>
+                    <p>Een functie kan standaard slechts &eacute;&eacute;n waarde retourneren. De mogelijkheid bestaat om met out-parameters toch meerdere waarden terug te geven, maar dit is minder leesbaar en doorbreekt de conventie dat parameters alleen input zijn. Sinds C# 7 zijn er daarom tuples ge&iuml;ntroduceerd: een datastructuur om meerdere waarden onder &eacute;&eacute;n type terug te geven, met benoemde of anonieme elementen:</p>
+                    <pre><code>// Benoemde elementen
+(int a, int b) tup1 = (5, 10);
+tup1.b = 20;  // wijziging mogelijk via naam
+
+// Anonieme elementen &rarr; Item1, Item2, &hellip;
+var tup2 = (&quot;Hallo&quot;, 3.14);
+tup2.Item1 = &quot;Nieuwe tekst&quot;;</code></pre>
+                    <p>Tuples maken het mogelijk om op een nette manier functies te defini&euml;ren die meerdere waarden teruggeven:</p>
+                    <pre><code>// Retourneert som en product als tuple
+(int sum, int product) PlusTimes(int x, int y)
+{
+    return (x + y, x * y);
+}
+
+// Aanroepen
+var result = PlusTimes(6, 12);
+Console.WriteLine($&quot;Sum = {result.sum}, Product = {result.product}&quot;);
+// Output: Sum = 18, Product = 72</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Object georiënteerd C#</h2>
+                
+                <div class="chapter__group">
+                    <h3>C# klassen defini&euml;ren</h3>
+                    <p>Een klasse vormt de blauwdruk voor objecten en wordt gedefinieerd met het sleutelwoord class, gevolgd door de klassennaam en een optionele access modifier (public, internal, etc.) om zichtbaarheid te regelen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Class</td>
+                                <td>Declareert een klasse</td>
+                                <td><pre>public class Job{}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Binnen de klasse kunnen velden worden gedeclareerd om data op te slaan. In het onderstaande voorbeeld beginnen de veldnamen met een underscore om interne variabelen te onderscheiden:</p>
+                    <pre><code>public class Book
+{
+    private string _name;       // titel van het boek
+    private string _author;     // auteur
+    private int    _pageCount;  // aantal pagina&rsquo;s
+    // &hellip;
+}</code></pre>
+                    <p>De constructor is een speciale methode die bij het aanmaken van een object wordt aangeroepen. De parameters van de constructor worden gebruikt om de interne velden te initialiseren:</p>
+                    <pre><code>public class Book
+{
+    // velden &hellip;
+
+    public Book(string name, string author, int pages)
+    {
+        _name      = name;
+        _author    = author;
+        _pageCount = pages;
+    }
+
+    // &hellip;
+}</code></pre>
+                    <p>Klassen bevatten ook methoden om gedrag te defini&euml;ren. In dit voorbeeld geeft GetDescription() een geformatteerde omschrijving terug via string-interpolatie:</p>
+                    <pre><code>public class Book
+{
+    // velden en constructor &hellip;
+
+    public string GetDescription()
+    {
+        return $&quot;{_name} by {_author}&quot;;
+    }
+}</code></pre>
+                    <p>In de Main-methode worden objecten van de klasse aangemaakt met het sleutelwoord new. Vervolgens kunnen de methoden worden aangeroepen:</p>
+                    <pre><code>var b1 = new Book(&quot;War and Peace&quot;, &quot;Leo Tolstoy&quot;, 800);
+var b2 = new Book(&quot;The Grapes of Wrath&quot;, &quot;John Steinbeck&quot;, 464);
+
+Console.WriteLine(b1.GetDescription());
+Console.WriteLine(b2.GetDescription());</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Acces modifiers</h3>
+                    <p>Bescherming van velden en methoden wordt geregeld met acces modifiers. Access modifiers bepalen op welke manier de velden, methoden en eigenschappen van een klasse toegankelijk zijn vanuit andere delen van de applicatie:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Modifier</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>public</td>
+                                <td>Toegankelijk vanuit &eacute;lk codeblok in het project.</td>
+                                <td><pre>public  void A1() { /* &hellip; */ }</pre></td>
+                            </tr>
+                            <tr>
+                                <td>protected</td>
+                                <td>Toegankelijk binnen de eigen klasse &eacute;n afgeleide (sub)klassen.</td>
+                                <td><pre>protected void A2() { /* &hellip; */ }</pre></td>
+                            </tr>
+                            <tr>
+                                <td>private</td>
+                                <td>Alleen toegankelijk binnen de eigen klasse.</td>
+                                <td><pre>private void A3() { /* &hellip; */ }</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Wanneer een private veld buiten de klasse wordt aangepast, ontstaat er een compile-error, wat aangeeft dat de access modifier verhindert dat externe code de klasse wijzigt.</p>
+                    <p>Door een veld public te markeren, kan de hoofdcode het directe veld aanpassen, wat tot ongewenst gedrag kan leiden. In plaats van velden publiek te maken, kunnen getter- en setter-methoden worden toegevoegd:</p>
+                    <pre><code>public string GetName() { return _name; }
+public void   SetName(string s) { _name = s; }</code></pre>
+                    <p>Hiermee blijft de interne implementatie afgeschermd en bij wijziging van de velden hoeven aanroepers niets aan te passen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Properties defini&euml;ren</h3>
+                    <p>Properties combineren de rol van velden en methoden om gecontroleerde toegang tot interne data mogelijk te maken. Een property wordt gedeclareerd als een public met een datatype, klasse naam &eacute;n de getter/ setter-methoden:</p>
+                    <pre><code>public class Book
+{
+    private string _name;
+
+    public string Name     // property
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+}</code></pre>
+                    <p>Voor eenvoudige getters en setters kan de syntax worden ingekort met de =&gt;-notatie:</p>
+                    <pre><code>public class Book
+{
+    private string _author;
+
+    public string Author
+        { get =&gt; _author; set =&gt; _author = value; }
+}</code></pre>
+                    <p>Properties minimaliseren de tijd die kwijtraakt aan het schrijven van aparte Get- en Set-methoden en verbeteren de leesbaarheid. Wanneer set &oacute;f get wordt weggelaten, ontstaat een read-only of write-only property en zonder backing velden, slaan auto-properties de data intern op, wat handig is voor eenvoudige data-containers. Ten slot kunnen properties ook berekende waardes teruggeven, gebaseerd op andere properties of velden:</p>
+                    <pre><code>public class Book
+{
+    public string Description   // alleen getter
+        =&gt; $&quot;{Name} by {Author}, {PageCount} pages&quot;;
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Overerven</h3>
+                    <p>Met overerving kunnen klassen hi&euml;rarchie&euml;n vormen waarbij een bovenliggende klasse gemeenschappelijke functionaliteit bevat en een onderliggende klasse deze verder uitbreidt en specialiseert:</p>
+                    <pre><code>public class Publication
+{
+    private string _name;
+    public string Name
+    {
+        get =&gt; _name;
+        set
+        {
+            if (string.IsNullOrEmpty(value))
+                throw new ArgumentException(&quot;Name cannot be blank&quot;);
+            _name = value;
+        }
+    }
+    public int    PageCount { get; set; }
+    public decimal Price     { get; set; }
+
+    public virtual string GetDescription()
+        =&gt; $&quot;{Name}, {PageCount} pages&quot;;
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Sting representatie</h3>
+                    <p>Elke klasse erft impliciet van de basisklasse Object, waarin de methode ToString() wordt gedefinieerd en geeft klassen standaard een volledige klasse naam inclusief naamruimte. Standaard overschrijven ingebouwde datatypen ToString() zodat de waarde zelf wordt geretourneerd en eigen klassen zonder override tonen de namespace en klassenaam:</p>
+                    <pre><code>int x = 1000;
+Console.WriteLine(x.ToString());   // &quot;1000&quot;
+
+object a = new object();
+Console.WriteLine(a.ToString());   // &quot;System.Object&quot;</code></pre>
+                    <p>Door in een eigen klasse public override string ToString() te defini&euml;ren, kan er een betekenisvolle weergave van objecten worden gecre&euml;erd, zoals:</p>
+                    <pre><code>public class Book
+{
+    public string Name      { get; set; }
+    public string Author    { get; set; }
+    public int    PageCount { get; set; }
+
+    public override string ToString()
+        =&gt; $&quot;Book: {Name} by {Author}&quot;;
+}</code></pre>
+                    <p>Door een sting te overloaden is het mogelijk om extra parameters te accepteren voor verschillende formaten. Dit maakt flexibele weergave opties mogelijk zonder de oorspronkelijke methode te verstoren. Het overloaden van ToString() is een andere methode met een apart signatuur en is niet hetzelfde als overschrijven:</p>
+                    <pre><code>public class Book
+{
+    // &hellip; bestaande properties en override &hellip;
+
+    // Condensed form (B)
+    public string ToString(char format)
+    {
+        return format == &apos;B&apos;
+            ? $&quot;{Name}: {Author}&quot;
+            : format == &apos;F&apos;
+                ? $&quot;{Name} by {Author} is {PageCount} pages&quot;
+                : base.ToString();
+    }
+}</code></pre>
+                </div>                
+            </div>           
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

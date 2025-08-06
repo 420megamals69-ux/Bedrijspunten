@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Programming Foundations: Databases</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>Programming Foundations: Databases</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Database basiskennis</h2>
+
+                <div class="chapter__group">
+                    <h3>Relationele databases</h3>
+                    <p>Er zijn verschillende soorten databases: Grafiekdatabases zoals Neo4j, objectdatabases zoals Realm en Objectivity/DB, documentdatabases zoals CouchDB en MongoDB. De relationele database is de meest voorkomende database soort. Relationele databases organiseren data met relaties of tabellen van gerelateerde gegevens.</p>
+                    <p>Tabellen bestaan uit rijen, die gevallen van een bepaalde entiteit representeren, en kolommen, die attributen van elke entiteit voorstellen. De gegevens in de tabel representeren een specifieke entiteit. Er moeten meerdere tabellen worden gemaakt, als er meerdere entiteiten zijn. Een entiteit als gerechten zal bijvoorbeeld niet in de onderstaande tabel kunnen, aangezien die geen voornaam hebben, etc.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Voornaam</th>
+                                <th>Achternaam</th>
+                                <th>Email</th>
+                                <th>TelefoonNummer</th>
+                            </tr>
+                            <tr>
+                                <td>Steven</td>
+                                <td>Hartman</td>
+                                <td>shartman@...</td>
+                                <td>123456789</td>
+                            </tr>
+                            <tr>
+                                <td>Brandon</td>
+                                <td>Lichthart</td>
+                                <td>blichthart@...</td>
+                                <td>987654321</td>
+                            </tr>
+                        </table>
+                    </div>                                 
+                    <p>In de tabel zijn personen de entiteit. De tabel is gevuld met verschillende personen die allemaal een geval van een persoon representeren. Deze personen worden individueel beschreven met behulp van een attributen die bij de entiteit hoort. Achternaam is een voorbeeld van een attribuut. De verzameling van kolommen wordt een relatie genoemd. Elk kolom of informatiestuk in de tabel heeft een datatype waarmee wordt gedefinieerd welke informatie het bevat, zoals: Nummers, tekst, datums, true of false, en binaire data die een file representeert.  </p>                                                            
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Sleutels en unieke waarden</h3>
+                    <p>Een unieke waarde komt slechts een keer voort in een selectie van kolommen en kan daarom ook als een sleutel worden gebruikt. Een sleutel is een waarde die refereert naar een specifieke record. Een primary key is de belangrijkste sleutel in een tabel en helpt om specifieke records makkelijker te vinden.</p>
+                    <p>Een synthetic of surogate key is een uniek identificatiemiddel die aan een bestaande record is toegevoegd. In een DBMS wordt dit vaak gedaan door een nummer aan een record toe te wijzen en dit nummer per record te verhogen.</p>
+                    <p>Een composite key refereert naar een combinatie van twee of meer fields die dient als een uniek identificatiemiddel. Wanneer er in een tabel gerefereerd wordt naar de sleutel van een andere tabel, wordt dit een foreign key genoemd.</p>                                                        
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Relaties</h3>
+                    <p>Er zijn drie verschillende relatie soorten in databases:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Relatie soort</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>One-to-many</td>
+                                <td>De meest voorkomende relatie. Verbind een record in een tabel met meerdere records in een andere tabel. Deze relatie ontstaat door de primary key van een tabel de foreign key in een andere tabel te maken.</td>
+                            </tr>
+                            <tr>
+                                <td>Many-to-many</td>
+                                <td>Verbind meerdere records in een tabel met meerdere records in een andere tabel. Deze relatie ontstaat door de primary key's van de tabellen de foreign key in een aparte tabel te maken. Deze tabel wordt de associative of linking tabel genoemd.</td>
+                            </tr>
+                            <tr>
+                                <td>One-to-one</td>
+                                <td>De minst voorkomende relatie. Verbind een record in een tabel met een record in een andere tabel, zodat een record niet tegelijkertijd met een ander record kan worden geassocieerd. Deze relatie ontstaat ook door de primary key van een tabel de foreign key in een andere tabel te maken.</td>
+                            </tr>
+                        </table>
+                    </div>                                                                                    
+                </div>                
+
+                <div class="chapter__group">
+                    <h3>Acid en transacties</h3>          
+                    <p>Een transactie is een opeenvolging van handelingen die moet worden voltooid. Als een van de handelingen niet kan worden voltooid, zal er geen verandering plaatsvinden in de database. Alles dat gedeeltelijk gedaan is wordt ongedaan. Dit houdt de data in een database nauwkeurig tijdens veranderingen.</p>
+                    <p>Transacties volgen een reeks van principes die onthouden kan worden met het ezelbruggetje "ACID":</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Principes</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>Atomic</td>
+                                <td>De transactie is ondeelbaar, stukken ervan kunnen niet worden gescheiden.</td>
+                            </tr>
+                            <tr>
+                                <td>Consistent</td>
+                                <td>De database moet in een valide of consistente staat worden achtergelaten. De integriteitsregels van de database mogen niet worden gebroken.</td>
+                            </tr>
+                            <tr>
+                                <td>Isolated</td>
+                                <td>Er kunnen geen wijzigingen aan de data worden gemaakt terwijl de activiteiten in de transactie worden voltooid. Nieuwe wijzigingsverzoeken moeten wachten.</td>
+                            </tr>
+                            <tr>
+                                <td>Durable</td>
+                                <td>De informatie die wordt veranderd in de transactie wordt daadwerkelijk in de database geschreven. Wanneer de transactie is voltooid, zijn de gegevens er.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een transactie wordt gebruikt wanneer een activiteit stappen bevat die tegelijkertijd moeten gebeuren en wanneer exclusieve toegang tot informatie nodig is terwijl een taak wordt uitgevoerd. Het volgen van de ACID-principes gebeurt automatisch, nadat in de DBMS aan wordt geven dat er een transactie moet plaatsvinden.</p>                                                                    
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Simpele SQL</h3>   
+                    <p>Structured query language (SQL) is een taal die wordt gebruikt om met een database te communiceren. ANSI SQL is de standaard die door relationele databasemanagementsystemen wordt ondersteunt. SQL maakt het mogelijk om uitdrukkingen te schrijven die de DBMS interpreteert. Hierdoor kan er worden geïnteracteerd met de data in de database. In deze rol wordt SQL een data manipulation language (DML) genoemd.</p>
+                    <p>SQL bevat ook functionaliteiten om de database te managen, zoals het creëren en aanpassen van tabellen. In deze rol wordt SQL een data definition language (DDL) en een data control language (DCL) genoemd.</p>
+                    <p>Een SQL-uitdrukking bestaat uit clauses, die expressies en predicates kunnen bevatten. Een clause bevat een sleutelwoord, die een actie specificeert, en hetgeen wat moet worden gebruikt of waarop moet worden gehandeld. Expressies en predicates zetten parameters waarin de database moet handelen.</p>
+                    <pre><code>SELECT Voornaam, Achternaam FROM Personen
+WHERE Achternaam = 'Steven'</code></pre>
+                    <p>In de bovenstaande uitdrukking maakt gebruik van SELECT, FROM en WHERE clauses. Achternaam = 'Steven' is een expressie en 'Steven' is een predicate. De database wordt hier gevraagd om iets te doen, waardoor de uitdrukking een query heet. Een uitdrukking kan in database software of direct in de code worden geschreven.</p>
+                    <p>In SQL is het gebruikelijk om de sleutelwoorden met hoofdletters te schrijven. Dit is niet noodzakelijk maar helpt met leesbaarheid. CRUD staat voor create, read, update en delete en vormt de basis van het interacteren met data.</p>                                                                       
+                </div>
+
+            </div>            
+            
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Tabellen</h2>
+
+                <div class="chapter__group">
+                    <h3>Databases modeleren en plannen</h3>
+                    <p>Een entity relationship (ER) diagram is een diagram die wordt gebruikt om een database te plannen. Het bevat tabellen, fields en relaties. Eerst wordt vastgesteld welke data moet worden bewaard in de database. Vervolgens worden tabellen gemaakt voor de entiteiten door te bedenken wat de relevante fields zijn.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Tabellen benamen</h3>
+                    <p>Een tabel wordt gebruikelijk benaamd naar de entiteit die het omvat in meervoud. Dit maakt het later gemakkelijker om te praten over de items die in de tabel zijn opgeslagen. Dus “Personen” voor een tabel waarbij de entiteit een persoon is. Daarnaast is het een best practice om de naam van een tabel met een hoofdletter te beginnen. Ook wordt het gebruik van speciale tekens en spaties in tabelnamen vermeden.</p>
+                    <p>Namen van Fields zijn altijd in enkelvoud en maken gebruik van UpperCamelCase. Dit houdt in dat elk woord begint met een hoofdletter en aan elkaar wordt geschreven.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Kolommen en datatypes</h3>
+                    <p>De informatie soort die een kolom bevat, wordt een datatype genoemd. De datatype van fields moet worden gedefinieerd tijdens het werken met databases. Hierdoor kan de informatie efficiënter worden bewaard en kunnen functionaliteiten worden aangeboden op basis van het type informatie.</p>
+                    <p>Strings zijn een datatype categorie die een collectie van karakters, individuele letters, nummers en symbolen representeren. De lengte van de informatie die moet worden opgeslagen is belangrijk voor de string datatype. De database moet weten hoe lang een fields met een string zijn.</p>
+                    <p>CHAR is een stringtype waarbij een vaste hoeveelheid karakters. Het wordt meestal voor fields gebruikt waarbij de hoeveelheid karakters vaststaat. Denk bijvoorbeeld aan “Postcode CHAR(6)”. VARCHAR is een stringtype met een variabele hoeveelheid karakters tot een bepaald limiet. Bij “Voornaam VARCHAR(200)” is het limiet op 200 gezet. Als een voornamen meer dan 200 karakters bevat worden alleen de eerste 200 in de database opgeslagen. De VARCHAR zal echter minder ruimte opnemen dan de CHAR als een naam 5 letters bevat.</p>
+                    <p>Ten slot bestaan er andere stringtypes die zijn bedoeld voor langere teksten, zoals een product omschrijving.</p>
+                    <p>DATE is een datatype categorie die specifiek is bedoeld voor datums. Met DATETIME kan een datum en een tijdstip worden vastgelegd. Sommige DBMS-software biedt TIMESTAMP aan. Dit legt automatisch een datum en een tijdstip worden vast op het moment dat een rij wordt toegevoegd of aangepast.</p>
+                </div>                
+
+                <div class="chapter__group">
+                    <h3>Nummers en andere types</h3>
+                    <p>Databases bieden datatypes voor verschillende soorten nummers: lntegers, double precision, floating point, decimals en meer. Voor een product prijs kan bijvoorbeeld “Prijs DECIMAL(3,2) worden gebruikt als de prijzen lager blijven dan 1000 euro.</p>
+                    <p>Telefoonnummers worden meestal met een VARCHAR(20) opgeslagen. Er hoeven geen berekeningen met telefoonnummers te worden gedaan en de VARCHAR maakt het mogelijk om extensies aan een nummer tot te voegen.</p>
+                    <p>NULL is een waarde die de absentie van een waarde representeert. Het wordt meestal gebruikt om een missend informatiestuk in een database te representeren. NULL wordt bijvoorbeeld gebruikt als er geen telefoonnummer is opgegeven. NULL is geen datatype maar een conditie: Een waarde is NULL of NOT NULL.</p>
+                    <p>Als een veld informatie bevat is het NOT NULL, zo niet dan is het NULL. Het kan worden ingesteld of kolom NULL-waardes kan bevatten en of de standaardinstelling van een kolom NULL is.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Primairy en foreign keys</h3>
+                    <p>Tijdens het ontwerpen van een database moeten potentiële sleutels worden geïdentificeerd, of er moeten synthetic of surogate keys worden aangemaakt als er geen natuurlijke sleutels in de data aanwezig zijn. Hiermee is een record uniek te identificeren.</p>
+                    <p>De integer datatype kan worden gebruikt, omdat sleutel fields numeriek zijn. De numerieke waarde wordt automatisch verhoogd per record. Hiermee is een record uniek te identificeren. Meestal wordt er echter een universally-unique identifier gebruikt (UUID) voor veiligheid reden. De UUID is veel langer en daardoor moeilijker om te raden voor hackers.</p>
+                    <p>De naam van een sleutel moet consistent en beschrijvend zijn. Denk bijvoorbeeld aan een combinatie van de tabelnaam in enkelvoud en "ID"</p>
+                    <p>Een composite key refereert naar een combinatie van twee of meer fields die dient als een uniek identificatiemiddel. Een composite key wordt meestal gebruikt als er geen sleutel aan een tabel kan worden toegevoegd en er geen kolom is die als uniek identificatiemiddel kan worden gebruikt. Meestal heeft een enkele sleutel namelijk de preferentie.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Relaties</h2>
+
+                <div class="chapter__group">
+                    <h3>Relaties creëren</h3>
+                    <p>Zodra uidelijk is welke gegevens de database gaat opslaan, moet worden bedacht hoe die gegevens met elkaar verbonden zijn. Er zijn drie verschillende relatie soorten in databases: One-to-many, many-to-many en one-to-one. Een relatie hoeft niet te worden gedefinieerd in een schema of de DBMS. Het is een manier om te bedenken hoe gegevens met elkaar verbonden zijn in een informatiemodel.</p>
+                    <p>Tijdens het plannen, worden lijnen getekend die relaties weergeven. Deze informatie wordt gebruikt om fields te maken, tabellen te organiseren, redundantie te verminderen en de integriteit van gegevens te verbeteren.</p>
+                </div>                
+
+                <div class="chapter__group">
+                    <h3>One-to-many relaties</h3>
+                    <p>De meest voorkomende relatie. Verbind een record in een tabel met meerdere records in een andere tabel. De relatie wordt gerepresenteerd door een lijn met een “crow’s foot”. Deze relatie ontstaat door de primary key van een tabel de foreign key in een andere tabel te maken.</p>
+                    <p>Het gebruiken van de sleutel heeft de volgende voordelen: De sleutel veranderd niet, het is gegarandeerd een unieke waarde en het neemt minder ruimte in dan een volledige tekstnaam, wat de database klein houdt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Many-to-many relaties</h3>
+                    <p>Verbind meerdere records in een tabel met meerdere records in een andere tabel. De relatie wordt gerepresenteerd een lijn met een “crow’s foot” aan beiden uiteinden. In veel DBMS-tools kan deze relatie niet direct worden gemaakt.</p>
+                    <p>In dit geval worden er twee one-to-many relaties gemaakt met een tussentabel. Deze tabel wordt de associative of linking tabel genoemd. De tabel wordt benaamd door de namen van de twee tabellen te combineren, dus bijvoorbeeld PersonenProducten.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>One-to-one relaties</h3>
+                    <p>Verbind een record in een tabel met een record in een andere tabel. De relatie wordt gerepresenteerd door een lijn. Dit is de minst voorkomende relatie, want als een record alleen is gerelateerd aan één andere record suggereert dit dat de twee records gewoon één record in een tabel moeten zijn.</p>
+                    <p>Een one-to-one relatie kan worden gebruikt om persoonlijke gegevens van klanten te beschermen tegen inzage door onze medewerkers door tabellen van elkaar te scheiden. Sommige DBMS-software biedt echter de optie aan om individuele kolommen van gegevens te beveiligen. Hierdoor is de relatie niet nodig om informatie te beschermen.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Relatie regels en referentiele integriteit</h3>
+                    <p>Er wordt bepaald op welke manier relaties worden gehandhaafd, nadat relaties zijn vastgesteld. Referentiele integriteit houdt in dat een database bewust is van een relatie en gebruikers niet toestaat om data aan te passen op een manier die deze relatie schendt. Dit zorgt ervoor dat er geen record aangemaakt kan worden als het een productnummer bevat dat nog niet bestaat. Dit helpt om de database consistent te houden.</p>
+                    <p>Het kan ook worden gebruikt om records te verwijderen met een "cascading delete". Denk bijvoorbeeld aan het verwijderen van bestellingen als een klant wordt verwijderd. Daarnaast voorkomt het ook dat records worden verwijderd. Als de bestelling van een klant wordt verwijderd moeten de menu items bijvoorbeeld wel in de database blijven.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Database optimalisatie</h2>
+                
+                <div class="chapter__group">
+                    <h3>Normalisatie</h3>
+                    <p>De normalisatieregels zijn drie verschillende regels die helpen om redundantie te verminderen en de integriteit van gegevens te verbeteren. De regels heten de eerste-, tweede- en derde normaalvorm. Deze regels zijn een selectie van criteria die stapsgewijs op elkaar voortbouwen.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Eerste normaalvorm</h3>
+                    <p>1NF houdt in dat de waarden in elke cel atomisch zijn en dat tabellen geen herhalende groepen bevatten. De eerste normale vorm wordt vaak uitgebreid met het concept dat een tabel geen dubbele rijen bevat. De volgorde van rijen en kolommen is niet belangrijk.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Tweede normaalvorm</h3>
+                    <p>2NF houdt in dat geen waarde in de tabel niet afhankelijk mag zijn van een gedeelte van een sleutel. Dit kan plaatsvinden in het geval dat een composite keys de unieke waarde of een candidate key is.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Derde normaalvorm</h3>
+                    <p>3NF houdt in dat een waarde niet moet worden opgeslagen als het kan worden afgeleid uit een non-key field.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De-normalisatie</h3>
+                    <p>Soms is het nodig om normalisatieregels te overtreden door een bedrijfsbehoefte of een probleem met databaseprestaties. De-normalisatie refereert naar het opzettelijk dupliceren van informatie in tabellen in schending met de normalisatieregels.</p>
+                    <p>De-normalisatie wordt uitgevoerd na het normaliseren van een database. De-normalisatie is vaak een afweging tussen data consistentie en snelheid.</p>
+                </div>
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Database querying</h2>
+            
+                <div class="chapter__group">
+                    <h3>Database creëren</h3>
+                    <p>De manier waarop een database wordt gecreëerd, hangt af van de DBMS. In sommige DBMS-software moeten handmatige SQL-opdrachten worden geschreven, terwijl andere DBMS-software een grafische omgeving bevatten die deze opdrachten zelf samenstelt.</p>
+                    <p>SQL kan als een DML en DDL worden gebruikt. SQL functioneert als een DDL tijdens het creëren van een database en het aanpassen van een schema. SQL functioneert als een DML op het moment dat er met data binnen de structuur wordt gewerkt.</p>
+                    <p>Voordat tabellen worden gedefinieerd, moeten de database worden aangemaakt. In SQL gaat het creëren van een database met de naam "Restaurant" als volgt:</p>
+                    <pre><code>CREATE DATABASE Restaurant;</code></pre>
+                    <p>Soms moet worden aangegeven dat een database moet worden gebruikt:</p>
+                    <pre><code>USE Restaurant;</code></pre>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Tabellen creëren</h3>
+                    <p>Het creëren van een tabel genaamd "Klanten" gaat bijvoorbeeld als volgt:</p>
+                    <pre><code>CREATE TABLE Klanten (
+KlantID INT(6) NOT NULL AUTO_INCREMENT,
+Voornaam VARCHAR(200) NOT NULL,
+Achternaam VARCHAR(200) NOT NULL,
+Email VARCHAR(200),
+Adres VARCHAR(200),
+Stad VARCHAR(200),
+LandAfkorting VARCHAR(5),
+TelefoonNummer VARCHAR(200) NOT NULL,
+GeboorteDatum DATE,
+FavorietGerecht INT(6) REFERENCES Gerecht(GerechtID)
+PRIMARY KEY(KlantID)
+);</code></pre>
+                </div>                
+
+                <div class="chapter__group">
+                    <h3>SQL-query's schrijven</h3>
+                    <p>Nadat de database is gemaakt en het gevuld is met data, kan de data worden bewerkt. Een query geeft de data terug waarnaar wordt gevraagd. De SELECT-clause haalt gegevens op uit de tabellen in de database en het dient ook als een startpunt voor het maken van complexe en gedetailleerde queries. Hieronder staan twee voorbeelden van queries voor de klanten tabel:</p>
+                    <pre><code>SELECT Voornaam, Achternaam, Email FROM Klanten;
+SELECT * FROM Klanten;</code></pre>
+                    <p>Een * wordt gebruikt om alle waarden te selecteren. Dit kan handig zijn om een tabel te verkennen, maar wordt in een echte productiedatabase meestal niet aangeraden. Het kan namelijk veel capaciteit vereisen als alle informatie uit een grote tabellen moet worden geladen.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Query resultaten verfijnen</h3>
+                    <p>Met de WHERE-clause worden specifieke records geselecteerd die voldoen aan ingestelde criteria. Denk bijvoorbeeld aan:</p>
+                    <pre><code>SELECT Voornaam, Achternaam, Email FROM Klanten WHERE Voornaam="Vincent" OR Voornaam="Ed";</code></pre>
+                    <p>Met de LIKE-clause worden records met soortgelijke waarden geselecteerd in plaats van exact overeenkomende waarden. Denk bijvoorbeeld aan:</p>
+                    <pre><code>SELECT Voornaam, Achternaam, LandAfkorting FROM Klanten WHERE LandAfkorting LIKE "N%";</code></pre>
+                    <p>Het procent teken in het bovenstaande voorbeeld is een placeholder voor een karakter.</p>
+                    <p>Bij fields met het datatype DATE is het volgende mogelijk:</p>
+                    <pre><code>SELECT * FROM Reservaties WHERE Datum = "2024-11-21";</code></pre>
+                    <p>Bij fields met het datatype DATETIME ziet dit er zo uit:</p>
+                    <pre><code>SELECT * FROM Reservaties WHERE Datum > "2024-11-21" AND Datum < "2024-11-22";</code></pre>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Resultaten sorteren</h3>
+                    <p>Met de ORDER BY-clause worden records weergeven aan de hand van een bepaalde volgorde. Met de standaardinstelling wordt er van A tot Z of van een klein getal naar een groot getal gesorteerd. Dit heet ascending en wordt gerepresenteerd met "ASC". Dit kan worden omgekeerd met behulp van "DESC", oftewel descending. Zie de volgende voorbeelden:</p>
+                    <pre><code>SELECT * FROM Klanten ORDER BY Voornaam;
+SELECT * FROM Reservaties
+WHERE Datum = "2024-11-21"
+ORDER BY Datum DESC;</code></pre>
+                </div>                
+
+                <div class="chapter__group">
+                    <h3>Aggregatie functies</h3>
+                    <p>Aggregatie functies genereren een waarde op basis van meerdere gegevens. De COUNT functie is een aggregatie functie die de hoeveelheid records optelt die aan de ingestelde criteria voldoen:</p>
+                    <pre><code>SELECT COUNT(Voornaam) FROM Klanten;</code></pre>
+                    <p>De SUM aggregatie functie telt de waardes op van de records die aan de ingestelde criteria voldoen. Het gemiddelde van waardes kan worden achterhaald met de AVG-functie. MIN en MAX geven de grootste en kleinste waarde in de selectie:</p>
+                    <pre><code>SELECT SUM(Prijs), AVG(Prijs), MIN(Prijs), MAX(Prijs) FROM Gerechten;</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Tabellen samenvoegen</h3>
+                    <p>De JOIN-keyword wordt gebruikt om informatie in records van verschillende tabellen met elkaar te verbinden. Het onderstaande voorbeeld laat zien hoe een gerecht tabel met GerechtID en Naam fields aan de Klanten tabel verbonden kunnen worden. Hierdoor kan een naam worden weergeven in plaats van een GerechtID (FavorietGerecht):</p>
+                    <pre><code>SELECT Voornaam, Achternaam, Gerechten.Naam FROM Klanten
+JOIN Gerechten ON Klanten.FavorietGerecht = Gerechten.GerechtID;</code></pre>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Data aanpassen</h3>
+                    <p>Naast het lezen van data kan SQL ook worden gebruikt om data te creëren, aan te passen of te verwijderen. Een nieuwe klant toevoegen aan de Klanten tabel kan als volgt:</p>
+                    <pre><code>INSERT INTO Klanten (Voornaam, Achternaam, Email)
+VALUES ('Vincent', 'Bosma', 'vincent.bosma@hva.nl');</code></pre>
+                    <p>De waardes die niet zijn opgegeven krijgen de waarde NULL toegewezen. Er wordt een error gegeven als een veld niet NULL mag zijn.</p>
+                    <p>Bij het aanpassen van een record is het altijd een goed idee om eerst de data te selecteren, om er zeker van te zijn dat het de juiste record wordt gewerkt.</p>
+                    <pre><code>SELECT * FROM Klanten WHERE Voornaam='Vincent' AND Achternaam='Bosma';</code></pre>
+                    <p>Als de Klant ID die bij de naam hoort 1 is, verloop het aanpassen van de email gegevens als volgt:</p>
+                    <pre><code>UPDATE Klanten SET Email = 'vincent.bosma@hva.com' WHERE KlantID=1;</code></pre>
+                    <p>Tijdens het verwijderen van een record is het, net als bij het aanpassen van een record, altijd een goed idee om eerst de data te selecteren. De email gegevens van de record aanpassen gaat bijvoorbeeld als volgt:</p>
+                    <pre><code>DELETE FROM Klanten WHERE KlantID=1;</code></pre>
+                    <p>Op het moment dat een record wordt verwijderd wordt de Klant ID ook verwijderd. Deze ID is niet meer herbruikbaar voor een andere record. Door een cascading delete toe te passen, kunnen de bestellingen die de klant heeft gemaakt bijvoorbeeld ook tegelijkertijd door de database worden verwijderd.</p>
+                </div>
+            </div>
+
+            <!--=============== CHAPTER 6 ===============-->            
+            <div class="chapter__container">
+                <h2>Verdere database onderwerpen</h2>
+
+                <div class="chapter__group">
+                    <h3>Indexen, transacties en bewaarde procedures</h3>
+                    <p>Indexen maken het mogelijk om snel informatie op te zoeken. Een primary key functioneert als een index, maar het kan voorkomen dat een gebruiker op een ander veld wil zoeken. In een grote tabel kan deze zoekopdracht veel tijd kosten. De index bewaard referenties van waardes in fields en waar het vandaan komt en maakt het teruggeven van informatie sneller. Sommige operaties, zoals het creëren van een record kosten echter extra tijd door een index. Er moet dus een overweging worden gemaakt.</p>
+                    <p>Een transactie is een opeenvolging van handelingen die moet worden voltooid. Als een van de handelingen niet kan worden voltooid, zal er geen verandering plaatsvinden in de database. Alles dat gedeeltelijk gedaan is wordt ongedaan. Dit houdt de data in een database nauwkeurig tijdens veranderingen.</p>
+                    <p>Een bewaarde functie is een soort programma die bewaard woord aan op de database server. Het bevat een reeks van opdrachten die gebruikt en waarnaar gerefereerd kan worden tijdens de interactie met de database. Met en bewaarde functie kunnen lange of gedetailleerde queries worden hergebruikt. Hierdoor hoeven de queries niet opnieuw te worden geschreven. Ten slot biedt een bewaarde functie een manier om op een veilige en goedgekeurde manier met sensitieve data om te gaan.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Toegangscontrole en beveiliging</h3>
+                    <p>De meeste DBMS-software bevatten verschillende mechanismes met betrekking tot toegangscontrole. Hieronder vallen gebruikersaccounts en de mogelijkheid om personen rechten te geven om een tabel of kolom te benaderen. Het is mogelijk om gebruikers verschillende toegangsrechten te geven. Denk bijvoorbeeld aan het kunnen lezen, maar niet kunnen aanpassen van fields.</p>
+                    <p>Het is belangrijk om rekening te houden met de business requirements wanneer toegang tot data wordt gegeven. Ook is het belangrijk om op de hoogte te zijn van de compliance regulaties. Personally identifiable information (PII) wordt strikt gereguleerd in bepaalde industrieën en gebieden. HIPAA en GDPR zijn voorbeelden van wetgeving die vereisen dat bepaalde data op een specifieke manier wordt behandeld.</p>
+                    <p>Een SQL-injectie is een aanval waarbij een deel van een SQL-opdracht als waarde wordt ingevoerd om een query te hijacken en te veranderen hoe het werkt. Afhankelijk van hoe goed een database omgaat met SQL-injecties wordt deze ingevoerde waarde wel of niet uitgevoerd. Correct ontworpen toegangsrechten, best practices voor het interacteren met data, veiligheidsmaatregelen die worden aangeboden in een programmeertaal en de correcte verwerking van ingevoerde data, kunnen allemaal helpen tegen SQL-injectie aanvallen.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Software opties</h3>
+                    <p>Veelgebruikte relationele databasemanagementsystemen zijn: Microsoft SQL Server, Oracle, dBase, FileMaker Pro, Microsoft Access, MySQL, MariaDB, SAP HANA en SQLite.</p>
+                    <p>Sommige systemen bieden een grafische omgeving voor het bouwen, beheren en bewerken van databases. Anderen bieden een tekstconsole waar rechtstreeks SQL in wordt geschreven om met de database te werken.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Database soort</th>
+                                <th>Context</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>Desktopdatabase</td>
+                                <td>
+                                    <ul>
+                                        <li>- Bedoeld voor kleinere softwareoplossingen</li>
+                                        <li>- Gehost op een werkstation.</li>
+                                    </ul>
+                                </td>
+                                <td>Access en Filemaker Pro</td>
+                            </tr>
+                            <tr>
+                                <td>Enterprisedatabase</td>
+                                <td>
+                                    <ul>
+                                        <li>- Bedoeld voor grote hoeveelheden mensen.</li>
+                                        <li>- Draait op infrastructuur die miljoenen interacties kan bedienen.</li>
+                                        <li>- Door kosten wellicht niet waard voor grote projecten.</li>
+                                    </ul>
+                                </td>
+                                <td>SQL Server, Oracle en SAP HANA</td>
+                            </tr>
+                        </table>
+                    </div>                
+                    <p>MariaDB en MySQL zijn geschikt voor verschillende toepassingen, goed voor het maken van prototypes en geschikte applicaties met duizenden cliënten. SQLite is goed voor het maken van mobiele applicaties en voor kleinere databases. Processing frameworks zoals Hadoop en Spark zijn wellicht nodig voor Big Data.</p>
+                    <p>NoSQL (Not Only SQL) databases zijn databases die niet relationeel zijn. NoSQL-databases kunnen van alles zijn: Een verzameling van ongestructureerde gegevens, sleutelwaardenparen, grafieken, objecten, geografische gegevenspunten en informatiestromen, zoals posts en comments op sociale media.</p>
+                </div>                
+                
+            </div>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

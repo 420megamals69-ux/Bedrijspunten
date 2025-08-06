@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Programming Foundations: Web Security</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>Programming Foundations: Web Security</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Een overzicht van beveiliging</h2>
+
+                <div class="chapter__group">
+                    <h3>Wat is beveiliging?</h3>
+                    <p>Beveiliging wordt gedefinieerd als de staat van beschermd zijn en de maatregelen die worden genomen om deze veiligheid te garanderen. Een website is beveiligd wanneer de server en alle applicaties tegen dreigingen zijn beschermd. Een website heeft speciale beveiligingsoverwegingen nodig omdat het een hoog profiel heeft, het merk vertegenwoordigd en gevoelige gebruikersinformatie kan bevatten.</p>
+                    <p>Ontwikkelaars moeten bewust zijn van risico's en potentiële bedreigingen om websites effectief te beschermen. Effectieve beveiliging combineert bewustzijn van bedreigingen met adequate beschermingsmaatregelen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Waarom doet beveiliging ertoe?</h3>
+                    <p>De complexiteit en kwetsbaarheid van de beveiliging van een website nemen toe op het moment dat een website nieuwe functies en technologieën verkrijgt. Nieuwe functies bieden mogelijkheden om acties uit te voeren die wellicht niet worden verwacht.</p>
+                    <p>Hackers richten zich vaak op webservers die zijn opgezet door beginners of die gebruikmaken van exploiteerbare technologieën en configuraties. Dit kan bijvoorbeeld leiden tot gelddiefstal, identiteitsdiefstal, gegevensdiefstal, spionage, spam, toegangsverlies en het verlies van controle.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Wat is een hacker?</h3>
+                    <p>Een hacker wordt op basis van twee categorieën opgedeeld: White-hat (ethische hackers) en black-hat (kwaadaardige hackers).</p>
+                    <p>Black-hat hackers kunnen nieuwsgierige gebruikers, scriptkiddies, hacktivisten, criminele hackers, trofeejagers of door de overheid gesteunde hackers zijn, elk met verschillende motivaties variërend van nieuwsgierigheid tot politieke agenda's en financieel gewin. Voor het bouwen van betere beveiligingen is het cruciaal, om deze verschillende motivaties te begrijpen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Risicomodellen</h3>
+                    <p>Risicomodellen zijn essentieel om de potentiële beveiligingsrisico te beoordelen die van toepassing zijn op een website of organisatie. Het risicomodel helpt om verdedigingen te prioriteren op basis van kwetsbaarheden, het profiel van de aanvaller en de bedreigingen die het waarschijnlijke of impactvol zijn.</p>
+                    <p>Het risicomodel is in proportie met de waarde die het moet beschermen en de mogelijke gevolgen van een inbreuk op de beveiliging. Daarom zal risicomodel voor elke organisatie uniek zijn en moet het voortdurend worden bijgewerkt naarmate situaties en bedreigingen zich ontwikkelen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Totale veiligheid is onhaalbaar</h3>
+                    <p>Een zero-day vulnerability is een bedreiging die bekend is en gedeeld wordt onder hackers, waarvan ontwikkelaars zich niet bewust zijn. Hierdoor heeft de ontwikkelaar nul dagen de tijd gehad om er een verdediging tegen te ontwikkelen.</p>
+                    <p>Totale beveiliging veiligheid is onhaalbaar, omdat er altijd onvoorziene kwetsbaarheden en nieuwe bedreigingen zijn die na verloop van tijd kunnen opduiken. Dit maakt de beveiliging van een website geen eenmalig proces. Het vereist voortdurende evaluatie en aanpassing naarmate er nieuwe kwetsbaarheden en aanvallers opduiken.</p>
+                    <p>In plaats van te streven naar perfecte beveiliging, moet er prioriteit worden gegeven aan bedreigingen die binnen het risicomodel vallen en het makkelijkst zijn te misbruiken.</p>
+                </div>                                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Algemene beveiligingsprincipes</h2>
+                
+                <div class="chapter__group">
+                    <h3>Minste privileges</h3>
+                    <p>Het principe van de minste privileges is een van de belangrijkste beveiligingsprincipes en verwijst naar het volgende: Beperk toegang tot alleen diegenen die het nodig hebben. Dit geldt voor zowel fysieke als digitale omgevingen.</p>
+                    <p>De privileges van gebruikers en programma’s moeten worden beperkt tot de minst mogelijke hoeveelheid die nodig is om de taak uit te kunnen voeren. Bovendien moeten procedures in plaats zijn om toegang in te trekken als deze niet langer nodig is, vooral voor vertrekkende werknemers of aannemers.</p>
+                    <p>Het principe van de minste privileges verhoogt de beveiliging, omdat kwetsbaarheden beperkt en gelokaliseerd blijven. Het is altijd erg om een account gehackt te hebben, maar de schade is veel minder als het gehackte account beperkte privileges heeft.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Eenvoud is het veiligst</h3>
+                    <p>Eenvoudige systemen zijn gemakkelijker te beveiligen omdat er minder aandachtsgebieden zijn en de gebieden waarop kan worden aangevallen kleiner zijn. Tijdens het coderen zijn er bepaalde technieken die de eenvoud kunnen verhogen en potentiële kwetsbaarheden kunnen verminderen: het gebruik van duidelijke namen voor functies en variabelen, codecommentaar en waar mogelijk de ingebouwde functies.</p>
+                    <p>Verder is het wenselijk om cruft uit de code te verwijderen. Dit zijn onderdelen van de code die overbodig zijn of in de weg kunnen zitten. Functies en code die niet nodig zijn horen te worden verwijderd om potentiële beveiligingsrisico's te minimaliseren. Daarnaast is het beter om 
+                    <p>De meest belangrijke maategel is om stukken code niet te dupliceren. Als er namelijk een bug plaatsvindt, kan de bug wellicht in de ene versie worden opgelost, maar niet in de andere. Daarnaast kan de verkeerde code per ongeluk worden gebruikt als er sprake van een subtiel verschil in de code is.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Vertrouw gebruikers nooit</h3>
+                    <p>Het is veiliger om wantrouwend te zijn wanner het aankomt op gebruikers, omdat iedereen een potentiële hacker kan zijn. Het is moeilijk om gebruikersidentiteiten online te verifiëren en zelfs geverifieerde gebruikers kunnen bedreigingen vormen, waaronder bedreigingen van binnenuit.</p>
+                    <p>Bovendien kunnen gebruikers ook onbedoeld beveiligingsproblemen veroorzaken door fouten te maken of misleid worden om de beveiliging in gevaar te brengen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Verwacht het onverwachte</h3>
+                    <p>Beveiliging moet proactief zijn: van tevoren moet steeds worden geanticipeerd wat er mogelijk fout kan gaan. Het is belangrijk om aannames in twijfel te trekken en mogelijke beveiligingsrisico's te identificeren, zelfs de risico’s die onwaarschijnlijk lijken. Veel kwetsbaarheden worden namelijk in edge cases gevonden; de situaties waarbij gebruikers onverwachte acties ondernemen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Grondige verdediging</h3>
+                    <p>Een grondige verdediging bestaat uit meerdere lagen van beveiligingsmaatregelen die worden geïmplementeerd om aanvallers te vertragen en af te schrikken. Er zijn drie verschillende lagen: Fysieke controles (toegang tot gebouwen, beveiligers), technische controles (firewalls, encryptie) en administratieve controles (beleid, training).</p>
+                    <p>Beveiliging die uit meerdere lagen bestaat vermindert de afhankelijkheid van één verdedigingsmaatregel en verhoogt tegelijkertijd geometrisch de moeilijkheidsgraad van een succesvolle aanval. Hierdoor wordt het aanzienlijk moeilijker voor de aanval om te slagen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Veerkracht</h3>
+                    <p>Veerkracht bestaat uit het identificeren van problemen, er efficiënt op reageren en ervan herstellen om operationele continuïteit te behouden. Net zoals het hebben van een reserveparachute, houdt veerkracht in dat er redundante maatregelen worden genomen om ervoor te zorgen dat systemen snel kunnen herstellen van storingen.</p>
+                    <p>Effectieve veerkracht vereist planning, zoals het monitoren van systemen, het hebben van actieplannen en het uitvoeren van oefeningen om voorbereid te zijn op mogelijke storingen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Beveiliging door middel van onduidelijkheid</h3>
+                    <p>Hackers voeren verkenningen uit wat bekend staat als footprinting, om kwetsbaarheden in systemen te ontdekken. Het beperken van de beschikbare informatie kan deze inspanningen belemmeren. Informatie verborgen houden maakt het moeilijker voor aanvallers om waardevolle inzichten te krijgen. Dit benadrukt het belang van het principe van de minste privileges.</p>
+                    <p>Hoewel onduidelijkheid een nuttige verdediging is, moet het worden gecombineerd met andere beveiligingsmaatregelen voor een robuustere beschermingsstrategie. Onduidelijkheid maakt andere middelen van verdediging sterker maar is niet voldoende op zichzelf.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Deny-listing af en allow-listing</h3>
+                    <p>In webontwikkeling wordt er standaard een toestemmingslijst voor HTML-tags gebruikt die alleen veilige tags toestaat en tags die later worden geïntroduceerd automatisch geblokkeerd. Dit is een voorbeeld van een allow-list.</p>
+                    <p>Een allow-list laat een handeling standaard niet toe, tenzij er specifiek wordt aangegeven dat het wel moet worden toegelaten. Een deny-list doet het tegenovergestelde: Het laat alle handeling standaard toe, tenzij er specifiek wordt aangegeven dat het wel niet moet worden toegelaten.</p>
+                    <p>Allow-lists zijn over het algemeen veiliger dan deny-lists omdat deze standaard de toegang beperken, waardoor het risico op het blootleggen van nieuwe kwetsbaarheden kleiner wordt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Kwetsbaarheden en data passages in kaart brengen</h3>
+                    <p>Het is belangrijk om te identificeren waar er kan worden aangevallen, zodat alle punten kunnen worden afgedekt die een aanvaller zou kunnen uitbuiten. Denk hierbij aan de plakken waar gegevens binnenkomen, worden opgeslagen en het systeem verlaten.</p>
+                    <p>Om bescherming te bieden tegen bedreigingen zoals gegevenslekken, ongeautoriseerde wijzigingen en denial-of-service-aanvallen, wordt er gefocust op de drie doelen van gegevensbeveiliging: vertrouwelijkheid, integriteit en beschikbaarheid.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Filter input, controleer output</h2>
+                
+                <div class="chapter__group">
+                    <h3>Reguleer verzoeken</h3>
+                    <p>Een webbrowser en een webserver communiceren met elkaar aan de hand van HTTP-verzoeken. Het reguleren van deze verzoeken is de eerste laag van beveiliging, waarbij de goede gegevens worden doorgelaten en slechte gegevens worden geweerd. Het is belangrijk om de aanvraagmethodes zoals GET, POST, etc. te inspecteren en te evalueren om er zeker van te zijn dat deze overeenkomen met verwachtingen.</p>
+                    <p>Een verzoek bestaat meestal uit twee waarden: de content type en accept. Content type wordt gebruikt om het formaat van de binnenkomende gegevens aan te geven. Accept wordt gebruikt om het formaat van het antwoord aan te geven dat de browser die het verzoek doet terug wil krijgen.</p>
+                    <p>De content type en accept van headers moeten worden gecontroleerd om onacceptabele gegevensformaten eruit te filteren: deze waarden kunnen namelijk worden vervalst. Andere attributen om te inspecteren zijn IP-adressen, onverwachte URL-strings, user-agent strings en de grootte van verzoeken of bestandsuploads. Webserverconfiguraties, webapplicaties, firewalls en proxy’s worden allemaal gebruikt om dit geheel te kunnen beheren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Input valideren</h3>
+                    <p>Het valideren van invoer zorgt ervoor dat alleen goede gegevens worden toegelaten. Het reguleren van verzoeken is de eerste verdedigingslinie, maar vervolgens moet de inhoud van het verzoek worden gecontroleerd. Dit maakt het van belang om te bepalen wat aanvaardbare en onaanvaardbare gegevens zijn, wat per toepassing en zelfs per pagina kan verschillen.</p>
+                    <p>Er zijn echter algemene vormen van validatie zoals ervoor zorgen dat velden niet leeg zijn en dat de tekenlimiet niet wordt overschreden. Controleer daarnaast of het gegevenstype overeenkomt met de verwachtingen en maak gebruik patronen zoals reguliere expressies om formaten te valideren. Gebruik ook een allow- of deny-list om gegevens te valideren aan de hand van een set waarden en zorg ervoor dat gegevenswaarden uniek zijn op plekken waar dit is vereist, zoals de gebruikersnamen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Data verschonen</h3>
+                    <p>Data moeten worden opgeschoond, zelfs nadat het een vorm van validatie heeft doorstaan, om ervoor te zorgen dat het onschadelijk is. Het verschonen van gegevens is een van de belangrijkste stappen om webapplicaties te beveiligen. De eenvoudigste en meest gebruikte aanvallen sturen allemaal kwaadaardige gegevens naar binnen, die de initiële validatie doorstaan.</p>
+                    <p>Het typecasten van alle data is hierin belangrijk, wat verwijst naar het vaststellen van een gegevenstype. Typecasting van gegevens naar het juiste gegevenstype in een vroeg voorkomt dat er onverwachte waarden worden aangeleverd die problemen veroorzaken.</p>
+                    <p>Gegevens moeten worden verschoond op basis van de bestemming om schadelijke tekens te neutraliseren. Daarom moet goed geteste en taal specifieke functies worden gebruikt voor het verschonen van data. Het verschonen van gegevens moet continue worden gedaan en opgehaalde opgeslagen gegevens moet telkens als nieuwe invoer worden gezien, zelfs als de gegevens uit een eigen systeem komen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Variabelen labelen</h3>
+                    <p>Labels worden voor variabelen gebruikt om duidelijk aan te kunnen geven of gegevens al zijn verschoond. Voorvoegsels als raw_ of dirty_ worden hierbij gebruikt voor niet-verschoonde gegevens, terwijl safe_ of clean_ kan worden gebruikt de verschoonde gegevens.</p>
+                    <p>Het labelen van variabelen helpt om de beveiligingstoestand van gegevens bij te houden, waardoor het risico op eenvoudige fouten die kunnen leiden tot beveiligingslekken wordt verkleind.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Code privé houden</h3>
+                    <p>De code van een website wordt in twee mappen gescheiden: Een publieke map die toegankelijk is voor de webserver en private map die niet toegankelijk is voor de webserver. Dit helpt de zichtbaarheid te controleren en houdt gevoelige code verborgen.</p>
+                    <p>De webserver moet op een manier worden geconfigureerd, waardoor bestanden alleen vanuit de openbare map worden weergegeven, zodat privébestanden ontoegankelijk blijven voor gebruikers. Dit kan worden behaald door de openbare map in het configuratiebestand van de webserver als de document root in te stellen. </p>
+                    <p>De hoeveelheid code in de openbare bestanden moet worden beperkt tot een minimum. Om het risico te verkleinen op blootstelling van gevoelige code, worden er functies gebruikt die zijn opgeslagen in privébestanden. Deze functies worden vervolgens aangeroepen vanuit openbare bestanden.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Toegangsgegevens privé houden</h3>
+                    <p>Het hard coderen van toegangsgegevens moet worden vermeden. Daarom worden de toegangsgegevens in een apart bestand opgeslagen en worden er variabelen of constanten gebruikt om naar het bestand te verwijzen.</p>
+                    <p>Referenties van versiebeheersystemen moeten worden uitgesloten, om onbedoelde blootstelling te voorkomen. Als referenties zijn vastgelegd moeten deze worden vervang worden dan en vervolgens worden uitgesloten.</p>
+                    <p>Voor elke omgeving en database hoort een uniek wachtwoord te worden gebruikt, om de toegang te beperken als de gegevens openbaar worden gemaakt. De toegangsgegevens moeten op servers staan die sterke toegangscontroles hebben. Het gebruik van SSH-sleutels in plaats van wachtwoorden voor externe toegang is veiliger en handiger.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Foutmeldingen onduidelijk houden</h3>
+                    <p>Niet gedetailleerde foutmeldingen zoals “inloggen mislukt” hebben de voorkeur over specifieke meldingen zoals “verkeerd wachtwoord”, om te voorkomen dat hackers aanwijzingen krijgen over geldige gebruikersnamen of wachtwoorden.</p>
+                    <p>Gedetailleerde foutmeldingen kunnen in de browser uit worden gezet wanneer de website live is om te voorkomen dat gevoelige informatie wordt vrijgegeven. Implementeer daarnaast standaardfoutpagina's, zoals 404- en 500 die minimale informatie bieden aan zowel gebruikers als hackers, terwijl de site er consistent blijft uitzien.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Slim loggen</h3>
+                    <p>Het vastleggen van gegevens levert bewijs na een incident, zodat er kan worden vastgesteld wat er is gebeurd en het probleem kan worden gevonden en opgelost. Loggen kan echter een veiligheidsrisico worden, waardoor het noodzakelijk is om na te denken over wat er moet worden gelogd en hoe het wordt gelogd.</p>
+                    <p>Tijdens het loggen van fouten moet de focus liggen op gevoelige acties zoals aanmeldingen en financiële transacties en verdachte activiteiten om beveiligingsproblemen te helpen identificeren en aanpakken. Details zoals datum en tijd, IP-adres, informatie over gebruikersaccount, uitgevoerde actie en alle relevante parameters moeten worden opgenomen, om een uitgebreide registratie te maken.</p>
+                    <p>De logs moeten daarnaast in een afgeschermde plek worden opgeslagen, geen gevoelige gegevens bevatten en het gebruik van een logrotatie is wenselijk om de grootte van logbestanden effectief te beheren.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>De meest voorkomende aanvallen</h2>
+                
+                <div class="chapter__group">
+                    <h3>Vormen van toegangsaanvallen</h3>
+                    <p>Diefstal van referenties verwijst naar de gebeurtenis waarbij iemand achter een gebruikersnaam en wachtwoord komt. Dit komt vaak tot stand door datalekken waarbij hele databases met gebruikersgegevens bloot komen te liggen.</p>
+                    <p>Brute-force aanvallen proberen elke mogelijke combinatie van tekens om een wachtwoord te raden. Woordenboekaanvallen zijn brute-force aanvallen die voorrang geven aan veelgebruikte woorden en eerder gelekte wachtwoorden.</p>
+                    <p>Aanvallers gebruiken inloggegevens die zijn verkregen uit datalekken om te proberen in te loggen op andere sites, wat credential stuffing heet. Dit berust op het feit dat gebruikers wachtwoorden vaak hergebruiken op verschillende platforms.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Sterke paswoorden</h3>
+                    <p>Als er wachtwoorden worden gebruikt om servers te beheren is het wenselijk om minstens 12 tekens, een combinatie van hoofdletters, kleine letters, cijfers en symbolen te gebruiken. Lengte is hierbij belangrijker dan de complexiteit. Daarnaast mag het gebruikte wachtwoord nooit opnieuw worden gebruikt, om aanvallen met credential stuffing te voorkomen.</p>
+                    <p>Een wachtwoordmanager kan worden gebruikt om sterke wachtwoorden op te slaan en te genereren. Dit helpt bij het beheren van complexe wachtwoorden zonder dat deze allemaal moeten worden onthouden.De beveiliging kan ten slot worden verbeterd door gebruik te maken van multi-factor authenticatie, die een extra verificatiestap vereist naast alleen het wachtwoord.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>URL-manipulatie en Insecure Direct Object Reference (IDOR)</h3>
+                    <p>URL-manipulatie verwijst naar het bewerken van een URL om toegang te krijgen tot ongeautoriseerde informatie of acties. Dit kan privépagina's onthullen of de structuur van een website in kaart brengen.</p>
+                    <p>Insecure Direct Object Reference (IDOR) vindt plaats wanneer code toegang krijgt tot een beperkte bron op basis van gebruikersinvoer zonder de autorisatie te verifiëren. Hierdoor kunnen aanvallers toegang krijgen tot gevoelige gegevens door URL's te manipuleren.</p>
+                    <p>Toegangscontroles, indirecte objectverwijzingen en het netjes afhandelen van fouten helpt om URL-manipulatie en IDOR-aanvallen te voorkomen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>SQL-injectie</h3>
+                    <p>SQL-injectie (SQLI) treedt op wanneer niet-vertrouwde gegevens worden gebruikt om een SQL-query op te bouwen, waardoor aanvallers willekeurige verzoeken kunnen uitvoeren in een SQL-database. Het is een veel voorkomende en ernstige beveiligingsbedreiging.</p>
+                    <p>Aanvallers kunnen aanmeldingsformulieren manipuleren om authenticatie te omzeilen, gegevens te stelen of database-inhoud te wijzigen. Blinde SQL-injectie is een variant waarbij aanvallers de databasestructuur en -gegevens afleiden zonder directe feedback.</p>
+                    <p>Beperk daarom databaseprivileges, verschoon de invoer om schadelijke tekens te vermijden, gebruik SQL prepared statements en valideer gegevens met allow-lists om SQLI-aanvallen effectief te voorkomen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Cross-Site Scripting (XSS)</h3>
+                    <p>Een cross-site scripting (XSS) aanval vindt plaats wanneer een aanvaller code in de webpagina's injecteert, zodat de browsers van andere gebruikers deze code uitvoeren. Deze aanval dankt zijn naam aan het feit dat een aanvaller scripts via uw website naar de browser van iemand anders stuurt.</p>
+                    <p>Er zijn drie soorten XSS-aanvallen: gereflecteerd, opgeslagen en op DOM gebaseerd. Gereflecteerde aanvallen komen het vaakst voor en treden op wanneer kwaadaardige scripts van een webserver worden gereflecteerd.</p>
+                    <p>XSS-aanvallen kunnen webpagina's wijzigen, cookies stelen en kwaadaardige scripts uitvoeren in de browser van een gebruiker, wat leidt tot aanzienlijke beveiligingsproblemen. Om XSS te voorkomen, moet alle gebruikersinvoer worden verschoond, HTTPOnly-cookies worden gebruikt en een Content Security Policy (CSP) worden gedefinieerd om te bepalen welke bronnen kunnen worden geladen en uitgevoerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Cross-Site Request Forgery (CSRF)</h3>
+                    <p>Een CSRF-aanval zorgt dat de browser van een gebruiker ongeautoriseerde verzoeken naar een andere site stuurt. Hierbij wordt er misbruik gemaakt van de geauthentiseerde sessie van de gebruiker zonder dat deze het weet.</p>
+                    <p>Om dit te kunnen bereiken verwerken aanvallers schadelijke URL's in HTML-elementen, zoals afbeeldingscodes. Hierdoor verstuurt de browser automatisch verzoeken wanneer de pagina wordt geladen, zelfs als de gebruiker nergens op klikt.</p>
+                    <p>CSRF-aanvallen kunnen leiden tot ongeautoriseerde acties zoals het overmaken van geld, het wijzigen van accountinstellingen of het verhogen van het aantal bekeken pagina's; allemaal zonder toestemming van de gebruiker.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Cross-Site Request beschermingen</h3>
+                    <p>POST-requests worden in plaats van GET-requests gebruikt voor acties die wijzigingen aanbrengen, om eenvoudige CSRF-aanvallen te voorkomen. Daarnaast kan de authenticiteit worden geverifieerd door een uniek token te genereren voor elke sessie, en deze op de server op te slaan en in formulierverzendingen mee te nemen. Dit wordt ook wel een CSRF-token genoemd.</p>
+                    <p>Andere methodes die tegen CSRF-aanvallen beschermen zijn het controleren van referentie-headers, het gebruik van aangepaste headers voor Ajax-verzoeken en het vereisen van een authenticatie voor gevoelige acties.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Cookie zichtbaarheid en diefstal</h3>
+                    <p>Browsercookies kunnen gemakkelijk bekeken, gemanipuleerd en gestolen worden, vooral via onbeveiligde netwerken zoals open Wi-Fi. Daarom is het van belang om geen belangrijke of gevoelige gegevens in cookies op te slaan.</p>
+                    <p>In plaats van cookies worden er daarom sessies gebruikt om gevoelige informatie op te slaan en deze op de server te houden. Hiernaast kan de beveiliging van cookies worden verbeterd door HTTPS en beveiligde vlaggen te gebruiken, SSL-certificaten te implementeren voor HTTPS en vervaldata op te stellen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Sessie Hijacken</h3>
+                    <p>Session hijacking vindt plaats wanneer een aanvaller de sessie-ID van een gebruiker steelt om ongeautoriseerde toegang te krijgen. Hierdoor kan een aanvaller zich als de gebruiker voordoen en acties uitvoeren zoals geld overmaken of accountgegevens wijzigen. Aanvallers kunnen deze sessie-ID's verkrijgen via cross-site scripting (XSS) of door mee te kijken op onbeveiligde netwerken.</p>
+                    <p>Daarom is het gebruik van HTTPS voor alle pagina’s, het instellen van cookies met de vlag HttpOnly, Secure en expire, en het valideren en verschonen van input de standaard. Daarnaast is het wenselijk om sessie-ID’s regelmatig te laten verlopen en opnieuw te regenereren. Ten slot horen sessies bij het afmelden te worden vernietigd om te beschermen tegen session hijacking.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Sessie fixatie</h3>
+                    <p>Sessie fixatie treedt op wanneer een aanvaller een gebruiker voorziet van een sessie-ID die de aanvaller controleert, waardoor de identiteit van de gebruiker kan worden aangenomen bij het inloggen. Sessie-ID's worden daarom nooit als GET- of POST-variabelen geaccepteerd, tenzij het van cookies komt.</p>
+                    <p>Het is van belang om HTTPS te gebruiken en de invoer te valideren. De output moet tevens worden verschoond en sessie-ID's moeten na het inloggen opnieuw worden gegenereerd.</p>
+                    <p>Sessie fixatie kan worden tegengegaan door verdedigingen te implementeren tegen cross-site scripting, slimme cookie-instellingen zoals HttpOnly en Secure te gebruiken en door sessie-ID’s pas na het inloggen van de gebruiker te genereren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Remote system execution</h3>
+                    <p>Remote code execution (RCE) is één van de ernstigste soorten aanvallen en stelt een aanvaller in staat om commando's op een server uit te voeren alsof de aanvaller fysiek aanwezig is. RCE-aanvallen komen vaak voor door onzorgvuldigheid bij het omgaan met krachtige functies die interageren met het besturingssysteem. Correcte code kan het risico op RCE aanzienlijk verkleinen.</p>
+                    <p>RCE wordt vermeden door het gebruik van systeem uitvoeringsfuncties te vermijden. Als deze functies toch nodig zijn, moeten de functies niet worden gekoppeld aan gebruiker input en moeten de dynamische gegevens altijd worden verschoond.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Bestand upload misbruik</h3>
+                    <p>Bestanden kunnen op diverse manieren worden misbruikt: aanvallers kunnen te grote bestanden uploaden, te frequent achter elkaar uploaden of te vaak op één moment uploaden, wat kan leiden tot het stoppen van de service of opslagproblemen. Daarnaast kunnen bestanden ook het verkeerde type inhoud of malware bevatten.</p>
+                    <p>Het misbruiken van bestanden kan worden verminderd door gebruikers in te laten loggen voordat bestanden kunnen worden geüpload en om bestanden in niet-openbare mappen op te slaan. De bestandstypen en -groottes kunnen tevens worden beheerd en het gebruik van virusscans en menselijke controle voor openbare bestanden wordt aangeraden.</p>
+                    <p>Het gebruik van een grote opslag, het beheren van de schijfruimte en het beperken van frequente uploads kan ook helpen om het misbruik van bestandsuploads te beperken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Service ontzeggen</h3>
+                    <p>Denial of Service (DoS) aanvallen hebben het doel om een dienst niet beschikbaar te maken voor legitieme gebruikers door het systeem te overspoelen met verzoeken of het te laten crashen. Een DoS aanval kan ook worden verwezenlijkt door kwetsbaarheden te misbruiken om software of hardware te laten crashen. Bij een DDoS-aanval (Distributed DoS) worden meerdere computers gebruikt, vaak onderdeel van een botnet, om de aanval te versterken.</p>
+                    <p>Als een website het doelwit van wraakacties, activisme of afpersingspogingen kan zijn, moeten DDOS-aanvallen in het bedreigingsmodel zitten. Voor de meeste websites zal dat niet het geval zijn. Indien dit wel zo is kunnen DDoS-risicobeperkingsservices zoals Cloudflare of AWS Shield worden gebruikt. Dit kan worden ondersteund met technieken zoals throttling, filtering, sinkholing of blackholing, om kwaadaardige activiteiten te beheersen.</p>
+                </div>                
+            </div>           
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

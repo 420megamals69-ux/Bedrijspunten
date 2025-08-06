@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>CSS Essential Training</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>CSS Essential Training</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Aan de slag gaan</h2>
+                
+                <div class="chapter__group">
+                    <h3>HTML en CSS</h3>
+                    <p>HTML wordt gebruikt om de structuur van een document te definiëren en betekenis toe te voegen aan de inhoud. CSS bepaalt het uiterlijk van het document. De HTML-elementen moeten niet worden gekozen op basis van de manier waarop het wordt weergeven. Daar is CSS namelijk voor.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Werken met websitebestanden</h3>
+                    <p>Een website is een verzameling van bestanden die aan elkaar zijn gelinkt. Webpagina's worden geschreven met programmeertalen zoals HTML en CSS en maken bijvoorbeeld gebruik van andere web-bronnen zoals afbeeldingen.</p>
+                    <p>De verschillende bestandstypen worden opgeslagen met specifieke bestandsextensies. HTML-bestanden gebruiken .html en CSS-bestanden gebruiken .css. Andere webbronnen zoals afbeeldingen, video's of PDF's hebben ook hun eigen bestandsextensies.</p>
+                    <p>Lokale bestanden maken het mogelijk om de website aan te passen en te testen, voordat het beschikbaar wordt gemaakt. De mappen waarin deze bestanden worden opgeslagen worden directories genoemd. De hoofdmap heet de root directory. Dit is waar HTML-bestanden vaak worden opgeslagen. Andere bestanden worden meestal gegroepeerd en opgeslagen in gerelateerde submappen.</p>
+                    <p>Het gebruik van spaties en symbolen wordt vermeden in het benamen van bestanden, met uitzondering op koppeltekens en lage strepen. Deze worden gebruikt om woorden van elkaar te scheiden. Google's Search Engine Optimalisatie gids raadt aan om woorden met een koppelteken te scheiden.</p>
+                    <p>Sommige servers zijn gevoelig voor hoofdletters en interpreteren bestanden hierdoor anders. Het wordt daarom aangeraden om alleen kleine letters te gebruiken voor bestandnamen. Het gebruik van betekenisvolle en beschrijvende namen wordt ook aanbevolen voor SEO. Dit maakt het ook makkelijker voor ontwikkelaars om te identificeren welk bestand waarvoor wordt gebruikt.</p>
+                    <p>Om een website op het internet te zetten, is een domeinnaam nodig. Dit is het adres van de website. De server is verantwoordelijk voor het opslaan van de webbestanden en webhostingbedrijven bieden toegang tot deze servers.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Code schrijven met een tekst editor</h3>
+                    <p>Een tekst editor is vereist om te programmeren. Vooraf geïnstalleerde teksteditors zoals Notepad zijn bruikbaar, maar missen functionaliteiten. Visual Studio Code is de populairste editor.</p>
+                    <p>Een bestand kan worden geopend in Visual Studio Code door het naar de editor te slepen. Het is ook mogelijk om een bestand handmatig te openen via "Open Folder". Een HTML-bestand kan in de browser worden geopend door in het besturingssysteem naar het bestand te navigeren en erop te klikken.</p>
+                    <p>Aanpassingen aan het bestand zijn pas zichtbaar nadat de wijzigingen zijn opgeslagen. De shortcut hiervoor is Ctrl+S op een PC en Command+S op de Mac.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Project: De tekst editor aanpassen</h3>
+                    <p>In Visual Studio Code kan de fontgrootte binnen de tekst editor worden aangepast door "Font Size" aan te passen in het instellingenmenu. Ctrl - en Ctrl + passen de font en UI grootte tegelijkertijd aan.</p>
+                    <p>Door "Word Wrap" aan te zetten in het instellingenmenu hoeft er niet te worden gescrold om inhoud te zien die buiten de breedte van de editor valt.</p>
+                    <p>De minimap kan worden verwijderd door het aan te klikken en het te deselecteren. Het kan weer aan worden gezet door minimap in het instellingenmenu aan te vinken.</p>
+                    <p>Syntax highlighting maakt verschillende delen van de code te onderscheidbaar door middel van kleur. De kleuren kunnen worden aangepast door via "Themes" naar "Color Theme" te navigeren. Additionele thema's kunnen worden toegevoegd met behulp van extensies.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Afbeeldingen vinden</h3>
+                    <p>Stockafbeeldingen zijn een verzameling van afbeeldingen, waarvoor een licentie kan worden aangevraagd voor specifieke gebruiksscenario's. Diensten zoals Adobe Stock bieden toegang tot afbeeldingen tegen betaling. Unsplash is een gratis optie voor het vinden van afbeeldingen en Iconfinder heeft betaalde en gratis iconen, stijlen en licenties.</p>
+                    <p>Het is belangrijk om te letten op potentiële copyright, gebruik of kenmerkrichtlijnen; ook voor gratis iconen en afbeeldingen. Deze informatie staat meestal op de website in een tekstbestand bij de download. Veel iconen zijn bedrijfslogo's die specifieke gebruiksrestricties hebben.</p>
+                    <p>Lorem Ipsum is een optie voor online placeholderfoto's in verschillende dimensies, stijlen en onder specifieke URL's. Deze afbeeldingen zijn meer bedoeld voor tijdelijk gebruik en worden bijvoorbeeld ingezet voor het testen of voor voorbeelden. Als de dienst ooit komt te vervallen, zullen de afbeeldingen echter niet meer beschikbaar zijn.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Afbeeldingen optimaliseren voor het web</h3>
+                    <p>Het formaat van afbeeldingsbestanden wordt aangepast om de snelheid van een website te verbeteren. Voor snellere laadtijden moeten bestanden namelijk zo klein mogelijk zijn.</p>
+                    <p>Schermen hebben verschillende pixeldichtheden. Dit verwijst naar het aantal pixels in een fysiek gebied op een scherm. Dit wordt gemeten met pixels per inch (PPI). Hogere PPI resulteert in scherpere en meer gedetailleerde afbeeldingen en tekst. Schermen met verschillende pixeldichtheden worden ondersteund door het gebruik van meerdere afbeeldingsbestanden: Eén afbeelding voor standaardschermen en één die ten minste twee keer zo groot is voor schermen met een hogere pixeldichtheid.</p>
+                    <p>HTML wordt gebruikt om de juiste afbeelding te selecteren:</p>
+                    <pre><code>&lt;img src="image/example-500px.png"
+    srcset="image/example-100px.png 2x"
+    alt="Afbeelding omschrijving"&gt;</code></pre>
+                    <p>In het bovenstaande voorbeeld wordt de grotere afbeelding geselecteerd voor een beeldscherm met een resolutie 2x.</p>
+                    <p>Het vergroten en stijlen van een kleiner afbeeldingsbestand kan leiden tot pixelvorming. Daarom wordt de afbeelding met het grootste formaat geselecteerd, als het verschil in bestandsgrootte niet significant genoeg is om twee afbeeldingen te gebruiken. Met CSS wordt vervolgens de breedte aangepast voor desktop- en mobiele lay-outs.</p>
+                    <p>Voor achtergronden wordt één bestand gebruikt met een breedte van 1500 tot 2500 pixels. Anders moet er namelijk een bestand worden gebruikt dat twee keer zo groot is als het volledige computerscherm.</p>
+                    <p>Beeldbewerkingssoftware zoals Photoshop is nodig om het formaat van de bestanden aan te passen. Er zijn ook gratis online tools zoals Adobe Express en Shutterstock. De hoogte van een afbeelding wordt automatisch aangepast wanneer de breedte van een afbeelding wordt bewerkt, om de beeldverhouding te behouden. Soms moet de hoogte later nogmaals worden aangepast, afhankelijk van de gekozen afbeelding.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Relatieve en absolute paden</h3>
+                    <p>Er kan naar een bestand worden gelinkt door middel van relatieve- en absolute paden. Relatieve paden linken naar bestanden binnen hetzelfde project, zoals "cv.html" of "images/thumbnail.jpg".</p>
+                    <p>Het relatieve pad is afhankelijk van de locatie die een bestand heeft binnen een directory. Het pad moet worden bijgewerkt als een bestand wordt verplaatst. Bestandspaden zijn ook hoofdlettergevoelig. Om mogelijke problemen te voorkomen, is het aan te raden om alle kleine letters te gebruiken.</p>
+                    <p>Absolute paden linken meestal naar externe web-bronnen buiten de projectbestanden. Absolute paden gebruiken de volledige URL, inclusief het protocol, domeinnaam en eventuele map- of bestandsnamen. Bijvoorbeeld "https://website.com/posts/".</p>
+                    <p>Het linken naar een website wordt als acceptabel beschouwd, omdat het de gebruiker simpelweg naar die website leidt. Hotlinken is over het algemeen niet acceptabel. Hotlinken verwijst naar het opnemen van inhoud zoals afbeeldingen, video's of andere media van een externe website door te linken naar de URL van het originele bestand.</p>
+                    <p>Hierdoor vragen browsers de afbeelding op bij de server van de oorspronkelijke website. Dit kan resulteren in verhoogd bandbreedtegebruik voor de hostwebsite, wat kan leiden tot hogere kosten, vertragingen en crashes.</p>
+                    <p>Er zijn diensten zoals Lorem Picsum, die content hosten waarnaar gebruikers kunnen hotlinken. Deze diensten zijn echter ontworpen voor tijdelijk gebruik.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Naar CSS verwijzen</h3>
+                    <p>CSS kan op drie manieren aan de HTML worden toegevoegd: Inline, intern en extern. De inline methode voegt CSS direct toe aan elementen binnen een HTML-bestand met het style-attribuut:</p>                 
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>style</td>
+                                <td>Specificeert een inline stijl voor een element.</td>
+                                <td>&lt;p style="color: blue"&gt;Blauwe tekst.&lt;/p&gt;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Inline CSS wordt alleen gebruikt als het absoluut noodzakelijk is, omdat het flexibiliteit mist en het uitdagend kan zijn om te onderhouden.</p>
+                    <p>De stijlregels die zijn toegevoegd met de inline methode overschrijven de stijlregels die zijn toegevoegd met andere methoden, wat kan leiden tot conflicten. De stijlregels moeten ook per element worden toegepast en zijn hierdoor niet herbruikbaar. Ten slotte kan de code onoverzichtelijk worden als meerdere stijlregels aan een element worden toegevoegd.</p>
+                    <p>De interne methode voegt de CSS direct toe aan de head van het HTML-document:</p>                  
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>style</td>
+                                <td>Specificeert een stijl voor een document.</td>
+                                <td><pre>&lt;head&gt;
+&lt;style&gt;
+    p {color:blue;}
+&lt;/style&gt;
+&lt;/head&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Selectors worden gebruikt om stijlen toe te passen op alle overeenkomende elementen. De code in het bovenstaande voorbeeld is bijvoorbeeld genoeg om elke paragraaf in het document blauw te maken. Om dezelfde stijl op meerdere HTML-pagina's toe te passen, moet het stijlblok echter aan elke pagina worden toegevoegd. Hierdoor is deze methode ook moeilijk te onderhouden.</p>
+                    <p>De externe methode verwijst in de head van het HTML-document naar een apart CSS-bestand met het link-element:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>link</td>
+                                <td>Specificeert relaties tussen het huidige bestand en een externe bron.</td>
+                                <td><pre>&lt;head&gt;
+&lt;link rel="stylesheet" href="styles.css" /&gt;
+&lt;/head&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <p>Om naar een CSS-bestand te verwijzen wordt een rel-attribuut gebruikt met een waarde van "stylesheet" en een href-attribuut met het pad naar het CSS-bestand als waarde.</p>
+                    <p>Een externe stylesheet kan door meerdere HTML-bestanden worden gebruikt en alle wijzigingen in het stylesheet worden toegepast op de HTML-pagina's waarnaar het verwijst. Het gebruik van de externe methode wordt aanbevolen, omdat het voor meerdere bestanden kan worden hergebruikt en makkelijker is om te beheren.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>CSS-basisconcepten</h2>
+                
+                <div class="chapter__group">
+                    <h3>CSS-specificaties en de W3C</h3>
+                    <p>Tijdens het programmeren zijn er specifieke regels die moeten worden gevolgd. W3C is de organisatie die de technische specificaties opstelt voor CSS. Op de website van W3C worden alle versies en concepten gepubliceerd.</p>
+                    <p>Het is niet nodig om de specificatie volledig te lezen; het is voldoende om te weten hoe de benodigde informatie kan worden gevonden en hoe de documentatie moet worden geïnterpreteerd.</p>
+                    <p>De eerste twee versies van de CSS-specificatie werden beiden gepubliceerd als één document, maar daarna splitste de CSS-specificatie op in meerdere modules. De term CSS3 verwijst naar de verschillende updates die na de tweede versie van CSS hebben plaatsgevonden. Aangezien de CSS-specificatie is opgedeeld in modules, verwijst dit echter niet meer naar de specificatie als een geheel.</p>
+                    <p>Elk van de modules bevat alle informatie over een bepaald CSS-concept, inclusief een kleur en statuscode die aangeeft in welke fase een module zich bevindt:</p>                    
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Kleur- en statuscodes</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>FPWD & WD</td>
+                                <td>Zijn experimenteel en worden mogelijk niet door alle browsers ondersteund. Kunnen ook worden gewijzigd of verwijderd.</td>
+                            </tr>
+                            <tr>
+                                <td>CR, CRD & PR</td>
+                                <td>Worden geformaliseerd na feedback en goedkeuring. Standaarden in deze fase zijn meestal geschikt om te implementeren.</td>
+                            </tr>
+                            <tr>
+                                <td>REC</td>
+                                <td>De huidige standaard voor de nieuwste browsers.</td>
+                            </tr>
+                            <tr>
+                                <td>DPSD</td>
+                                <td>Een specificatie die is vervangen door een nieuwere versie.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De CSS-gids van het Mozilla Developer Network is een referentiepunt die op een toegankelijke manier een overzicht van het onderwerp biedt. Bovendien linkt het naar de W3C-gidsen, indien aanvullende informatie nodig is.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>CSS-syntax en terminologie</h3>
+                    <p>Een declaratieblok kan één of meer stijlregels bevatten en wordt omvat door accolades. Een selector specificeert op welke elementen een stijl wordt toegepast. Stijlregels worden declaraties genoemd en gebruiken eigenschap-waarde paren om de browser instructies te geven over hoe een specifiek element moet worden opgemaakt.</p>
+                    <p>In het onderstaande voorbeeld is background de eigenschap en blue de waarde. Het paar is gescheiden met een ":" en wordt afgesloten met een ";".</p>
+                    <pre><code>body {
+    background: blue;
+}</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Shorthand</td>
+                                <td>Declareert meerdere waarden met één statement</td>
+                                <td><pre>padding: 10px 5px 20px 15px;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Longhand</td>
+                                <td>Declareert individuele waardes.</td>
+                                <td><pre>padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 20px;
+padding-left: 15px;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Comments hebben geen invloed op de styling van de webpagina en worden genegeerd door browsers. Het gebruik van comments helpt ontwikkelaars om code leesbaar en begrijpelijk te maken.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Comments</td>
+                                <td>Voegt een notitie toe aan de CSS.</td>
+                                <td><pre>/* Header--------------------------------------------- */
+h1 {
+    background: #1A05F8; /* Blauw */
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Comments worden ook gebruikt om code te debuggen of uit te testen, zonder de code te hoeven verwijderen. Dit wordt gedaan door tijdelijk een codeblok te negeren aan de hand van comments.</p>
+                    <p>Witruimtes zijn soms vereist in de syntax. De waarden in een shorthand-eigenschap moeten bijvoorbeeld met een spatie worden gescheiden. Daarnaast worden witruimtes gebruikt om code te formateren, zodat het makkelijker te interpreteren is voor ontwikkelaars.</p>
+                    <p>Het is gebruikelijk om declaraties op een aparte regel te schrijven en in te laten springen. Hierdoor is het codeblok waar de declaratie van toepassing op is makkelijker te herkennen. De leesbaarheid van de code wordt ook verbeterd door spaties te plaatsen tussen de selector en de accolades, en tussen de eigenschap-waarde paren.</p>
+                    <p>Er zijn verschillende stijlgidsen voor het formateren van code in CSS. Een voorbeeld hiervan is "codeguide.co". Het is belangrijk om consistent te zijn in de formatering.</p>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>CSS-waardes en units</h3>
+                    <p>Een eigenschap specificeert een gewenste stijlwijziging, zoals kleur of lettergrootte. De waarde definieert de stijl van een eigenschap, zoals blauw of 10 pixels. Elke eigenschap kan worden gedefinieerd door verschillende waardentypes, die op zichzelf weer verschillende eenheden kunnen gebruiken. Een datatype, oftewel een waardentype, wordt meestal geschreven met haakjes om het onderscheidbaar te maken van eigenschappen.</p>
+                    <p>Het numerieke-datatype verwijst naar waarden die getallen gebruiken, met of zonder eenheden. Numerieke datatypes worden gebruikt om de breedte en hoogte van een element, de dikte van een rand, of het aantal keren dat een animatie moet lopen, te definiëren.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Numerieke datatype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;integer&gt;</pre></td>
+                                <td>Heel positief of negatief nummer.</td>
+                                <td><pre>100, -10</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;number&gt;</pre></td>
+                                <td>Heel nummer of een breuk met decimalen.</td>
+                                <td><pre>200, -7.8</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;percentage&gt;</pre></td>
+                                <td>Fractie van een andere waarde met een procent teken.</td>
+                                <td><pre>80%, 45.5%</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;dimension&gt;</pre></td>
+                                <td>Numerieke waarde met een eenheid</td>
+                                <td><pre>12s, 96dpi, 100px</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Dimension representeert datatypes zoals &lt;time&gt;, &lt;resolution&gt; en &lt;length&gt;.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Datatype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;length&gt;</pre></td>
+                                <td>Defineert een afstandswaarde</td>
+                                <td><pre>width, height, padding, font-size</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De waarde van &lt;length&gt; is een &lt;number&gt; dat absoluut of relatief is. Absolute units zijn vaste waardes die gebaseerd zijn op fysieke metingen, zoals cm, In en px. Pixels worden gebruikt voor web-ontwikkeling, omdat een scherm wordt afgemeten in pixels.</p>
+                    <p>Relatieve units zijn lengtes die gebaseerd zijn op andere lengtes. Em is bijvoorbeeld relatief ten opzichte van de font-size van het omvattende element en rem is relatief ten opzichte van het root element.</p>
+                    <p>Viewport-gebaseerde units zijn relatief ten opzichte van de viewport van een browser. Vw representeert de wijdte en vh de hoogte. Vmin is de kleinste waarde tussen de vw en vh en vmax de grootste waarde.</p>
+                    <p>Een sleutelwoord is een tekstueel datatype. Een sleutelwoord is een vooraf gedefinieerde waarde die varieert afhankelijk van de eigenschap. Alle geldige trefwoorden voor de verschillende eigenschappen zijn gedocumenteerd in verschillende CSS-specificaties, zoals de W3C-publicaties en de MDN Web Docs.</p>
+                    <p>Functiewaarden vertegenwoordigen een complexer datatype die kunnen worden herkend aan een functienaam gevolgd door haakjes. Functies bevatten één of meer argumenten, die worden gebruikt om de resulterende waarde te berekenen, zoals "transform: rotate(90deg);" of "width: calc(80% - 20px);".</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De kleur eigenschap en waardes</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;color&gt;</pre></td>
+                                <td>Verandert de kleur van tekst en tekst decoraties van een element.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De &lt;color&gt; eigenschap wordt gecombineerd met kleurwaardes, waaronder sleutelwoorden. De volledige lijst van sleutelwoorden is onder andere teug te vinden op MDN Web Docs en colours.neilorangepeel. Op colours.neilorangepeel kunnen de sleutelwoorden worden gesorteerd op basis van de kleurgroep. De site weergeeft ook de overeenkomende RGB en hexadecimale van het sleutelwoord.</p>
+                    <p>Een RGB-kleurwaarde wordt uitgedrukt met drie verschillende getallen tussen de 0 en de 255, die van elkaar zijn gescheiden met behulp van een spatie. Denk bijvoorbeeld aan "color: rgb(255 0 0);". Een RGB kleur kan doorzichtig worden gemaakt door een 4e getal tussen de 0 en de 1 toe te voegen, zoals "color: rgb(0 0 0 / 0.5);".</p>
+                    <p>In eerdere specificaties werden de getallen gescheiden door komma's. Daarnaast moest een rgba-functie functie worden gebruikt om transparantie toe te voegen. Dit is niet meer nodig, maar wordt nog steeds ondersteund door browsers.</p>
+                    <p>Een ander soort RGB-kleurwaarde is de hexadecimale waarde. Deze waarde wordt gedefinieerd met zes tekens, waarbij een combinatie van cijfers van nul tot negen en letters van A tot F wordt gebruikt. Een hexadecimale waarde begint met een hashtag en ziet er bijvoorbeeld als volgt uit: "color: #ff0000;". Een kleur kan doorzichtig worden gemaakt door een 5e of 6e waarde tussen de 0 en de 9 en de A en F toe te voegen, zoals "color: #ff00000;" of "color: #ff0000ff;".</p>
+                    <p>Het hexadecimale systeem gebruikt 16 verschillende symbolen om een waarden tussen de 0 en 15 te creëren. Nul tot negen is gelijk aan nul tot negen, maar 10 tot 15 wordt vertegenwoordigd door de letters A tot en met F. Het instellen van de doorzichtigheid maakt ook gebruik van dit systeem. De volgende website bevat een grafiek met alle hexadecimale doorzichtigheidswaarden van 0 tot 100%: https://davidwalsh.name/hex-opacity</p>
+                </div> 
+                
+                <div class="chapter__group">
+                    <h3>Een kleurpalet maken</h3>
+                    <p>Verschillende hulpmiddelen kunnen worden gebruikt om een kleurpalet te maken. Canva is een website die een kleurpalet kan genereren op basis van een geüploade afbeelding. Daarnaast biedt Canva vooraf ingestelde paletten die gefilterd kunnen worden op kleur, thema's en trefwoorden. Bovendien beschikt Canva over een kleurwiel dat kleurcombinaties kan samenstellen op basis van kleurtheorie.</p>
+                    <p>Een andere optie voor het genereren van kleurpaletten is de website coolors.co. De paletten die de website genereerd zijn aanvankelijk willekeurig. Gebruikers hebben echter de mogelijkheid om kleuren uit deze paletten vast te zetten, waarna verdere paletten op basis van deze selectie worden gegenereerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Type- en universele selectors</h3>
+                    <p>Selectors worden gebruikt om te specificeren op welke HTML-elementen stijlen worden toe gepast. Er zijn verschillende soorten selectors, zoals de type- en universele-selectors.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Selector</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>Type</pre></td>
+                                <td>Past een stijl toe op de overeenkomende HTML-element in het-document</td>
+                                <td><pre>h1 {
+    color: red;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>Universele</pre></td>
+                                <td>Past een stijl toe op elk element in het HTML-document</td>
+                                <td><pre>* {
+    color: red;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De universele-selector kan de prestatie van een webpagina beïnvloeden, omdat de stijlen worden toegepast op alle elementen op de pagina. Daarom wordt deze selector in slechts een aantal scenario's gebruikt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>ID selectors</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Selector</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>ID</pre></td>
+                                <td>Past een stijl toe op een element met een overeenkomend id-attribuut.</td>
+                                <td><pre>#global-header {
+    color: red;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Voordat een HTML-selector kan worden toegepast, moet er eerst een id-attribuut aanwezig zijn in een openingstag van een HTML-element. De naam van een id-attribuut mag geen spaties bevatten. In plaats daarvan worden lage strepen of koppelteken gebruikt om woorden van elkaar te scheiden. CamelCase, waarbij elk nieuw woord begint met een hoofdletter is ook geldig, maar het gebruik van kleine letters is gebruikelijker.</p>
+                    <p>Ten slot moet de naam van een ID ook beschrijvend zijn, zodat het doel van een stijl makkelijker te begrijpen is. Denk bijvoorbeeld aan een ID-naam zoals global-header om aan te geven dat een stijl bedoeld is voor een header die op meerdere pagina's wordt gebruikt.</p>
+                </div> 
+                
+                <div class="chapter__group">
+                    <h3>Class selectors</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Selector</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>class</pre></td>
+                                <td>Past een stijl toe op elk element met een overeenkomend class-attribuut.</td>
+                                <td><pre>.navbar {
+    color: red;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Net als bij een ID-selector moet er eerst een attribuut aanwezig zijn in een openingstag van een HTML-element. Een class-attribuut is toepasbaar op verschillende soorten element en kan meerdere malen worden gebruikt en worden.</p>
+                    <p>Meerdere class-attributen kunnen op één element worden toegepast waardoor meerdere class-selectors op een element kunnen worden toegepast. De volgorde van de attributen in het HTML-element maakt niet uit:                        
+                        <pre><code>&lt;p class="class1 class2"&gt;Een voorbeeld tekst.&lt;/p&gt;</code></pre>
+                    <p>Het is ook mogelijk om een specifieke stijl toe te passen wanneer een element beide class-attributen bevat, Dit wordt als volgt gedaan:</p>
+                    <pre><code>.class1.class2 {
+    color: purple;
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Descendant combinators en selector lijsten</h3>
+                    <p>De Document Object Model (DOM) is een hiërarchie van in elkaar genestelde HTML-elementen. Een element dat direct wordt omvangen door een ander element, heeft een parent-child relatie. Elementen die op een dieper niveau worden omvangen, hebben een ancestor-descendant relatie. Sibling elementen zijn elementen die door dezelfde parent-element worden omvangen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Combinator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>Descendant combinator</pre></td>
+                                <td>Selecteert genestelde elementen door twee selectors te combineren: Eén gericht op het ancestor-element en de andere op een descendant element.</td>
+                                <td><pre>selector1 selector2 {
+    color: red;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een selector lijst is een ander soort selector-combinator:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Combinator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>Selector lijst</pre></td>
+                                <td>Groepeert meerdere selectors, zodat een stijl op meer dan één selector tegelijkertijd wordt toegepast.</td>
+                                <td><pre>h1, h2, section h3 {
+    font-family: helvetica;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Wanneer een descendant selector in een selector lijst wordt gebruikt, moet de volledige combinatie worden gedeclareerd, omdat elke selector in de lijst onafhankelijk van elkaar is.</p>
+                    <p>Het groeperen van selectors kan de efficiëntie van de CSS verbeteren, omdat het aantal declaraties wordt verminderd. Bovendien is het wijzigen van een enkel declaratieblok een eenvoudiger proces.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De achtergrond eigenschap</h3>
+                    <p>De background-eigenschap is een shorthand-eigenschap die invloed heeft op meerdere achtergrond stijlen.</p>
+                    <p>De longhand-eigenschap voor het instellen van de achtergrondkleur is background-color:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>background-color</pre></td>
+                                <td>Specificeert de achtergrondkleur van een element.</td>
+                                <td><pre>.background {
+    background-color: red;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Voor een achtergrond afbeelding is de longhand-eigenschap background-image:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>background-image</pre></td>
+                                <td>Specificeert een of meer achtergrondafbeeldingen voor een element.</td>
+                                <td><pre>.background {
+    background-image: url("image.png");
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een afbeelding moet met een HTML-element worden toegevoegd, wanneer het inhoudelijke relevantie heeft. Als dit niet het geval is kan de background-eigenschap worden gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>background-repeat</pre></td>
+                                <td>Specificeert hoe achtergrondafbeeldingen worden herhaald.</td>
+                                <td><pre>.background {
+    background-repeat: no-repeat;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Als het formaat van een afbeeldingsbestand kleiner is dan het gebied waarop het wordt toegepast, zal de afbeelding horizontaal en verticaal worden herhaald totdat het gehele gebied op gevuld. Door de background-repeat eigenschap een waarde van no-repeat te geven, wordt voorkomen dat de afbeelding wordt herhaald.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>background-position</pre></td>
+                                <td>Specificeert de beginpositie voor een achtergrondafbeelding ten opzichte van het element.</td>
+                                <td><pre>.background {
+    background-position: 20px 40%;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De afbeelding in het bovenstaande voorbeeld is 20 pixels van de linkerkant en 40% van de bovenkant van de container gepositioneerd. Naast pixels en getallen kan de afbeelding ook worden gepositioneerd met vijf sleutelwoorden: top, bottom, left, right en center.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>background-size</pre></td>
+                                <td>Specificeert de grootte van de achtergrondafbeelding.</td>
+                                <td><pre>.background {
+    background-size: 100% 100%;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In het bovenstaande voorbeeld vult de afbeelding de volledige hoogte en breedte van een container. De afbeelding kan er echter vervormd uitzien, als de ruimte niet dezelfde beeldverhouding heeft als de afbeelding. Met het sleutelwoord cover wordt de container gevuld terwijl de beeldverhouding wordt behouden. Het deel van de afbeelding dat niet past in de container, wordt weggelaten.</p>
+                    <p>In de background-eigenschap moet het background-size altijd worden gedeclareerd in combinatie met background-position. Deze eigenschappen worden van elkaar gescheiden met een slash, zoals:</p>
+                    <pre><code>.background {
+    background: url(image.png) no-repeat center/cover;
+}</code></pre>
+                    <p>Als background-position niet wordt gebruikt, moet de background-size apart met een longhand-eigenschap worden gedeclareerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Pseudo-classes en pseudo-elementen</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Selector</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>Pseudo-class</pre></td>
+                                <td>Past een stijl toe op een element in een specifieke staat.</td>
+                                <td><pre>button:hover {
+    color: red;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>Pseudo-element</pre></td>
+                                <td>Past een stijl toe op een specifiek deel van een element.</td>
+                                <td><pre>p::first-letter {
+    color: blue;
+    text-transform: uppercase;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het pseudo-element in het tweede voorbeeld selecteert de eerste letter van een paragraaf-element en de pseudo-class selecteert button-elementen die door de muis worden aangewezen. Andere voorbeelden van een pseudo-classes zijn :first-child en :first-of-type:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Pseudo-class</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>first-child</pre></td>
+                                <td>Selecteert het eerste child-element.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>first-of-type</pre></td>
+                                <td>Selecteert het eerste child-element dat overeenkomt met de gespecifieerde selector.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is mogelijk om pseudo-classes en elementen met elkaar te combineren, zoals:</p>
+                    <pre><code>article p:first-of-type::first-letter {
+    color: red;
+}</code></pre>
+                    <p>De resterende pseudo-classes en elementen zijn terug te vinden in de referentiegids van MDN Web Docs.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Overerven en cascade</h3>
+                    <p>Elementen kunnen sommige stijlen overerven van omvangende elementen, waardoor stijlen kunnen worden toegepast op meerdere elementen met slechts één regel code. Het is bijvoorbeeld gebruikelijk om een stijl in het body-element te definiëren, zodat de onderliggende elementen het overerven. Dit is efficiëntere manier om een gedeelde stijl op verschillende elementen toe te passen.</p>
+                    <p>De overerfbare stijlen zijn voornamelijk gerelateerd aan typografie, zoals font-family en color. Niet-overerfbare stijlen zijn meestal gerelateerd aan de positionering of grootte van elementen, zoals position of width. De CSS-documentatie kan worden geraadpleegd om precies te weten welke eigenschappen wel of niet erfelijk zijn.</p>
+                    <p>Cascade in cascading style sheets verwijst naar de volgorde waarmee stijlregels worden toegepast. De browser leest de stijlregels van boven naar beneden. Als er tegenstrijdige regels worden toegepast op hetzelfde element, wordt de laatste declaratie toegepast.</p>
+                    <p>Het is mogelijk dat een stijl per ongeluk meerdere malen wordt toegevoegd, naarmate een CSS-bestanden groter wordt. Dit kan worden verminderd door de CSS te organiseren aan de hand van gerelateerde blokken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Specificiteit</h3>
+                    <p>Specificiteit bepaalt welke stijl wordt toegepast wanneer stijlregels conflicteren, gebaseerd op het type en de hoeveelheid gebruikte selectors. Hoe hoger de specificiteit, hoe meer prioriteit een selector heeft bij het toepassen van stijlen op een element.</p>
+                    <p>De enige uitzondering op de prioriteit-regels is de important-markering:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Markering</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>!important</pre></td>
+                                <td>Geeft het element waarop het is toegepast de hoogste prioriteit.</td>
+                                <td><pre>a {
+    color: red !important;
+    color: yellow;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De enige manier om een stijl die met een important-markering te overschrijven is door een selector met een hogere specifiteit te combineren met een important-markering. Het gebruik van de important-markering wordt over het algemeen beschouwd als een slechte gewoonte, omdat het geen regels volgt. De meeste conflicten tussen stijlregels worden voorkomen door cascade-, specificiteit- en organisatieregels te volgen. De important-markering wordt daarom alleen ingezet als laatste redmiddel.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Het CSS-box model</h2>
+                
+                <div class="chapter__group">
+                    <h3>Introductie tot het CSS-box model</h3>
+                    <p>De browser neemt elk element waar als een rechthoekig vak, ongeacht wat voor element dit is. Het CSS-box model is een verzameling regels die bepaalt hoe groot deze rechthoeken moeten zijn en hoeveel tussenruimte de rechthoeken bevatten. Het box model bestaat omvat de volgende eigenschappen: width, height, padding, margin en border.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Box model eigenschappen</h3>
+                    <p>CSS-box model: Elk element wordt in de browser weergegeven als een rechthoek. Deze rechthoeken bestaan uit inhoud, padding, border en margin. Rechthoeken worden opgebouwd met de volgende eigenschappen: width, height, padding, margin en border.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>width</pre></td>
+                                <td>Specificeert de breedte van een element.</td>
+                                <td><pre>width: 25em;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>height</pre></td>
+                                <td>Specificeert de hoogte van een element.</td>
+                                <td><pre>height: 120px;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>margin</pre></td>
+                                <td>Specificeert de tussenruimte buiten de border die afstand creëert tussen elementen.</td>
+                                <td><pre>margin: 20px 5px 40px 0;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>padding</pre></td>
+                                <td>Specificeert de ruimte tussen de inhoud en de border.</td>
+                                <td><pre>padding: 20px 5px 40px;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>border</pre></td>
+                                <td>Specificeert de rand van een element</td>
+                                <td><pre>border: 1px solid red;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Eigenschappen zoals margin, padding en border kunnen ook worden gespecificeerd aan de hand van longhand-eigenschappen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Box-dimensies en box model fix</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>box-sizing</pre></td>
+                                <td>Specificeert hoe de totale breedte en hoogte van een element worden berekend.</td>
+                                <td><pre>box-sizing: content-box;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De twee waarden zijn content-box (standaard) en border-box:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>content-box</pre></td>
+                                <td>Breedte en hoogte zijn alleen van toepassing op de inhoud. Het toevoegen van padding of een border vergroot de totale grootte van het element.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>border-box</pre></td>
+                                <td>Breedte en hoogte omvatten de padding en border, waardoor de totale grootte consistent blijft.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is gebruikelijk om border-box toe te passen op alle elementen, zodat de breedte en hoogte niet meerdere malen aangepast hoeven te worden wanneer padding en border stijlen worden toegepast.</p>
+                    <p>De box model fix refereert naar het gebruik van border-box toe op alle elementen om het formaat te vereenvoudigen en consistente lay-outs te garanderen:</p>
+                    <pre><code>html {
+    box-sizing: border-box;
+}
+*, *:before, * after {
+    box-sizing: inherit;
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Inline, block en display</h3>
+                    <p>Block elementen, zoals paragrafen en koppen, beginnen op een nieuwe regel en spannen over de volledige breedte van de container. Inline elementen, zoals anchor tags en spans, worden naast elkaar weergegeven en nemen slechts evenveel breedte in als de inhoud.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>display</pre></td>
+                                <td>Specificeert of het element als een block of een inline element wordt behandeld.</td>
+                                <td><pre>display: block;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De display eigenschap kan het standaard gedrag van elementen wijzigen. De waarden van het display element zijn block, inline en inline-block:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>block</pre></td>
+                                <td>Width en height kunnen worden ingesteld. Marge en padding hebben invloed op de grootte en positionering van het element.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>inline</pre></td>
+                                <td>Width en height hebben geen effect. Margin en padding beïnvloeden alleen de horizontale afstand.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>inline-block</pre></td>
+                                <td>Genereert een block element dat vloeit als een inline element.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Debuggen met Developer Tools</h3>
+                    <p>De elementen op een webpagina kunnen worden geïnspecteerd met de ingebouwde ontwikkelaarstools van de browser. De HTML en bijbehorende CSS kunnen worden bekeken door een element aan te klikken en "Inspecteren" te selecteren. Zowel Firefox als Chrome bieden een visuele representatie van het box model die de inhoud, padding, border en margin van elementen weergeven.</p>
+                    <p>Stijlen kunnen afkomstig zijn van de standaard browserstijlen of van de CSS van een project. De stijlen onder user agent stylesheet zijn de standaard browser stijlen. De stijlen met de bestandsnaam zijn de stijlen die we hebben toegevoegd.</p>
+                    <p>CSS-stijlen kunnen direct in de browser worden bewerkt voor test en debug doeleinden. Dit kan bijvoorbeeld worden gedaan door de vink bij een declaratie te verwijderen. Wijzigingen die in de browser worden gemaakt zijn tijdelijk en worden niet opgeslagen in het CSS-bestand.</p>
+                    <p>Margin collapsing verwijst naar het overlappen van de margin tussen aangrenzende elementen, wat de indeling van de lay-out beïnvloedt. Dit komt alleen voor bij verticale block elementen met een aangrenzende margin-top- en margin-bottom.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Box model eigenaardigheden beheren</h3>
+                    <p>De margin van block elementen zakken in elkaar waneer twee aangrenzende block elementen een verticale margin hebben. Margin collapsing wordt verholpen door de margin-top van het onderste element of de margin-bottom van het bovenste element te verwijderen.</p>
+                    <pre><code>.eerste-element {
+    margin-bottom: 0;
+}
+.tweede-element {
+    margin-top: 0;
+}</code></pre>
+                    <p>De ruimte tussen inline elementen ontstaat door regeleindes in de HTML. Dit kan worden opgelost door een negatieve margin in te stellen of door eerst de font-size van de container op nul in te stellen en vervolgens de font size opnieuw in te stellen voor de child elementen.</p>
+                    <pre><code>.dicht-ruimte {
+    margin-left: -4px;
+}</code></pre>
+                    <p>Of</p>
+                    <pre><code>.container {
+    font-size: 0;
+}
+.container-child {
+    font-size: 16px;
+}</code></pre>
+                    <p>Wanneer inline elementen met een specifieke breedte worden gebruikt binnen een container die ook een specifieke breedte heeft, moet de extra ruimte tussen de elementen mogelijk worden verwijderd. Flexbox en Grid zijn over het algemeen beter voor het beheren van de lay-out in dit soort scenario's.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Negatieve marge waardes gebruiken</h3>
+                    <p>Positieve margin waarden duwen elementen van elkaar weg, terwijl negatieve waarden elementen dichter naar elkaar toe trekken waardoor overlappingen kunnen ontstaan. De margin kan aan worden gepast aan elke zijde van een element. De positionering van de omringende elementen wordt hier tevens door beïnvloed.</p>
+                    <p>Een negatieve margin kan worden gebruikt voor het maken van kleine aanpassingen aan de positie van een element. Als een element ergens naar een andere plek op de pagina moet worden verplaatst, is het beter om de HTML aan te passen of om een andere lay-out techniek te gebruiken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Het midden uitlijnen met marges</h3>
+                    <p>Het margin eigenschap kan de "auto" waarde gebruiken, om een block element in het midden uit te lijnen. De width van het element wordt eerst ingesteld op een waarde die kleiner is dan de viewport en vervolgens wordt een waarde van "auto" toegewezen aan de linker en rechter margin. Dit verdeelt de horizontale ruimte gelijkmatig tussen de linker- en rechtermarge.</p>
+                    <pre><code>section {
+    width: 400px;
+    margin: 0 auto;
+}</code></pre>
+                    <p>Margin kan niet worden gebruikt om elementen verticaal uit te lijnen. Voor verticale uitlijning kan bijvoorbeeld Flexbox worden gebruikt.</p>
+                    <p>Tijdens het werken met margin moet er rekening worden gehouden met standaardmarges op elementen zoals de body, die mogelijk een waarde van nul moeten worden toegewezen.</p>
+                    <p>Content wrappers worden gebruikt om inhoud te centreren terwijl een achtergrondkleur of afbeelding de volledige breedte van de pagina dekt. Een container, zoals een div met een class van content-wrapper of container wordt rond de inhoud geplaatst. De stijlen die worden gebruikt om inhoud in het midden uit te lijnen, worden vervolgens toegepast op deze container.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Lay-outs: Float en Position</h2>
+                
+                <div class="chapter__group">
+                    <h3>Introductie tot CSS lay-out</h3>
+                    <p>CSS lay-out technieken worden gebruikt om de positie van elementen op een webpagina te wijzigen ten opzichte van de standaardpositie, andere elementen en de viewport van de browser.</p>
+                    <p>De normale flow is de standaard lay-out waarbij de inhoud van boven naar beneden stroomt, geschikt voor eenvoudige lay-outs zoals blogs. Complexere lay-outs die bijvoorbeeld zijbalken of meerdere kolommen bevatten, maken gebruik van CSS lay-out technieken zoals Grid, Flexbox, Floats en Position.</p>
+                    <p>Het is gebruikelijk om een combinatie van deze lay-outmethoden in een project te gebruiken om de gewenste lay-out te bereiken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Lay-outs met het float eigenschap</h3>
+                    <p>De float-eigenschap werd in het verleden gebruikt om pagina lay-outs te maken. Hoewel Grid en Flexbox nu de voorkeur hebben voor het creëren van lay-outs, is float nog steeds terug te vinden in legacy code en eenvoudige lay-out taken.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>float</pre></td>
+                                <td>Plaatst een element aan de linker- of rechterkant van de container.</td>
+                                <td><pre>float: left;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De positie van een float-element kan worden gedefinieerd met de volgende sleutelwoorden: none, left, right, inline-start en inline-end.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>clear</pre></td>
+                                <td>Specificeert of een element om een voorgaand float element heen wikkelt.</td>
+                                <td><pre>clear: both;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De clear eigenschap kan de volgende waarden hebben: none, left, right en both.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Floats clearen</h3>
+                    <p>Clear moet worden toegepast op een parent-element wanneer er binnen dezelfde container geen ander element is om de float op te heffen. Dit kan worden bereikt met de overflow-eigenschap met een waarde van "auto" of "hidden", de Clearfix Hack en de Flow Root.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>overflow</pre></td>
+                                <td>Specificeert het gedrag van de inhoud wanneer het niet in de container past.</td>
+                                <td><pre>.parent {
+    overflow: auto;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De overflow-eigenschap kan worden gebruikt om een float te clearen, maar kan leiden tot inhoud die abrupt wordt afgekapt en onbedoelde scrolbalken.</p>
+                    <p>De clearfix Hack is een CSS-fragment dat het :after pseudo-element gebruikt om floats te clearen. Dit is voornamelijk bedoelt voor oudere browsers en is minder relevant geworden sinds Microsoft de ondersteuning voor internet Explorer heeft stopgezet.</p>
+                    <pre><code>.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}</code></pre>
+                    <p>De moderne en aanbevolen methode om een float te clearen is het gebruik van het display-eigenschap met een waarde van "flow-root". Hierdoor blijven alle elementen binnen het parent element, inclusief de float-elementen, waardoor floats niet uit de container steken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De position eigenschap</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>position</pre></td>
+                                <td>Specificeert hoe een element wordt gepositioneerd</td>
+                                <td><pre>.relative {
+    position: absolute;
+    top: 20px;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De position-eigenschap kan vijf waarden toepassen die elk de positie van het element anders beïnvloeden: static (standaard), relative, absolute, fixed, en sticky.</p>
+                    <p>Op static na moet voor elke waarde de top, right, bottom en left eigeschappen worden gebruikt, om de uiteindelijk plaatsing van het elementen te specificeren. Als zowel top en bottom of left en right worden opgegeven, wordt de laatst opgegeven waarde genegeerd.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>relative</pre></td>
+                                <td>Blijft in de normale flow en kan worden verplaatst met behulp van de verschillende richting eigenschappen. Dit heeft geen invloed op de omliggende elementen.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>absolute</pre></td>
+                                <td>Verdwijnt uit de normale flow. Wordt relatief gepositioneerd ten opzichte van het dichtstbijzijnde parent-element met een position-eigenschap of het initieel zichtbare deel van een container.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>fixed</pre></td>
+                                <td>Verdwijnt uit de normale flow en wordt relatief gepositioneerd ten opzichte van de viewport. Het blijft op dezelfde plaats, zelfs tijdens het scrollen en wordt niet beïnvloed door een parent- of ancestor-element.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>sticky</pre></td>
+                                <td>Blijft in de normale lay-out flow totdat een richting eigenschap wordt toegewezen. Wanneer het gespecificeerde richting element is bereikt beweegt het element mee tot het einde van de container. Als het einde van de container is bereikt verplaatst het terug naar de initiële positie.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Position en z-index</h3>
+                    <p>Elementen die door een gemeenschappelijk element worden omvat, worden in lagen op elkaar gestapeld langs de Z-as Dit wordt de stacking context wordt genoemd. Elementen met een hoger stapelniveau worden eerder weergeven dan de elementen met een lager stapelniveau.</p>
+                    <p>De stacking context hangt af van volgorde, het gebruikte element en of het position-element is toegepast. Na het html en body elementen worden block-elementen als eerst gestapeld, gebaseerd op de opgegeven volgorde in de HTML Dit wordt opgevolgd door float-elementen zonder positionering, inline-elementen en ten slot position-elementen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>z-index</pre></td>
+                                <td>Specificeert de z-volgorde van een element met een positie eigenschap.</td>
+                                <td><pre>.container {
+    position: relative;
+    z-index: 1;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het element waarop de z-index-eigenschap wordt toegepast moet een position-eigenschap bevatten, bijvoorbeeld relative of absolute. Elementen met een hogere z-index hebben een hogere prioriteit.</p>
+                    <p>Het gebruik van z-index om de prioriteit aan te passen, is handig wanneer een element altijd boven andere elementen moet worden weergegeven, zoals bij drop down menu's, tooltips of pop-ups.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Lay-outs: Flexbox en Grid</h2>
+                
+                <div class="chapter__group">
+                    <h3>Introductie tot Grid en Flexbox</h3>
+                    <p>Flexbox is een lay-out techniek die items uitlijnt op een enkele as; dus in rijen of kolommen. Grid is een lay-out techniek die items tegelijkertijd zowel rijen als kolommen uitlijnt.</p>
+                    <p>Beidde lay-out techniek hebben sterke punten en gebruikssituaties en geen van beide is inherent beter dan de ander.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Introductie tot Flexbox</h3>
+                    <p>Een flex container is het parent-element dat alle items bevat die moeten worden gerangschikt. Flex items zijn de child-elementen van de flex container.</p>
+                    <p>Flex items worden gerangschikt langs de hoofdas. Deze as is standaard horizontaal en wordt gedefinieerd met flex-direction: row;. De richting waarin flex items worden gerangschikt kan naar verticaal worden veranderd met flex-direction: column;.</p>
+                    <p>De dwars as loopt altijd loodrecht op de hoofdas. Beide assen hebben begin- en eindpunten: Main start en main end voor de hoofdas, en cross start en cross end voor de dwars as.</p>
+                    <p>De flex container wordt gedefinieerd door een display-element een waarde van flex of inline-flex toe te wijzen.</p>
+                    <pre><code>.container {
+    display: flex;
+    /* Of */
+    display: inline-flex;
+}</code></pre>
+                    <p>Door dit te doen wordt elk child-element een flex item en automatisch in een rij weergegeven. De flex items nemen dezelfde grootte aan als de inhoud, terwijl de flex container de breedte van de container beslaat. Als de weergavewaarde is ingesteld op inline flex, zal de flex container de breedte van de inhoud beslaan en zal de container zich als een inline element gedragen en weergeven.</p>
+                    <p>Flex items passen zich automatisch aan op de grootte van de inhoud en de hoogte van het hoogste item zonder extra CSS. Hoewel de flex items zichzelf automatisch aanpassen aan de grootte van de inhoud, kunnen specifieke groottes ook worden ingesteld.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Flexbox: Oriëntatie en volgorde</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-direction</pre></td>
+                                <td>Specificeert de richting van de as waarop flex items worden geplaatst en de volgorde van deze items.</td>
+                                <td><pre>.container {
+    display: flex;
+    flex-direction: row-reverse;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Flex-direction kan vier verschillende waarden hebben:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>row(standaard)</pre></td>
+                                <td>Flex items worden in een rij van main start naar main end geplaatst.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>row-reverse</pre></td>
+                                <td>Items worden in een rij van main end naar main start geplaatst.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>column</pre></td>
+                                <td>Items worden gestapeld in een kolom van main start naar main end.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>column-reverse</pre></td>
+                                <td>Flex items worden in een kolom van main end naar main start.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-wrap</pre></td>
+                                <td>Specificeert of een flex item naar een nieuwe regel mag inspringen als het niet op één regel past.</td>
+                                <td><pre>flex-wrap: wrap;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Flex-wrap: Deze eigenschap bepaalt of de items op meerdere regels moeten worden ingepakt als ze niet op één regel passen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>nowrap(standaard)</pre></td>
+                                <td>Items blijven op één regel en kunnen krimpen om te passen.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>wrap</pre></td>
+                                <td>Items worden op meerdere regels gezet als dat nodig is.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De volgorde waarmee flex items inspringen kan ook worden gewijzigd met de waarde wrap-reverse. Dit heeft echter alleen invloed op de cross start en cross end. De items staan nog steeds in dezelfde volgorde op de hoofdas.</p>
+                    <p>Flex-flow is een shorthand eigenschap die flex-direction en flex-wrap combineert:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-flow</pre></td>
+                                <td>Specificeert de richting van een flex container en het inspring gedrag.</td>
+                                <td><pre>flex-direction: column wrap;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Op maat brengen met het flex eigenschap</h3>
+                    <p>De belangrijkste eigenschap van de Flexbox-lay-out is de mogelijkheid om de flexi tems te laten groeien of krimpen zodat deze in de container passen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex</pre></td>
+                                <td>Specificeert hoe een flex item groeit of krimpt om te passen in de beschikbare ruimte in de flex container.</td>
+                                <td><pre>.container {
+    display: flex;
+}
+.flex-items{
+    flex: 0 1 auto;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De flex eigenschap is een shorthand die flex-grow, flex-shrink en flex-basis combineert.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-grow</pre></td>
+                                <td>Specificeert hoeveel een item moet groeien om de beschikbare ruimte in de flex-container te vullen.</td>
+                                <td><pre>flex-grow: 1;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De standaardwaarde van flex-grow is 0, waardoor items niet groeien en geen overige ruimte opvullen. Als een waarde van 1 wordt toegewezen, groeien alle items evenveel om de ruimte op te vullen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-shrink</pre></td>
+                                <td>Specificeert hoeveel een item moet krimpen als er niet genoeg ruimte is in de container.</td>
+                                <td><pre>flex-grow: 0;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De standaardwaarde is 1, waardoor alle items evenveel krimpen. Indien flex-shrink is ingesteld op 0, zullen items niet krimpen en zal de container overvloeien tenzij flex-wrap is ingesteld op wrap.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-basis</pre></td>
+                                <td>Specificeert de initiële grootte van een item voordat het groeit of krimpt.</td>
+                                <td><pre>flex-basis: auto;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Flex-basis kan worden gedefinieerd met vaste grootte zoals 100px, een percentage of een sleutelwoord. Voor flex-basis is de standaardwaarde auto, waardoor flex items dezelfde grootte krijgen als de inhoud.</p>
+                    <p>Flex-basis past content-box toe op de flex items, waardoor de toevoeging van padding of een border de flex items groter maakt. Dit kan echter op worden gelost met de box model fix.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Flex items uitlijnen</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>justify-content</pre></td>
+                                <td>Specificeert hoe flex items geplaatst moeten worden op de hoofdas.</td>
+                                <td><pre>justify-content: space-evenly;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Justify-content kan worden gedefinieerd met de volgende waarden:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-start (standaard)</pre></td>
+                                <td>Flex items worden tegen de main start geplaatst.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-end</pre></td>
+                                <td>Flex items worden tegen de main end geplaatst.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>center</pre></td>
+                                <td>Plaatst flex items in het midden van de hoofdas van de container.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>space-between</pre></td>
+                                <td>Spreid items uit tussen de uiteindes van de container. Verdeeld de ruimte vervolgens gelijkmatig tussen de items.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>space-around</pre></td>
+                                <td>Verdeeld dezelfde hoeveelheid ruimte aan de linker- en rechterkant van elk item, waardoor het middengebied dikker oogt.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>space-evenly</pre></td>
+                                <td>Verdeeld de ruimte gelijkmatig tussen de flex items</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In tegenstelling tot de flex-grow en flex-shrink eigenschappen, hebben space-between, -aound en -evenly geen invloed op de grootte van de flexitems. Alleen de ruimte om de flex items heen wordt herverdeeld.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>align-items</pre></td>
+                                <td>Specificeert hoe flex items geplaatst moeten worden op de dwars as.</td>
+                                <td><pre>align-items: center;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Align-items kan worden gedefinieerd met de volgende waarden:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>Stretch (standaard)</pre></td>
+                                <td>Rekt flex items uit om de hoogte van de container te vullen.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-start</pre></td>
+                                <td>Flex items worden tegen de cross start geplaatst.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>flex-end</pre></td>
+                                <td>Flex items worden tegen de cross end geplaatst.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>center</pre></td>
+                                <td>Plaatst items in het midden van de dwars as van de container.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Introductie tot CSS Grid</h3>
+                    <p>Het parent-element dat alle items in een grid omvat heet de grid container. Grid items zijn de child-elementen van de grid container. De grid container wordt gedefinieerd door een display-element een waarde van grid of inline-grid toe te wijzen:</p>
+                    <pre><code>.container {
+    display: grid;
+    /* Of */
+    display: inline-grid;
+}</code></pre>
+                    <p>Elk grid item wordt automatisch in een kolom weergegeven. Wanneer de grid-container een grid-waarde krijgt, wordt deze als een block-element weergegeven, en nemen de grid-items dezelfde grootte aan als de container. Met inline-grid nemen de grid-items de breedte van hun inhoud aan, en wordt de container weergegeven als een inline-element</p>
+                    <p>Grid lijnen zijn de horizontale en verticale lijnen die de grid in kolommen en rijen verdelen. Grid lijnen worden gebruikt om de positie van grid items te bepalen en worden aangeduid met een numerieke index of een toegewezen naam. Zowel de verticale als horizontale grid lijnen beginnen bij 1. Negatieve nummers verwijzen naar het tegenoverliggende uiteinde van de grid.</p>
+                    <p>Een grid cell is het gebied waar een rij en -kolom elkaar kruisen: Een grid track is een kolom of -rij. De gutter is een tussenruimte die grid tracks van elkaar scheidt.</p>
+                    <p>Grid items kunnen ook in een grid area worden geplaatst. Een grid area spant over meerdere rijen en kolommen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De expliciete grid</h3>
+                    <p>Grid items die deel uitmaken van een gedefinieerde kolom of rij behoren tot de expliciete grid. Een grid track wordt met de volgende eigenschappen in de grid container gedefinieerd:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>grid-template-columns</pre></td>
+                                <td>Specificeert het aantal kolommen en de grootte van de kolommen in een grid lay-out.</td>
+                                <td><pre>grid-template-columns: 50px 100px;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>grid-template-rows</pre></td>
+                                <td>Specificeert het aantal rijen en de grootte van de rijen in een grid lay-out.</td>
+                                <td><pre>grid-template-columns: 25% 75%;
+grid-template-rows: 1fr 2fr 1fr;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een grid kan gebruik maken van de flexibele lengte-eenheid (fr). Fr representeert een fractie van de beschikbare ruimte in de grid container.</p>
+                    <p>Herhaalde waarden kunnen worden gedefinieerd met de repeat functie.</p>
+                    <pre><code>.container {
+    display: grid;
+    grid-template-columns: 50px repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}</code></pre>
+                    <p>Items die deel uitmaken van de grid-container maar buiten de expliciete grid vallen, worden in een impliciete grid geplaatst. De afmetingen van deze grid-items worden bepaald volgens de regels die voor de impliciete grid zijn gespecificeerd</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De impliciete grid</h3>
+                    <p>De grid-container creëert een impliciete grid om extra inhoud te plaatsen wanneer de expliciete grid vol  of niet gedefinieerd is. Een impliciet grid is vooral handig voor dynamische inhoud, zoals nieuwsfeeds of zoekresultaten, waarbij het aantal items niet van tevoren vaststaat.</p>
+                    <p>Impliciete rasters worden gedefinieerd met de volgende eigenschappen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>grid-auto-columns</pre></td>
+                                <td>Specificeert het aantal kolommen en de grootte van de kolommen in een impliciete grid.</td>
+                                <td><pre>grid-auto-columns: repeat(2, 100px);</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>grid-auto-rows</pre></td>
+                                <td>Specificeert het aantal rijen en de grootte van de rijen in een impliciete grid.</td>
+                                <td><pre>grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 200px;
+grid-auto-columns: 100px;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is mogelijk om een grid te maken dat alleen bestaat uit impliciete grid items, als het aantal dat items dat wordt weergeven onbekend is. Een combinatie van een expliciete en impliciete grid is mogelijk als het minimumaantal grid items bekend is.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Gutters toevoegen met het gap eigenschap</h3>
+                    <p>De gap-eigenschap is een shorthand die row-gap en column-gap combineert en wordt zowel in Grid als Flexbox gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>gap</pre></td>
+                                <td>Specificeert de hoeveelheid ruimte tussen rijen en kolommen.</td>
+                                <td><pre>gap: 10px 30px;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Eén waarde geeft zowel rijen als kolommen dezelfde hoeveelheid tussenruimte. Als de ruimtes tussen de rijen en de kolommen variëren, worden er twee waardes gebruikt.</p>
+                    <p>De gap-eigenschap kan gebruik maken van verschillende lengte-eenheden, percentages en de calc-functie. Met behulp van de calc functie kan een tussenruimte worden gecreëerd op basis van een calculatie. De gap-eigenschap kan echter geen gebruik maken van fr.</p>
+                    <pre><code>gap: 10px;
+gap: 10%;
+gap: calc(10% + 20px);</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 6 ===============-->
+            <div class="chapter__container">
+                <h2>Typografie</h2>
+                
+                <div class="chapter__group">
+                    <h3>Typografie voor het web</h3>
+                    <p>Typografie verwijst naar het ontwerp en de organisatie van tekst om te communiceren met de lezer. Dit begint bij het kiezen van een typeface.</p>
+                    <p>Een typeface is het ontwerp van een set tekens, nummers en symbolen die een gemeenschappelijk ontwerpkenmerken delen. Een font refereert naar het digitale bestand dat de informatie van het lettertype bevat. Een font family is een verzameling van gerelateerde fonts.</p>
+                    <p>Een lettertype wordt gekozen onder andere gekozen om de gevoelens of de toon van de inhoud over te brengen. Er zijn vijf typeface categorieën:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Categorie</th>
+                                <th>Toelichting</th>
+                            </tr>
+                            <tr>
+                                <td><pre>Script</pre></td>
+                                <td>
+                                    <ul>
+                                        <li>Handgeschreven uitstraling</li>
+                                        <li>Brengen elegantie over</li>
+                                        <li>Voornamelijk bewaard voor headings en korte tekst blokken</li>
+                                        <li>Kan moeilijk leesbaar zijn</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><pre>Decoratief</pre></td>
+                                <td>
+                                    <ul>
+                                        <li>Sierlijk</li>
+                                        <li>Bewaard voor headings of decoratieve details</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><pre>Monospace</pre></td>
+                                <td>
+                                    <ul>
+                                        <li>Elk teken neemt dezelfde horizontale ruimte in</li>
+                                        <li>Wordt gebruikt voor het weergeven van code</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><pre>Serif</pre></td>
+                                <td>
+                                    <ul>
+                                        <li>Bevatten kleine decoratieve lijnen</li>
+                                        <li>Traditioneel en formeel</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><pre>Sans Seif</pre></td>
+                                <td>
+                                    <ul>
+                                        <li>Geen decoratieve lijnen</li>
+                                        <li>Eigentijds en modern</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Fonts veranderen met font-family</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>font-family</pre></td>
+                                <td>Specificeert de typeface van een element.</td>
+                                <td><pre>font-family: Georgia, serif;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het font-family eigenschap waard aangevuld met een lijst van fonts, die bekend staat als de font stack. De font Stack is een lijst van font opties die gerangschikt zijn op prioriteit. De browser weergeeft de eerst font uit de lijst die geïnstalleerd staat op de computer van de gebruiker.</p>
+                    <p>De font stack hoort een terugval optie te hebben en bevat altijd een generieke font-family. Een generiek font-family wordt door de browser gespecificeerd en zal variëren op basis van het besturingssysteem.</p>
+                    <p>De volgende sleutelwoorden zijn beschikbaar om een generieke font family te kunnen definiëren:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Generieke font family</th>
+                            </tr>
+                            <tr>
+                                <td><pre>serif</pre></td>
+                                <td>Serif</td>
+                            </tr>
+                            <tr>
+                                <td><pre>sans Seif</pre></td>
+                                <td>Sans Serif</td>
+                            </tr>
+                            <tr>
+                                <td><pre>monospace</pre></td>
+                                <td>Monospace</td>
+                            </tr>
+                            <tr>
+                                <td><pre>cursive</pre></td>
+                                <td>Script of decoratief</td>
+                            </tr>
+                            <tr>
+                                <td><pre>fanasy</pre></td>
+                                <td>Decoratieve en onconventionele fonts</td>
+                            </tr>
+                            <tr>
+                                <td><pre>system-ui</pre></td>
+                                <td>Komt overeen met het standaard font van het besturingssysteem (San Francisco voor Macs en Segoe UI voor Windows).</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een fontnaam moet tussen aanhalingstekens staan als het spaties, nummers of speciale tekens bevat, zoals 'Gill Sans' of "Ahem!". Algemene fonts moeten nooit aanhalingstekens bevatten.</p>
+                    <p>Web-safe fonts zijn fonts die beschikbaar zijn op de meeste besturingssystemen, waardoor deze een veiligere keuze vormen in de font stack. Een lijst van web-safe fonts en de beschikbaarheid van deze fonts op verschillende besturingssystemen, is terug te vinden op cssfontstack.com.</p>
+                    <p>De GitHub pagina Modern Font Stacks geeft een overzicht van verschillende font stacks die per categorie en besturingssysteem zijn georganiseerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Font-weight en font-style</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>font-weight</pre></td>
+                                <td>Specificeert de dikte van tekens.</td>
+                                <td><pre>font-weight: 400;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De font-weight-eigenschap kan worden gedefinieerd met waardes tussen 1 (lichtst) tot 1000 (vetst). Een waarde van 400 komt overeen met het sleutelwoord normal en 700 komt overeen met bold.</p>
+                    <p>Niet iedere font-family bevat alle gewichten. Als een waarde wordt toegewezen waarvoor geen font-bestand bestaat, wordt de typeface met het dichtstbijzijnde gewicht gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>font-style</pre></td>
+                                <td>Specificeert de stijl van tekens.</td>
+                                <td><pre>font-style: italic;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De font-style -eigenschap wordt gedefinieerd met de volgende waarden: italic, oblique en normal. Italic is ontworpen om schuin en cursief te zijn, terwijl oblique een schuine versie is van de normale typeface.</p>
+                    <p>Als er geen italic font aanwezig is, zal de olique font worden gekozen. Als er geen oblique font aanwezig is, zal de browser het italic effect simuleren door het gewone lettertype schuin te zetten. Hetzelfde is waar voor oblique, maar oblique probeert eerst een oblique font te kiezen.</p>
+                    <p>De font-weight- en font-style-eigenschappen zijn beiden over te erven, waardoor de stijlen worden toegepast op alle genestelde elementen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Web fonts met @font-face</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Regel</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>@font-face</pre></td>
+                                <td>Specificeert de font of webfont waarmee tekst wordt weergeven.</td>
+                                <td><pre>@font-face {
+    font-family: "Trickster";
+    src: url("trickster-outline.woff2") format("woff2"),
+            url("trickster-outline.woff") format("woff");
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De font-family die in de @font-face-regel wordt gespecificeerd, wordt gebruikt als de waarde voor de font-family eigenschap, dus:</p>
+                    <pre><code>body {
+    font-family: "Trickster", Georgia, serif;
+}</code></pre>
+                    <p>Relatieve of absolute paden worden gebruikt om naar de font bestanden te refereren. De format-functie kan worden toegevoegd na de URL-waarde om informatie over het font formaat aan de browser te geven.</p>
+                    <p>De meeste moderne browsers ondersteunen WOFF en WOFF2 formaten. Om oudere browsers te ondersteunen, kunnen andere formaten nodig zijn. Websites zoals Font Squirrel kunnen helpen bij het genereren van verschillende bestandsformaten.</p>
+                    <p>Bekijk altijd de gebruiksrichtlijnen en licentie-informatie bij het downloaden van lettertypes, zelfs als een font gratis is.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Web fonts met Google Fonts</h3>
+                    <p>Door een online font service zoals Adobe Fonts of Google Fonts te gebruiken hoeft er geen font bestand te worden gedownload en hoeven er geen @font-face declaraties te worden geschreven. In plaats daarvan wordt er rechtstreeks gelinkt naar het CSS-font bestand, doormiddel van bijgeleverde snippet.</p>
+                    <p>Beperk het aantal font bestanden om te voorkomen dat de website trager wordt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Het font-size eigenschap</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>font-size</pre></td>
+                                <td>Specificeert de grootte van tekens.</td>
+                                <td><pre>font-size: 1.5em;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De font-size- eigenschap kan gebruik maken van verschillende eenheden, zoals px, em en rem.</p>
+                    <p>Pixel (px) is een absolute eenheid, wat het ideaal maakt voor precisie. De grootte van een pixel wordt niet beïnvloed door de font-sizing stijlen van ancestor-elementen. De standaardgrootte van tekst in een HTML-document is 16px, behalve bij kopteksten. Als een waarde in pixels wordt gedeclareerd, worden geen decimale waarden gebruikt.</p>
+                    <p>Em (em) is een relatieve eenheid; de grootte van de eenheid hangt af van de font-size van het dichtstbijzijnde ancestor-element. Tekst met een waarde van 1,5em is anderhalf keer zo groot als de geërfde font-size. Als er geen font-size is gedeclareerd, is em relatief ten opzichte van de standaard font-size van de browser. In tegenstelling tot px gebruikt em vaak decimale waarden voor nauwkeurigheid.</p>
+                    <p>Root Em (rem) is vergelijkbaar met em, maar is alleen relatief ten opzichte van de font-size van het root-element (het HTML-element). Rem wordt niet beïnvloed door de font-size van andere ancestor-elementen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Font-size en toegankelijkheid</h3>
+                    <p>Browsers maken gebruik van relatieve eenheden voor standaardstijlen, waardoor de font-size aangepast kan worden op basis van gebruikersinstellingen.</p>
+                    <p>Het gebruik van relatieve eenheden zoals em en rem maakt het mogelijk om een font-size te specificeren, zonder de gebruikersinstellingen op te heffen. Dit maakt het gebruik van relatieve eenheden daarom een betere keuze met betrekking tot toegankelijkheid, vooral voor gebruikers met visuele beperkingen.</p>
+                    <p>Het is over het algemeen gemakkelijker om rem te gebruiken, omdat het alleen relatief is ten opzichte van het basiselement. De browser gebruikt standaard em, maar dit kan worden overschreven door de eenheden in het CSS-bestand.</p>
+                    <p>Door de gewenste pixel waarde te delen met de standaard root font-size te delen, kan de benodigde rem-waarde worden achterhaald.</p>
+                    <p>Door de font-size van het root-element in te stellen op 62,5% wordt de standaardgrootte van 16px naar 10px veranderd, wat de conversie van pixels naar rem makkelijker maakt. Deze aanpak staat bekend als de '62,5% Methode' en wordt als volgt toegepast:</p>
+                    <pre><code>html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Tekst-allign en tekst-transform</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>text-align</pre></td>
+                                <td>Specificeert hoe inhoud binnen een block element wordt geplaatst.</td>
+                                <td><pre>text-align: center;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De tekst-align-eigenschap wordt gedefinieerd aan de hand van de volgende waarden:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>center</pre></td>
+                                <td>De inline inhoud wordt gecentreerd binnen de container.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>left (standaard)</pre></td>
+                                <td>Lijnt de inline inhoud uit aan de linkerkant van de container.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>right</pre></td>
+                                <td>De inline inhoud wordt uitgelijnd aan de rechterkant van de container.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>start</pre></td>
+                                <td>De inline inhoud wordt uitgelijnd aan de kant waar de tekst start.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>end</pre></td>
+                                <td>Lijnt de inline inhoud uit aan de kant waar de tekst eindigt.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>justify</pre></td>
+                                <td>Spreidt de inhoud uit tegen de randen van de container, met uitzondering op de laatste lijn tekst.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het text-align-eigenschap werkt alleen op een block-elementen of elementen waarvan de display-eigenschap van block of inline block.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>text-transform</pre></td>
+                                <td>Specificeert het hoofdletter gebruik in een tekst.</td>
+                                <td><pre>text-transform: uppercase;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De tekst-align-eigenschap wordt gedefinieerd aan de hand van de volgende waarden:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><pre>uppercase</pre></td>
+                                <td>Transformeert alle tekens naar hoofdletters.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>lowercase</pre></td>
+                                <td>Transformeert alle tekens naar kleine letters.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>capitalize</pre></td>
+                                <td>Transformeert de eerste letter van elk woord naar een hoofdletter.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De text-align- en text-transform-eigenschappen zijn beiden over te erven; de stijlen worden toegepast op de genestelde elementen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Line-height en letter-spacing</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>line-height</pre></td>
+                                <td>Specificeert de verticale ruimte tussen lijnen tekst.</td>
+                                <td><pre>line-height: 1.5;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De line-height is gerelateerd aan de font-size, die een standaardwaarde van 16 pixels heeft. Om ruimte tussen de regels toe te voegen, wordt er een waarde gekozen die groter is dan de font-size.</p>
+                    <p>De line-height-eigenschap kan worden gespecificeerd met lengte-eenheden, nummers, percentages en het sleutelwoord normal.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>letter-spacing</pre></td>
+                                <td>Specificeert de horizontale ruimte tussen karakters.</td>
+                                <td><pre>letter-spacing: 0.05em;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De letter-spacing-eigenschap kunnen beiden gebruik maken van verschillende lengte-eenheden en het sleutelwoord normal.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 7 ===============-->
+            <div class="chapter__container">
+                <h2>Lay-outs: Vloeiend en responsief</h2>
+                
+                <div class="chapter__group">
+                    <h3>Introductie tot responsief ontwerpen</h3>
+                    <p>Responsief webdesign bestaat uit vloeiende grids, flexibele afbeeldingen en media queries. Een responsief ontwerp is essentieel voor het maken van websites die naadloos werken op elk apparaat, wat de gebruikerservaring en toegankelijkheid verbetert.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Introductie tot media queries</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Regel</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>@media</pre></td>
+                                <td>Past CSS toe op basis van specifieke voorwaarden, indien deze voorwaarde waar is.</td>
+                                <td><pre>@media screen and (max-width: 650px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Media queries beginnen met @media en worden gevolgd door een media type. Een media type specificeert wat voor apparaat wordt gebruikt om de website te weergeven. Er zijn drie verschillende soorten:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Media type</th>
+                                <th>Toelichting</th>
+                            </tr>
+                            <tr>
+                                <td><pre>print</pre></td>
+                                <td>Komt overeen met printers en print gerelateerde displays zoals de preview pagina.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>screen</pre></td>
+                                <td>Past bij apparaten met een scherm en wordt gebruikt voor responsieve CSS</td>
+                            </tr>
+                            <tr>
+                                <td><pre>all (standaard)</pre></td>
+                                <td>Komt overeen met alle apparaten.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Na de media type kan een media eigenschap worden gedefinieerd. Media-eigenschappen controleren een specifieke eigenschap van de browser of het apparaat, zoals resolutie of oriëntatie.</p>
+                    <p>Een media type en een media-eigenschap worden gecombineerd met logische operatoren zoals and, not, only, comma en and/or. De and operator kan ook meerdere eigenschappen combineren.</p>
+                    <p>Er zijn verschillende manieren waarop media queries worden toegevoegd. Media queries kunnen worden bijgeleverd onder de gerelateerde stijlen, aan de onderkant van een CSS-bestand of in een aparte stylesheet. De laatste optie ziet er bijvoorbeeld als volgt uit:</p>
+                    <pre><code>&lt;link rel="stylesheet" media="screen and (max-width: 450px)"
+    href="css/mobile.css"&gt;</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Breekpoints en media queries</h3>
+                    <p>Breakpoints zijn de specifieke punten waar media queries worden toegepast, om wijzigingen aan te brengen in het ontwerp en de lay-out. In responsief webdesign is dit meestal gebaseerd op de grootte van het scherm of viewport. De volgende functies worden gebruikt om breakpoints te definiëren:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Toelichting</th>
+                            </tr>
+                            <tr>
+                                <td><pre>width</pre></td>
+                                <td>Specificeert de exacte breedte van de viewport van de browser. De functie heeft een waarde van true als de viewport overeenkomt met de gedefinieerde waarde.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>min-width</pre></td>
+                                <td>Specificeert de minimale van een element. De media query is van toepassing als de viewport groter is dan de gedefinieerde waarde.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>max-width</pre></td>
+                                <td>Specificeert de maximale breedte van een element. De media query is van toepassing als de viewport kleiner is dan de gedefinieerde waarde.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het gebruik van de min- en max-width-functie is over het algemeen beter omdat het een bereik specificeert zoals groter dan of kleiner dan om breakpoints te kiezen in plaats van te focussen op specifieke apparaat groottes.</p>
+                    <p>Wanneer de min- en max-width-functies tegelijkertijd worden gebruikt, kan er een conflict ontstaan als beiden functies hetzelfde breekpunt wordt gebruikt. Dit wordt voorkomen door één van de breakpoints één pixel kleiner of groter te maken.</p>
+                    <p>Het gebruik van min-width is gebruikelijk bij een mobile-first benadering, terwijl max-width vaak wordt gebruikt bij een desktop-first benadering.</p>
+                    <p>Het is ook mogelijk om beidde functies te combineren om een bereik te creëren:</p>
+                    <pre><code>@media (min-width: 400px) and (max-width: 800px)</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Vloeiende lay-outs</h3>
+                    <p>Als een website een flexibele lay-out heeft, is het niet nodig om media queries voor elke mogelijke schermgrootte te specifiëren.</p>
+                    <p>Het gebruik van procentuele waarden of relatieve eenheden helpt om de breedte van pagina-elementen flexibel in te stellen. Indien een absolute waarde wordt gebruikt, kan de waarde gepaard worden met een min- of max-width.</p>
+                    <p>Het gebruik van flexbox en grid helpen ook om een vloeiende lay-out te creëren, aangezien beide lay-out technieken flexiebelle elementen bevatten.</p>
+                    <p>Afbeeldingen worden flexibel gemaakt door eigenschappen zoals background-size: cover te gebruiken, waardoor een afbeelding zich relatief aan de viewport aanpast.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De viewport meta tag</h3>
+                    <p>Een website wordt standaard door de mobiele browser verkleind, zodat deze op het scherm van het apparaat past, wat resulteert in een uitgezoomde versie van de desktop lay-out.</p>
+                    <p>De viewport meta tag wordt gebruikt om de lay-out op mobiele browsers te controleren door informatie te geven over the viewport. Het opnemen van de viewport meta tag is cruciaal om ervoor te zorgen dat responsieve CSS-stijlen correct worden weergegeven op mobiele apparaten. De tag wordt toegevoegd in de head van de HTML.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Meta tag</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>viewport</pre></td>
+                                <td>Specificeert de grootte en vorm van de viewport.</td>
+                                <td><pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het name-attribuut maakt het mogelijk om viewport specifieke informatie toe te voegen met het content-attribuut. Width=device-width stelt de paginabreedte in op basis van de breedte van het apparaat en initial-scale=1 zorgt ervoor dat de pagina niet ingezoomd of uitgezoomd wordt weergeven bij het laden.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Responsieve lay-outs testen</h3>
+                    <p>Responsieve stijlen kunnen het beste worden getest op echte apparaten, maar tools zoals Browser Stack, Lambda Test en Sauce Labs kunnen ook worden gebruikt.</p>
+                    <p>De ontwikkelaarstools van de browser zijn ook een optie om gratis en effectief responsieve ontwerpen te testen. In deze tools kan de grootte van de viewport worden aangepast door het formaat van het paneel te wijzigen, in plaats van het hele browservenster aan te passen.</p>
+                    <p>De ontwikkelaarstools bevatten ook een device emulation tool waarmee kan worden bekeken hoe een webpagina eruitziet op verschillende apparaten. De tool biedt opties voor diverse apparaten en schermoriëntaties.</p>
+                    <p>Specifieke afmetingen kunnen in de tool worden getest door de gewenste waarden in het tekstveld aan te passen. Daarnaast kan de grootte van de viewport in de emulator worden gewijzigd.</p>
+                </div>                
+            </div>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,2412 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>JavaScript Essential Training</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>JavaScript Essential Training</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Javascript: Een korte introductie</h2>
+                
+                <div class="chapter__group">
+                    <h3>Javascript: Eerste contact</h3>
+                    <p>Javascript is de primaire taal voor web-ontwikkeling, zowel in de browser als op de server. Tegenwoordig houdt het leren van Javascript in dat de focus ligt op moderne Javascript en de bijbehorende tools. Daarnaast is het van belang kennis te hebben van concepten zoals JSX en TypeScript, zodat frameworks zoals React herkend kunnen worden en ermee gewerkt kan worden.</p>
+                    <p>Een basiskennis van Javascript helpt om JSX en andere JavaScript-varianten sneller op te pikken. JSX is een Javascript syntax extensie voor het React Javascript framework.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Het JV-landschap navigeren</h3>
+                    <p>Vanilla Javascript, oftewel Javascript, is de scripttaal van het web. ECMAScript is de officiële browser implementatie specificatie voor Javascript, die definieert hoe de taal moet worden geïnterpreteerd door de browser. Versies zoals ES6 en ES2015 vertegenwoordigen de nieuwste ontwikkelingen binnen Javascript.</p>
+                    <p>Wanneer er in een versie van ECMAScript wordt geschreven, wordt Babel over het algemeen gebruikt om code terug te converteren naar Javascript dat de huidige browser kan lezen.</p>
+                    <p>Er zijn varianten van JavaScript ontwikkeld die soepeler zijn en aanvullende functies bevatten. De meest populaire hiervan is TypeScript, dat veel wordt gebruikt in moderne Javascript-frameworks. TypeScript-bestanden zijn vaak te herkennen aan de bestandsextensie .ts. TypeScript, CoffeeScript en andere varianten kunnen worden gezien als dialecten van JavaScript.</p>
+                    <p>Frameworks zijn tools die zijn geschreven in Javascript om web inhoud in applicatievorm te weergeven. De meest populaire frameworks zijn React, Vue en Angular voegen een abstractie laag toe aan Javascript, wat ontwikkelen efficiënter maakt. React gebruikt bijvoorbeeld JSX of Javascript XML, wat het eenvoudiger maakt om Javascript en HTML te mixen.</p>
+                    <p>JavaScript-frameworks gaan vaak gepaard met build tools. Dit zijn hulptoepassingen, vaak geautomatiseerd, die lokaal of in de cloud draaien om geschreven Javascript-code om te zetten in code die geoptimaliseerd is voor de browser. Voorbeelden van populaire tools zijn Babel, NPM, WebPack, Grunt en Gulp.</p>
+                    <p>Met Node.js kan Javascript ook op servers draaien, waardoor Javascript zowel aan de achterkant als aan de voorkant van applicaties draaien. Bij het werken met moderne Javascript zal regelmatig gebruik worden gemaakt van Node.js, doorgaans via de Node Package Manager (NPM).</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Tools voor het werken met Javascript</h3>
+                    <p>Er zijn een aantal tools die noodzakelijk zijn om effectief met Javascript te kunnen werken waaronder een moderne browser zoals Chrome, Firefox of Edge.</p>
+                    <p>Daarnaast is het nodig om code editor te hebben met syntax highlighting en live server extensies zoals Visual Studio Code (De industriestandaard). De code editor moet een live serveromgeving bevatten om lokaal een webserveromgeving te kunnen simuleren.</p>
+                    <p>Ten slot is een browser console benodigd waarmee de Javascript-code op een webpagina wordt weergeven. De browser console is terug te vinden onder de ontwikkelingstools van een browser.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Linten en formateren</h3>
+                    <p>ESLint en Prettier tools voor het onderhouden van nette en consistente code. ESLint werkt als een spellingscontrole voor JavaScript, die fouten in de code kan identificeren en herstellen. Prettier formatteert de code automatisch volgens vooraf gedefinieerde standaarden, waardoor het makkelijker te lezen en te onderhouden is.</p>
+                    <p>De ESLint en Prettier extensies kunnen direct in VS Code worden geïnstalleerd vanuit de extensie tab. Node.js is voor beiden extensies vereist.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Bekend worden met de browser console</h3>
+                    <p>Javascript wordt in een code-editor geschreven, maar in de browser gedraaid. De browser console maakt het mogelijk om binnen de browser met Javascript te communiceren. Als de Javascript code met de browser console wordt gewijzigd, zullen de wijzigingen direct in de browser zichtbaar zijn. Dit maakt de browser console een krachtig hulpmiddel voor het debuggen en experimenteren met code</p>
+                    <p>Wijzigingen die in de browserconsole zijn gemaakt, kunnen worden teruggedraaid door op 'Clear' te drukken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Javascript taal principes</h3>
+                    <p>De browser leest Javascript van boven naar beneden, waardoor variabelen, functies en objecten meestal bovenaan een bestand worden gedefinieerd om problemen te voorkomen.</p>
+                    <p>Comments worden gebruikt om de code te verduidelijken en kunnen ook worden ingezet voor debugging door tijdelijk delen van de code te deactiveren. Het activeren en deactiveren van code kan met de toetscombinatie ctrl + /.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Comment soort</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Enkele regel</td>
+                                <td><pre>let main = document.querySelector("main"); // main is een element</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Meerdere regels</td>
+                                <td><pre>/* Deze comment
+spant over meerdere lijnen */</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Code editors zoals VS Code bezitten een shorthand voor een uitgebreidere comment die met de toetscombinatie /** + enter wordt opgeroepen. In deze uitgebreidere comment kan de parameter en de datatype in de parameter worden vastgelegd.</p>
+                    <p>Het gebruik van inspringende tekst helpt om de code leesbaarder te maken voor mensen. De witruimtes hebben echter geen invloed op hoe de browser Javascript interpreteert. Met tools zoals Prettier wordt het inspringen van code automatisch gedaan.</p>
+                    <p>Het gebruik van puntkomma's aan het einde van declaraties is optioneel en een kwestie van voorkeur. Dit geldt ook voor het gebruik van enkele of dubbele aanhalingstekens voor strings. Het is echter belangrijk om consistent te zijn in de manier waarop de code wordt opgemaakt. Tools zoals ESLint en Prettier kunnen helpen deze consistentie te waarborgen en te automatiseren.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Aan de slag met Javascript</h2>
+                
+                <div class="chapter__group">
+                    <h3>Javascript In een HTML-document</h3>
+                    <p>Javascript kan rechtstreeks in een HTML-document worden geschreven met het script-element. Er zijn echter modernere en efficiëntere manieren om Javascript te laden.</p>
+                    <p>Hoewel het script-element overal in het document kan worden geplaatst, wordt het vaak aan het einde van het document geplaatst. Dit zorgt ervoor dat alle HTML-elementen volledig geladen zijn voordat de Javascript wordt uitgevoerd, wat voorkomt dat het script probeert te interacteren met nog niet geladen elementen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Javascript als een extern bestand</h3>
+                    <p>Het is over het algemeen beter om Javascript in externe bestanden te plaatsen in plaats van inline in HTML-documenten, vooral wanneer hetzelfde script op meerdere pagina's wordt toegepast. In de HTML wordt naar externe Javascript-bestanden verwezen met behulp van een script-element met een src-attribuut. Dit kan er als volgt uitzien:</p>
+                    <pre><code>&lt;script src="myscript.js"&gt;&lt;/script&gt;</code></pre>
+                    <p>Zorg ervoor dat het script-element correct is geplaatst in de HTML, bijvoorbeeld na de body-inhoud, zodat alle elementen zijn geladen voordat het script wordt uitgevoerd om fouten te voorkomen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Modern inladen van Javascript</h3>
+                    <p>Wanneer de browser een Javascript-bestand in de HTML tegenkomt, pauzeert het de verdere verwerking van de HTML. De browser voert eerst de instructies in het Javascript-bestand uit en hervat daarna het laden van de rest van de HTML.</p>
+                    <p>Het laden van Javascript-bestanden op de traditionele manier kan problemen veroorzaken. Pagina's kunnen trager laden en er kunnen fouten optreden wanneer scripts worden uitgevoerd voordat de benodigde elementen volledig zijn ingeladen.</p>
+                    <p>Daarom moeten Javascript-bestanden tegenwoordig met een async- of defer-attribuut in de head-sectie van het document worden geplaatst. Deze attributen bepalen wanneer de Javascript wordt uitgevoerd en zouden als standaardaanpak moeten worden gehanteerd voor het laden van Javascript.</p>
+                    
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>async</td>
+                                <td>Downloadt het Javascript-bestand terwijl de HTML wordt verwerkt en voert de Javascript uit wanneer het script volledig is geladen.</td>
+                                <td><pre>&lt;script src="script.js" async&gt;&lt;/script&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het async-attribuut versnelt de verwerking van de HTML, maar kan nog steeds een korte onderbreking veroorzaken. Dit attribuut is nuttig wanneer het belangrijk is dat het Javascript zo snel mogelijk wordt geladen en de verwerkingssnelheid van de HTML van minder groot belang is.</p>
+                    
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>defer</td>
+                                <td>Downloadt het Javascript-bestand terwijl de HTML wordt verwerkt en voert de Javascript pas uit nadat de HTML-pagina volledig is verwerkt.</td>
+                                <td><pre>&lt;script src="script.js" defer&gt;&lt;/script&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het defer-attribuut voorkomt onderbrekingen in het laden en verzekert dat scripts pas worden uitgevoerd nadat alles is ingeladen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Javascript modules</h3>
+                    <p>Met Javascript-modules worden grotere scriptbestanden opgesplitst in kleinere, beter beheersbare delen, wat het overzicht en onderhoud van de code aanzienlijk vergemakkelijkt. Constanten, functies of klassen kunnen in aparte bestanden worden gedefinieerd en onderaan de pagina met de export-declaratie beschikbaar worden gesteld.</p>
+                    
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Declaratie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>export</td>
+                                <td>Specificeert dat code beschikbaar is om te worden geëxporteerd.</td>
+                                <td><pre>export default backpack;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Vervolgens kunnen deze onderdelen met een import-declaratie bovenaan de pagina in andere bestanden worden opgenomen.</p>
+                    
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Declaratie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>import</td>
+                                <td>Importeert code uit een ander bestand.</td>
+                                <td><pre>import backpack from "./backpack.js";</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Bij het gebruik van modules moeten alle gebruikte scripts in de head-sectie van de HTML worden geplaatst. Vervolgens moet het type-attribuut met een waarde van "module" aan de script-elementen in de HTML worden toegevoegd om de bestanden correct te laden en uit te voeren.</p>
+                    
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Type waarde</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>module</td>
+                                <td>Specificeert dat er naar een module wordt verwezen.</td>
+                                <td><pre>&lt;script type="module" src="backpack.js"&gt;&lt;/script&gt;
+&lt;script type="module" src="script.js"&gt;&lt;/script&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is belangrijk om op te merken dat objecten die in modules zijn gedefinieerd, niet direct toegankelijk zijn in de browserconsole.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Objecten</h2>
+                
+                <div class="chapter__group">
+                    <h3>Objecten: Een praktische introductie</h3>
+                    <p>Javascript is een prototype-gebaseerde objectgeoriënteerde programmeertaal, wat inhoudt dat er met objecten wordt gewerkt die op overkoepelende prototypes zijn gebaseerd.</p>
+                    <p>Objecten hebben eigenschappen die de kenmerken van het object beschrijven, zoals de kleur of grootte. Daarnaast hebben objecten ook methoden die de eigenschap waarden en hiermee het gedrag van het object bepaald, zoals het openen van een rugzak. Een wijziging aan een object beïnvloedt echter niet automatisch de andere objecten.</p>
+                    <p>Elk object is een unieke instantie van een objectprototype, waardoor nieuwe objecten eenvoudig geïdentificeerd en aangemaakt kunnen worden door gedeelde eigenschappen en gedrag te definiëren.</p>
+                    <p>Objecten kunnen andere objecten eigen methoden en eigenschappen. Zolang een object in een ander object zit kan het dienen als een eigenschap van het ander object.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Javascript objecten: De code versie</h3>
+                    <p>Javascript-objecten zijn verzamelingen van gegevens en functionaliteit, opgeslagen als eigenschappen en methoden die het gedrag van een object beschrijven. Om een object te definiëren, wordt doorgaans een constante aangemaakt waarin het object wordt opgeslagen. Objecten worden gedefinieerd met behulp van accolades, waarin de eigenschappen en methoden worden vastgelegd.</p>
+                    <pre><code>const backpack = {
+    volume: 30,
+    color: "grey",
+    pocketNum: 15,
+    strapLength: {
+        left: 26,
+        right: 26,
+    },
+    lidOpen: false,
+    toggleLid: function (lidStatus) {
+        this.lidOpen = lidStatus;
+    },
+    newStrapLength: function (lengthLeft, lengthRight) {
+        this.strapLength.left = lengthLeft;
+        this.strapLength.right = lengthRight;
+    },
+};</code></pre>
+                    <p>Eigenschappen zijn naam-waarde paren die de kenmerken van een object definiëren en kunnen verschillende soorten waarden bevatten, zoals strings, getallen, Booleans, arrays en andere objecten. Methoden zijn vergelijkbaar met eigenschappen, maar bevatten in plaats van een waarde een functie die de eigenschappen van het object kan manipuleren of wijzigen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>this</td>
+                                <td>Verwijst naar het huidige object.</td>
+                                <td><pre>this.lidOpen = lidStatus;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Object containers</h3>
+                    <p>Een object heeft een container nodig waarin het wordt opgeslagen. Deze container wordt een variabele genoemd en de naam van de variabele dient als een referentie naar deze container. Wat aan de rechterkant van het gelijkheidsteken staat, is de inhoud die aan de variabele wordt toegewezen.</p>
+                    <pre><code>const backpack = {}</code></pre>
+                    <p>Objecten in Javascript worden vaak opgeslagen in constante variabelen met behulp van het const-sleutelwoord.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>const</td>
+                                <td>Specificeert dat een object niet opnieuw kan worden toegewezen, maar dat de eigenschappen ervan wel kunnen worden gewijzigd.</td>
+                                <td><pre>const number = 42;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Object eigenschappen</h3>
+                    <p>Een object eigenschap beschrijft een kenmerk van een object en wordt gedefinieerd als een naam-waardenparen, gescheiden door een dubbele punt.</p>
+                    <p>De waarde van een object kan variëren van een string, integer, floating-point getal, Booleaanse waarde, array, tot zelfs een ander object. De naam van een eigenschap is een string van karakters die uitsluitend letters, cijfers, dollartekens en underscores mag bevatten; het gebruik van andere tekens kan fouten veroorzaken in Javascript.</p>
+                    <p>Het is aanbevolen om camel case te gebruiken bij het benoemen van eigenschappen om de leesbaarheid te verbeteren en de correcte werking van de code te garanderen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Objecten opvragen</h3>
+                    <p>Een object of entiteit binnen een variabele kan worden opgevraag door het met de gespecificeerde naam aan te roepen. Dit kan in de browserconsole handmatig worden gedaan door de naam op te geven. JavaScript biedt echter een reeks console-methoden om entiteiten automatisch in de browserconsole weer te geven, zonder dat handmatige invoer nodig is. De meest gebruikte methode hiervoor is console.log().</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Console methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>console.log()</td>
+                                <td>Weergeeft de inhoud in de browser console</td>
+                                <td><pre>console.log(backpack);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De console.log-methode is handig is om snel naar een object te refereren. Om de output informatiever te maken, kan een tekststring voor het object worden toegevoegd, zodat de context duidelijker wordt, bijvoorbeeld:</p>
+                    <pre><code>console.log("the backpack object:", backpack);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Object eigenschappen opvragen</h3>
+                    <p>Er zijn twee methoden om objecteigenschappen op te vragen: puntnotatie en haakjesnotatie. Puntnotatie heeft de voorkeur vanwege de eenvoud en leesbaarheid, en wordt gebruikt om direct toegang te krijgen tot de eigenschappen van een object. De syntaxis voor puntnotatie is als volgt: object.property</p>
+                    <p>Haakjesnotatie is nuttig wanneer meer controle nodig is. Dit is bijvoorbeeld nodig wanneer een variabele als eigenschapsnaam wordt gebruikt of wanneer de eigenschapsnaam speciale tekens bevat die niet voldoen aan de standaarden. De syntaxis voor haakjesnotatie ziet er als volgt uit: object["property"].</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Prototype overerving</h3>
+                    <p>Elk object in Javascript is gebaseerd op een prototype-object, dat dient als blauwdruk voor het object. Dit prototype is een verborgen eigenschap, genaamd [[Prototype]], en maakt deel uit van elk object dat wordt aangemaakt.</p>
+                    <p>Elk object erft eigenschappen en methoden van het prototype waarop het is gebaseerd. Een object zal bijvoorbeeld de eigenschappen en methoden van object.prototype erven, zoals valueOf() en toString(), omdat alle objecten op het prototype-object zijn gebaseerd.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>valueOf()</td>
+                                <td>Geeft de primitieve waarde van een object eigenschap.</td>
+                                <td><pre>console.log(backpack.volume.valueOf());</pre></td>
+                            </tr>
+                            <tr>
+                                <td>toString()</td>
+                                <td>Geeft een string representatie van een object eigenschap.</td>
+                                <td><pre>console.log(backpack.volume.toString());</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Daarnaast is het mogelijk om zelf object-constructeurs te maken en daar nieuwe eigenschappen en methoden aan toe te voegen, die door andere objecten kunnen worden geërfd. Geërfde eigenschappen en methoden kunnen ook worden overschreven door het object dat het prototype erft, zodat aangepast gedrag kan worden vertoond.</p>
+                    <pre><code>const backpack = {
+    name: "Everyday Backpack",
+    volume: 30,
+    toString: function () {
+        return `Backpack: ${this.name}, Volume: ${this.volume} liters`;
+    }
+};
+console.log(backpack.toString()); // "Backpack: Everyday Backpack, Volume: 30 liters"</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Object methodes</h3>
+                    <p>Functies in objecten worden methodes genoemd. Methoden voeren acties uit op de eigenschappen van het object en worden toegevoegd als een object eigenschap. Methoden kunnen met een functie-uitdrukkingen of met een shorthand worden gedefinieerd. Het gebruik van de functie-uitdrukkingen is echter de standaard in verband met duidelijkheid.</p>
+                    <pre><code>toggleLid: function (lidStatus) {
+    this.lidOpen = lidStatus;
+}</code></pre>
+                    <p>of</p>
+                    <pre><code>toggleLid(lidStatus) {
+    this.lidOpen = lidStatus;
+}</code></pre>
+                    <p>Een functie is een programma dat een specifieke taak uitvoert, zoals het wijzigen van een waarde. Het function-sleutelwoord geeft aan dat het een functie betreft. Als de functie parameters vereist, worden deze waarden tussen de haakjes geplaatst. Dit zijn de gegevens die de functie gebruikt om bijvoorbeeld een eigenschap aan te passen. De code binnen de functie wordt vervolgens omsloten door accolades.</p>
+                    <p>Een functie call is de manier waarop een functie in Javascript wordt uitgevoerd. Om een functie aan te roepen, wordt de functienaam gevolgd door haakjes. Als de functie parameters nodig heeft, worden deze waarden tussen de haakjes geplaatst.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Klassen: Object blauwdrukken</h3>
+                    <p>Klassen fungeren als blauwdrukken voor het creëren van objecten, waarbij eigenschappen en methoden worden gedefinieerd die door elk object dat onder de klasse valt, worden geërfd. Hierdoor kan de structuur van eigenschappen en methoden voor alle objecten die binnen die klasse worden vastgesteld, zonder dat deze telkens opnieuw gedeclareerd hoeven te worden.</p>
+                    <pre><code>class Backpack {
+    constructor(name, volume, lidOpen) {
+        this.name = name;
+        this.volume = volume;
+        this.lidOpen = lidOpen;
+    }
+    toggleLid(lidStatus) {
+        this.lidOpen = lidStatus;
+    }
+}
+export default Backpack;</code></pre>
+                    <p>Klassen worden onderaan de pagina met de export-declaratie beschikbaar gesteld aan andere bestanden en met de import-declaratie bovenin de gewenste bestanden opgenomen. Een klasse is pas bruikbaar nadat het is gedeclareerd en dit wordt gegarandeerd door het bovenaan de pagina te importeren.</p>
+                    <pre><code>import Backpack from "./Backpack.js";
+
+const hikingBackpack = new Backpack(
+    "Everyday Backpack",
+    30,
+    false 
+);</code></pre>
+                    <p>De gebruikte scripts worden vervolgens in de head-sectie van de HTML geplaatst met een type-attribuut waarde van "module".</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>class</td>
+                                <td>Maakt een klasse aan.</td>
+                                <td><pre>class ClassName {}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Naast het gebruik van het class-sleutelwoord kan ook een class-uitdrukking worden gebruikt om een klasse te definiëren.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Uitdrukking</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>class</td>
+                                <td>Maakt een klasse aan.</td>
+                                <td><pre>const ClassName = class {}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In beide gevallen begint de naam van de klasse met een hoofdletter, om het onderscheidbaar te maken van een normaal object en wordt een constructeur-methode gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>constructor()</td>
+                                <td>Specificeert hoe een object door een klasse wordt gecreëerd.</td>
+                                <td><pre>constructor(name, volume) {
+    this.name = name;
+    this.volume = volume;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De constructor-methode definieert de eigenschappen en parameters van een klasse.</p>
+                    <p>Methoden kunnen buiten de constructor-methode accolades aan een klasse worden toegevoegd. Deze methoden zullen beschikbaar zijn voor alle objecten die uit de klasse worden gecreëerd.</p>
+                    <p>Een nieuw tot een klasse behorend object kan worden gecreëerd door eigenschapswaarden als parameters door te geven met behulp van het new-sleutelwoord.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>new</td>
+                                <td>Creëert een object op basis van een gespecificeerde klasse.</td>
+                                <td><pre>const everydayPack = new Backpack(
+    "Everyday Backpack",
+    30,
+    false
+);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Object constructeurs</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>object constructor</td>
+                                <td>Creëert een blauwdruk voor een object.</td>
+                                <td><pre>function Person(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Object constructeurs en klassen creëren beiden objecten door eigenschappen vast te leggen via parameters en waarden toe te wijzen met behulp van het sleutelwoord this en puntnotatie. Klassen bieden echter de mogelijkheid om uitgebreid te worden en nieuwe functies toe te voegen. Daarom hebben klassen de voorkeur voor het maken van objecten op basis van een blauwdruk. Objectconstructeurs worden vooral toegepast in oudere codebases of omgevingen zonder ondersteuning voor klassen.</p>
+                    <p>In tegenstelling tot klassen worden methoden binnen de constructie functie gedefinieerd.</p>
+                    <pre><code>function Backpack (name, volume, lidOpen) {
+    this.name = name;
+    this.volume = volume;    
+    this.lidOpen = lidOpen;
+    this.toggleLid = function(lidStatus) {    
+        this.lidOpen = lidStatus;
+    };
+}
+
+const everydayPack = new Backpack(
+    "Everyday Backpack",
+    30,
+    false
+);</code></pre>
+                    <p>Object constructeurs worden net als klassen met het new-sleutelwoord aangeroepen:</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Klassen uitbreiden</h3>
+                    <p>Een nieuwe klasse kan op basis van een bestaande klasse worden gemaakt. Deze nieuwe klasse erft alle eigenschappen en methoden van de bestaande klasse en kan met nieuwe eigenschappen en methoden worden uitgebreid. Dit wordt met het extends-sleutelwoord gedaan:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>extends</td>
+                                <td>Creëert een klasse op basis van een reeds bestaande klasse.</td>
+                                <td><pre>class HikingBackpack extends Backpack {}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In de nieuwe klasse kunnen extra eigenschappen en methoden worden toegevoegd, waardoor deze specifieker wordt. Bijvoorbeeld een MotorVehicle klasse met overkoepelende eigenschappen en methoden voor motorvoertuigen die met specifiekere klassen zoals Car, Truck en Motorcycle wordt uitgebreid.</p>
+                    <p>Zowel de bestaande eigenschappen van de parent-klasse als alle nieuwe eigenschappen worden in de constructor gedefinieerd. Vervolgens wordt de super-methode gebruikt om de constructor van de parent-klasse aan te roepen en de geërfde eigenschappen te initialiseren:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>super()</td>
+                                <td>Specificeert de eigenschappen die de parent en child klassen delen.</td>
+                                <td><pre>super(name, volume, lidOpen, hydrationCapacity);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Ten slot worden de methoden zoals voorheen buiten de constructor-methode accolades toegevoegd.</p>
+                    <pre><code>class HikingBackpack extends Backpack {
+    constructor(name, volume, lidOpen, hydrationCapacity) {
+        super(name, volume, lidOpen);
+        this.hydrationCapacity = hydrationCapacity; // Capacity in liters
+    }
+    checkHydration() {
+        if (this.hydrationCapacity > 0) {
+        console.log(`You have ${this.hydrationCapacity} liters of water left.`);
+        } else {
+        console.log("Time to refill your water!");
+        }
+    }
+}</code></pre>
+                    <p>Methoden van een parent-klasse kunnen door een nieuwe methode met dezelfde naam worden overschreven. Vervolgens wordt de super-methode gebruikt om de originele methode aan te roepen en met een nieuwe functionaliteit aan te vullen.</p>
+                    <pre><code>toggleLid(lidStatus) {
+    super.toggleLid(lidStatus); // Call the parent method
+    if (lidStatus) {
+        console.log("Your hiking backpack lid is open. Remember to check to make sure the hydration pack is inserted.");
+    } else {
+        console.log("Your hiking backpack lid is closed. Remember to check to make sure the hydration pack is inserted.");
+    }
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Globale objecten</h3>
+                    <p>Globale objecten verwijzen naar de standaard-objecten van de browser die voor diverse doeleinden kunnen worden gebruikt. Een globaal object hoeft niet gedefinieerd te worden voordat het bruikbaar is en wordt met het new-sleutelwoord aangeroepen. Een voorbeeld van een globaal object is het date-object:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Object</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>Specificeert hoeveel milliseconden er zijn verstreken sinds 1-1-1970, UTC.</td>
+                                <td><pre>const rightNow = new Date()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het date-object transformeert een string die een datum en tijd bevat naar het aantal milliseconden dat is verstreken sinds 1 januari 1970, volgens de UTC-tijdzone. Het date-object maakt gebruik van het huidige tijdstip wanneer het niet met een string wordt aangevoerd. Dit kan bijvoorbeeld worden gebruikt om het verschil tussen het huidige en een voorgaand tijdstip te bepalen:</p>
+                    <pre><code>backpackAge() {
+    let now = new Date();
+    let acquired = new Date(this.dateAcquired);
+    let elapsed = now - acquired; // elapsed time in milliseconds
+    let daysSinceAcquired = Math.floor(elapsed / (1000 * 3600 * 24));
+    return daysSinceAcquired;
+}</code></pre>
+                    <p>Als een taak regelmatig voorkomt, is de kans groot dat er een ingebouwd object in Javascript bestaat om deze taak te ondersteunen. Een volledige lijst van deze objecten is beschikbaar op MDN Web Docs.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Sidebar: String output</h2>
+                
+                <div class="chapter__group">
+                    <h3>Tekst en variabelen mengen met template literals</h3>
+                    <p>Wanneer een browser een pagina laadt, wordt er een Document Object Model (DOM) aangemaakt. Dit model vertegenwoordigt alle HTML-elementen op de pagina als objecten. De DOM fungeert ook als een object binnen de browser: Het document-object.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Object</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>document</td>
+                                <td>Representeert de DOM van een ingeladen webpagina.</td>
+                                <td><pre>document.body.innerHTML</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De HTML-elementen binnen dit object worden opgeroepen met het innerHTML-eigenschap.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>innerHTML</td>
+                                <td>Roept de HTML-elementen op die zich in een specifiek element bevinden.</td>
+                                <td><pre>document.body.innerHTML</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Template literals maken het mogelijk om een combinatie van HTML en Javascript uitdrukkingen uit te voeren. Met template literals kan HTML-inhoud, gegenereerd en gewijzigd worden op basis van gegevens in Javascript-objecten. Template literals gebruiken backticks (`) in plaats van aanhalingstekens om strings te maken.</p>
+                    <pre><code>const content = `
+    &lt;main&gt;
+        &lt;article&gt;
+        &lt;h1&gt;${everydayPack.name}&lt;/h1&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Volume: ${everydayPack.volume}&lt;/li&gt;
+            &lt;li&gt;Color: ${everydayPack.color}&lt;/li&gt;
+            &lt;li&gt;Lid status: ${everydayPack.lidOpen}&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+`;
+
+document.body.innerHTML = content;</code></pre>
+                    <p>Binnen de template literal worden vervolgens placeholders geplaatst waar Javascript de inhoud moet genereren. Javascript-uitdrukkingen die in de placholder zijn opgenomen worden vervolgens op de plek van de placeholder ingeladen. Placeholders worden gespecificeerd met ${}.</p>
+                    <p>De template literal kan elke Javascript-uitdrukking injecteren en kan hierdoor bijvoorbeeld eigenschappen oproepen en functies uitvoeren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Traditionele string output</h3>
+                    <p>Traditionele strings kunnen worden gebruikt om een combinatie van HTML en Javascript uitdrukkingen uit te voeren door de string op te breken en stringconcatenatie toe te passen, zoals in het volgende voorbeeld:</p>
+                    <pre><code>const content = "&lt;h1&gt;" + everydayPack.name + "&lt;/h1&gt;";</code></pre>
+                    <p>Het gebruik van traditionele strings kan echter complexer en onoverzichtelijker zijn. Traditionele strings ondersteunen geen template-tags en houden geen rekening met witruimte, waardoor de code moeilijker te lezen en te onderhouden is.</p>
+                    <p>Hoewel het gebruik van template literals de preferentie heeft, is het gebruik van traditionele strings nog steeds veelvoorkomend.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>DOM</h2>
+                
+                <div class="chapter__group">
+                    <h3>Dom: Het document object model</h3>
+                    <p>Wanneer een HTML-document door een browser wordt geladen, creëert de browser een Document Object Model (DOM). Dit model beschrijft de hiërarchische boomstructuur van het document en toont hoe de verschillende elementen zijn verbonden en genesteld.</p>
+                    <p>Het vermogen om door de DOM-structuur te navigeren is cruciaal bij het werken met Javascript, omdat dit de basis vormt voor het vinden en manipuleren van elementen in het document.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Elementen opvragen met querySelector methodes</h3>
+                    <p>De querySelector() en querySelectorAll() methoden worden gebruikt, om element in de DOM te vinden.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>querySelector()</td>
+                                <td>Geeft het eerste overeenkomende element in terug.</td>
+                                <td><pre>document.querySelector("main li:last-child")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>querySelectorAll()</td>
+                                <td>Geeft een lijst (NodeList) terug met alle overeenkomende elementen.</td>
+                                <td><pre>document.querySelectorAll("li")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Beiden methodes gebruiken CSS-selectors om elementen in de DOM te vinden. Een element kan met elke CSS-selector combinatie worden geselecteerd, bijvoorbeeld: ".container li:last-child".</p>
+                    <p>Zodra een element is geselecteerd in het Document Object Model (DOM), kan het worden gemanipuleerd met behulp van Javascript.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>forEach()</td>
+                                <td>Voert een opgegeven functie één keer uit voor elk array-element.</td>
+                                <td><pre>document.querySelectorAll("li").forEach()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een methode, zoals forEach(), kan worden toegepast op een NodeList om door elk element in die lijst te itereren en specifieke bewerkingen uit te voeren op elk item. Dit maakt het mogelijk om meerdere elementen in één bewerking aan te passen of te manipuleren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Elementen opvragen met andere methodes</h3>
+                    <p>Er zijn twee oudere methoden beschikbaar voor het opvragen van elementen in de DOM: getElementsByClassName() en getElementById(). Deze methoden werken nog steeds en worden breed ondersteund, maar zijn minder flexibel en krachtig in vergelijking met querySelector en querySelectorAll.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>getElementsByClassName()</td>
+                                <td>Geeft een array-achtig object van alle overeenkomende child-elementen terug.</td>
+                                <td><pre>document.getElementsByClassName()</pre></td>
+                            </tr>
+                            <tr>
+                                <td>getElementById()</td>
+                                <td>Geeft het overeenkomende element terug.</td>
+                                <td><pre>document.getElementById("idname")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Element klassen aanpassen</h3>
+                    <p>Het uiterlijk of gedrag van een element kan worden aangepast zonder CSS in de HTML te injecteren, door de klasse van een element met behulp van Javascript te wijzigen. Er zijn twee eigenschappen beschikbaar voor het manipuleren van klasse-elementen: className en classList.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>className</td>
+                                <td>Bevat een string met alle klassen die aan een element zijn toegewezen</td>
+                                <td><pre>document.querySelector("h1").className = "new-class"</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het gebruik van de className-eigenschap kan in bepaalde situaties problemen veroorzaken. Wanneer een element meerdere klassen bevat, zal het gebruik van className alle bestaande klassen verwijderen en vervangen door de nieuwe waarde.</p>
+                    <p>Daarnaast gebruiken frameworks zoals React de term className ter vervanging van het class-attribuut om conflicten te vermijden met het class-sleutelwoord in Javascript. Het gedrag van className in deze frameworks verschilt van hoe het normaal in Javascript werkt.</p>
+                    <p>Om deze problemen te voorkomen, is het beter om de classList-eigenschap te gebruiken.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>classList</td>
+                                <td>Geeft een DOM-token lijst met alle klassen die aan een element zijn toegewezen.</td>
+                                <td><pre>document.querySelector("main li:first-child").classList.add("new-class")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met classList kunnen klassen afzonderlijk worden aangepast zonder dat andere klassen worden overschreven. Hiervoor worden de volgende bijbehorende methoden gebruikt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>add()</td>
+                                <td>Voegt een klasse toe.</td>
+                                <td><pre>document.querySelector("main li").classList.add("new-class", "second-class")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>remove()</td>
+                                <td>Verwijdert een klasse.</td>
+                                <td><pre>document.querySelector("main li").classList.remove("old-class", "new-class")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>replace()</td>
+                                <td>Vervangt een klasse.</td>
+                                <td><pre>document.querySelector("main li").classList.replace("new-class")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>toggle()</td>
+                                <td>Voegt een klasse toe als het niet aanwezig is en verwijdert de klasse als het wel aanwezig is.</td>
+                                <td><pre>document.querySelector("main li").classList.toggle("new-class")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Gebruik classList en de bijbehorende methodes voor het toevoegen, verwijderen, omschakelen of vervangen van klassen. Gebruik className alleen wanneer een string van alle klassen nodig is.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Attributen</h3>
+                    <p>Javascript kan een attribuut van een element wijzigen. Attributen worden opgeslagen in de attributes-eigenschap en worden met dezelfde eigenschap aangeroepen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>attributes</td>
+                                <td>Geeft een lijst van alle attributen.</td>
+                                <td><pre>document.querySelector("img").attributes</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een attribuut bestaat uit een sleutel en een waarde, die afzonderlijk en gelijktijdig moeten kunnen worden gemanipuleerd. Dit kan niet worden bereikt met een array, waardoor de lijst van attributen wordt behandeld als een named node map in plaats van een array.</p>
+                    <p>Hierdoor kunnen reguliere array-methoden niet worden toegepast. In plaats daarvan biedt Javascript speciale methoden voor het werken met attributen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>hasAttribute()</td>
+                                <td>Controleert of een element een attribuut bezit.</td>
+                                <td><pre>document.querySelector("img").hasAttribute("src")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>getAttribute()</td>
+                                <td>Haalt de waarde van een attribuut op.</td>
+                                <td><pre>document.querySelector("img").getAttribute("alt")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>setAttribute()</td>
+                                <td>Stelt de waarde van een attribuut in of maakt een nieuw attribuut aan.</td>
+                                <td><pre>document.querySelector("img").setAttribute("alt", "Description")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>removeAttribute()</td>
+                                <td>Verwijdert een attribuut van een element.</td>
+                                <td><pre>document.querySelector("img").removeAttribute("title")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Als het nodig is, kan de attribuut-methoden ook klassen manipuleren, aangezien klasse van een element ook een attribuut is. Houd er echter rekening mee dat er specifieke eigenschappen en methoden voor klassen bestaan.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Inline stijl</h3>
+                    <p>De CSS-stijlen die in de HTML zijn gedeclareerd, worden in de style-eigenschap van een element opgeslagen en kan met Javascript worden benaderd en aangepast.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>style</td>
+                                <td>Geeft een lijst met de mogelijke en de huidige stijl-eigenschappen.</td>
+                                <td><pre>document.querySelector(".site-title").style</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Individuele style-eigenschappen zijn met puntnotatie aan te passen, bijvoorbeeld: document.querySelector(".site-title").style.color = "green".</p>
+                    <p>De naam van een eigenschap kan in Javascript geen koppeltekens gebruiken. In plaats van koppeltekens gebruiken alle CSS-eigenschappen lowerCamelCase, dus: backgroundColor. De volledige lijst met CSS-stijldeclaraties is terug te vinden met de style-eigenschap.</p>
+                    <p>Hoewel het mogelijk is om meerdere stijlen tegelijkertijd toe te voegen, is het aanbevolen om de inline stijlen individueel aan te passen voor meer controle. Dus niet: document.querySelector(".siteheader .site-title").style.cssText = "color: green; background-color: purple;"</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Met element attributen werken</h3>
+                    <p>Javascript-methode zoals getAttribute(), setAttribute() en removeAttribute() manipuleren de attributen van een standaard HTML-element zonder de pagina opnieuw te laden. Bijvoorbeeld als volgt:</p>
+                    <pre><code>const button = document.querySelector("#myButton");
+
+// Get the value of the 'class' attribute
+console.log(button.getAttribute("class")); // "btn btn-primary"
+
+// Overwrite the value of the 'class' attribute
+button.setAttribute("class", "btn btn-secondary");
+
+// Remove the 'type' attribute
+button.removeAttribute("type");</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>data-*</td>
+                                <td>Specificeert extra informatie over een HTML-elementen</td>
+                                <td><pre>document.querySelector("img").setAttribute("data-id", "001")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Attributen kunnen extra informatie opslaan en toegankelijkheidrollen definiëren. Aangepaste attributen, gedefinieerd met data-*, kunnen worden toegevoegd aan elementen om extra informatie op te slaan. Deze zijn toegankelijk met de dataset-eigenschap.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>dataset</td>
+                                <td>Geeft toegang tot data-* attributen.</td>
+                                <td><pre>document.querySelector("img").dataset</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Aangepaste data-attributen worden vaak in Javascript frameworks en libraries gebruikt om extra informatie over een element op te slaan. Data-attributen kunnen ook toegankelijkheidrollen definiëren, zoals aria-* attributen. Deze attributen worden gebruikt om aanvullende informatie te verstrekken aan hulptechnologieën zoals schermlezers, waardoor het web toegankelijker wordt voor gebruikers met een beperking.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>DOM elementen toevoegen</h3>
+                    <p>Het injecteren van HTML in een bestaand document door gebruik te maken van innerHTML kent enkele nadelen: Het vereist een bestaand element in het HTML-document en het verwijdert alle bestaande code in het element.</p>
+                    <p>Het is echter mogelijk om een element aan de DOM toe te voegen zonder bestaande elementen te overschrijven. Om het element te kunnen maken wordt de createElement-methode gebruikt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>createElement()</td>
+                                <td>Creëert een HTML-element.</td>
+                                <td><pre>const newArticle = document.createElement("article")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het element kan vervolgens van klassen en een ID worden voorzien met classList.add en setAttribute:</p>
+                    <pre><code>const main = document.querySelector(".maincontent");
+
+const newArticle = document.createElement("article");
+newArticle.classList.add("backpack");
+newArticle.setAttribute("id", "everyday");
+newArticle.innerHTML = content;
+
+main.append(newArticle);</code></pre>
+                    <p>Het nieuwe element wordt in het bovenstaande voorbeeld met de append-methode aan het bestaande document toegevoegd.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>ParentNode.append()</td>
+                                <td>Voegt de inhoud toe als het laatste child-element van de gespecifieerde parent.</td>
+                                <td><pre>document.querySelector(".class").append(newArticle);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De append-methode kan meerdere elementen toevoegen door de elementen met een komma te scheiden, en kan tevens worden gebruikt om strings toe te voegen.</p>
+                    <p>Naast de append-methode zijn er andere methoden beschikbaar om elementen in de DOM toe te voegen of te verplaatsen; elk met specifieke eigenschappen en toepassingen voor verschillende scenario's.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>ParentNode.prepend()</td>
+                                <td>Voegt de inhoud toe als het eerste child-element van de gespecifieerde parent.</td>
+                            </tr>
+                            <tr>
+                                <td>Node.appendChild()</td>
+                                <td>Verplaatst een element van locatie en kan het toegevoegde element teruggeven.</td>
+                            </tr>
+                            <tr>
+                                <td>Node.replaceChild()</td>
+                                <td>Vervangt een child-element binnen de gespecifieerde parent.</td>
+                            </tr>
+                            <tr>
+                                <td>Node.insertBefore()</td>
+                                <td>Voegt een child-element toe vóór de gespecificeerde parent.</td>
+                            </tr>
+                            <tr>
+                                <td>Element.insertAdjacentElement()</td>
+                                <td>Specificeert waar een element wordt toegevoegd ten opzichte van het huidige element.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 6 ===============-->
+            <div class="chapter__container">
+                <h2>Sidebar: Variabelen en data types </h2>
+                
+                <div class="chapter__group">
+                    <h3>Variabelen: Containers voor alles</h3>
+                    <p>Variabelen zijn containers met namen die gegevens bevatten. Wanneer een object een naam krijgt, wordt er een container met een naam gecreëerd en wordt er iets in die container geplaatst.</p>
+                    <p>De inhoud van deze container wordt met het gelijkheidssymbool gedefinieerd en kan verschillende data typen bevatten: Een object, arrays, numerieke waarden, strings of een groep objecten.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Var</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Uitdrukking</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>var</td>
+                                <td>Declareert een variabele container met globale scope.</td>
+                                <td><pre>var x = 1</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Bij het aanroepen van een container wordt de bijbehorende waarde geretourneerd. Bijvoorbeeld, de bovengenoemde variabele met de naam x geeft de waarde 1 terug wanneer deze wordt opgevraagd.</p>
+                    <p>Een variabele die met var is gedefinieerd, is te muteren: De bijbehorende waarde kan op elk moment worden aangepast. De eerdergenoemde variabele kan bijvoorbeeld ook de waarde "rood" krijgen door het volgende te doen: x = "rood".</p>
+                    <p>Var wordt standaard aan een variabele toegewezen, wanneer een variabele een sleutelwoord mist. Als het var-sleutelwoord wordt weggelaten bij het aanmaken van een variabele, zal de variabele dus alsnog worden aangemaakt. Dit wordt echter afgeraden omdat het tot problemen kan leiden.</p>
+                    <p>Het is mogelijk om meerdere variabelen tegelijk te definiëren door een door komma's gescheiden lijst te gebruiken, bijvoorbeeld: var x = 5, y = "zes".</p>
+                    <p>Daarnaast kunnen variabelen worden aangemaakt zonder dat deze direct een waarde krijgen, wat resulteert in een ongedefinieerde variabele, bijvoorbeeld: var empty.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Scope</h3>
+                    <p>Variabelen die met var zijn gedeclareerd, hebben een globale scope. Dit betekent dat wijzigingen binnen een functie ook de code buiten de functie beïnvloed, wat onbedoeld gedrag en fouten kan veroorzaken. In het onderstaande voorbeeld wordt de waarde "skyblue" bijvoorbeeld nooit gebruikt, omdat het in de functie met "blue" wordt overschreven.</p>
+                    <pre><code>var color = "purple";
+
+document.querySelector(".left").style.backgroundColor = color;
+document.querySelector(".left .color-value").innerHTML = color;
+
+var color = "skyblue";
+
+function headingColor() {
+    color = "blue";
+    document.querySelector(".title").style.color = color;
+}
+
+headingColor();
+
+document.querySelector(".right").style.backgroundColor = color;
+document.querySelector(".right .color-value").innerHTML = color;</code></pre>
+                    <p>Om deze problemen te voorkomen zijn er twee nieuwe variabele typen met een lokale scope die scope-gerelateerde problemen helpen voorkomen: De let en de const variabelen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Let</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Uitdrukking</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>let</td>
+                                <td>Declareert een variabele container met block scope.</td>
+                                <td><pre>let color = "blue"</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een block-scope is lokaal en bestaat alleen binnen het code-block waarin het is gedefinieerd, zoals een functie of een loop. Door een variabele binnen een functie met de let-uitdrukking te declareren, kunnen scope-probleem met variabelen worden vermeden.</p>
+                    <p>Een let-variabele binnen een functie mag dezelfde naam hebben als een bestaande variabele buiten de functie, omdat een let-variabele de code buiten het codeblok negeert.</p>
+                    <p>Voor de meeste situaties waarin een veranderlijke of een te muteren variabele nodig is, wordt de let-uitdrukking gebruikt. Dit geldt ook voor een variabele die in de globale scope wordt gebruikt; als een let in de globale scope wordt gedeclareerd, is deze overal van toepassing, behalve waar de variabele opnieuw wordt gedeclareerd.</p>
+                    <p>Het gebruik van var is alleen nuttig als er een te muteren variabele met een altijd globale-scope nodig is, maar dit komt zelden voor. Daarom is de let-uitdrukking over het algemeen de voorkeursoptie.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Const</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Uitdrukking</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>const</td>
+                                <td>Declareert een constante container met block scope.</td>
+                                <td><pre>const color = "blue"</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een constante is qua scope vergelijkbaar met een let-variabele, maar de waarde van een constante kan niet opnieuw worden toegewezen als het eenmaal gedefinieerd is. Door een const te gebruiken is er geen risico dat de toegewezen waarde plotseling verandert of per ongeluk wordt veranderd. Het gebruik van de const-uitdrukking is hierdoor erg zinvol voor onveranderlijke variabele.</p>
+                    <p>Het opnieuw toewijzen van een waarde zal een fout veroorzaken, waardoor de browser de fout zal markeren en onmiddellijk zal stoppen met renderen. Dit helpt bij het onderhouden van nettere code door onbedoelde wijzigingen te voorkomen.</p>
+                    <p>Hoewel de waarde van een const-uitdrukking niet opnieuw toewijsbaar is, kunnen de eigenschappen van objecten of arrays die in de constante zijn gedefinieerd wel worden gewijzigd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Datatypes</h3>
+                    <p>Javascript is een zwak getypeerde taal, wat betekent dat de datatype die in een variabele gaat niet hoeft te worden gedeclareerd. De variabele wordt met de gewenste gegevens en Javascript zal vervolgens het bijbehorende gegevenstype proberen te identificeren.</p>
+                    <p>Dit zijn de algemene datatypes:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Datatype</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>String</td>
+                                <td><pre>let stringDemo = "Een string met tekst";</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Nummer</td>
+                                <td><pre>let integerDemo = 4;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Float</td>
+                                <td><pre>let floatDemo = 5.6;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Boolean</td>
+                                <td><pre>let booleanDemo = true;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Null waarde</td>
+                                <td><pre>let nullDemo = null;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Ongedefinieerd</td>
+                                <td><pre>let undefinedDemo;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Object</td>
+                                <td><pre>const objectDemo = {
+    naam: "vogel",
+    vleugels: 2,
+};</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Array</td>
+                                <td><pre>const arrayDemo = ["groen", "blauw", "rood", "geel"];</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De waarde die Javascript automatisch heeft geïdentificeerd kan met de typeof-operator worden achterhaald:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>typeof</td>
+                                <td>Geeft een string terug met de datatype van een waarde.</td>
+                                <td><pre>let stringDemo = "Een string met tekst";
+console.log("String:", typeof stringDemo);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Typen in Javascript</h3>
+                    <p>In een sterk getypeerde taal zoals Java of C++ wordt de datatype van een variabele van tevoren gedeclareerd. Als de opgegeven waarde niet met de datatype overeenkomt wordt er vervolgens een waarschuwing of foutmelding gegeven. In een zwak getypeerde taal als Javascript kan een variabele elke type data bevatten zonder dat het type hoeft te worden gedeclareerd, wat tot onverwacht gedrag kan leiden als er een fout wordt gemaakt.</p>
+                    <pre><code>function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 10)); // Output: 15
+console.log(add("5", 10)); // Output: "510"</code></pre>
+                    <p>Typecontroles zijn van groot belang wanneer er met grotere functies en complexe gegevens wordt gewerkt, vooral als deze gegevens van een externe bron zoals een API afkomstig zijn. Binnen Javascript kan de typeof-operator worden gebruikt om handmatig de datatypen te controleren en te verzekeren dat het met de verwachtingen overeenkomt.</p>
+                    <pre><code>function add(a, b) {
+    if (typeof a !== "number" || typeof b !== "number") {
+        throw new TypeError("Both arguments must be numbers");
+    }
+    return a + b;
+}</code></pre>
+                    <p>Deze functie kan worden uitgebreid om het herbruikbaar te maken. Voor grotere applicaties is het onderstaande voorbeeld sneller om te implementeren en makkelijker te onderhouden.</p>
+                    <pre><code>function assertType(value, type) {
+    if (typeof value !== type) {
+        throw new TypeError(`Expected ${type}, but got ${typeof value}`);
+    }
+}
+
+function add(a, b) {
+    assertType(a, "number");
+    assertType(b, "number");
+    return a + b;
+}</code></pre>
+                    <p>Voor complexere gegevenstypen kunnen typecontroles direct in de constructor-functie worden verwerkt om te waarborgen dat objecten geldige types hebben.</p>
+                    <pre><code>function assertType(value, type, paramName) {
+    if (typeof value !== type) {
+        throw new TypeError(`${paramName} must be a ${type}`);
+    }
+}
+
+class Backpack {
+    constructor(
+        name,
+        volume,
+        lidOpen
+    ) {
+        assertType(name, "string", "name");
+        assertType(volume, "number", "volume");
+        assertType(lidOpen, "boolean", "lidOpen");
+
+        this.name = name;
+        this.volume = volume;
+        this.lidOpen = lidOpen;
+    }
+
+    toggleLid(lidStatus) {
+        assertType(lidStatus, "boolean", "lidStatus");
+        this.lidOpen = lidStatus;
+    }
+}</code></pre>
+                    <p>Deze technieken geven meer controle over datatypes in de code en zullen voor veel toepassingen voldoende zijn. Als er echter veel code voor typecontrole moet worden geschreven, kan het beter zijn om over te schakelen naar TypeScript. TypeScript is een sterk getypeerde variant van JavaScript die statische typeringen kan toevoegen om type-gerelateerde fouten te voorkomen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Toewijzen versus vergelijking</h3>
+                    <p>Een enkel gelijkheidsteken wijst de waarde aan de rechterkant toe aan een variabele aan de linkerkant. Meerdere gelijkheidstekens worden in vergelijkingen gebruikt, waarin wordt gecontroleerd of waarden met elkaar overeenkomen. Vergelijkingen geven een waarde van true of false.</p>
+                    <p>Dubbel gelijkheidsteken (==) is een losse vergelijking, waarbij wordt gecontroleerd of de waarden, los van het data type, hetzelfde zijn:</p>
+                    <pre><code>let a = 5;
+let b = "5";
+let result = a == b; // true</code></pre>
+                    <p>Een driedubbel gelijkheidsteken (===) is een absolute vergelijking, waarbij wordt gecontroleerd of zowel het datatypes als de waarden gelijk zijn:</p>
+                    <pre><code>let a = 5;
+let b = 5;
+let result = a === b; // true</code></pre>
+                    <p>Andere vergelijkingsoperatoren zijn:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>!==</td>
+                                <td>Absolute niet gelijk aan</td>
+                                <td><pre>3 !== 3 // False</pre></td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Niet gelijk aan</td>
+                                <td><pre>3 != "3" // False</pre></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;</td>
+                                <td>Kleiner dan</td>
+                                <td><pre>3 &lt; 4 // True</pre></td>
+                            </tr>
+                            <tr>
+                                <td>&gt;</td>
+                                <td>Groter dan</td>
+                                <td><pre>3 &gt; 4 // False</pre></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;=</td>
+                                <td>Kleiner of gelijk aan</td>
+                                <td><pre>3 &lt;= 4 // True</pre></td>
+                            </tr>
+                            <tr>
+                                <td>&gt;=</td>
+                                <td>Groter of gelijk aan</td>
+                                <td><pre>3 &gt;= 3 // True</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Wiskundige operatoren</h3>
+                    <p>Javascript bevat standaard aritmetische wiskunde operatoren, waarmee berekeningen kunnen worden gemaakt. Het is mogelijke om deze operatoren tussen haakjes te zetten, om complexere berekeningen te maken</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>Optellen</td>
+                                <td><pre>let result = 5 + 4; // 9</pre></td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Aftrekken</td>
+                                <td><pre>let result = 15 - 4; // 11</pre></td>
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Delen</td>
+                                <td><pre>let result = 15 / 5; // 3</pre></td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Vermenigvuldigen</td>
+                                <td><pre>let result = (5 + 15) * 4; // 80</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De volgende geavanceerdere rekenkundige operatoren zijn ook beschikbaar in Javascript:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Modulo geeft het resterende getal van een breuk</td>
+                                <td><pre>let result = 15 % 4; // 3</pre></td>
+                            </tr>
+                            <tr>
+                                <td>**</td>
+                                <td>Exponent</td>
+                                <td><pre>let result = 3 ** 3; // 27</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Naast het gebruik van berekeningen moet in Javascript vaak een getal met één worden verhoogd of verlaagd. De volgende operatoren worden hiervoor gebruikt</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>++</td>
+                                <td>Verhoogt met één</td>
+                                <td><pre>let a = 5;
+
+console.log("Result: ", ++a); // geeft gelijk 6
+of
+console.log("Result: ", a++); // geeft eerst 5</pre></td>
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>Verlaagt met één</td>
+                                <td><pre>let a = 5;
+
+console.log("Result: ", --a); // geeft gelijk 4
+of
+console.log("Result: ", a--); // geeft eerst 5</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Tijdens het maken van optelberekeningen, moet worden verzekerd dat er alleen met echte getallen wordt gewerkt en niet met strings. Anders zal de string en het getal worden samengevoegd, wat tot resultaten leidt die vanuit een wiskundig perspectief nergens op slaan. Dit probleem vindt alleen plaats bij het gebruik van de optel operator.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 7 ===============-->
+            <div class="chapter__container">
+                <h2>Arrays</h2>
+                
+                <div class="chapter__group">
+                    <h3>Arrays uitgelegd</h3>
+                    <p>Een Array is een lijsten met objecten die wordt gebruikt om gegevens op te slaan, op te halen en te verwerken. Om dit soort handelingen in Javascript uit te voeren zijn er verschillende methodes beschikbaar, waaronder:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>pop()</td>
+                                <td>Verwijdert het laatste element van een array en geeft dit element terug.</td>
+                            </tr>
+                            <tr>
+                                <td>push()</td>
+                                <td>Voegt een item toe aan het einde van de array en geeft dit element terug.</td>
+                            </tr>
+                            <tr>
+                                <td>shift()</td>
+                                <td>Verwijdert het eerste element van een array en geeft dit element terug.</td>
+                            </tr>
+                            <tr>
+                                <td>unshift()</td>
+                                <td>Voegt een item toe aan het begin van de array en geeft dit element terug.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De functionaliteiten van de array methoden zijn makkelijker om te begrijpen door de array als een fysiek rek met opslag plekken voor verschillende objecten te zien. De opslag plekken van een array hebben een bijbehorend index nummer en de eerste opslag plek heeft een index nummer van nul. Objecten kunnen worden verwisseld, uit het rek worden gehaald, in het rek worden gestopt en van plek worden veranderd.</p>
+                    <p>Als een methode zoals shift of unshift wordt gebruikt, verschuiven de eerder aanwezige objecten in de array naar een nieuwe plek. Deze objecten krijgen hierdoor ook een nieuw index nummer.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Arrays in code</h3>
+                    <p>Een array is een instantie van het array-object en wordt gedeclareerd door een variabele met de volgende structuur aan te maken:</p>
+                    <pre><code>const arrayNaam = [1, "string", true];</code></pre>
+                    <p>Een array kan worden aangevuld met verschillende soorten datatypen en de hoeveelheid elementen die aan de array zijn aangevoerd kunnen met het length-eigenschap worden herleid:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Eigenschap</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>length</td>
+                                <td>Specificeert de hoeveelheid elementen in een array.</td>
+                                <td><pre>console.log(collection.length)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om een specifiek item in een array te benaderen, moet het bijbehorende indexnummer van de opslag plek worden gebruikt. De index van een array begint bij 0, waardoor het tweede element in de array bijvoorbeeld een indexnummer van 1 heeft. Het aanroepen van dit element ziet er als volgt uit:</p>
+                    <pre><code>console.log(collection[1])</code></pre>
+                    <p>Er kan een nieuwe waarde aan de elementen in de array worden toegewezen. Dit gaat als volgt:</p>
+                    <pre><code>collection[1] = "camera"</code></pre>
+                    <p>De length eigenschap kan worden gebruikt om nieuwe items aan het einde van een array toe te voegen. De length-eigenschap heeft namelijk dezelfde numerieke waarde die een nieuw voorgesteld element zal krijgen. Dit gaat als volgt:</p>
+                    <pre><code>collection[collection.length] = "new item"</code></pre>
+                    <p>Het is tevens mogelijk om een element toe te wijzen aan indexnummer die nog niet bestaat. De tussenliggende indexnummers waar geen waarde aan is verbonden krijgen dan een waarde van undefined.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Array methodes</h3>
+                    <p>Er zijn verschillende methoden beschikbaar om te werken met arrays en de inhoud van arrays. Deze methoden zijn gedocumenteerd in de MDN Web Docs en zijn te vinden onder "static methods" en "instance methods". Hieronder staan een aantal methodes toegelicht die de inhoud van een array kunnen manipuleren:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>join()</td>
+                                <td>Zet de elementen in de array om naar een string, met een gespecificeerd scheidingsteken (bijv. komma, spatie).</td>
+                                <td><pre>let arrayNaam = ["paper", 26, "pen"];
+arrayNaam.join(" | ");
+console.log(arrayNaam);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>push()</td>
+                                <td>Voegt een item toe aan het einde van de array en geeft dit element terug.</td>
+                                <td><pre>let arrayNaam = ["paper", 26, "pen"];
+arrayNaam.push("pencil", 5);
+console.log(arrayNaam);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>unshift()</td>
+                                <td>Voegt een item toe aan het begin van de array en geeft dit element terug.</td>
+                                <td><pre>let arrayNaam = ["paper", 26, "pen"];
+arrayNaam.unshift("pencil", 5);
+console.log(arrayNaam);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>shift()</td>
+                                <td>Verwijdert het eerste element van een array en geeft dit element terug.</td>
+                                <td><pre>let arrayNaam = ["paper", 26, "pen"];
+arrayNaam.shift();
+console.log(arrayNaam);</pre></td>
+                            </tr>
+                            <tr>
+                                <td>pop()</td>
+                                <td>Verwijdert het laatste element van een array en geeft dit element terug.</td>
+                                <td><pre>let arrayNaam = ["paper", 26, "pen"];
+arrayNaam.pop();
+console.log(arrayNaam);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Daarnaast bestaan er verschillende methodes die geavanceerdere handelingen mogelijk maken, zoals het toepassen van een functie op elk element in de array:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>forEach()</td>
+                                <td>Voert een opgegeven functie één keer uit voor elk array-element.</td>
+                                <td><pre>backpackContents.forEach(function (item) {
+    item = `&lt;li&gt;${item}&lt;/li&gt;`;
+    console.log(item);
+});</pre></td>
+                            </tr>
+                            <tr>
+                                <td>find()</td>
+                                <td>Geeft het eerste element in de array terug dat voldoet aan de opgegeven functie.</td>
+                                <td><pre>let longItems = backpackContents.find(function (item) {
+    if (item.length >= 5) {
+        return item;
+    }
+});
+console.log("longItems:", longItems);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Set: Arrays met unieke items</h3>
+                    <p>Het set-object vermijdt dat een item meerdere malen voorkomt door waarden op te slaan die uniek moeten blijven. Deze waarden kunnen van elk datatype afkomstig zijn. Dit maakt de Set een effectief hulpmiddel voor het beheren van verzamelingen van unieke items.</p>
+                    <p>De Set wordt gemaakt met een new Set() constructor, wat er als volgt uit ziet:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Object</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>set</td>
+                                <td>Slaat een waarden op die uniek moet blijven.</td>
+                                <td><pre>const itemsToPack = new Set();
+itemsToPack.add("water bottle");
+itemsToPack.add("laptop");
+itemsToPack.add("sunscreen");</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het toevoegen en beheren van de items in de Set gaat aan de hand van verschillende methoden:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>add()</td>
+                                <td>Voegt een nieuw item toe aan de Set</td>
+                                <td><pre>itemsToPack.add("water bottle");</pre></td>
+                            </tr>
+                            <tr>
+                                <td>has()</td>
+                                <td>Controleert of een item bestaat in de Set.</td>
+                                <td><pre>itemsToPack.has("water bottle");</pre></td>
+                            </tr>
+                            <tr>
+                                <td>delete()</td>
+                                <td>Verwijdert een item uit de Set</td>
+                                <td><pre>itemsToPack.delete("water bottle");</pre></td>
+                            </tr>
+                            <tr>
+                                <td>size</td>
+                                <td>Geeft het aantal items in de Set</td>
+                                <td><pre>console.log(itemsToPack.size);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met behulp van de beschikbare methoden kan eenvoudig worden gecontroleerd of een item aanwezig is, en kan het indien nodig worden toegevoegd:</p>
+                    <pre><code>const itemsToPack = new Set();
+itemsToPack.add("water bottle");
+itemsToPack.add("laptop");
+itemsToPack.add("sunscreen");
+
+if (!itemsToPack.has("water bottle")) {
+    itemsToPack.add("water bottle");
+} else {
+    console.log("Water bottle is already on the list!");
+}</code></pre>
+                    <p>In tegenstelling tot arrays, biedt de Set geen directe manier om items via de bijbehorende index te benaderen. Ook kunnen items niet worden opgehaald via een specifieke sleutel zoals bij objecten of maps. Dit maakt de Set vooral geschikt voor situaties waarin de uniciteit van de items belangrijk is, maar waar geen toegang via index of sleutel nodig is, bijvoorbeeld:</p>
+                    <pre><code>const itemsToPack = new Set();
+itemsToPack.add("water bottle");
+itemsToPack.add("laptop");
+itemsToPack.add("headphones");
+itemsToPack.add("sunscreen");
+
+const backpack1 = ["water bottle", "laptop"];
+const backpack2 = ["headphones"];
+
+itemsToPack.forEach((item) => {
+    if (backpack1.includes(item)) {
+        console.log(`${item} is packed in backpack 1`);
+    } else if (backpack2.includes(item)) {
+        console.log(`${item} is packed in backpack 2`);
+    } else {
+        console.log(`${item} is not packed`);
+    }
+});</code></pre>
+                    <p>De bovenstaande code controleert welke items wel en niet aanwezig zijn.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 8 ===============-->
+            <div class="chapter__container">
+                <h2>Functies en methodes</h2>
+                
+                <div class="chapter__group">
+                    <h3>Functies in de echte wereld</h3>
+                    <p>Om objecten te kunnen sorteren moet er een ordeningssysteem gekozen en vervolgens toegepast worden. Mensen doen dit intuïtief, maar computers hebben expliciete instructies nodig.</p>
+                    <p>De reeks van stappen waaruit het sorteerproces bestaat, wordt een algoritme genoemd. Functies worden gemaakt door deze algoritmen om te zetten in code. Een functie specificeert een reeks stappen en beslist wat er moet worden gedaan op basis van het resultaat van elke stap.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Functies en methodes</h3>
+                    <p>Functies worden gebruikt om programma's te schrijven. Een functie is een zelfstandige blok code, terwijl methodes functies zijn die zich binnen objecten bevinden.</p>
+                    <p>Functies kunnen op verschillende manieren worden gecreëerd, bijvoorbeeld met een functiedeclaratie:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>function</td>
+                                <td>Specificeert een nieuwe functie.</td>
+                                <td><pre>function doSomeMath(a, b) {
+    let c = a + b;
+    return c;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De functie begint met het function-sleutelwoord, gevolgd door de functienaam, haakjes en accolades. Tussen de haakjes van een functie kan een parameter worden gedeclareerd. Dit kan echter ook worden leeggelaten. De accolades van een functie bevatten het lichaam van de functie, waarin de functie handelingen uitvoert op de data die het ontvangt.</p>
+                    <p>Deze data kan met het return sleutelwoord terug worden gestuurd naar waar de functie oorspronkelijk is gedeclareerd. Dit is echter geen verplichting aangezien de gegevens ook direct kunnen worden teruggegeven.</p>
+                    <p>Een functiedeclaratie heeft een globale scope en is hierdoor overal beschikbaar. Ook kan een functiedeclaratie net als een var opnieuw worden gedeclareerd, waardoor functies per ongeluk kan worden overschreven.</p>
+                    <p>Daarnaast heeft de volgorde waarmee functies worden gedeclareerd ook invloed op de werking van een functie. Een functie is namelijk niet uitvoerbaar als het afhankelijk is van een functie die pas later in de code wordt gedeclareerd.</p>
+                    <p>Een andere manier om een functie te declareren is de function-uitdrukking. Deze manier van functie declareren biedt extra functionaliteiten en heeft de voorkeur in frameworks zoals React.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Uitdrukking</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>function</td>
+                                <td>Specificeert een functie in een uitdrukking.</td>
+                                <td><pre>const doMoreMath = function (a , b) {
+    let c = a * b;
+    return c;
+};</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In een functie-uitdrukking wordt een variabele benoemd, waardoor de functie die in de variabele zit zelf naamloos is. Meestal wordt een const gebruikt, zodat de functie niet per ongeluk overschreven kan worden.</p>
+                    <p>Zowel functiedeclaraties als uitdrukkingen worden aangeroepen door de functienaam met haakjes te volgen waarin mogelijke parameters worden doorgegeven:</p>
+                    <pre><code>console.log("Do some math:", doSomeMath(5, 6));</code></pre>
+                    <p>Als de parameters en de haakjes van een functie-uitdrukking weg worden gelaten, wordt de functie zelf teruggegeven. Wanneer alleen de parameters zelf leeg is, zal er een waarde van NAN (not a number) worden teruggegeven.</p>
+                    <p>Dit wordt opgelost door standaardwaarden in te stellen voor de parameters in de functie-uitdrukking zelf:</p>
+                    <pre><code>const doMoreMath = function (a = 3 , b = 4) {
+    let c = a * b;
+    return c;
+};</code></pre>
+                    <p>Naast functiedeclaraties, uitdrukkingen en de naamloze functie die in de uitdrukking zit, is er nog een type functie beschikbaar. Een IIFE (immediately invoked function expression) wordt onmiddellijk uitgevoerd wanneer de browser het tegenkomt, zonder dat het hoeft te worden aangeroepen:</p>
+                    <pre><code>(function () {
+    let a = 4;
+    let b = 6;
+    let c = doSomeMath(a, b);
+    console.log(`The sum of a and b is: ${c}`);
+})();</code></pre>
+                    <p>Normaal gesproken is het wenselijk om controle te hebben over wanneer een functie wordt uitgevoerd. Desondanks kan een IIFE handig zijn wanneer een functie zo snel mogelijk moet worden uitgevoerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Een traditionele functie</h3>
+                    <p>Een functie heeft altijd een naam dit kan de functienaam zelf zijn of de naam van de variabele die de functie bevat. Daarnaast heeft een functie heeft altijd parameters. Deze parameters kunnen mogelijk leeg blijven, maar er zullen altijd haakjes zijn.</p>
+                    <pre><code>const greenPack = {
+    name: "Frog Pack",
+    color: "green",
+    volume: 8,
+    pocketNum: 3,
+};
+
+const addPack = function (currentPack) {
+    const newArticle = document.createElement("article");
+    newArticle.innerHTML = `
+        &lt;h1&gt;${currentPack.name}&lt;/h1&gt;
+        &lt;ul&gt;
+        &lt;li&gt;Volume: ${currentPack.volume}&lt;/li&gt;
+        &lt;li&gt;Color: ${currentPack.color}&lt;/li&gt;
+        &lt;li&gt;Number of pockets: ${currentPack.pocketNum}&lt;/li&gt;
+        &lt;/ul&gt;
+    `;
+    return newArticle;
+};
+
+const main = document.querySelector("main");
+main.append(addPack(greenPack));</code></pre>
+                    <p>Binnen de haakjes van de parameter kan elk waarde worden doorgegeven. De functie blijft tevens bruikbaar voor nieuwe waarden.</p>
+                    <p>Het door accolades omsloten functie lichaam, bevat de code die daadwerkelijk de handelingen van de functie uitvoert. In de functie lichaam kan data met behulp van return worden teruggegeven. De teruggegeven inhoud kan bijvoorbeeld in een andere variabele, object of array worden geplaatst of het kan direct in de functie worden gebruikt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De arrow functie</h3>
+                    <p>Het gebruik van => functies wordt steeds gebruikelijker als vervanging voor de traditionele function-uitdrukkingen. => Functies bieden een beknoptere manier om functie-uitdrukkingen te schrijven.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Uitdrukking</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>=&gt;</td>
+                                <td>Specificeert een functie.</td>
+                                <td><pre>(a) => {
+    return a + 100;
+};</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een vergelijking tussen beide vormen ziet er als volgt uit:</p>
+                    <pre><code>(function (a) {
+    return a + 100;
+});</code></pre>
+                    <p>Vs</p>
+                    <pre><code>(a) => {
+    return a + 100;
+};</code></pre>
+                    <p>Een => functie kan verder worden vereenvoudigd, tot het punt dat het wellicht moeilijk wordt te begrijpen. Wanneer er slechts één parameter is kunnen de haakjes namelijk weg blijven en de accolades kunnen weg worden gelaten wanneer er slechts één uitdrukking is. Dit ziet er als volgt uit:</p>
+                    <pre><code>(a) => a + 100;</code></pre>
+                    <p>En</p>
+                    <pre><code>a => a + 100;</code></pre>
+                    <p>Een traditionele-functie-declaratie kan worden aangeroepen voordat het is gedeclareerd. Dit is niet de bedoeling, maar werkt wel. In tegenstelling tot traditionele functies kan een => functie echter niet worden aangeroepen voordat het is gedeclareerd.</p>
+                    <p>Daarnaast kunnen => functies niet worden gebruikt voor het declareren van methoden in een object.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Arrow functies en "this"</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>this</td>
+                                <td>Verwijst naar het huidige object.</td>
+                                <td><pre>this.idOpen = lidStatus;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het this-sleutelwoord wordt bijvoorbeeld binnen object-constructors gebruikt om terug te verwijzen naar het object zelf.</p>
+                    <p>Wanneer traditionele functies binnen andere functies worden gebruikt, kan het this-sleutelwoord naar een globaal object wijzen, wat onverwacht gedrag veroorzaakt. In het geval van scope gerelateerde problemen kan het helpen om de functie in een => functie te veranderen. De => functies hebben geen eigen 'this' context. In plaats daarvan wordt er naar de dichtstbijzijnde omringende scope, wat problemen met onjuiste scopeverwijzingen kan helpen voorkomen.</p>
+                    <p>Dit verklaart ook waarom de => functie niet als declaratie voor een methode kan worden gebruikt. De => zou namelijk terugverwijzen naar de globale scope in plaats van de methode scope, waardoor de inhoud binnen de => functie niet correct zou functioneren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Data doorgeven aan een functie met parameters</h3>
+                    <p>Met behulp van parameters en argumenten kan data aan een functie worden doorgegeven, waarna de functie de aangevoerde data zal gebruiken. Een parameter is een placeholder voor argumenten in de functie en argumenten bevatten de waarden die aan de functie worden doorgegeven wanneer deze wordt aangeroepen.</p>
+                    <pre><code>const tipCalculator = (sum, percentage, currency, prefix) => {
+    let tip = sum * (percentage / 100);
+    let total = sum + tip;
+    if (prefix) {
+        console.log(`
+        Sum before tip: ${currency}${sum}
+        Tip percentage: ${percentage}%
+        Tip:            ${currency}${tip.toFixed(2)}
+        Total:          ${currency}${total.toFixed(2)}
+        `);
+    } else {
+        console.log(`
+        Sum before tip: ${sum}${currency}
+        Tip percentage: ${percentage}%
+        Tip:            ${tip.toFixed(2)}${currency}
+        Total:          ${total.toFixed(2)}${currency}
+        `);
+    }
+};
+
+tipCalculator(29.95, 18, "kr", false);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Waardes terugkeren met een functie</h3>
+                    <p>Een functie kan informatie terugsturen naar waar de functie oorspronkelijk is aangeroepen. Dit maakt het mogelijk om de informatie verder te verwerken.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>return</td>
+                                <td>Beëindigt de uitvoering van de functie en specificeert een waarde die moet worden teruggegeven.</td>
+                                <td><pre>function sum(a, b) {
+    let result = a + b;
+    return result;
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het return-sleutelwoord maakt het mogelijk om informatie tussen verschillende functies heen en weer te sturen. Daarnaast kunnen functies opnieuw worden gebruikt voor verschillende doeleinden. Hierdoor kunnen ondersteunende functies worden gemaakt, waardoor alle handelingen niet in één functie hoeven plaats te vinden.</p>
+                    <pre><code>const formatter = (locale = "en-US", currency = "USD", value) => {
+    let formattedValue = new Intl.NumberFormat(locale, {
+        style: "currency",
+        currency: currency,
+    }).format(value);
+
+    return formattedValue;
+};
+
+const tipCalculator = (sum, percentage, locale, currency) => {
+    let tip = sum * (percentage / 100);
+    let total = sum + tip;
+
+    console.log(`
+        Sum before tip: ${formatter(locale, currency, sum)}
+        Tip percentage: ${percentage}%
+        Tip:            ${formatter(locale, currency, tip)}
+        Total:          ${formatter(locale, currency, total)}
+    `);
+};
+
+tipCalculator(29.95, 18, "de-DE", "EUR");</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Return: Verder verkennen</h3>
+                    <p>Het return-sleutelwoord kan naast het teruggeven van waarden ook de verdere uitvoering van andere delen van een functie vroegtijdig beëindigen. In het onderstaande voorbeeld sluit de return-uitdrukking de functie vroegtijdig wanneer de voorwaarde is voldaan, waardoor de rest van de functie niet wordt uitgevoerd:</p>
+                    <pre><code>// Check if there is more than one item
+if (items.length <= 1) {
+    console.log("Discount is only applied when there are more than one item.");
+    return; // Exits the function if not more than one item
+
+// Calculate total price of all items
+let totalPrice = items.reduce((sum, item) => sum + item.price, 0);
+
+// Calculate 15% discount
+let discount = totalPrice * 0.15;
+
+// Calculate final price after discount
+let discountedPrice = totalPrice - discount;
+
+// Return the discounted price
+return discountedPrice;
+}
+
+// Example usage:
+const items = [
+    { name: "Book", price: 20 },
+    { name: "Pen", price: 5 },
+];
+
+const discountedPrice = calculateDiscount(items);
+console.log("Discounted price: $" + discountedPrice.toFixed(2));</code></pre>
+                    <p>Het return-sleutelwoord kan worden gebruikt om functies als resultaat van andere functies terug te geven. Dergelijke functies worden higher-order functies genoemd en bieden de mogelijkheid om configureerbare functies te maken. Higher-order functies maken het mogelijk om functies als argument door te geven, of om nieuwe functies te genereren op basis van bepaalde parameters:</p>
+                    <pre><code>function createMultiplier(multiplier) {
+    return function (value) {
+        return value * multiplier;
+    };
+}
+
+const double = createMultiplier(2);
+const quintuple = createMultiplier(5);
+
+console.log(double(5)); // Outputs: 10
+console.log(quintuple(5)); // Outputs: 25</code></pre>
+                    <p>In dit voorbeeld wordt een functie createMultiplier gedefinieerd die een multiplier als parameter accepteert en een nieuwe functie retourneert. De geretourneerde functie vermenigvuldigt elke opgegeven value met de opgegeven multiplier, wat resulteert in een configureerbare vermenigvuldigingsfunctie.</p>
+                    <p>Daarnaast kan het return-sleutelwoord asynchrone resultaten afhandelen.</p>
+                    <pre><code>async function fetchData(url) {
+    let response = await fetch(url);
+    let data = await response.json();
+    return data; // Returns a promise that resolves to data
+}</code></pre>
+                    <p>In dit voorbeeld stuurt het return-sleutelwoord gegevens terug die van de server zijn gehaald. Wanneer de data is teruggestuurd, kan het in de console worden uitgevoerd of in andere delen van de applicatie worden gebruikt.</p>
+                    <p>Bij arrow functies wordt het return-sleutelwoord vaak helemaal weglaten, omdat deze functies een speciale syntaxis hebben die impliciete teruggave mogelijk maakt. Dit vereenvoudigt functiedeclaraties aanzienlijk in het geval dat er maar één uitdrukking betrokken is:</p>
+                    <pre><code>const add = (a, b) => a + b; // Implicit return</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Callbacks</h3>
+                    <p>Een callback-functie is een functie die als argument wordt doorgegeven aan een andere functie, die vervolgens wordt aangeroepen binnen de buitenste functie om een handeling te voltooien.</p>
+                    <p>Het gebruik van callback-functies is een standaard manier om de volgorde van functie-uitvoering te beheren. Dit is wenselijk wanneer een functie afhankelijk is van de output van een andere functie of wanneer er moet worden gewacht tot een andere functie is voltooid.</p>
+                    <p>Callbacks zijn een veelvoorkomend patroon in JavaScript, gebruikt in scenario's zoals event listeners en setTimeout-functies. Ze helpen bij het maken van flexibele en herbruikbare code door verschillende functies te laten uitvoeren als dat nodig is.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Conditioneel if...else statement</h3>
+                    <p>Conditionele statements bepalen welke handelingen er moeten worden uitgevoerd op basis van of een voorwaarde true of false is.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Statement</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>If...else</td>
+                                <td>Voert de instructies in "if" uit als de voorwaarde waar is. Als de voorwaarde foutief is, wordt de instructie in "else" uitgevoerd.</td>
+                                <td><pre>if (everydayPack.lidOpen === true) {
+    console.log("Backpack is open")
+} else {
+    console.log("Backpack is closed")
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Er is ook een shorthand versie van de if...else statement beschikbaar: De ternary operator. De ternary operator wordt als volgt gebruikt:</p>
+                    <pre><code>console.log(everydayPack.lidOpen ? "open" : "closed")</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Logische operatoren</h3>
+                    <p>Logische operatoren worden gebruikt om te bepalen of een voorwaarde voldaan is. Dit resulteert in een waarde van true of false.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>!==</td>
+                                <td>Absolute niet gelijk aan</td>
+                                <td>3 !== 3 // False</td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Niet gelijk aan</td>
+                                <td>3 != "3" // False</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;=</td>
+                                <td>Kleiner of gelijk aan</td>
+                                <td>3 &lt;= 4 // True</td>
+                            </tr>
+                            <tr>
+                                <td>&gt;=</td>
+                                <td>Groter of gelijk aan</td>
+                                <td>3 &gt;= 3 // True</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De volgende logische operatoren worden gebruikt om complexere verklaringen te maken:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>AND (&amp;&amp;)</td>
+                                <td>Beide voorwaarden moeten waar zijn, om true terug te geven.</td>
+                                <td><pre>if (everydayPack.volume > 15 &amp;&amp; everydayPack.pocketNum >=5) {
+    console.log("Backpack is big")
+} else {
+    console.log("Backpack is small")
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>OR (||)</td>
+                                <td>Ten minste één van de voorwaarden moet waar zijn, om true terug te geven.</td>
+                                <td><pre>if (everydayPack.volume > 35 || everydayPack.pocketNum >=5) {
+    console.log("Backpack is big")
+} else {
+    console.log("Backpack is small")
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Conditioneel switch statement</h3>
+                    <p>Het switch-statement wordt gebruikt wanneer verschillende resultaten gewenst zijn aan de hand van meerdere voorwaarden. Het switch-statement biedt een nettere en eenvoudigere manier om meerdere voorwaarden af te handelen in vergelijking met genestelde if-else-statements.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Statement</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>switch</td>
+                                <td>Evalueert een uitdrukking tegen een reeks van cases. De eerste case die overeenkomt in waarde wordt uitgevoerd.</td>
+                                <td><pre>const usedStatus = () => {
+    let age = everydayPack.backpackAge();
+    age = 1095
+    let description;
+    
+    switch (true) {
+        case age &lt; 30:
+        description = "new"
+        break;
+        case age >= 30 &amp;&amp; age &lt; 365:
+        description = "lightly used"
+        break;
+        case age >= 365 &amp;&amp; age &lt; 1095:
+        description ="used"
+        break;
+        case age >= 1095:
+        description = "old"
+        break;
+        default:
+        console.log(`There is no description for ${age}.`)
+    }
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>case</td>
+                                <td>Specificeert een voorwaarde.</td>
+                                <td><pre>switch (true) {
+    case age >= 365 &amp;&amp; age &lt; 1095:
+    description ="used"
+    break;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>break</td>
+                                <td>Beëindigt een lus of switch.</td>
+                                <td><pre>switch (true) {
+    case age &lt; 30:
+    description = "new"
+    break;
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>default</td>
+                                <td>Specificeert een handeling die wordt uitgevoerd als een waarde met geen van de cases overeenkomt.</td>
+                                <td><pre>switch (true) {
+    case age >= 1095:
+    description = "old"
+    break;
+    default:
+    console.log(`There is no description for ${age}.`)
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Inhoud herhalen</h3>
+                    <p>Er zijn verschillende statements en methoden beschikbaar om een proces steeds te herhalen of om door arrays en geneste objecten te lussen. Eerst wordt in de declaratie van de verklaring gespecificeerd onder welke omstandigheden de lus of iteratie moet worden uitgevoerd. In het lichaam van het statement wordt vervolgens aangegeven wat er moet gebeuren.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Statement</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>for</td>
+                                <td>De standaard manier om door arrays en andere verzamelingen te lussen.</td>
+                                <td><pre>for (let i = 0; i &lt; stuff.length; i++) {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = stuff[i];
+    stuffList.append(listItem);
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>for...of</td>
+                                <td>Een moderne manier om door arrays te lussen, door direct over de waarden te itereren zonder een index nodig te hebben.</td>
+                                <td><pre>for (const item of stuff) {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    stuffList.append(listItem);
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>for...in</td>
+                                <td>Lust door de eigenschappen van een object.</td>
+                                <td><pre>const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+    console.log(`${property}: ${object[property]}`);
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De forEach methode is de voorkeursmethode voor array's in modern JavaScript, waarbij een functie wordt toegepast op elk item in de matrix.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>forEach()</td>
+                                <td>Voert een opgegeven functie één keer uit voor elk array-element.</td>
+                                <td><pre>for (const singleObject in nestedObjects) {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = `Name: ${nestedObjects[singleObject].name}`;
+    stuffList.append(listItem);
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De for...in-loop wordt gebruikt om door de eigenschappen van een object te lussen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De map() array methode gebruiken</h3>
+                    <p>De map-methode voor arrays wordt gebruikt bij het werken met complexe lijsten met gegevens en bij binnen frameworks zoals React.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>map()</td>
+                                <td>Voert een handeling uit op de items van een bestaande array en geeft de items terug in een nieuwe array.</td>
+                                <td><pre>const stuffItems = stuff.map((item) => {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    return listItem;
+});</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De map methode is handig wanneer extra bewerkingen op array items moeten worden uitgevoerd, bijvoorbeeld:</p>
+                    <pre><code>const stuff = ["piggy", "headlamp", "pen", "pencil", "eraser", "water bottle"];
+
+const article = document.querySelector("article");
+let stuffList = document.createElement("ul");
+
+// map() through the stuff array to make a new stuffItems array.
+const stuffItems = stuff.map((item) => {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    return listItem;
+});
+
+// Append each element from the stuffItems array to the stuffList &lt;ul&gt;
+stuffItems.forEach((item) => {
+    stuffList.append(item);
+});
+
+// Append stuffList to the &lt;article&gt;
+article.append(stuffList);</code></pre>
+                    <p>De map()-methode is uitsluitend bedoeld voor het maken van een nieuwe array om iets verder met de gegevens te doen. Een forEach loop hoort te worden gebruikt wanneer er door een array moet worden gecirkeld.</p>
+                </div>                
+            </div>
+            
+            <!--=============== CHAPTER 9 ===============-->
+            <div class="chapter__container">
+                <h2>Events</h2>
+                
+                <div class="chapter__group">
+                    <h3>Dom gebeurtenissen uitgelegd</h3>
+                    <p>Event handling stelt programma's in stelt om gebruikersinteracties te detecteren en erop te reageren. Elke van deze gebeurtenissen kan een zelf gedefinieerde functie met zich mee dragen die specificeren welke handeling wordt uitgevoerd wanneer de gebeurtenis plaatsvindt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Gebruikelijke DOM gebeurtenissen</h3>
+                    <p>Elke handeling die plaatsvindt in de browser is een gebeurtenis; klikken, scrollen en typen worden bijvoorbeeld als een gebeurtenis beschouwd.</p>
+                    <p>JavaScript kan monitoren of een gebeurtenis plaats heeft gevonden met behulp van event listeners, die aan elk element binnen het venster of het Document Object Model kan worden toegevoegd:</p>
+                    <pre><code>// Update the x and y displays to show the current mouse position.
+const mousePosition = (event) => {
+    posX.innerText = event.pageX;
+    posY.innerText = event.pageY;
+};</code></pre>
+                    <p>Vervolgens kunnen specifieke functies worden uitgevoerd wanneer deze gebeurtenissen zich voordoen. De volledige lijst van gebeurtenissen is op MDN-webdocs terug te vinden.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Event listeners</h3>
+                    <p>De addEventListener-methode wordt aan een doelwit toegevoegd (meestal een element) en roept een functie aan wanneer deze gebeurtenis wordt gedetecteerd.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>addEventListener()</td>
+                                <td>Roept een functie aan wanneer een gespecificeerde gebeurtenis wordt gedetecteerd.</td>
+                                <td><pre>button.addEventListener("click", (e) => {
+    console.log('Event fired: ${e}')
+});</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De basisstructuur van een EventListener heeft een doelwit, zoals een vensterobject, documentobject of een willekeurig DOM-element.</p>
+                    <p>De addEventListener-methode die dit doelwit opvolgt bestaat uit twee hoofdargumenten: De gebeurtenis die wordt gemonitord en een callbackfunctie of functie die wordt uitgevoerd wanneer de gebeurtenis plaatsvindt.</p>
+                    <p>Er is een optioneel derde argument voor een options-object, dat zelden wordt gebruikt en meestal op false wordt ingesteld om standaardgedrag te garanderen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Geavanceerde event listeners en "this"</h3>
+                    <p>Een arrow-functie heeft geen eigen "this" en weet niet naar welk object er wordt verwezen wanneer het this-sleutelwoord wordt gebruikt. Een functie declaratie heeft wel een eigen "this" context, wat het geschikter maakt voor bepaalde event listener scenario's.</p>
+                    <p>Het is vaak nuttig om de callback-functie te scheiden van de event listener voor een betere organisatie en leesbaarheid van de code. Hierdoor kan complexere logica netjes worden afgehandeld.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>This: Een verdere verkenning</h3>
+                    <p>In Javascript is het mogelijk om meerdere methoden aan elkaar te koppelen om de code te vereenvoudigen:</p>
+                    <pre><code>let greeting = "Hello";
+greeting = greeting.concat(" World").toUpperCase().trim();
+console.log(greeting); // Outputs: "HELLO WORLD"</code></pre>
+                    <p>Het this-sleutelwoord wordt gebruikt om te verwijzen naar het object waarop een methode wordt aangeroepen. Het this-sleutelwoord kan echter ook worden gebruikt om methodes binnen klassen te koppelen. Dit vereenvoudigt de code en verbetert de leesbaarheid:</p>
+                    <pre><code>class Backpack {
+    constructor(
+    // Defines parameters:
+        name,
+        volume,
+        color,
+        pocketNum,
+        strapLengthL,
+        strapLengthR,
+        lidOpen
+        ) {
+        this.name = name;
+        this.volume = volume;
+        this.color = color;
+        this.pocketNum = pocketNum;
+        this.strapLength = {
+            left: strapLengthL,
+            right: strapLengthR,
+        };
+        this.lidOpen = lidOpen;
+    }
+
+    toggleLid(lidStatus) {
+    this.lidOpen = lidStatus;
+    return this; // Return the current object to enable chaining
+    }
+
+    newStrapLength(lengthLeft, lengthRight) {
+    this.strapLength.left = lengthLeft;
+    this.strapLength.right = lengthRight;
+    return this; // Return the current object to enable chaining
+    }
+}
+
+// Usage
+const myBackpack = new Backpack("Hiker", 30, "blue", 5, 35, 35, false);
+myBackpack.toggleLid(true).newStrapLength(25, 25);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Argumenten doorgeven door event listeners</h3>
+                    <p>Het event object wordt automatisch doorgegeven aan de callback functie, bij het instellen van een event listener. Het object kan worden vastlegt en gebruikt door het te benoemen als parameter in de functie.</p>
+                    <pre><code>button.addEventListener("click", (event) => {
+    console.log(event)
+    status.innerText === "open" ? status.innerText = "closed" : status.innerText = "open"
+})</code></pre>
+                    <p>Om extra argumenten door te geven aan de callback-functie, kan de callback-functie in een anonieme functie worden gestopt. Hierdoor kan de oorspronkelijke functie worden aangeroepen met de gewenste argumenten.</p>
+                    <pre><code>button.addEventListener("click", (event) => {
+    lidToggle(event, button, newArg)
+})</code></pre>
+                    <p>Bij het gebruik van arrow-functies, verwijst "this" naar de internals van de pijlfunctie, wat problemen kan veroorzaken. Om de juiste context te behouden, wordt het relevante element als argument en wordt dit gebruik in plaats van "this".</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Automatisch events starten</h3>
+                    <p>Event listeners kunnen programmatisch worden geactiveerd door een nieuw Event object aan te maken en de dispatchEvent-methode te gebruiken op het doelelement.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>dispatchEvent()</td>
+                                <td>Stuurt een gebeurtenis naar het object en roept (synchroon) de betrokken event listeners in de juiste volgorde op.</td>
+                                <td><pre>const clickEvent = new Event("click");
+
+// Dispatch the event on the button
+button.dispatchEvent(clickEvent);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De CustomEvent-constructor extra gegevens doorgeven met een gebeurtenis. Dit is handig voor het doorgeven van aangepaste berichten of gegevens met de gebeurtenis.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Constructor</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>CustomEvent()</td>
+                                <td>Specificeert de extra gegevens die worden doorgegeven met een gebeurtenis.</td>
+                                <td><pre>// Create a custom click event
+const customClickEvent = new CustomEvent("click", {
+    detail: { message: "This is a custom click!" },
+});
+
+// Dispatch the custom event on the button
+button.dispatchEvent(customClickEvent);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Input van een gebruiker kan worden gesimuleerd doormiddel van constructors zoals InputEvent, KeyboardEvent en MouseEvent. Dit is handig voor test- of demodoeleinden.</p>
+                    <pre><code>const input = document.querySelector("#inputField");
+const text = "Hello!";
+let index = 0;
+
+function typeCharacter() {
+    if (index < text.length) {
+        const keyEvent = new KeyboardEvent("keydown", {
+            key: text[index],
+            code: `Key${text[index].toUpperCase()}`,
+            charCode: text[index].charCodeAt(0),
+    });
+        input.value += text[index];
+        input.dispatchEvent(keyEvent);
+        index++;
+        setTimeout(typeCharacter, 100);
+    }
+}
+
+typeCharacter();</code></pre>
+                </div>                
+            </div>              
+
+            <!--=============== CHAPTER 10 ===============-->
+            <div class="chapter__container">
+                <h2>JS troubleshooten en valideren</h2>
+                
+                <div class="chapter__group">
+                    <h3>Javascript troubleshooten in de browser</h3>
+                    <p>De browserconsole is één van de primaire hulpmiddelen voor het loggen van waarden en het debuggen van JavaScript-code. De waarden van variabelen en elementen kunnen in de browserconsole worden bekeken, zodat de problemen kunnen worden geïdentificeerd.</p>
+                    <p>Het is tevens mogelijk om code direct in de browser te schrijven en te testen. De console log geeft hierbij directe feedback in de vorm van foutmeldingen. Deze foutmeldingen geven de problemen in de code aan, zoals syntaxisfouten en wijzen naar het specifieke bestand en regelnummer.</p>
+                    <p>Er zijn meerdere geavanceerde tools beschikbaar voor het debuggen van code. Eén van deze tools is terug te vinden in het Sources tabblad van de ontwikkelaarstools in de browser. Hier kunnen breakpoints aan het script bestand worden toegevoegd, waarmee delen van de code getest in realtime kunnen worden getest om te zien wat er gebeurt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De React component begrijpen</h3>
+                    <p>Inzicht in de fundamenten van JavaScript helpt bij het begrijpen van frameworks zoals React, zelfs zonder voorafgaande kennis van React.</p>
+                    <p>React componenten gebruiken vaak objecten en klassen, vergelijkbaar met JavaScript, waardoor het gemakkelijker is om de structuur en functionaliteit te begrijpen.</p>
+                    <p>Met JSX kan HTML-achtige syntaxis binnen JavaScript worden geschreven, wat het proces van het maken en beheren van UI-elementen in React vereenvoudigt.</p>
+                </div>                
+            </div>  
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

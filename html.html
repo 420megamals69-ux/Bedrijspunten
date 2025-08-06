@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>HTML Essential Training</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>HTML Essential Training</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>De rol van HTML</h2>
+
+                <div class="chapter__group">
+                    <h3>De rol van HTML</h3>
+                    <p>Een website die vandaag gecodeerd wordt, kan over vijf of tien jaar nog steeds werken zonder updates. De code kan functioneren op oude computers en browsers, en het internet draait op diverse apparaten zoals Mac, Windows, iOS, Android, Linux, e-boeklezers, gameconsoles, televies en horloges. Deze veelzijdigheid is mogelijk dankzij de drie verschillende programmeertalen die elk een specifiek deel van het werk doen: HTML, CSS en Javascript.</p>
+                    
+                    <p>HTML staat voor HyperText Markup Language. HTML markeert de inhoud van een site en vertelt de computer wat deze inhoud is. HTML bevat geen programmeerlogica, loops of functies, omdat het een declaratieve taal is. Het declareert simpelweg wat een browser moet doen. Daarnaast is HTML instaat om resultaten op te leveren zelfs als iets ontbreekt of verkeerd is gespeld. HTML gokt in deze scenario's wat er wordt bedoeld, repareer en weergeeft de pagina alsnog. Van de drie talen is HTML het meest robuust.</p>
+                    
+                    <p>CSS staat voor Cascading Style Sheets en verzorgt de visuele stijl en lay-out voor alles op de webpagina. Het definieert bijvoorbeeld kleuren, typografie en grootte, en maakt het mogelijk om eenvoudige animaties en interacties aan een webpagina toe te voegen. CSS bevat wat computerwetenschappelijke structuur waardoor de taal kwetsbaarder, maar krachtiger is. Als er iets misgaat in CSS, slaat de browser dat gedeelte van de code over. De rest van de stijlen worden echter wel toegepast. Het resultaat is misschien niet helemaal correct, maar het grootste gedeelte zal werken.</p>
+                    
+                    <p>Javascript is een programmeertaal die het mogelijk maakt om krachtigere interactiviteit te creëren. Hoe complexer en rijker een interface wordt, hoe waarschijnlijker het is dat Javascript is gebruikt. Van de drie talen is Javascript het krachtigst en het kwetsbaarst. Als er iets mis is met de code, of als de browser te oud is om te weten wat die code betekent, zal de browser de Javascript code niet uitvoeren.</p>
+                    
+                    <p>Ontwikkelaars kunnen de kwaliteiten van deze talen combineren. Als iets met HTML kan worden gedaan, wordt het ook met HTML gedaan aangezien dit het robuustere deel van de stack is. De rest van de talen worden gebruikt, als HTML ergens niet toe instaat is.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Tekst formateren</h2>
+                
+                <div class="chapter__group">
+                    <h3>De syntax van HTML-elementen</h3>
+                    <p>Inhoud in HTML wordt gedefinieerd doormiddel van een HTML-tag. Een tag begint met een kleiner-dan haak gevolgd door een letter, woord of afgekort woord, en eindigt met een groter-dan haak. Een HTML-tag voor een paragraaf ziet er als volgt uit: <code>&lt;p&gt;</code></p>
+                    <p>Er zijn twee soorten tags: opening tags en closing tags. De bovenstaande tag is een voorbeeld van een opening tag. De closing tag lijkt hierop, maar bevat een extra schuine streep, dus: <code>&lt;/p&gt;</code>. De opening tag markeert het begin, de inhoud staat in het midden en de closing tag markeert het einde. Denk bijvoorbeeld aan: <code>&lt;p&gt;Dit is een paragraaf.&lt;/p&gt;</code></p>
+
+                    <p>De opening en closing tags vormen samen een element. Alhoewel niet elk element een closing tag heeft, hebben veel HTML-elementen zowel een opening als een closing tag. Het vergeten van de closing tag aan het einde van een element is een van de meest gemaakte fouten.</p>
+                    <p>Het is mogelijk om een HTML-element in het ander HTML-element te nesten, bijvoorbeeld: <code>&lt;p&gt;Deze paragraaf bevat &lt;em&gt;benadrukte tekst&lt;/em&gt; voor het effect.&lt;/p&gt;</code>. Een HTML-document bestaat in feite volledig uit elementen die in elkaar zijn genest. Hier is nog een praktisch voorbeeld van hoe HTML is genest:</p>
+                    <pre><code>&lt;article&gt;
+    &lt;h1&gt;Dit is een headline&lt;/h1&gt;
+    &lt;p&gt;Dit is de eerste paragraaf.&lt;/p&gt;
+    &lt;p&gt;Dit is de tweede paragraaf met &lt;em&gt;benadrukte tekst&lt;/em&gt; voor het effect.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                    <p>Alles wat na de closing tag van het artikel komt, wordt weergegeven op dezelfde HTML-pagina. Door de closing tag begrijpt de browser echter dat de rest buiten dit artikel valt. De browser houdt namelijk rekening met de structuur van hoe HTML-elementen genest zijn en creëert een uitgebreide stamboom van wat met wat verwant is en hoe: Dit is de DOM.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Paragrafen</h3>
+                    <p>Als code in een bestand wordt gezet zonder opmaak, wordt het weergeven als één opeenvolgend blok met tekst. De browser gaat ervan uit dat de code één lange string is. De inhoud moet met HTML worden gedefinieerd, zodat de browser weet wat het moet doen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>p</pre></td>
+                                <td>Specificeert dat een stuk tekst een paragraaf moet zijn.</td>
+                                <td><pre>&lt;p&gt;Dit is een paragraaf.&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Headlines</h3>
+                    <p>Headlines helpen om de inhoud van de pagina op te splitsen, zodat mensen gemakkelijker kunnen begrijpen wat de structuur en de informatie op een pagina is. HTML bevat 6 elementen voor het identificeren van headlines: h1, h2, h3, h4, h5 en h6. Elk van deze headlines verschild visueel van de ander. H1 is de grootst en het meest prominente, h6 is de kleinste en het meest subtiel en de rest valt daar tussenin.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>h1</pre></td>
+                                <td>Specificeert dat een stuk tekst een header (1) moet zijn.</td>
+                                <td><pre>&lt;h1&gt;Dit is een header.&lt;/h1&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Headlines voor een tekst worden niet gekozen op basis van hoe het eruit ziet, aangezien het aanpassen van stijlen mogelijk is met CSS. In plaats daarvan wordt een headline gekozen op basis van wat het betekent. Denk bijvoorbeeld aan h1 hebben voor een titel en h2 voor de subtitels. Intentioneel zijn met het gebruik van headlines heeft bijvoorbeeld een grote invloed op gebruikers die met een schermlezer de pagina navigeren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Bold en italics</h3>
+                    <p>HTML bevat twee elementen voor bold en twee elementen voor italic, om de diverse gebruikscontexten te kunnen dekken. De eerste gebruikscontext is om in een zin ergens de nadruk op te leggen. De tweede gebruikscontext zijn voor de scenario's waarin de typografie regels dicteren dat de tekst bold of italic gemarkeerd moet zijn. De elementen worden niet gebruikt met het doel om de stijl van een stuk tekst aan te passen. In deze gevallen wordt CSS gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>em</pre></td>
+                                <td>Emphasize legt ergens de nadruk op en brengt semantische betekenis over.</td>
+                                <td><pre>&lt;p&gt;Mijn &lt;em&gt;favoriete karakter&lt;/em&gt; is Peter.&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>i</pre></td>
+                                <td>Italic markeert de tekst; er hoeft geen speciale betekenis over gebracht te worden aan schermlezer.</td>
+                                <td><pre>&lt;p&gt;Mijn neefje keek &lt;i&gt;Sesam straat&lt;/i&gt; op tv.&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>strong</pre></td>
+                                <td>Strong brengt belang, ernst en urgentie over. Heeft ook een semantische betekenis.</td>
+                                <td><pre>&lt;p&gt;&lt;strong&gt;Attentie!&lt;/strong&gt; Wees optijd.&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>b</pre></td>
+                                <td>Bold markeert de tekst; er hoeft geen speciale betekenis over gebracht te worden aan schermlezer.</td>
+                                <td><pre>&lt;p&gt;Binnen deze tekst &lt;b&gt;trekt dit meeste aandacht.&lt;/b&gt;&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Lijsten</h3>
+                    <p>Lijsten worden bijvoorbeeld gebruikt om navigatie balken en collages te maken. In HTML zijn er drie soorten lijsten. Ongeordende lijsten, geordende lijsten en definitielijsten.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>ul</pre></td>
+                                <td>De meest gebruikte lijst. Een unordered list rangschikt de items die geen vaste volgorde hebben. Denk bijvoorbeeld aan een boodschappenlijst.</td>
+                                <td><pre>&lt;ul&gt;
+    &lt;li&gt;Bloem&lt;/li&gt;
+    &lt;li&gt;Zout&lt;/li&gt;
+    &lt;li&gt;Peper&lt;/li&gt;
+&lt;/ul&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>ol</pre></td>
+                                <td>Een ordered list rangschikt de items die een vaste volgorde hebben. Denk bijvoorbeeld aan een recept.</td>
+                                <td><pre>&lt;ol&gt;
+    &lt;li&gt;Stap 1.&lt;/li&gt;
+    &lt;li&gt;Stap 2.&lt;/li&gt;
+    &lt;li&gt;Stap 3.&lt;/li&gt;
+&lt;/ol&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>dl</pre></td>
+                                <td>Een definition list rangschikt termen met de bijbehorende definities. Denk bijvoorbeeld aan een lijst waarin wetenschappelijke afkortingen worden uitgelegd.</td>
+                                <td><pre>&lt;dl&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+        &lt;dd&gt;Definitie&lt;/dd&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+        &lt;dd&gt;Definitie&lt;/dd&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+        &lt;dd&gt;Definitie&lt;/dd&gt;
+&lt;/dl&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In de ongeordende lijsten en geordende lijsten wordt er gebruik gemaakt van het li-element, wat staat voor list item. In het li-element worden de items genesteld die in de lijst moeten worden verwerkt. Het li-element wordt vervolgens in een ul- of een ol-element genesteld.</p>
+                    <p>In van de definitielijst wordt er gebruik gemaakt van de dt- en dd-elementen. Het dt-element staat voor definition term en nestelt de term. De omschrijving van een definitie wordt in het dd-element genesteld, wat staat voor definition description. De dt- en dd-elementen hoeven niet onderling te worden genesteld.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Quotes</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>cite</pre></td>
+                                <td>Cite crediteert de persoon waarvan het stuk tekst afkomstig is.</td>
+                                <td><pre>&lt;cite&gt;— Vincent Bosma&lt;/cite&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>blockquote</pre></td>
+                                <td>Blockquote onderscheidt een citaat van de omringende tekst.</td>
+                                <td><pre>&lt;blockquote&gt;
+&lt;p&gt;Dit is een quote.&lt;/p&gt;
+&lt;cite&gt;— Vincent Bosma&lt;/cite&gt;
+&lt;/blockquote&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>quote</pre></td>
+                                <td>Quote laat de browser aanhalingstekens genereren voor het geselecteerde stuk tekst op basis van de gedetecteerde taal.</td>
+                                <td><pre>&lt;p lang="fr"&gt;Vincent Bosma a déclaré: &lt;q&gt;Ceci est une citation.&lt;/q&gt;&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Sommige HTML-elementen markeren iets dat deel uitmaakt van een groter geheel en sommige elementen zijn dit grotere geheel. Inline elementen omsluiten tekstgedeelten die genesteld zijn in andere elementen. Denk bijvoorbeeld aan q, strong, b, i, en em. Block-level elementen starten een nieuw code block en dit block kan worden opgevolgd door een ander block. Denk hierbij aan blockquote, p en ul. Met CSS kan het gedrag van de lay-out worden veranderd van block naar inline en visa versa.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Datum en tijden</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>time</pre></td>
+                                <td>Time markeert een datum of een tijdstip.</td>
+                                <td><pre>&lt;time&gt;8 mei 2024&lt;/time&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het doel van het time-element is om computers te laten weten wanneer een gespecificeerde datum of tijdstip plaatsvindt. Het time-element wordt uitgebreid met een HTML-attribuut om dit mogelijk te kunnen maken. Aan elk HTML-element kan een attribuut worden toe gevoegd, dit gaat als volgt:</p>
+                    <pre><code>&lt;elementnaam attribuutnaam=""&gt;</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td><pre>datetime</pre></td>
+                                <td>Datetime laat de computer een exacte datum of een exact tijdstip interpreteren. De volgende structuur wordt gehandhaafd tijdens op opstellen van een datum: YYYY-MM-DD. Voor een tijdstip is dit: hh-mm-ss.ddd+-hh:mm. De laatste waarden representeren de optionele seconden, decimalen en tijdzone (GMT).</td>
+                                <td><pre>&lt;time datetime="2024-05-08"&gt;8 mei 2024&lt;/time&gt;
+
+&lt;time datetime="21:15"&gt;9:15 pm&lt;/time&gt;
+
+&lt;time datetime="2024-05-08 21:15"&gt;Morgen om 9:15. 2024&lt;/time&gt;
+
+&lt;time datetime="2024-05-08T21:15"&gt;Morgen om 9:15. 2024&lt;/time&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Code, pre en br</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>code</pre></td>
+                                <td>Code markeert en formatteert tekst die code representeert.</td>
+                                <td><pre>&lt;p&gt;
+    CSS code &lt;code&gt;{color:green;}&lt;/code&gt; en HTML code &lt;code&gt;&amp;lt;H4&amp;gt;&lt;/code&gt;
+&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>br</pre></td>
+                                <td>Line break creëert een regeleinde.</td>
+                                <td><pre>&lt;p&gt;
+Deze&lt;br&gt;
+tekst&lt;br&gt;
+springt&lt;br&gt;
+in&lt;br&gt;
+&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>pre</pre></td>
+                                <td>Preserve laat de browser het gebruik van insprongen en regeleinden vanuit de HTML overnemen.</td>
+                                <td><pre>&lt;pre&gt;
+&lt;code&gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt; Bloem &amp;lt;li/&amp;gt;
+    &amp;lt;li&amp;gt; Zout &amp;lt;li/&amp;gt;
+    &amp;lt;li&amp;gt; Peper &amp;lt;li/&amp;gt;
+&amp;lt;ul/&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De voorbeelden met het code-element bevatten deze HTML-entiteiten: &amp;lt; en &amp;gt;. De entiteiten worden gebruikt om het kleiner dan en groter dan symbool te creëren. Zonder deze HTML-entiteiten zou h4 als een h4-element worden gezien. Hierdoor zou &lt;h4&gt; niet op het scherm worden weergeven aangezien het wordt uitgevoerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Superscripts, subscripts en kleine tekst</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>sub</pre></td>
+                                <td>Subscript creëert karakters onder de normale teksthoogte. Denk bijvoorbeeld aan H2O.</td>
+                                <td><pre>&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>sup</pre></td>
+                                <td>Superscript creëert karakters boven de normale teksthoogte. Denk hierbij aan een exponent of voetnoot.</td>
+                                <td><pre>&lt;p&gt;5&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>small</pre></td>
+                                <td>Small specificeert dat een iets van minder groot belang is op een pagina. Hieronder valt bijvoorbeeld copyright-markering.</td>
+                                <td><pre>&lt;small&gt;© 2024 Een bedrijf&lt;/small&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is mogelijk om het sup-element kan voor wiskundige doeleinden te gebruiken. Wanneer complexe vergelijkingen op een website moeten worden weergegeven, wordt doorgaans MathML gebruikt. MathML is een gespecialiseerde opmaaktaal voor wiskunde, en is krachtiger dan HTML op dit gebied.</p>
+                    <p>Tevens wordt small niet gebruikt om een bepaalde een stuk tekst te verkleinen. Gebruiken. In deze gevallen wordt CSS wordt gebruikt. Het wordt gebruikt om te specificeren dat iets minder prominent moet zijn.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>De kracht van HTML begrijpen</h2>
+                
+                <div class="chapter__group">
+                    <h3>HTML debuggen</h3>
+                    <p>Developer Tools (f12) biedt inzicht in de code en prestaties van een website. Het weergeeft bijvoorbeeld de HTML en de CSS van een website. In het HTML-paneel van Developer Tools is de DOM zichtbaar die de browser heeft gegenereerd. Aan de hand van de dom kan onderzocht worden hoe een webpagina is gestructureerd en welke elementen het bevat.</p>
+                    <p>Het HTML-paneel gebruiken om de website van een andere ontwikkelaar te bekijken, is een effectieve manier om ideeën op te doen bij twijfel over welke markeringen te gebruiken. Bovendien kan het HTML-paneel worden ingezet om fouten te debuggen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>HTML-attributen</h3>
+                    <p>Een attribuut kan aan een element worden toegevoegd om het meer functionaliteit te geven. Sommige attributen zijn alleen toepasbaar op een bepaald elementen, zoals het datetime attribuut. Sommige van de attributen werken op een aantal elementen, maar niet op allemaal. Een globaal attribuut werkt op elk element.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td><pre>class</pre></td>
+                                <td>Het meest gebruikte attribuut. Class koppelt een naam aan elk element die het omvat. De naam kan opgeroepen worden met CSS en Javascript.</td>
+                                <td><pre>&lt;p class="tekst"&gt;
+    Dit is een tekst
+&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>id</pre></td>
+                                <td>ID koppelt een unieke naam aan elk element die het omvat. De naam kan opgeroepen worden met CSS en Javascript.</td>
+                                <td><pre>&lt;p class="tekst" id="voorbeeld-tekst"&gt;
+    Dit is een tekst
+&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>contenteditable</pre></td>
+                                <td>Contenteditable definieert of de inhoud van een element aanpasbaar is voor de gebruiker. Een element is aanpasbaar als het een waarde van true heeft.</td>
+                                <td><pre>&lt;blockquote contenteditable="true"&gt;
+    Schrijf hier een eigen quote.
+&lt;/blockquote&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>lang</pre></td>
+                                <td>Language vertelt de browser in welke taal de inhoud is. Wordt opgevolgd met de short code die de taal representeert.</td>
+                                <td><pre>&lt;p lang="nl"&gt;
+    Een zin in het Nederlands.
+&lt;/p&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>dir</pre></td>
+                                <td>Direction specificeert in welke richting een tekst vloeit. De richting van de tekst wordt aangegeven met ltr (left to right) en rtl (right to left).</td>
+                                <td><pre>&lt;p dir="ltr"&gt;
+    Dit leest van links naar rechts.
+&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De vier belangrijkste globale attributen zijn: Class, ID, Lang en Dir. De unieke elementnamen maken het id attribuut handig voor Javascript doeleinden en gerichte links. Voor CSS-doeleinden wordt het class-attribuut doorgaans geprefereerd, aangezien de specificiteit van een id-attribuut hier voor minder flexibiliteit zorgt.</p>
+                    <p>Het contenteditable- attribuut biedt alleen de functionaliteit om de inhoud van een element aan te passen. Het attribuut veranderd niet de inhoud van de HTML, wat zichtbaar is als de webpagina wordt vernieuwd. Additionele code moet worden toegevoegd, om het vastleggen en opslaan van aanpassingen mogelijk te maken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>ARIA rollen</h3>
+                    <p>ARIA-rollen zijn globale attributen die de browser helpt om elementen te interpreteren. Dit voorziet de ondersteunde technologieën van de informatie die nodig is om een site toegankelijk te maken voor mensen met beperkingen. Idealiter is er geen ARIA-rol nodig door het gebruik van correcte HTML-elementen. Om sommige visuele ontwerpen te kunnen maken, is dit echter niet mogelijk.</p>
+                    <p>In de accessibility inspector van Developer Tools staat de accessibility tree van een website weergeven. De accessibility tree wordt gegenereerd op basis van de DOM en wordt door ondersteunende hulpmiddelen gebruikt. Met de accessibility inspector kan bekeken worden hoe een schermlezer de tekst zal interpreteren. Aan de hand van deze informatie kan worden bepaald waar ARIA-rollen nodig zijn.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>aria-label</pre></td>
+                                <td>Aria-label vertelt de browser wat het op moet lezen. Het voegt tekst toe aan de accessibility tree.</td>
+                                <td><pre>&lt;h1 aria-label="Hallo"&gt;
+    &lt;div class="grid"&gt;
+        &lt;span&gt;H&lt;/span&gt;
+        &lt;span&gt;a&lt;/span&gt;
+        &lt;span&gt;l&lt;/span&gt;
+        &lt;span&gt;l&lt;/span&gt;
+        &lt;span&gt;o&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/h1&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td><pre>aria-hidden</pre></td>
+                                <td>Aria-hidden dicteert of een element en alle onderliggende elementen worden weergeven in de accessibility tree. Het kan elementen verwijderen door het een waarde van true te geven.</td>
+                                <td><pre>&lt;h1 aria-label="Hallo"&gt;
+    &lt;div class="grid" aria-hidden="true"&gt;
+        &lt;span&gt;H&lt;/span&gt;
+        &lt;span&gt;a&lt;/span&gt;
+        &lt;span&gt;l&lt;/span&gt;
+        &lt;span&gt;l&lt;/span&gt;
+        &lt;span&gt;o&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/h1&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>HTML-formateren</h3>
+                    <p>De weergave van HTML wordt meestal niet beïnvloed door spaties, tabs en regeleinden. Er zijn een paar uitzonderingen zoals de pre-, code-, en textarea-elementen of CSS, maar meestal negeert de browser echter allesbehalve enkele spaties.</p>
+                    <p>Ontwikkelaars houden code begrijpelijk door commentaar aan code toe te voegen. Met commentaar wordt bijvoorbeeld uitgelegd wat de functie van een stuk code doet. In HTML wordt commentaar als volgt toegepast: <code>&lt;!-- Dit is voorbeeld van commentaar --&gt;</code></p>
+                    <p>Ontwikkelaars schrijven tegenwoordig alle HTML-elementen in kleine letters. Vroeger werden HTML-elementen vaak met een hoofdletter geschreven. Naarmate HTML evolueerde, raakten ontwikkelaars echter overtuigd dat het beter is om alle elementen met kleine letters te schrijven. Desondanks ondersteunen browsers beide methoden.</p>
+                    <p>Sommige elementen zijn erg kort, zoals <code>&lt;p&gt;</code> of <code>&lt;i&gt;</code> terwijl anderen, zoals <code>&lt;article&gt;</code> of <code>&lt;video&gt;</code> uit volledige woorden bestaan. Dit komt omdat computers minder geheugen hadden toen HTML werd uitgevonden. Door de gelimiteerde geheugenruimte moest er rekening gehouden worden met de hoeveelheid karakters. Naarmate HTML zich ontwikkelde, groeide de hoeveelheid geheugenruimte in computers. Code gemakkelijk leesbaar en begrijpelijk maken, werd daarom belangrijker dan het besparen van geheugenruimte.</p>
+                    <p>De nieuwere HTML-elementen hebben altijd een opening- en closingstag. Sommige oudere elementen bevatten echter geen closingstag. Ontwikkelaars kunnen ervoor kiezen om een afsluitende schuine streep in deze elementen te gebruiken of niet. Browsers ondersteunen beiden opties.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Vreemde karakters</h3>
+                    <p>HTML-entiteiten zorgen ervoor dat de browser het gewenste teken op de pagina plaatst, inclusief niet-afbrekende spaties.</p>
+                    <p>Een karakter kan mogelijk van een pagina verdwijnen als het op een HTML-element lijkt. Dit komt voor bij tekens zoals "&lt;", "&gt;", en "&amp;". Dit zijn namelijk karakters die worden gebruikt om HTML te schrijven. In plaats van de code te weergeven denkt de browser dat de karakters een stuk code moeten uitvoeren.</p>
+                    <p>In een content managementsysteem zoals WordPress of een tool zoals markdown, is er een kans dat de laag tussen de teksteditor en de HTML deze karakters correct afhandelt. Karakter-entiteiten worden toegepast in de gevallen waarin een ontwikkelaar dit zelf moet oplossen. Entiteit roepen namelijk karakters op. Het W3C houdt een referentietabel bij van alle entiteiten.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Entiteit</th>
+                                <th>Karakter</th>
+                            </tr>
+                            <tr>
+                                <td><pre>&amp;lt;</pre></td>
+                                <td>&lt;</td>
+                            </tr>
+                            <tr>
+                                <td><pre>&amp;gt;</pre></td>
+                                <td>&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><pre>&amp;amp;</pre></td>
+                                <td>&amp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Html-entiteiten kunnen ook worden gebruikt om tekens op te roepen die niet op het toetsenbord staan. Hieronder vallen bijvoorbeeld:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Entiteit</th>
+                                <th>Karakter</th>
+                            </tr>
+                            <tr>
+                                <td><pre>&amp;lt;</pre></td>
+                                <td>&lt;</td>
+                            </tr>
+                            <tr>
+                                <td><pre>&amp;gt;</pre></td>
+                                <td>&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><pre>&amp;amp;</pre></td>
+                                <td>&amp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Normaal gesproken wordt een tekst rondom spaties opgebroken als er niet genoeg ruimte is voor een hele zin. De non breaking space is een spatie die niet overgaat in een nieuwe regel. Woorden met een breaking space ertussen, blijven altijd op dezelfde regel staan.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Entiteit</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>&amp;nbsp;</pre></td>
+                                <td>De non breaking space laat de tekst niet opgebroken worden op de gespecificeerde plek.</td>
+                                <td><pre>&lt;p&gt;De maximale snelheid is hier 50&amp;nbsp;km/h.&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De non breaking space kan ook worden gebruikt om meer dan één spatie tussen woorden te plaatsen.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Linken en navigeren</h2>
+                
+                <div class="chapter__group">
+                    <h3>Links</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>a</pre></td>
+                                <td>Anchor creëert een link. Dit kan bijvoorbeeld gecombineerd worden met tekst en afbeeldingen.</td>
+                                <td><pre>&lt;a href="https://website.com"&gt;Dit is een link.&lt;/a&gt;
+
+&lt;p&gt;Dit is een zin &lt;a href="https://example.com"&gt;met een link&lt;/a&gt; midden in de tekst.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://website.com"&gt;&lt;img src="https://tinyurl.com/y3ycfl3e"&gt;&lt;/a&gt;&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het link element maakt gebruik van het href-attribuut. De Hypertext Reference definieert de locatie van de link en gebruikt de volgende opmaak: <code>href="URL"</code>. Sommige URL's verwijzen naar de startpagina van een site en anderen verwijzen naar inhoud die dieper ligt. Dit zijn allemaal zogenaamde absolute URL's. Er wordt verwezen naar een specifieke plaats op internet, een absolute plaats. HTTP:// of de HTTPS:// moet in de URL worden inbegrepen als het een absolute URL is. Meestal is dit HTTPS aangezien dit secuurder is.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>URL-paden</h3>
+                    <p>Een relatieve URL is bruikbaar wanneer hetgeen waarnaar wordt gelinkt op dezelfde site en in hetzelfde domein is. Het gebruik van relatieve URL's is nuttig voor een project dat van server naar server beweegt terwijl eraan wordt gewerkt. De domeinnaam wordt weggelaten in een relatieve URL, wat er zo uit kan zien: <code>/user/profile.html</code>.</p>
+                    <p>Het bovenstaande voorbeeld is een relatieve URL die leidt naar een bestand genaamd profile.html in een folder genaamd user. In tegenstelling tot bestanden hebben folders geen extensie zoals .html, .jpg, .css, of .js waardoor "user" genoeg is in het bovenstaande voorbeeld. Met de schuine streep aan het begin wordt aan geduid dat de browser naar het hoogste niveau van de bestandsstructuur moet gaan.</p>
+                    <p>De andere schuine strepen in de URL geven aan dat de browser een niveau naar beneden moet gaan in de bestandstructuur. Het is echter ook mogelijk om een URL-pad te maken dat relatief is ten opzichte van het bestand waarin de link is geschreven. Hiervoor wordt <code>../</code> aan het begin gebruikt. Dit geeft aan dat er een niveau omhoog moet worden gegaan.</p>
+                    <p>De browser zoekt en laadt automatisch een index.html-bestand wanneer het de instructies krijgt om een URL-folder in te gaan, ongeacht of de URL relatief of absoluut is. Het is mogelijk om nette URL's te maken, door bijvoorbeeld een bestand genaamd index.html in een folder met de naam profile index.html te plaatsen. Hierdoor hoeft een bestand niet profile.html te worden genoemd. Dit werkt echter alleen voor HTML en bijvoorbeeld niet voor afbeeldingen of CSS.</p>
+                    <p>Ten slotte maakt het niet uit of de laatste schuine streep wel of niet in een URL wordt opgenomen. Dit betekent dat deze drie URL's allemaal naar dezelfde pagina zullen leiden:</p>
+                    <pre><code>&lt;a href="/folder/index.html"&gt;Folder&lt;/a&gt;
+&lt;a href="/folder/"&gt;Folder&lt;/a&gt;
+&lt;a href="/folder"&gt;Folder&lt;/a&gt;</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Navigatie</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>nav</pre></td>
+                                <td>Navigation specificeert dat de genestelde elementen tot de website navigatie behoren.</td>
+                                <td><pre>&lt;nav aria-label="kruimelpad"&gt;
+    &lt;ol class="kruimelpad"&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/login"&gt;Login&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het bovenstaande voorbeeld gebruikt naast het aria-label attribuut ook een role-attribuut. In verband met toegankelijkheid wordt role vaak met de site navigatie gecombineerd.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><pre>role</pre></td>
+                                <td>Een ARIA role beschrijft de rol van een element voor de ondersteunende hulpmiddelen.</td>
+                                <td><pre>&lt;nav role="navigation" aria-label="main menu"&gt;
+    &lt;ul class="navbar"&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/prijzen"&gt;Prijzen&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In tegenstelling tot een navigatiebalk of een kruimelpad, hoeft de footer van een website niet gebruik te maken van een nav-element. De links in de footer kunnen worden behandeld als losse links.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Afbeeldingen en grafieken</h2>
+                
+                <div class="chapter__group">
+                    <h3>Afbeeldingen</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>img</td>
+                                <td>Image weergeeft een afbeelding.</td>
+                                <td><pre>&lt;img src="Hond.jpg" alt="Peinzend kijkende zwarte hond" width="400" height="300"&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het img-element wordt altijd vergezeld met een src-, alt-, width- en height-attribuut. De volgorde van de attributen in maakt niet uit in het HTML-element.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                            </tr>
+                            <tr>
+                                <td>src</td>
+                                <td>Sources specificeert welke afbeelding door de browser moet worden geladen.</td>
+                            </tr>
+                            <tr>
+                                <td>alt</td>
+                                <td>Alternative specificeert de alternatieve tekst van een afbeelding. De alt wordt leeggelaten indien mensen niets over de afbeelding hoeven te weten.</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>Width specificeert hoe breed een afbeelding is in pixels.</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>Height specificeert hoe hoog een afbeelding is in pixels.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De afbeelding en de lay-out van de webpagina is instaat om efficiënter te laden als de grote en breedte van een afbeelding worden meegegeven. Dit voorkomt het rondspringen van paginaelementen terwijl de afbeeldingen worden geladen.</p>
+                </div>        
+                
+                <div class="chapter__group">
+                    <h3>Afbeelding formaten</h3>
+                    <p>Om een afbeelding op een webpagina te plaatsen, moet deze in een formaat zijn dat de browser begrijpt. Er zijn vier belangrijke formaten die vaak op internet worden gebruikt: GIF, SVG, JPG en PNG. Elk formaat is gespecialiseerd in de compressie van bepaalde soorten afbeeldingen en minder geschikt voor andere soorten.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Afbeelding formaat</th>
+                                <th>Voor- en nadelen</th>
+                            </tr>
+                            <tr>
+                                <td>GIF</td>
+                                <td>
+                                    <pre>- Goed in de compressie van afbeeldingen die uit één kleur bestaan.
+- Gebruikt maar 256 kleuren, waardoor foto's pixelachtig kunnen ogen.
+- Gif kan transparant zijn, maar de randen zijn meestal ruw.
+- Kan meerdere frames bevatten en korte filmpjes maken.</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SVG</td>
+                                <td>
+                                    <pre>- Goed voor logos, iconen en andere soorten illustraties.
+- Het is een vector bestand. Afbeeldingen kunnen hierdoor geschaald worden zonder kwaliteit te verliezen.
+- Kleine bestandsgrote
+- Gebruik SVG waar mogelijk.</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>JPG</td>
+                                <td>
+                                    <pre>- Goed voor de compressie van foto's.
+- Compressie en formaat wijziging is nodig voor het web.
+- Compressie is mogelijk door kwaliteit en grote te balanceren.</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PNG</td>
+                                <td>
+                                    <pre>- Goed voor de compressie van foto's die deels transparant zijn.
+- Is soms beter dan JPG in het verwerken van afbeelding soorten die JPG prefereert, maar niet altijd.
+- Is soms beter dan GIF in het verwerken van afbeelding soorten die GIF prefereert, maar niet altijd.</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Probeer verschillende opties en kijk welke resultaten het kleine bestand oplevert in het geval van handmatige bestandcompressie.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Responsieve afbeeldingen</h3>
+                    <p>HTML kan afbeeldingsbestanden oproepen op basis van het schermformaat. Dit gebeurt in samenwerking met het besturingssysteem, waarbij rekening wordt gehouden met de hardware capaciteiten van het apparaat en de netwerksnelheid.</p>
+                    <p>Tegenwoordig zijn er steeds meer schermen met een pixeldichtheid van 2X, 3X, 4X, waarbij meer gegevens door het scherm kunnen worden weergegeven. De eenvoudigste manier om deze verschillende schermen te ondersteunen is door meerdere kopieën van een afbeelding in verschillende resoluties te maken. Vervolgens beslist de browser welke afbeelding wordt gebruikt aan de hand van de pixeldichtheid, de netwerkverbinding en de gebruikersinstellingen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>srcset</td>
+                                <td>Source set specificeert de meerdere afbeeldingen keuzes. Bestaat uit een URL, een spatie gevolgd door de gewenste resolutie, een komma met een spatie en de volgende URL.</td>
+                                <td>
+                                    <pre>&lt;img src="Hond-480.jpg" alt="Peinzend kijkende zwarte hond" 
+    width="480" height="360" srcset="Hond-960.jpg 2x, Hond-1440.jpg 3x"&gt;</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="chapter__group">
+                    <h3>Responsieve breedte</h3>
+                    <p>Srcset kan op twee manieren afbeeldingen keuzes maken: Op basis van de pixeldichtheid of op basis van pixeldichtheid en viewport-breedte. De browser maakt keuzes op basis van de pixeldichtheid door de gewenste resolutie te specificeren met bijvoorbeeld 2x of drie 3x.</p>
+                    <p>De browser kan een keuze maken op basis van de breedte van de viewport en pixeldichtheid door de breedte van elk bestand te specificeren. Denk bijvoorbeeld aan 480w of 960w, wat staat voor 480 en 960 pixels breed:</p>
+                    <pre><code>&lt;img src="Hond-480.jpg" alt="Peinzend kijkende zwarte hond" 
+    width="480" height="360" srcset="Hond-480.jpg  480w,
+    Hond-960.jpg  960w, Hond-1440.jpg 1440w" &gt;</code></pre>
+                    <p>In het bovenstaande voorbeeld wordt de afbeelding echter niet gekozen op basis van de pagina lay-out. De browser maakt namelijk de veronderstelling dat de breedte van de afbeelding 100% van de viewport moet zijn. Het afbeeldingsbestand wordt namelijk voor de CSS geladen en voordat de lay-out is opgemaakt. De browser weet tijdens het downloaden dus niet hoe groot het object is waarin de afbeelding wordt geplaatst.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>sizes</td>
+                                <td>Sizes specificeert op basis van media condities welke afbeelding worden geselecteerd.</td>
+                                <td><pre>&lt;img src="Hond-480.jpg" alt="Peinzend kijkende zwarte hond" 
+        width="480" height="360" srcset="Hond-480.jpg  480w, 
+        Hond-960.jpg  960w, Hond-1440.jpg 1440w"
+        sizes="(max-width: 480px) 240px, (max-width: 960px) 480px, 1440px"&gt;</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het sizes-attribuut komt van pas als de afbeelding kleiner is dan de breedte van de gehele pagina.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Responsieve foto's</h3>
+                    <p>Als er meer moet worden gedaan dan alleen een lage-resolutie afbeelding vervangen door een hoge-resolutie versie, biedt het image-element met srcset- of sizes-attributen geen oplossing. Bijvoorbeeld wanneer verschillende afbeeldingen nodig zijn voor kleine en grote schermen of als de afbeelding anders bijgesneden moet worden. In deze gevallen wordt het picture-element gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>picture</td>
+                                <td>Picture maakt het mogelijk om een andere afbeeldingen te weergeven op basis van de schermgrote. De alternatieve opties worden vermeld met het source-element.</td>
+                                <td>
+                                    <pre>&lt;picture&gt;
+    &lt;source media="(min-width:600px)" srcset="Hond-720.jpg"&gt;
+    &lt;source srcset="Hond-cropped-320.jpg"&gt;
+    &lt;img src="Hond-480.jpg" width="480" height="360" 
+        alt="Peinzend kijkende zwarte hond" &gt;
+&lt;/picture&gt;</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In het bovenstaande voorbeeld wordt een liggende versie van een afbeelding geladen wanneer de viewport minimaal 600 pixels breed of groter is. Bij een kleinere viewport wordt een bijgesneden versie geladen. Het source-element wordt hier gebruikt om één of meer mediabronnen te specificeren.</p>
+                    <p>De manier waarop het srcset-element wordt gebruikt in het source-element, is precies hetzelfde als bij het img-element. Hierdoor is bijvoorbeeld het volgende mogelijk:</p>
+                    <pre><code>&lt;picture&gt;
+    &lt;source media="(min-width:600px)" srcset="Hond-320.jpg  320w, Hond-480.jpg  480w, 
+        Hond-720.jpg  720w, Hond-960.jpg  960w, Hond-1440.jpg 1440w, Hond-1920.jpg 1920w"&gt;
+    &lt;source srcset="Hond-cropped-320.jpg 320w, Hond-cropped-480.jpg 480w, 
+        Hond-cropped-720.jpg 720w, Hond-cropped-960.jpg 960w" &gt;
+    &lt;img src="Hond-480.jpg" alt="Peinzend kijkende zwarte hond" height="360px" width="480px"&gt;
+&lt;/picture&gt;</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Figuur en figcaption</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>figcaption</td>
+                                <td>Figcaption markeert dat een stuk tekst een onderschrift voor een figuur is.</td>
+                                <td>
+                                    <pre>&lt;img src="Hond.png" width="960" height="720" alt="Peinzend kijkende zwarte hond"&gt;
+
+&lt;figcaption&gt;De zwarte hond rust en kijkt voor zich uit.&lt;/figcaption&gt;</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>figure</td>
+                                <td>Figure specificeert dat iets een figuur of een afbeelding is.</td>
+                                <td><pre>&lt;figure&gt;
+    &lt;img src="Hond.png" width="960" height="720" alt="Peinzend kijkende zwarte hond"&gt;
+    &lt;figcaption&gt; De zwarte hond rust en kijkt voor zich uit &lt;/figcaption&gt;
+    &lt;/figure&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Figure kan ook worden gebruikt voor andere dingen dan afbeeldingen, zoals een demonstratieve illustratie. De figure- en figcaption- elementen zijn handig voor figuren die iets illustreren en een bijschrift nodig hebben. Met deze elementen krijgt de browser meer semantische informatie over de inhoud, wat het voor zoekmachines en AI mogelijk maakt om vast te stellen dat deze stukken inhoud gerelateerd zijn.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 6 ===============-->
+            <div class="chapter__container">
+                <h2>Media</h2>
+                
+                <div class="chapter__group">
+                    <h3>Audio</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>audio</td>
+                                <td>Audio plaatst een audiobestand op een webpagina.</td>
+                                <td><pre>&lt;audio src="audio.mp3"&gt;&lt;/audio&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een audiospeler moet aanwezig zijn, om het audiobestand af te kunnen spelen. Ontwikkelaars kunnen zelf een besturingselement maken, maar het is ook mogelijk om de ingebouwde audiospeler van een browser te gebruiken. Deze ingebouwde audiospeler kan worden opgeroepen met behulp van een attribuut.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>controls</td>
+                                <td>Controls roept de audiospeler van de browser op.</td>
+                                <td><pre>&lt;audio controls src="audio.mp3"&gt;&lt;/audio&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>loop</td>
+                                <td>Loop speelt een bestand opnieuw af nadat het einde is bereikt.</td>
+                                <td><pre>&lt;audio src="audio.mp3" loop&gt;&lt;/audio&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>autoplay</td>
+                                <td>Autoplay speelt de audio automatisch af zodra de pagina is geladen</td>
+                                <td><pre>&lt;audio src="audio.mp3" autoplay&gt;&lt;/audio&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is mogelijk om een tekst alternatief te specificeren die wordt weergegeven als het audio-element niet wordt begrepen door de browser. Daarnaast kunnen meerdere audio-bestanden worden gespecificeerd met het source-element. Hierdoor kunnen ontwikkelaars verschillende bestandsformaten beschikbaar stellen, zoals mp3 of ogg. Het eerste gespecificeerde bestand die de browser begrijpt zal worden afgespeeld.</p>
+                    <pre><code>&lt;audio controls&gt;
+    &lt;source src="Vogels.ogg" type="audio/ogg; codec=opus"&gt;
+    &lt;source src="Vogels.mp3" type="audio/mpeg"&gt;
+    Je browser ondersteunt deze audio niet. 
+&lt;/audio&gt;</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Video</h3>
+                    <p>Videobestanden bevatten een aanzienlijke hoeveelheid gegevens en kunnen bijzonder groot worden. Dit maakt de compressie van videobestanden noodzakelijk. Er zijn diverse codecs die voor de compressie van videobestanden. De H.264 codec wordt momenteel het meest ondersteund door browsers, maar is echter gepatenteerd.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>video</td>
+                                <td>Video plaatst een videobestand op een webpagina.</td>
+                                <td><pre>&lt;video src="video.480.h624.mp4" controls&gt;&lt;/video&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Net als bij het audio-element kan het controls-attribuut worden toegevoegd om de videospeler van de browser op te roepen. Daarnaast is het ook mogelijk om meerdere video-bestanden te specificeren met het source-element. Hierdoor kunnen ontwikkelaars naar codecs refereren die niet zijn gepatenteerd zoals WebM.</p>
+                    <p>Dit proces is hetzelfde als bij de audio- en img-elementen. Een source-element wordt gebruikt om de verschillende bestandsformaten op te specificeren, en het src-attribuut linkt naar het gewenste bestand. Vervolgens geeft het type-attribuut aan wat het specifieke bestandstype is. Het eerste gespecificeerde bestand die de browser begrijpt zal worden afgespeeld.</p>
+                    <pre><code>&lt;video controls&gt;
+    &lt;source src="Video.480p.vp9.webm" type="video/webm"&gt;
+    &lt;source src="Video.480p.h264.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+                    <p>Het is echter niet mogelijk in HTML om verschillende videoformaten te selecteren onder verschillende netwerkomstandigheden. De browser kan niet van tevoren worden bepalen of een video van 480p of 1080p moet worden afgespeeld. Daarom maken streamingdiensten zoals Netflix, HBO en YouTube gebruik van adaptive bitrate. Met adaptive bitrate, wordt er tussen resoluties gewisseld terwijl de inhoud wordt afgespeeld.</p>
+                    <p>Dit proces is echter zeer complex en vereist een aanzienlijke infrastructuur. Daarom is het waarschijnlijk dat bij het uploaden van videocontent naar een website het video-element niet wordt gebruikt. In plaats daarvan wordt vaak embedcode van een videohostingservice gebruikt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Onderschriften en ondertitelingen</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>track</td>
+                                <td>Track creëert onderschriften en ondertitelingen voor audio- en video-elementen.</td>
+                                <td>
+                                    <pre>&lt;video controls&gt;
+    &lt;source src="maanwandeling.480p.vp9.webm" 
+        type="video/webm"&gt;
+    &lt;source src="maanwandeling.480p.h264.mp4" 
+        type="video/mp4"&gt;
+    
+    &lt;track src="maanwandeling.vtt"
+            kind="captions"
+            label="English"
+            srclang="en"
+            default&gt;
+    
+    &lt;track src="maanwandeling.es-la.es.vtt"
+            kind="subtitles"
+            label="Español"
+            srclang="es"&gt;
+    
+    &lt;p&gt; Deze video wordt niet ondersteund door de browser.&lt;/p&gt;
+&lt;/video&gt;</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Er zijn meerdere bestandsformaten beschikbaar voor ondertitelingen. Binnen de context van het internet wordt de voorkeur WebVTT. Web Video Text Tracks is in wezen een gewoon tekstbestand met een VTT-extensie dat zich houdt aan een specifieke conventie voor de presentatie van informatie. Deze bestanden worden opgeroepen doormiddel van het src-attribuut.</p>
+                    <p>De volgende attributen worden naast het src-attribuut gebruikt in het track-element:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                            </tr>
+                            <tr>
+                                <td>kind</td>
+                                <td>Kind specificeert of het element een onderschrift of een ondertiteling is.</td>
+                            </tr>
+                            <tr>
+                                <td>label</td>
+                                <td>Label specificeert de titel van een teksttrack.</td>
+                            </tr>
+                            <tr>
+                                <td>srclang</td>
+                                <td>Source language specificeert de taal van een teksttrack.</td>
+                            </tr>
+                            <tr>
+                                <td>default</td>
+                                <td>Default specificeert dat een teksttrack de standaardinstelling is.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het kind-attribuut kan op een aantal alternatieve manieren worden gebruikt. Kind="descriptions" biedt een manier om een tekstbestand aan te leveren met gedetailleerde visuele beschrijvingen van de video inhoud. Dit soort teksttracks lezen beschrijvingen voor die mogelijk worden gemist als de video niet wordt bekeken.</p>
+                    <p>Kind="chapters" biedt een manier om een tekstbestand aan te leveren met een lijst van de hoofdstukken in de video. Hiermee kunnen gebruikers gemakkelijk navigeren tussen verschillende delen van de video.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Andere media inbedden via frames</h3>
+                    <p>Bij embedden wordt inhoud van het ene digitale platform opgenomen in de inhoud van een pagina op een ander platform. De HTML die hiervoor nodig is wordt geleverd door de des betreffende serviceprovider.</p>
+                    <p>Bij YouTube kan de benodigde HTML bijvoorbeeld worden opgevraagd door op share en vervolgens op embed te klikken. De verkregen HTML bevat een aantal attributen die een ontwikkelaar kan aanpassen, zoals het width- en height-attribuut. Deze attributen zijn genesteld in het iframe-element wat veiligheidsrisico's met zich mee kan brengen.</p>
+                    <p>Degenen die verantwoordelijk zijn voor het ontwikkelen van een website moeten hier rekening mee houden. In omstandigheden waar meerdere personen content bijdragen aan een systeem, is het af te raden om het gebruik van iframes onbeperkt toe te staan. Dit is echter geen probleem in het geval van een ontwikkelaar zijn eigen video's op zijn eigen website plaatst wil plaatsen.</p>
+                    <p>Het is doorgaans niet toegestaan om willekeurige embed-codes van externe websites te plaatsen in een content managementsysteem (CMS) dat door iemand anders is geconfigureerd. Dit CMS is waarschijnlijk ingesteld om alleen URL's of shortcodes van specifiek goedgekeurde bronnen toe te staan. Het is daarom aan te bevelen om met een lid van het CMS-team te overleggen over de correcte procedure voor het insluiten van content, zoals YouTube-video's.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 7 ===============-->
+            <div class="chapter__container">
+                <h2>Meer manieren om content te identificeren</h2>
+                
+                <div class="chapter__group">
+                    <h3>Ondersteunende talen</h3>
+                    <p>De betrokken computers moeten de taal van de inhoud kunnen achterhalen. Het lang-attribuut wordt gebruikt om dit te bereiken.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>lang</td>
+                                <td>Language vertelt de browser in welke taal de inhoud is.</td>
+                                <td><pre>&lt;html lang="en-US"&gt;&lt;/html&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het lang attribuut is een universeel attribuut, waardoor het op elk element kan worden toegepast. Het attribuut wordt toegepast op het buitenste element dat alle andere elementen omvat, als de hele pagina maar één taal gebruikt. Als een webpagina meerdere talen bevat, is het aan te raden om de taal te specificeren voor elk afzonderlijk element van de inhoud.</p>
+                    <pre><code>&lt;p lang="nl"&gt;
+    Dit is een voorbeeld tekst &lt;span lang="en-GB"&gt;where multiple languages are being used&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+                    <p>Naast de taal van de inhoud moet de leesrichting van de inhoud ook worden gespecificeerd. Het dir-attribuut wordt hiervoor gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>dir</td>
+                                <td>Direction specificeert in welke richting een tekst vloeit. De richting van de tekst wordt aangegeven met ltr en rtl.</td>
+                                <td><pre>&lt;html lang="ar" dir="rtl"&gt;&lt;/html&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Net als bij het lang-attribuut wordt het dir-attribuut toegepast op het buitenste element dat alle andere elementen omvat, als de hele pagina maar één taal gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>charset</td>
+                                <td>Charecter set specificeert het alfabet of de verzameling tekens dat moet worden gebruikt.</td>
+                                <td><pre>&lt;meta charset="UTF-8"&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Tegenwoordig gebruiken de meeste projecten Unicode, met name UTF-8. Unicode heeft meer dan 137.000 tekens in een poging om elke taal, alle scripts en elke vorm van communicatie te ondersteunen, waaronder braille, gebarenschrift en muzieknotatie.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Generieke elementen: div en span</h3>
+                    <p>Er zijn twee generieke elementen voor wanneer geen van de andere elementen zin heeft: div en span. Met de div- en span-elementen is het mogelijk om elementen te groeperen of tekst binnen een element te markeren, zodat een deel van het DOM opgeroepen kan worden met CSS of Javascript.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>div</td>
+                                <td>Div is een generiek block-element.</td>
+                                <td>
+                                    <pre>&lt;article lang="nl"&gt;
+    &lt;h1&gt;Een headline&lt;/h1&gt;
+    &lt;div class="box"&gt;
+        &lt;p&gt;Eerste paragraaf.&lt;/p&gt;
+        &lt;p&gt;Tweede paragraaf.&lt;span lang="es" class="bilingual"&gt;Esta parte es española.&lt;/span&gt;
+        Een deel van de tekst is Spaans.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>span</td>
+                                <td>Span is een generiek inline-element.</td>
+                                <td><pre>&lt;p&gt;Deze tekst moet &lt;span&gt;bruin&lt;/span&gt; zijn.&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Gebruik de div- en span-elementen alleen als een laatste redmiddel wanneer er geen ander geschikt element is.</p>
+                </div>                
+            </div> 
+            
+            <!--=============== CHAPTER 8 ===============-->
+            <div class="chapter__container">
+                <h2>Alles samenbrengen</h2>
+                
+                <div class="chapter__group">
+                    <h3>De HTML-pagina</h3>
+                    <p>Om toegang te krijgen tot een website moet een gebruiker met behulp van een webbrowser of webview een URL openen. Een webserver reageert op dit verzoek door het specifieke HTML-bestand terug te sturen dat op dat adres staat. Vervolgens leest de browser de HTML en doet het wat het bestand zegt.</p>
+                    <p>Het bestand dat als eerste wordt teruggestuurd als antwoord op een verzoek voor een webpagina, is van groot belang. Het dient als een operationeel knooppunt voor alle opvolgende activiteiten die plaatsvinden nadat de site voor het eerst is geladen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Declaratie</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>doctype</td>
+                                <td>Document type specificeert welke versie van HTML wordt gebruikt.</td>
+                                <td><pre>&lt;!doctype html&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Zodra de HTML is opgebouwd, is het essentieel om ervoor te zorgen dat de volgende belangrijke elementen in elke webpagina zijn opgenomen: De doctype declaratie, en de html-, head- en body-elementen.</p>                    
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>html</td>
+                                <td>Html specificeert dat de onderliggende informatie deel uit maakt van de HTML.</td>
+                                <td><pre>&lt;!doctype html&gt;
+&lt;html lang="en-US" dir="ltr"&gt;
+    ...
+&lt;/html&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>head</td>
+                                <td>Head omvat alle metadata.</td>
+                                <td><pre>&lt;!doctype html&gt;
+&lt;html lang="en-US" dir="ltr"&gt;
+    &lt;head&gt;
+        ...
+    &lt;/head&gt;
+    &lt;body&gt;
+        ...
+    &lt;/body&gt;
+&lt;/html&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>body</td>
+                                <td>Body omvat de informatie en de inhoud die een browser op de pagina worden weergegeven.</td>
+                                <td><pre>&lt;!doctype html&gt;
+&lt;html lang="en-US" dir="ltr"&gt;
+    &lt;head&gt;
+        ...
+    &lt;/head&gt;
+    &lt;body&gt;
+        ...
+    &lt;/body&gt;
+&lt;/html&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Document head</h3>
+                    <p>De head van een bestand bevat de informatie die een browser moet weten maar die niet op de pagina weergeeft, zoals de charset. Voor deze informatie wordt het meta-element gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>meta</td>
+                                <td>Meta brengt metadata over. Wordt alleen in de head gebruikt.</td>
+                                <td><pre>&lt;meta charset="UTF-8"&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het meta-element kan voor verschillende vormen van metadata worden gebruikt bijvoorbeeld:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>meta-element</th>
+                                <th>Gebruikscontext</th>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre></td>
+                                <td>Geeft de browser instructies met betrekking tot de afmetingen en schaal van een pagina.</td>
+                            </tr>
+                            <tr>
+                                <td><pre>&lt;meta name="description" content="Beschrijving van de website"&gt;</pre></td>
+                                <td>Voegt een beschrijving van de site toe die zichtbaar is in de zoekresultaten.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In de head van een bestand moet altijd een titel aanwezig zijn. Hiervoor wordt het title-element gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>title</td>
+                                <td>Title specificeert de titel van de webpagina voor de browser.</td>
+                                <td><pre>&lt;title&gt;Paginanaam&lt;/title&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Overal waar de interface van de browser naar deze pagina verwijst, wordt de titel gebruikt die is gedefinieerd in het title-element. Het wordt bijvoorbeeld gebruikt als de naam op een browsertabblad, of als een bladwijzertitel.</p>
+                    <p>Een element dat veel wordt gebruikt in de head is het link-element. Dit element wordt bijvoorbeeld gebruikt om te linken naar CSS-bestanden, fonts en favicons.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>link</td>
+                                <td>Link specificeert relaties tussen het huidige bestand en een externe bron.</td>
+                                <td><pre>&lt;link href="main.css" rel="stylesheet"&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het link-element wordt vaak aangevuld met de volgende met de rel- en href-attributen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>rel</td>
+                                <td>Relationships definieert de relatie tussen een gekoppelde bron en het huidige document.</td>
+                                <td><pre>&lt;link rel="icon" href="favicon.ico"&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>href</td>
+                                <td>Hypertext Reference definieert de locatie van de link</td>
+                                <td><pre>&lt;link
+    rel="preload"
+    href="myFont.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het script-element kan ook in de head worden opgenomen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>script</td>
+                                <td>Script geeft de browser de opdracht om een Javascript-bestand te laden</td>
+                                <td><pre>&lt;script src="myscript.js"&gt;&lt;/script&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is echter niet verplicht om een script-element in de head te plaatsen. In de praktijk staat het vaak aan het einde van een HTML-document, zodat de browser Javascript kan laden nadat alle andere inhoud is geladen.</p>
+                    <p>Ten slotte moet er rekening mee worden gehouden dat de browser de bestanden van boven naar beneden laadt. Het wordt aanbevolen om items die als eerst moeten worden geladen bovenaan de lijst te plaatsen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Inhoud structureren</h3>
+                    <p>Over het algemene bestaat de structuur van een HTML-body uit zes hoofdelementen: main, header, footer, article, section, en aside.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>main</td>
+                                <td>Main specificeert de hoofdinhoud van de pagina. Wordt maar één keer per pagina gebruikt.</td>
+                                <td><pre>&lt;body&gt;
+    &lt;header&gt;
+        ...
+    &lt;/header&gt;
+    &lt;main id="main-content"&gt;
+        ...
+    &lt;/main&gt;
+&lt;/body&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>header</td>
+                                <td>Header specificeert de headers van een pagina. Bijvoorbeeld een navigatie of een artikel titel.</td>
+                                <td><pre>&lt;header&gt;
+&lt;h2&gt;Titel&lt;/h2&gt;
+&lt;p&gt;Gepost op woensdag, &lt;time datetime="2024-05-08"&gt;8 mei 2024&lt;/time&gt;
+door auteur.
+&lt;/p&gt;
+&lt;/header&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>footer</td>
+                                <td>Footer specificeert de footer van een pagina. Een groep van share knoppen kan ook een footer zijn.</td>
+                                <td><pre>&lt;footer&gt;
+&lt;small&gt;Copyright © 2024 Bedrijfsnaam &lt;/small&gt;
+&lt;/footer&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>article</td>
+                                <td>Article specificeert de artikelen op een pagina. Een teaser of een tweet kan ook article gebruiken.</td>
+                                <td><pre>&lt;article&gt;
+&lt;header&gt;
+&lt;h2&gt;Titel&lt;/h2&gt;
+&lt;/header&gt;
+&lt;p&gt;Het artikel&lt;/p&gt;
+&lt;/article&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>section</td>
+                                <td>Section specificeert secties op een pagina. Bijvoorbeeld een artikel die op is gebroken in sub-headlines.</td>
+                                <td><pre>&lt;h1&gt;Titel&lt;/h1&gt;
+&lt;section&gt;
+    &lt;h2&gt;Een voorbeeld&lt;/h2&gt;
+    &lt;p&gt;Informatie over het voorbeeld&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+    &lt;h2&gt;Een ander voorbeeld&lt;/h2&gt;
+    &lt;p&gt; Informatie over het andere voorbeeld&lt;/p&gt;
+&lt;/section&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>aside</td>
+                                <td>Aside specificeert inhoudsvormen die niet het punt van focus zijn. Denk aan side navigatie of advertenties.</td>
+                                <td><pre>&lt;p&gt;Een introductie over een onderwerp.&lt;/p&gt;
+&lt;aside&gt;
+    &lt;p&gt;Een weetje over het onderwerp.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;Verdere informatie over het onderwerp.&lt;/p&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Alhoewel de lay-out vaak de betekenis overbrengt, is de semantische betekenis bij deze elementen van belang, niet de positie op de pagina.</p>
+                </div>                
+            </div>            
+
+            <!--=============== CHAPTER 9 ===============-->
+            <div class="chapter__container">
+                <h2>Forums en interactieve elementen</h2>
+                
+                <div class="chapter__group">
+                    <h3>HTML-formulier fundaties</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>form</td>
+                                <td>Form specificeert dat onderliggende elementen informatie kunnen indienen.</td>
+                                <td><pre>&lt;form&gt;
+    &lt;label&gt;Naam&lt;/label&gt;
+    &lt;input&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input&gt;
+&lt;/form&gt;
+&lt;button&gt;Sign up&lt;/button&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>label</td>
+                                <td>Label specificeert een beschrijving van een item in de userinterface. Denk bijvoorbeeld aan veldnamen.</td>
+                                <td><pre>&lt;label&gt;Naam&lt;/label&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>input</td>
+                                <td>Input creëert invoerveld.</td>
+                                <td><pre>&lt;label&gt;Email&lt;/label&gt;
+&lt;input&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het input-element is een zogenaamd replaced element. Een replaced element functioneert als een markering voor de browser, die aangeeft dat de browser een reeds bestaande set functionaliteiten moet ophalen en invoegen op de aangewezen locatie. Deze gemarkeerde locatie is waar de browser een invoerveld laadt.</p>
+                    <p>Een button-element kan worden gebruikt om een knop te creëren waarmee de ingevulde inhoud van de velden te kunnen verzenden.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>button</td>
+                                <td>Button creëert een knop.</td>
+                                <td><pre>&lt;button class="login"&gt;Login&lt;/button&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om een werkend formulier te creëren, moet het worden verbonden met een backend. Het onderstaande voorbeeld gebruikt een action- en method-attribuut. In de praktijk zal method="GET" nooit worden gebruikt omdat het een veiligheidsrisico is.</p>
+                    <p>Daarnaast moet het invoervelden worden voorzien van een name-attribuut. Anders kunnen de gegevens die zijn verzonden niet worden weergegeven.</p>
+                    <pre><code>&lt;form action="succes.html" method="get"&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input name="emailadres"&gt;
+&lt;/form&gt;
+&lt;button&gt;Sign up&lt;/button&gt;</code></pre>
+                    <p>Ten slotte moeten de label- en de input-elementen moeten met elkaar worden verbonden in verband met toegankelijkheid. Het formulier is anders onbruikbaar voor mensen die het scherm niet kunnen zien scherm of geen muis kunnen gebruiken. Er zijn twee opties om deze elementen te koppelen:</p>
+                    <pre><code>&lt;form action="succes.html" method="get"&gt;
+&lt;label for="email"&gt;Email&lt;/label&gt;
+&lt;input id="email" name="emailadres"&gt;
+&lt;/form&gt;
+&lt;button&gt;Sign up&lt;/button&gt;</code></pre>
+                    <p>Of</p>
+                    <pre><code>&lt;form action="succes.html" method="get"&gt;
+&lt;label&gt;
+Email
+&lt;input name="emailadres"&gt;
+&lt;/label&gt;
+&lt;/form&gt;
+&lt;button&gt;Sign up&lt;/button&gt;</code></pre>
+                    <p>Door op het label te klikken wordt er gecontroleerd of de elementen verbonden zijn. De elementen zijn correct verbonden, als het invoerelement wordt geselecteerd door op het label te klikken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Meer over formulieren</h3>
+                    <p>Het is mogelijk om een telefoonnummer in een email veld te stoppen als de browser niet op de hoogte is van de informatie die in een veld hoort. Dit kan worden verholpen met een type-attribuut. Als het type-attribuut wordt weggelaten, zal de browser aannemen dat de invoer van het type 'tekst' is. De browser kan aan de hand van het type-attribuut valideren of een veld correct is ingevuld.</p>
+                    <p>Verder kan het type-attribuut worden gebruikt om aan te geven dat een knop de verzendknop is. Het is mogelijk dat dit formulier meer dan één knop bevat. Door de verzendknop het type "submit" te geven weet de browser welke knop moet worden geactiveerd als de gebruiker op enter drukt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>Type specificeert de informatiesoort die een invoerveld moet accepteren.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input id="email" name="emailadres" type="email"&gt;
+&lt;/form&gt;
+&lt;button type="submit"&gt;Sign up&lt;/button&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>required</td>
+                                <td>Required geeft aan dat een veld niet mag worden leeggelaten.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input id="email" name="emailadres" required&gt;
+&lt;/form&gt;
+&lt;button type="submit"&gt;Sign up&lt;/button&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>placeholder</td>
+                                <td>Placeholder specificeert een placeholder waarde voor een invoerveld.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input id="email" name="emailadres"
+    placeholder="persoon@voorbeeld.com"&gt;
+&lt;/form&gt;
+&lt;button type="submit"&gt;Sign up&lt;/button&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>value</td>
+                                <td>Value specificeert een waarde voor een invoerveld. Wordt bijvoorbeeld gebruikt om de rest van een adres in te vullen.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input id="email" name="emailadres"
+    value="persoon@voorbeeld.com"&gt;
+&lt;/form&gt;
+&lt;button type="submit"&gt;Sign up&lt;/button&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Additionele formulierelement soorten</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Input types</th>
+                                <th>Gebruikscontext</th>
+                            </tr>
+                            <tr>
+                                <td>password</td>
+                                <td>Password verbergt de informatie tijdens het invullen van het invoerveld.</td>
+                            </tr>
+                            <tr>
+                                <td>search</td>
+                                <td>Search creëert een invoerveld voor zoekopdrachten.</td>
+                            </tr>
+                            <tr>
+                                <td>tel</td>
+                                <td>Telephone number creëert een invoerveld voor telefoonnummers.</td>
+                            </tr>
+                            <tr>
+                                <td>date</td>
+                                <td>Date creëert een invoerveld voor een datum.</td>
+                            </tr>
+                            <tr>
+                                <td>color</td>
+                                <td>Color creëert een kleurkiezer.</td>
+                            </tr>
+                            <tr>
+                                <td>file</td>
+                                <td>File laat de gebruiker een of meer opgeslagen bestanden kiezen.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De file input type kan onder andere worden gecombineerd met het accept- en multiple attribuut.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                            </tr>
+                            <tr>
+                                <td>accept</td>
+                                <td>Accept specificeert welke bestandstypen worden geaccepteerd.</td>
+                            </tr>
+                            <tr>
+                                <td>multiple</td>
+                                <td>Multiple specificeert dat de gebruiker meer dan één bestand kan selecteren.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Dit ziet er als volgt uit:</p>
+                    <pre><code>&lt;form action="succes.html" method="get"&gt;
+    &lt;label for="file"&gt;Selecteer bestanden:&lt;/label&gt;
+    &lt;input id="file" name="file" type="file" accept="image/*" multiple&gt;
+&lt;/form&gt;</code></pre>
+                    <p>Met het textarea-element kan een paragraaf of een artikel worden toegevoegd aan een formulier.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>textarea</td>
+                                <td>Textarea creëert een invoerveld voor met meerdere regels. Wordt bijvoorbeeld gebruikt voor reviews.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+    &lt;label for="review"&gt;Review&lt;/label&gt;
+    &lt;textarea id="review" name="review" 
+    cols="33" rows="5"&gt;&lt;/textarea&gt;
+&lt;/form&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De textarea in het bovenstaande voorbeeld is 5 rijen hoog en 33 kolommen breed. Dit wordt gespecificeerd met de rows- en cols-attributen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                            </tr>
+                            <tr>
+                                <td>rows</td>
+                                <td>Rows specificeert de hoogte van een textarea.</td>
+                            </tr>
+                            <tr>
+                                <td>cols</td>
+                                <td>Columns specificeert de breedte van een textarea.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een checkbox- en radio-input type moet een value-attribuut bevatten, zodat het formulier een waarde kan doorgeven wanneer het wordt verzonden. In tegenstelling tot de andere input types wordt deze waarde niet weergegeven op het formulier.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Input types</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>checkbox</td>
+                                <td>Checkbox creëert een selectievakje. Meerdere selectievakken in een bepaalde groep kunnen tegelijkertijd worden geselecteerd.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+    &lt;input id="checkbox" name="simplecheckbox" type="checkbox" value="Aangevinkt" checked&gt;
+    &lt;label for="checkbox"&gt;Checkbox&lt;/label&gt;
+&lt;/form&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>radio</td>
+                                <td>Radio creëert een Keuzerondje. Slechts één keuzerondje in een bepaalde groep kan tegelijkertijd worden geselecteerd.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+    &lt;input id="radiobutton" name="simplebutton" type="radio" value="Aangevinkt" checked&gt;
+    &lt;label for="radiobutton"&gt;Keuzerondje&lt;/label&gt;
+&lt;/form&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het checkbox- en radio-input type kan gebruik maken van het checked-attribuut:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Gebruikscontext</th>
+                            </tr>
+                            <tr>
+                                <td>checked</td>
+                                <td>Checked specificeert dat een selectievakje standaard is aangevinkt.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De volgende elementen kunnen met checkboxes en keuzerondjes worden gecombineert om een keuzemenu te maken:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>fieldset</td>
+                                <td>Fieldset specificeert een groep van label- en input-elementen binnen een form-element.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+&lt;fieldset&gt;
+    &lt;legend&gt;Kies een optie:&lt;/legend&gt;
+        &lt;input type="checkbox" id="een" name="optielist"/&gt;
+        &lt;label for="een"&gt;Optie 1&lt;/label&gt;
+        &lt;input type="checkbox" id="twee" name="optielist" /&gt;
+        &lt;label for="twee"&gt;Optie 2&lt;/label&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>legend</td>
+                                <td>Legend specificeert een bijschrift voor de inhoud van het bovenliggende element.</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met de volgende elementen is het mogelijk om een uitklapbare keuzelijst te maken voor een formulier:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>select</td>
+                                <td>Select creëert een keuzemenu.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+&lt;label for="huisdier"&gt;Kies een dier:&lt;/label&gt;
+&lt;select name="huisdierlist" id="huisdier"&gt;
+    &lt;option value="hond"&gt;Hond&lt;/option&gt;
+    &lt;option value="kat"&gt;Kat&lt;/option&gt;
+&lt;/select&gt;
+&lt;/form&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>option</td>
+                                <td>Option definieert een keuzemenu item.</td>
+                                <td><pre>&lt;form action="succes.html" method="get"&gt;
+&lt;select name="huisdierlist" id="huisdier"&gt;
+    &lt;option value=""&gt;Maak een keuze&lt;/option&gt;
+    &lt;option value="hond"&gt;Hond&lt;/option&gt;
+    &lt;option value="kat"&gt;Kat&lt;/option&gt;
+&lt;/select&gt;
+&lt;/form&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 10 ===============-->
+            <div class="chapter__container">
+                <h2>Tabel data structureren</h2>
+                
+                <div class="chapter__group">
+                    <h3>Toepassen van tabellen</h3>
+                    <p>Een tabel illustreert het onderlinge verband tussen verschillende data-cellen. Het tabel-element wordt alleen ingezet voor deze semantische reden. Het tabel-element wordt niet gebruikt met het doel om de stijl van een stuk tekst aan te passen, aangezien dit voor toegankelijkheidsproblemen zorgt. Daarom wordt in deze gevallen CSS gebruikt.</p>
+                    <p>CSS kan wel worden gebruikt om de manier waarop een tabel wordt weergegeven te herschikken, zodat het visueel anders oogt dan een conventionele tabel. Dit is vooral relevant in de context van kleinere schermen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Tabel rijen bouwen</h3>
+                    <p>Een HTML-tabel bestaat uit de volgende HTML-elementen: tabel, tr, th en td.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Gebruikscontext</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>table</td>
+                                <td>Tabel specificeert het begin en het einde van een tabel.</td>
+                                <td><pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Vogel&lt;/th&gt;
+        &lt;th&gt;Kleur&lt;/th&gt;
+        &lt;th&gt;Photo&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Meeuw&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Raaf&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>tr</td>
+                                <td>Tabel row specificeert dat de onderliggende elementen tot een tabel rij behoren.</td>
+                                <td><pre>&lt;tr&gt;
+    &lt;td&gt;Meeuw&lt;/td&gt;
+    &lt;td&gt;Wit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Raaf&lt;/td&gt;
+    &lt;td&gt;Zwart&lt;/td&gt;
+&lt;/tr&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>th</td>
+                                <td>Tabel header specificeert een header van een tabel. Dit dient om een kolom aan te duiden.</td>
+                                <td><pre>&lt;tr&gt;
+    &lt;th&gt;Vogel&lt;/th&gt;
+    &lt;th&gt;Kleur&lt;/th&gt;
+    &lt;th&gt;Photo&lt;/th&gt;
+&lt;/tr&gt;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>td</td>
+                                <td>Tabel data specificeert de cellen met gegevens in een tabel.</td>
+                                <td><pre>&lt;tr&gt;
+    &lt;td&gt;Raaf&lt;/td&gt;
+    &lt;td&gt;Zwart&lt;/td&gt;
+    &lt;td&gt;&lt;img src="raaf.jpg" alt="Een raaf" width="360" height="529"&gt;&lt;/td&gt;
+&lt;/tr&gt;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om de stijl van een tabel aan te passen wordt CSS toegepast. CSS wordt bijvoorbeeld gebruikt om een header volledig in hoofdletters te weergeven. Dit zorgt ervoor dat de woorden correct worden uitgesproken.</p>
+                    <p>Aanvullende attributen kunnen worden gebruikt om een geavanceerde HTML-tabel te maken. Dit maakt het bijvoorbeeld mogelijk om de inhoud van een tabel te spreiden over meerdere rijen of kolommen. Daarnaast kan een header, body en footer van een tabel worden gedefinieerd en kan er een bijschrift worden toegevoegd.</p>
+                </div>                
+            </div>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

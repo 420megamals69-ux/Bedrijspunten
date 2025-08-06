@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Learning Java 11</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>Learning Java 11</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Van start gaan met Java</h2>
+                
+                <div class="chapter__group">
+                    <h3>Wat is Java?</h3>
+                    <p>Java is een programmeertaal die wordt gebruikt om instructies aan een computer te geven. Net als natuurlijke talen beschikt Java over een vocabulaire en grammaticale regels, waarmee communicatie tussen ontwikkelaar en computer mogelijk wordt gemaakt.</p>
+                    <p>Met Java kunnen verschillende soorten applicaties worden ontwikkeld, waaronder webapplicaties, mobiele applicaties, desktopapplicaties, webservers en embedded systems.</p>
+                    <p>Om Java-programma's uit te voeren en te ontwikkelen, is er een Java Runtime Environment (JRE) en Java Development Kit (JDK) nodig. De JRE verwijst naar een Java-omgeving voor het uitvoeren van Java-programma's en de JDK naar het volledig software-ontwikkelpakket voor het bouwen van Java-programma's.</p>
+                    <p>Voor het uitvoeren van Java-programma's volstaat installatie van de JRE. Voor het ontwikkelen van Java-programma's is installatie van de JDK vereist. Bij installatie van de JDK wordt de JRE automatisch mee geïnstalleerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Java op een computer downloaden</h3>
+                    <p>Voor de fundamenten van Java is elke versie Java 8 of hoger geschikt. In de cursus wordt Java 13.0.2 gebruikt, omdat dit de nieuwste release was op het moment van opname.</p>
+                    <p>Navigeer naar de Oracle-downloadpagina voor Java SE Development Kit, selecteer de gewenste versie (bijv. 13.0.2) en klik op Download. Accepteer de licentieovereenkomst en download het installatiebestand dat past bij het besturingssysteem. Voer ten slot het gedownloade installatiebestand uit en volg de installatiewizard.</p>
+                    <p>De succesvolle voltooiing van de installatie kan worden gecontroleerd door in een terminal/command prompt <code>java -version</code> en <code>javac -version</code> uit te voeren.</p>
+                    <p>Javac wordt gebruikt om .java-bestanden te compileren en java wordt gebruikt om gegenereerde .class-bestanden of jar-bestanden te starten.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De command line verkennen</h3>
+                    <p>De command line (of terminal) is een tekstgebaseerde gebruikersinterface waarmee opdrachten kunnen worden ingevoerd om de computer aan te sturen, in tegenstelling tot de grafische gebruikersinterface (GUI) waarbij met muis en vensters wordt gewerkt.</p>
+                    <p>Op de Mac kan het terminal worden geopend door Spotlight Search te openen, Terminal te typen en op Enter te drukken. Op Windows kan in het Startmenu cmd worden getypt, waarna Command Prompt kan worden aangeklikt. Eenmaal in de command line kunnen de volgende basiscommando's worden gebruikt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Actie</th>
+                                <th>macOS/Linux</th>
+                                <th>Windows</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>Lijst inhoud tonen</td>
+                                <td><code>ls</code></td>
+                                <td><code>dir</code></td>
+                                <td>Toont alle bestanden en mappen in de huidige directory.</td>
+                            </tr>
+                            <tr>
+                                <td>Directory veranderen</td>
+                                <td><code>cd &lt;naam&gt;</code></td>
+                                <td><code>cd &lt;naam&gt;</code></td>
+                                <td>Navigeert naar de opgegeven directory.</td>
+                            </tr>
+                            <tr>
+                                <td>Eén niveau omhooggaan</td>
+                                <td><code>cd ..</code></td>
+                                <td><code>cd ..</code></td>
+                                <td>Navigeert naar de bovenliggende directory.</td>
+                            </tr>
+                            <tr>
+                                <td>Een nieuwe map maken</td>
+                                <td><code>mkdir &lt;naam&gt;</code></td>
+                                <td><code>mkdir &lt;naam&gt;</code></td>
+                                <td>Maakt een nieuwe directory met de opgegeven naam.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Je eerste Javaprogramma</h3>
+                    <p>Om het eerste Javaprogramma te schrijven is een teksteditor nodig (bijv. Sublime Text) om code te schrijven en in combinatie met de command line om de code te compileren en uit te voeren.</p>
+                    <p>Java is een relatief verbose taal: elk programma moet een main-methode als entry point bevatten om het programma te kunnen laten functioneren:</p>
+                    <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        // hier komt de uitvoercode
+    }
+}</code></pre>
+                    <p>De main methode kan worden uitgebreid met additionele code:</p>
+                    <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World! It's me Vincent!");
+    }
+}</code></pre>
+                    <p>Nadat de geschreven code is opgeslagen, kan er in de terminal naar de map worden genavigeerd. Het compileren en uitvoeren van de code gaat als volgt:</p>
+                    <pre><code>javac Bestandnaam.java
+java HelloWorld</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Hello World in de command line</h3>
+                    <p>Java verschilt van veel andere talen doordat de broncode eerst gecompileerd moet worden tot bytecode. Tijdens dit proces worden één of meer .class-bestanden gegenereerd, die vervolgens door de JVM worden uitgevoerd.</p>
+                    <p>Om Hello World vanuit de command line te laten werken moet er eerst naar de directory worden genavigeerd. Dit kan worden gedaan door de inhoud van de huidige map te tonen en naar de map te navigeren waarin HelloWorld.java staat:</p>
+                    <pre><code>ls      # macOS/Linux
+# Of
+dir     # Windows
+
+cd Desktop
+cd learning-java
+ls</code></pre>
+                    <p>Om de code te compileren wordt de javac-commando gebruikt, zodat de .java-broncode om kan worden gezet naar bytecode (.class):</p>
+                    <pre><code>javac HelloWorld.java</code></pre>
+                    <p>Na de compilatie verschijnt HelloWorld.class in dezelfde directory en kan de bytecode uit worden gevoerd met de java-commando (zonder extensie):</p>
+                    <pre><code>java HelloWorld</code></pre>
+                    <p>Om het herhaaldelijk compileren en uitvoeren van code makkelijker te maken bestaan er tools en geïntegreerde ontwikkelomgevingen (IDE's) die deze stappen automatiseren en zo de ontwikkelaarstoolchain vereenvoudigen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>De geïntegreerde development omgeving (IDE) verkennen</h3>
+                    <p>Een IDE (Integrated Development Environment) is een softwarepakket dat het schrijven, compileren en uitvoeren van code ondersteunt via een grafische gebruikersinterface. Voor Java biedt een IDE geïntegreerde tools, zoals een editor, compiler en debugger, in één omgeving.</p>
+                    <p>Het gebruik van een IDE voor Java heeft voordelen ten opzichte van de command line: een IDE bevat functionaliteit voor het opsporen van fouten, biedt projectstructuur en automatisch beheer van afhankelijkheden en maakt het mogelijk om code in één omgeving te bouwen en te runnen.</p>
+                    <p>De IDE die in deze cursus wordt gebruikt is IntelliJ IDEA (JetBrains). De belangrijkste UI-componenten van deze IDE zijn de project-navigator, het editor venster en de run/debug-knoppen. De project-navigator toont mappen (.idea, src) en gekoppelde JDK en in het editor-venster staan de Java-bestanden klaar voor verdere bewerkingen. De run/debug-knoppen staan rechtsboven en assisteren in het testen en debuggen van de geschreven code.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Hello World in een IDE</h3>
+                    <p>De eerste stap om een Hello World programma in een IDE aan te maken en uit te voeren, is het aanmaken van een nieuw Java-bestand. Dit kan door in de Project-navigator links op de src map te klikken en door vervolgens Java Class te selecteren in new.</p>
+                    <p>Zodra het bestand is aangemaakt moeten de standaard main methode en de Hello World uitvoerregel worden toegevoegd:</p>
+                    <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World from the IntelliJ IDE!");    
+    }
+}</code></pre>
+                    <p>Ten slotte kan het programma direct in de IDE worden uitgevoerd door rechtsboven op de run knop te drukken.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Een sterke fundering bouwen</h2>
+                
+                <div class="chapter__group">
+                    <h3>Primitieve datatypes</h3>
+                    <p>Data is informatie die door een computer wordt opgeslagen of verwerkt. Java classificeert deze gegevens aan de hand van datatypes, waarbij elk datatype een verzameling mogelijke waarden representeert. Deze datatypes zijn onderverdeeld in Primitieve datatypes en Reference-types.</p>
+                    <p>Primitieve datatypes zijn de meest basale bouwstenen, waaronder Boolean, int, double en char. Primitive datatypes vormen de fundering voor alle overige datatypes in Java en worden hieronder nader toegelicht:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Datatype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Boolean</td>
+                                <td>Geeft één van twee waarden weer: true of false.</td>
+                                <td><pre>boolean lightOn = true;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>Staat voor "integer"; geeft gehele getallen weer.</td>
+                                <td><pre>int siblings = 3;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>Vertegenwoordigt decimale (zwevende-komma) getallen.</td>
+                                <td><pre>double gpa = 3.4;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>Staat voor "character"; geeft één enkel teken weer.</td>
+                                <td><pre>char initial = 'J';</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Deze primitieve datatypes worden gebruikt om basiswaarden te modelleren, zoals aan/uit-statussen, aantallen, kommagetallen of losse tekens. Door deze fundamentele bouwstenen te combineren, ontstaan de complexere datastructuren en objecten in Java.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Datatypes en variabelen in Java</h3>
+                    <p>In Java worden losse waarden opgeslagen in variabelen, waarbij elke variabele een datatype, een naam (label) en een waarde heeft. De datatype bepaalt welke waarden zijn toegestaan, en de naam maakt het mogelijk om die gegevens later te hergebruiken. Elke variabele wordt volgens de volgende structuur gedefinieerd:</p>
+                    <pre><code>&lt;datatype&gt; &lt;naam&gt; = &lt;waarde&gt;;</code></pre>
+                    <p>Dit kan uiteindelijk de volgende vorm aannemen:</p>
+                    <pre><code>int studentAge = 15;
+double studentGPA = 3.45;
+char studentFirstInitial = 'K';
+char studentLastInitial = 'H';
+boolean hasPerfectAttendance = true;</code></pre>
+                    <p>Om een variabele te gebruiken, kan de waarde geprint worden met:</p>
+                    <pre><code>System.out.println(&lt;variabeleNaam&gt;);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Strings in Java</h3>
+                    <p>Naast de primitieve datatypes bestaan er reference-types, waarvan String het eerste voorbeeld is. Een String is een geordende reeks tekens en wordt gebruikt om tekst van willekeurige lengte op te slaan, bijvoorbeeld woorden of volledige zinnen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Datatype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>String</td>
+                                <td>Reeks geordende karakters (reference-type)</td>
+                                <td><pre>String studentName = "Kayla Hammon";</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In tegenstelling tot char (één teken) kan een String meerdere tekens bevatten.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Indexen gebruiken in Java</h3>
+                    <p>Binnen een String is elke positie van een teken vastgelegd met een nul-gebaseerde index. Het eerste teken staat op index 0, het tweede op index 1, enzovoort. Voor de naam "Vincent" geldt bijvoorbeeld dat V een index van 0 heeft en e een index van 4.</p>
+                    <p>Om een specifiek teken uit een String te halen, biedt Java de methode charAt(). Deze methode retourneert het karakter op de opgegeven index.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>charAt()</td>
+                                <td>retourneert het karakter op de opgegeven index.</td>
+                                <td><pre>char studentFirstInitial = studentFirstName.charAt(0);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met deze methode kan bijvoorbeeld eenvoudig afgeleid worden hoe uit een langere String andere gegevens, zoals initialen worden gehaald.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Strings samenvoegen in Java</h3>
+                    <p>Om meerdere strings en string-variabelen samen in één regel af te drukken, gebruikt Java de +-operator. Deze operator voegt links en rechts van zichzelf telkens twee tekstwaarden (zowel letterlijke strings als string-variabelen) aaneen. Dit kan er als volgt uitzien:</p>
+                    <pre><code>System.out.println(
+        studentFirstName     
+    + " "                  
+    + studentLastName      
+    + " has a GPA of "     
+    + studentGPA           
+);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Input en output in Java</h3>
+                    <p>De Scanner-klasse maakt het mogelijk voor gebruikers om gegevens in te voeren, zodat gebruikers de variabelen tijdens uitvoering kunnen bijwerken:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Klasse</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Scanner</td>
+                                <td>Creëert een scanner.</td>
+                                <td><pre>Scanner input = new Scanner(System.in);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om hier gebruik van te kunnen maken moet de scanner eerst geïmporteerd worden:</p>
+                    <pre><code>import java.util.Scanner;</code></pre>
+                    <p>Daarna is het mogelijk om scanner-objecten aan te maken zoals:</p>
+                    <pre><code>System.out.println("Wat wil je instellen als nieuwe GPA?");
+
+Scanner input = new Scanner(System.in);
+studentGPA = input.nextDouble();
+
+System.out.println(studentFirstName + " " + studentLastName 
+    + " heeft nu een GPA van " + studentGPA);</code></pre>
+                    <p>Bij deze opzet moet het programma opnieuw worden uitgevoerd en handmatig aangepast voor elk item. Daarnaast blijven ingevoerde waarden slechts geldig tijdens de huidige uitvoering; waarden worden niet opgeslagen tussen sessies.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Control flow</h2>
+                
+                <div class="chapter__group">
+                    <h3>Een programma uitplannen in de control flow</h3>
+                    <p>De control flow van een programma bepaalt in welke volgorde de instructies worden uitgevoerd. Tot nu toe verliep de uitvoering altijd sequentieel: elke regel code volgt direct op de voorgaande. Met speciale control flow-verklaringen kan deze volgorde worden aangepast, waardoor bepaalde regels nooit, eénmaal of meerdere malen worden uitgevoerd.</p>
+                    <p>De uitvoering wordt gestuurd door voorwaarden, die bepalen óf en hoe vaak een codeblok wordt doorlopen. Dit kan bijvoorbeeld aan de hand van een if-statement:</p>
+                    <pre><code>System.out.print("Kies een getal tussen 1 en 10: ");
+int inputtedNum = scanner.nextInt();
+
+if (inputtedNum < 5) {
+    System.out.println("Jouw fortune: Je hebt een rustige dag voor de boeg.");
+} else {
+    System.out.println("Jouw fortune: Spannende gebeurtenissen komen eraan!");
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Operators in Java</h3>
+                    <p>In een beslissingsblok zoals een if-statement bestaat de voorwaarde uit een Boolean-expressie, die met behulp van relationele operatoren twee waarden vergelijkt en true of false oplevert:</p>
+                    <pre><code>Scanner scanner = new Scanner(System.in);
+System.out.print("Kies een getal tussen 1 en 10: ");
+int inputtedNum = scanner.nextInt();
+
+if (inputtedNum < 5) {
+    System.out.println("Jouw fortune: Je hebt een rustige dag voor de boeg.");
+} else if (inputtedNum == 5) {
+    System.out.println("Jouw fortune: Vandaag brengt een bijzondere verrassing.");
+} else {
+    System.out.println("Jouw fortune: Spannende gebeurtenissen komen eraan!");
+}</code></pre>
+                    <p>Deze expressie stuurt vervolgens de control flow van het programma. Hieronder staat een overzicht van deze relationele operatoren weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Betekenis</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;</td>
+                                <td>Kleiner dan</td>
+                                <td>inputtedNum &lt; 5</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;=</td>
+                                <td>Kleiner dan of gelijk aan</td>
+                                <td>inputtedNum &lt;= 5</td>
+                            </tr>
+                            <tr>
+                                <td>&gt;</td>
+                                <td>Groter dan</td>
+                                <td>inputtedNum &gt; 8</td>
+                            </tr>
+                            <tr>
+                                <td>&gt;=</td>
+                                <td>Groter dan of gelijk aan</td>
+                                <td>inputtedNum &gt;= 8</td>
+                            </tr>
+                            <tr>
+                                <td>==</td>
+                                <td>Gelijk aan</td>
+                                <td>inputtedNum == 8</td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Niet gelijk aan</td>
+                                <td>inputtedNum != 3</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Besluitvorming met if in Java</h3>
+                    <pre><code>System.out.print("Kies een getal tussen 1 en 10: ");
+int inputtedNum = scanner.nextInt();
+
+if (inputtedNum < 5) {
+    System.out.println("Geniet van het geluk dat een vriend je brengt.");
+} else {
+    System.out.println("Je schoenkeuze zal je vandaag veel geluk brengen.");
+}</code></pre>
+                    <p>De bovenstaande code bestaat uit drie stappen: het invoeren van gegevens, het controleren van de ingevoerde waarde ten opzichte van de voorwaarde en het geven van een output op basis van de voorwaarde. De besluitvorming in de code wordt afgehandeld aan de hand van een if-else statement.</p>
+                    <p>Een if-statement is een control flow-structuur die code uitvoert als een Boolean-expressie true oplevert. Met else kan een alternatief codeblok worden opgegeven voor het geval de expressie false is. In één programma-executie wordt altijd óf het if- óf het else-blok uitgevoerd, nooit beide.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Scope begrijpen in Java</h3>
+                    <p>De scope bepaalt in welk gedeelte van een programma een variabele of code-element toegankelijk is. In Java creëert elk paar accolades ({ ... }) een nieuw blok met een eigen scope:</p>
+                    <pre><code>if (inputtedNum < 5) {
+    int favoriteNumber = 5;            
+} else {
+}</code></pre>
+                    <p>In het bovenstaande voorbeeld is favoriteNumber alleen beschikbaar binnen de accolades van het if-blok waarin het is gedeclareerd. Buiten dit blok, zoals in het else-blok, bestaat de variabele niet.</p>
+                    <pre><code>String favoriteFood = "pizza";
+
+if (inputtedNum < 5) {
+    favoriteFood = "pasta";  
+} else {
+    favoriteFood = "sushi";
+}</code></pre>
+                    <p>Een variabele is alleen toegankelijk binnen de scope waarin het is gedeclareerd: hoe hoger de declaratie, hoe groter het bereik waarin de variabele gebruikt kan worden. Omdat favoriteFood in het tweede voorbeeld in de parent-scope is gedeclareerd (de main-methode) is het beschikbaar binnen alle geneste blokken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>While loops in Java</h3>
+                    <p>Een while-lus voert herhaaldelijk een blok statements uit zolang een opgegeven Boolean-voorwaarde true blijft; bij false stopt de herhaling.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>while</td>
+                                <td>Definieert een while loop</td>
+                                <td><pre>while (isOnRepeat) {
+    System.out.println("Huidig nummer speelt op repeat.");
+    System.out.print("Wilt u herhaling uitzetten? (ja/nee): ");</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Oneindige loops kunnen ontstaan als de voorwaarde nooit false wordt. Daarom is het raadzaam om altijd een exit-mogelijkheid aan te bieden. Het gebruik van een if-statement binnen de while-lus maakt het mogelijk om de lus dynamisch te beëindigen:</p>
+                    <pre><code>import java.util.Scanner;
+
+public class MusicPlayer {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        boolean isOnRepeat = true;  // Voorwaarde voor de while-lus
+
+        // While-lus: herhaal zolang isOnRepeat true is
+        while (isOnRepeat) {
+            System.out.println("Huidig nummer speelt op repeat.");
+            System.out.print("Wilt u herhaling uitzetten? (ja/nee): ");
+            
+            String userInput = input.nextLine();
+            // Controleer of de gebruiker "ja" invoert
+            if (userInput.equals("ja")) {
+                isOnRepeat = false;  // Verbreek de lus bij "ja"
+            }
+        }
+        
+        // Wordt uitgevoerd nadat isOnRepeat false is geworden
+        System.out.println("Speel volgend nummer.");
+        input.close();
+    }
+}</code></pre>
+                </div>               
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Debuggen in Java</h2>
+                
+                <div class="chapter__group">
+                    <h3>Syntax en logische errors debuggen</h3>
+                    <p>Tijdens het programmeren kunnen syntaxfouten en logische fouten plaatsvinden. Syntaxfouten ontstaan doordat de code niet kan worden gecompileerd door fouten in de structuur of "grammatica" van de code. Bij logische fouten draait de code, maar geeft het onjuiste resultaten doordat de logica van het programma fout is opgebouwd. Debuggen verwijst naar het proces van het vinden en oplossen van deze fouten.</p>
+                    <p>Een strategie die gebruikt wordt voor debuggen, is het gebruik van printstatements. Hierbij worden variabelen in de console getoond om te verifiëren wat de waardes zijn tijdens de uitvoering. Syntaxfouten zijn vaak voorzien van duidelijke foutbeschrijvingen en regelverwijzingen. Het doorlezen van deze foutmeldingen helpt om potentiele syntaxfouten te debuggen.</p>
+                    <p>Ook helpt het om te controleren of de toewijzingen, condities en vergelijkingen logisch correct zijn en om verschillende onverwachte en onjuist invoerwaarden op te leveren om het gedrag te observeren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Debuggen met een IDE</h3>
+                    <p>Printstatements gebruiken om fouten op te sporen is effectief, maar tegenwoordig omslachtig. Moderne IDE's zoals IntelliJ IDEA, Eclipse of VS Code bieden ingebouwde debugging tools die het opsporen van fouten eenvoudiger, sneller en overzichtelijker maken.</p>
+                    <p>De IDE biedt bijvoorbeeld syntaxfoutmarkeringen in realtime. Daarnaast is het mogelijk om tijdelijk de uitvoering van code op een specifieke regel te stoppen en om variabelen live te inspecteren. Dit maakt het makkelijker om het programma regel voor regel te doorlopen om het gedrag te volgen.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Functies in Java</h2>
+                
+                <div class="chapter__group">
+                    <h3>Wat zijn functies (conceptueel)</h3>
+                    <p>Een functie is een benaamde verzameling van eindige stappen die samen een specifieke taak uitvoeren. Een functie heeft een reeks gedefinieerde handelingen (stappen) die nodig zijn om een taak uit te voeren en de naam waaronder deze reeks stappen bekend is. Door deze functienaam gevolgd door haakjes (()) uit te voeren, worden alle onderliggende stappen doorlopen, wat er bijvoorbeeld zo uitziet:</p>
+                    <pre><code>makePBAndJSandwich();</code></pre>
+                    <p>Nadat een functie gedefinieerd kan het overal in het programma worden hergebruikt en wijzigingen in de functiedefinitie zijn direct van toepassing op alle plekken waar de functie wordt aangeroepen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Functies definiëren in Java</h3>
+                    <p>In Java moet een functie (methoden) eerst gedefinieerd worden buiten de main -methode, voordat het aangeroepen kan worden. Hierbij is het belangrijk om te beseffen dat definiëren niet hetzelfde is als aanroepen: het schrijven van de functiedefinitie bevat alleen de instructies; de functie wordt pas uitgevoerd bij een expliciete aanroep.</p>
+                    <pre><code>public static void announceDeveloperTeaTime() {
+    System.out.println("waiting for developer tea time...");
+    Scanner input = new Scanner(System.in);
+    input.next();  // wacht op willekeurig woord + Enter
+    System.out.println("It's Developer Tea Time!");
+}</code></pre>
+                    <p>Zodra een methode is gedefinieerd, zoals hierboven het geval is, kan het binnen of buiten de main-methode worden uitgevoerd:</p>
+                    <pre><code>public static void main(String[] args) {
+    announceDeveloperTeaTime();
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Een functie aanroepen in Java</h3>
+                    <p>Nadat een methode is gedefinieerd, kan deze binnen de main-methode (of een andere methode) worden opgeroepen om de onderliggende stappen uit te voeren, zelfs als het buiten de main staat. In het onderstaande voorbeeld wordt announceDeveloperTeaTime() buiten de main gedefinieerd:</p>
+                    <pre><code>public static void main(String[] args) {
+    System.out.println("Welcome to your new job");
+    announceDeveloperTeaTime();   // Eerste aanroep
+    System.out.println("write code, review code");
+    announceDeveloperTeaTime();   // Tweede aanroep
+    System.out.println("you get promoted");
+}</code></pre>
+                    <p>Tijdens elke aanroep wordt de volledige methode announceDeveloperTeaTime() doorlopen, waarna de uitvoering terugkeert naar de volgende regel in main.</p>
+                    <p>De main-methode is zelf ook een functie die automatisch wordt aangeroepen bij het starten van het programma. Al de overige functies worden handmatig aangeroepen. Deze functies kunnen meerdere keren hergebruikt worden in de main functie of andere functies, waardoor code‐duplicatie wordt voorkomen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Parameters in Java</h3>
+                    <p>Een parameter maakt het mogelijk om bij elke aanroep andere waarden mee te geven, waardoor het resultaat van de methode afhankelijk van de input kan veranderen. Hiermee maken parameters een methode dynamisch. Elke parameter bestaat enkel binnen de methode waarin het is gedefinieerd. Het is niet toegankelijk buiten de methode en andere methoden zien deze variabelen niet.</p>
+                    <p>Tijdens het definiëren van de methode komen de parameters tussen de haakjes te staan, met telkens een datatype én een naam:</p>
+                    <pre><code>public static void calculateTotalMealPrice(
+    double listedMealPrice,  // parameter 1
+    double tipRate,          // parameter 2
+    double taxRate           // parameter 3
+) {
+    // … implementatie …
+}</code></pre>
+                    <p>Bij het oproepen van de methode, worden de bijbehorende argumenten in dezelfde volgorde tussen de haakjes geplaatst:</p>
+                    <pre><code>calculateTotalMealPrice(15.0, 0.20, 0.08); 
+calculateTotalMealPrice(25.0, 0.18, 0.08);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Return types in Java</h3>
+                    <p>Met returntypes kan een methode berekende gegevens terug leveren, waardoor die gegevens in andere delen van het programma verder kunnen worden benut:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>return</td>
+                                <td>Levert een waarde van het opgegeven returntype op.</td>
+                                <td><pre>return result;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Waar een void-methode niets teruggeeft, retourneert een niet-void-methode een waarde van het opgegeven type.</p>
+                    <pre><code>public static double calculateTotalMealPrice(
+    double listedMealPrice,
+    double tipRate,
+    double taxRate
+) {
+    double result = listedMealPrice 
+                    + (listedMealPrice * tipRate) 
+                    + (listedMealPrice * taxRate);
+    return result;  // levert een double op
+}</code></pre>
+                    <p>Alle methoden in Java hebben een returntype. Door het returntype van void naar double te wijzigen, wordt de lokale variabele result buiten de methode beschikbaar. De geretourneerde double kan tevens worden opgeslagen in een variabele van hetzelfde type:</p>
+                    <pre><code>public static void main(String[] args) {
+    double groupTotalMealCost = calculateTotalMealPrice(100, 0.20, 0.08);
+    System.out.println(groupTotalMealCost);  // drukt 128.0 af
+
+    double individualTotalMealPrice = groupTotalMealCost / 5;
+    System.out.println(individualTotalMealPrice);  // drukt 25.6 af
+}</code></pre>
+                    <p>De meest voorkomende returntypes zijn hieronder weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Returntype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>void</td>
+                                <td>Geeft geen waarde terug</td>
+                                <td><pre>public static void log(String msg) { … }</pre></td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>Geheel getal</td>
+                                <td><pre>public static int sum(int a, int b) { … }</pre></td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>Kommagetal</td>
+                                <td><pre>public static double avg(double a, double b) { … }</pre></td>
+                            </tr>
+                            <tr>
+                                <td>boolean</td>
+                                <td>Waar of onwaar</td>
+                                <td><pre>public static boolean isEven(int n) { … }</pre></td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>Enkel teken</td>
+                                <td><pre>public static char firstChar(String s) { … }</pre></td>
+                            </tr>
+                            <tr>
+                                <td>String</td>
+                                <td>Tekststring</td>
+                                <td><pre>public static String greet(String name) { … }</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Ingebouwde functies gebruiken in Java</h3>
+                    <p>Ingebouwde functies zijn de vooraf gedefinieerde methoden die de programmeertaal of de standaardbibliotheek aanbiedt. Ontwikkelaars hoeven deze methoden niet zelf te implementeren, maar kunnen deze direct aanroepen. De println() en equals() functies zijn voorbeelden van ingebouwde functies.</p>
+                    <p>In tegenstelling tot gebruikers-gedefinieerde functies, die vaak direct op klasse niveau staan, wordt de punt-operator bij ingebouwde functies gebruikt om eerst een klasse of object en vervolgens de methode aan te wijzen:</p>
+                    <pre><code>// Printen met de ingebouwde println-functie
+System.out.println("Hallo wereld!");
+
+// Vergelijken van twee strings
+boolean gelijk = "test".equals(inputString);
+
+// Exponentiëren met Math.pow
+double resultaat = Math.pow(2, 5);  // geeft 32.0</code></pre>
+                    <p>De ingebouwde functies zijn grondig getest door de makers van Java en in het geval dat een actie uitgevoerd kan worden met een ingebouwde functies is er geen eigen implementatie nodig. Hierdoor kan er meer op de applicatielogica worden gefocust in plaats van op her-implementatie van standaardfunctionaliteit.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 6 ===============-->
+            <div class="chapter__container">
+                <h2>Klassen in Java</h2>
+                
+                <div class="chapter__group">
+                    <h3>Klassen in Java</h3>
+                    <p>Een klasse is een door de gebruiker gedefinieerde blauwdruk die de attributen en methoden omvat die het object representeren. Alle objecten die op basis van een klasse worden gemaakt, erven dezelfde structuur, maar kunnen verschillende waarden voor de attributen bevatten. Elke klasse-definitie bevat variabelen die de kenmerken van elk object vastleggen:</p>
+                    <pre><code>public class Triangle {
+    private double base, height, sideA, sideB, sideC;
+
+    public Triangle(double base, double height, 
+                    double sideA, double sideB, double sideC) {
+        this.base   = base;
+        this.height = height;
+        this.sideA  = sideA;
+        this.sideB  = sideB;
+        this.sideC  = sideC;
+    }
+
+    public double findArea() {
+        return 0.5 * base * height;
+    }
+
+    public String calculateTriangleType() {
+        if (sideA == sideB && sideB == sideC)      
+        return "Equilateral";
+        
+        else if (sideA == sideB || sideB == sideC || sideA == sideC)                   
+        return "Isosceles";
+        
+        else                                       
+        return "Scalene";
+    }
+
+    public static boolean isValidTriangle(double a, double b, double c) {
+        return a + b > c && a + c > b && b + c > a;
+    }
+}</code></pre>
+                    <p>Attributen zijn variabelen die de kenmerken van een object vastleggen, zoals lengte of kleur. Methoden beschrijven wat een object kan doen of welke berekeningen eraan verbonden zijn en zijn in feite functies binnen de klasse. Soms kan een berekende eigenschap ook als attribuut gelden. Het ontwerp bepaalt in dit geval of iets als methode of attribuut wordt geïmplementeerd, afhankelijk van hergebruik en opslagbehoefte.</p>
+                    <p>Methoden die géén gebruikmaken van de instantie specifieke attributen, maar wel thematisch bij de klasse horen, krijgen het sleutelwoord static. Een methode met static kan worden aangeroepen zonder een object te hoeven creëren:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>static</td>
+                                <td>Definieert variabelen, methoden, blokken en geneste klassen die bij een klasse horen in plaats van bij een specifieke instantie van de klasse</td>
+                                <td><pre>public static double toRadians(double degrees) { … }</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Constructors in Java</h3>
+                    <p>Een constructor is een methode binnen een klasse nieuwe object­instanties maakt en initialiseert. Elke klasse heeft een constructor, die expliciet kan worden gedefinieerd om de attributen direct bij creatie een waarde te geven. Met constructors blijft de code overzichtelijk en wordt elk object direct bij creatie correct ingesteld.</p>
+                    <p>Bij het definiëren van een constructor wordt per parameter een datatype en naam opgegeven, waarna de corresponderende attributen worden geinitialiseerd:</p>
+                    <pre><code>public class Triangle {
+    private double base, height, sideA, sideB, sideC;
+
+    // Constructor: parameters komen overeen met attributen
+    public Triangle(double base, double height,
+                    double sideA, double sideB, double sideC) {
+        this.base   = base;    // 'this.base' = attribuut, 'base' = parameter
+        this.height = height;
+        this.sideA  = sideA;
+        this.sideB  = sideB;
+        this.sideC  = sideC;
+    }
+
+    // Methode om oppervlakte te berekenen
+    public double findArea() {
+        return 0.5 * base * height;
+    }
+}</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>new</td>
+                                <td>Creert een nieuw object</td>
+                                <td><pre>public class Main {
+    int x = 5;
+
+    public static void main(String[] args) {
+        Main myObj = new Main();
+        System.out.println(myObj.x);
+    }
+}</pre></td>
+                            </tr>
+                            <tr>
+                                <td>this</td>
+                                <td>Verwijst naar het huidige object in een methode of constructor</td>
+                                <td><pre>public class Main {
+    int x;
+
+        public Main(int x) {
+        this.x = x;
+    }
+}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Een klasse creëren in Java</h3>
+                    <p>De eerste stap in het creëren van de klasse in deze cursus, is het aanmaken van een nieuw Java-bestand, waarin een klasse wordt gedefinieerd die dezelfde naam als het bestand heeft. Vervolgens worden de eigenschappen die de klasse heeft gedefinieerd met behulp van variabelen die later bij elke instantie een eigen waarde krijgen.</p>
+                    <p>Daarna wordt elk attribuut op basis van parameters geinitialiseerd, waarbij this wordt gebruikt om onderscheid te maken tussen de parameternaam en de attribuutnaam. Ten slot wordt een methode toe gevoegd die géén parameters nodig heeft en de waarde retourneert.</p>
+                    <pre><code>public class Triangle {
+    private double base;
+    private double height;
+    private double sideA;
+    private double sideB;
+    private double sideC;
+
+    public Triangle(double base, double height,
+                    double sideA, double sideB, double sideC) {
+        this.base   = base;
+        this.height = height;
+        this.sideA  = sideA;
+        this.sideB  = sideB;
+        this.sideC  = sideC;
+    }
+
+    public double findArea() {
+        return this.base * this.height / 2;
+    }
+}</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Een instantie creëren in Java</h3>
+                    <p>De eerste stap in het creëren van een instantie is het aanmaken van een nieuw Java-bestand met daarin een main-methode. Vervolgens worden de benodigde variabelen binnen de main gedeclareerd en wordt de constructor aangeroepen met de gewenste parameterwaarden, bijvoorbeeld als volgt:</p>
+                    <pre><code>public static void main(String[] args) {
+    // Eerste driehoek: base=15, height=8, sides=15, 8, 17
+    Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
+
+    // Tweede driehoek: base=3, height=2.598, sides=3, 3, 3
+    Triangle triangleB = new Triangle(3, 2.598, 3, 3, 3);
+
+    // Voorbeeld: oppervlakte berekenen van triangleA
+    double areaA = triangleA.findArea();
+    System.out.println("Oppervlakte triangleA: " + areaA);
+}</code></pre>
+                    <p>Om objecten te creëren op basis van een klasse blauwdruk, wordt het new-sleutelwoord in een apart uitvoerbaar programma gebruikt. Zo blijft de definitie van de klasse gescheiden van de code die de instantie(n) daadwerkelijk aanmaakt en gebruikt.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Instantie methodes vs. Klasse methodes</h3>
+                    <p>Java bevat instantie methodes en klasse methodes. Instantie methodes gebruiken de attributen van een specifieke instantie en vereisen daarom een bestaand object. Deze methodes worden aangeroepen met de punt­operator op een object­variabele, bijvoorbeeld:</p>
+                    <pre><code>Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
+double area = triangleA.findArea();</code></pre>
+                    <p>Klasse methodes hebben geen toegang tot instantie­attributen (this) en werken los van individuele objecten, waardoor deze methodes zonder object­instanties worden aangeroepen. Deze methodes worden aangeroepen met de punt­operator op de klasse naam, bijvoorbeeld:</p>
+                    <pre><code>double result = Math.pow(2, 3);</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Instantie methodes gebruiken in Java</h3>
+                    <p>Instanties methodes worden opgeroepen doormiddel van een specifiek object en gebruiken de attributen van dat object voor de berekeningen. Concreet houdt dit in dat object.method() wordt gebruikt tijdens het aanroepen.</p>
+                    <p>Omdat iedere instantie een eigen attributen heeft, levert een tweede aanroep per object een verschillend resultaat op. Instanties methodes kunnen worden gedebugd door breakpoints voor de aanroep, binnen de methode en na de return te plaatsen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Instantie en klasse variabelen in Java</h3>
+                    <p>Java heeft variabelen die per object verschillen (niet-static) en variabelen die één waarde voor de hele klasse vastleggen (static). De instantie variabelen (niet static) horen bij een object­instantie en bevatten data die per instantie kan verschillen. Deze variabelen worden aangeroepen met behulp van de volgende structuur:</p>
+                    <pre><code>object.variabeleNaam</code></pre>
+                    <p>De klasse variabelen (static) horen bij de klasse zelf en behouden één gedeelde waarde voor alle instanties. Deze variabelen worden aangeroepen met behulp van de volgende structuur:</p>
+                    <pre><code>ClassName.variabeleNaam</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Review: Klassen vs. Instanties</h3>
+                    <p>Een klasse bevat zowel attributen (properties) als gedrag (methods) en elke klasse heeft een constructor. Een constructor is een speciale methode om object­instanties te creëren en te initialiseren.</p>
+                    <p>Een instantie is een concreet object dat ontstaat door de constructor van een klasse aan te roepen met new ClassName(). De attributen die per object verschillend zijn, zoals de hoogte of de kleur, worden Instantie variabelen genoemd. Instantie methoden gebruiken deze instantievariabelen en worden aangeroepen met object.method().</p>
+                    <p>Klasse variabelen behouden één waarde voor alle instanties van een klasse (bijv. Triangle.numOfSides). De klasse methoden kunnen zonder object­instantie worden aangeroepen, met ClassName.method() en zijn ideaal voor hulpfuncties en constante waarden die niet per object mogen variëren.</p>
+                    <p>Deze begrippen zullen vaak terugkomen bij het debuggen, in de documentatie en in zoekopdrachten, waardoor een goed begrip van deze concepten essentieel is in het leren en toepassen van Java.</p>
+                </div>                
+            </div>           
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

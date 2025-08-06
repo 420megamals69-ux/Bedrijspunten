@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Learning SQL Programming</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>Learning SQL Programming</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Introductie</h2>
+                
+                <div class="chapter__group">
+                    <h3>SQL programmeren leren</h3>
+                    <p>De wereld wordt gedreven door data en veel van deze data is opgeslagen in databases. Om deze informatie en inzichten te kunnen gebruiken moet de data worden opgevraagd. SQL is een veelgebruikte taal voor het opvragen en wijzigen van gegevens in databases.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>DB Browser voor SQLite verkennen</h3>
+                    <p>Tijdens het werken met SQL is er een tool nodig waarin statements kunnen worden geschreven en die deze statements naar de database software kan sturen. Er zijn veel verschillende programma's hiervoor beschikbaar, waaronder SQLite.</p>
+                    <p>In SQLite is de structuur van de database terug te zien in het "Database Structure" tabblad. De data in de tabel kan doorzocht worden in "Browse Data" overzicht en het schrijven en uitvoeren van SQL-statements met behulp van het tabblad "Execute SQL".</p>
+                    <p>Om een statement uit te voeren kan de play button of de f5 shortcut worden gebruikt. Wanneer een statement wordt uitgevoerd, zal er een bericht worden teruggegeven met de status. Dit is handig voor troubleshooten.</p>
+                    <p>Alle statements in de query box worden uitgevoerd. Om slechts één query uit te voeren moet de rest worden verwijderd of moet de query worden geselecteerd.</p>
+                    <p>De SQL-log is een overzicht in SQLite die alle uitgevoerde opdrachten in een project bijhoudt. Als een statement moet worden verwijderd, zorgt het de SQL-log dat het niet voor altijd is verdwenen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Wat is een database?</h3>
+                    <p>Een database is een verzameling van informatie die is georganiseerd in kolommen (velden) en rijen (records). Velden en records vormen een tabel, en één of meer tabellen vormen een database.</p>
+                    <p>De lay-out en de manier waarop velden, tabellen en relaties zijn opgezet in een database, wordt een schema genoemd.</p>
+                    <p>In tegenstelling tot spreadsheets kunnen databases complexe queries en relaties tussen tabellen aan. SQL wordt hierbij voor interactie met databases gebruikt, waardoor het gemakkelijker wordt om gegevens op te vragen en te manipuleren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Wat is SQL?</h3>
+                    <p>Structured Query Language wordt gebruikt voor het manipuleren en definiëren van gegevens in databases. SQL biedt een gestandaardiseerde manier om specifieke vragen te stellen aan een database en gestructureerde query's te maken.</p>
+                    <p>Een SQL-statement wordt geschreven om een antwoord uit een database te krijgen of om er een wijziging in aan te brengen. Query's verwijzen naar statements die vragen stellen. Er mogen spaties of witregels aan deze statements worden toegevoegd om het leesbaarder te maken.</p>
+                    <p>Een SQL-statement bestaat uit clausules die met sleutelwoorden worden gedefinieerd. Daarnaast kan een statement veldnamen, tabelnamen en predicaten bevatten. Predicaten geven aan naar welke informatie of voorwaarde er wordt gezocht op zoek zijn, zoals:</p>
+                    <pre><code>SELECT first_name, last_name
+    FROM quiz_results
+    WHERE state_code = 'CA'
+    ORDER BY last_name ASC;</code></pre>
+                    <p>Predicaten bevatten een waarde of voorwaarde die een expressie wordt genoemd. In het bovenstaande voorbeeld is 'CA' de expressie.</p>
+                    <p>SQL-statements eindigen met een puntkomma en de gebruikte sleutelwoorden worden meestal in hoofdletters geschreven voor de leesbaarheid.</p>
+                    <p>SQL wordt als een DML (Data Manipulation Language) gebruikt wanneer het de gegevens in de database manipuleert. SQL wordt als een DDL (Data Definition Language) gebruikt wanneer de structuur van databaseobjecten zoals tabellen, indexen en schema's te definiëren worden gewijzigd.</p>
+                    <p>Handelingen waarbij data wordt gewijzigd, worden over het algemeen CRUD genoemd (Create, Read, Update, Delete).</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Data opvragen uit een database</h2>
+                
+                <div class="chapter__group">
+                    <h3>Data opvragen met SELECT</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>SELECT</td>
+                                <td>Haalt gegevens op.</td>
+                                <td><pre>SELECT company, first_name FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>FROM</td>
+                                <td>Specificeert de tabel.</td>
+                                <td><pre>SELECT last_name FROM people;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het SELECT-statement wordt gebruikt om gegevens uit een database op te halen en maakt het mogelijk om gegevens te lezen. Het gebruik van SELECT is een veilige manier om gegevens te verkennen zonder deze daadwerkelijk in de database te wijzigen.</p>
+                    <p>Daarnaast kan het SELECT-statement letterlijke tekst teruggeven door de gewenste tekst tussen enkele aanhalingstekens te plaatsen:</p>
+                    <pre><code>SELECT 'Hello World!';</code></pre>
+                    <p>De velden die worden opgehaald worden gedefinieerd tussen SELECT en FROM. Het is mogelijk om meerdere velden op te halen door de velden met een komma te scheiden. De volgorde van de velden in het SELECT-statement bepaalt tevens volgorde in de uitvoer.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>Wild card (*)</td>
+                                <td>Selecteert alle velden in een tabel.</td>
+                                <td><pre>SELECT * FROM people;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het gebruik van het sterretje is handig voor het verkennen van data, maar wordt zelden gebruikt in een app of rapport doordat het veel informatie teruggeeft.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Query's verfijnen met WHERE</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>WHERE</td>
+                                <td>Voegt een voorwaarde toe.</td>
+                                <td><pre>SELECT * FROM people WHERE state_code = 'CA';</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met de WHERE-clausule kunnen voorwaarden aan een SELECT-statement worden toegevoegd, om resultaten te filteren op basis van specifieke criteria.</p>
+                    <p>De volgorde van clausules in SQL is belangrijk. De WHERE-clausule moet na SELECT en FROM komen om geldig te zijn.</p>
+                    <p>De tekst in de WHERE-clausule is hoofdlettergevoelig, wat betekent dat "CA" anders is dan "ca".</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Meer criteria aan een statement toevoegen</h3>
+                    <p>Logische operatoren worden gebruikt om meerdere voorwaarden aan een WHERE-clausule toe te voegen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>AND</td>
+                                <td>Weergeeft een veld als alle condities true zijn.</td>
+                                <td><pre>SELECT team, first_name
+FROM people
+WHERE state_code = 'CA' AND shirt_or_hat = 'shirt';</pre></td>
+                            </tr>
+                            <tr>
+                                <td>OR</td>
+                                <td>Weergeeft een veld als een conditie true is.</td>
+                                <td><pre>SELECT team, first_name
+FROM people
+WHERE state_code = 'CA' OR shirt_or_hat = 'shirt';</pre></td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Weergeeft een veld als de conditie false is.</td>
+                                <td><pre>SELECT team, first_name
+FROM people
+WHERE state_code = 'CA' AND shirt_or_hat != 'shirt';</pre></td>
+                            </tr>
+                            <tr>
+                                <td>IS</td>
+                                <td>Gelijk aan.</td>
+                                <td><pre>SELECT team, first_name
+FROM people
+WHERE state_code = 'CA' AND shirt_or_hat IS 'shirt';</pre></td>
+                            </tr>
+                            <tr>
+                                <td>IS NOT</td>
+                                <td>Niet gelijk aan.</td>
+                                <td><pre>SELECT team, first_name
+FROM people
+WHERE state_code = 'CA' AND shirt_or_hat IS NOT 'shirt';</pre></td>
+                            </tr>
+                            <tr>
+                                <td>&lt;&gt;</td>
+                                <td>Niet gelijk aan.</td>
+                                <td><pre>SELECT team, first_name
+FROM people
+WHERE state_code = 'CA' AND shirt_or_hat &lt;&gt; 'shirt';</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Haakjes kunnen worden gebruikt om voorwaarden te groeperen en de volgorde van evaluatie te bepalen, vergelijkbaar met het gebruik ervan in algebra.</p>
+                    <pre><code>SELECT shirt_or_hat, state_code, first_name, last_name
+FROM people
+WHERE (state_code = 'CA' OR state_code = 'CO') AND shirt_or_hat IS 'shirt';</code></pre>
+                    <p>Het onjuist groeperen van voorwaarden is een veelgemaakte fout die kan leiden tot onverwachte resultaten.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Reacties verbreden en limiteren</h3>
+                    <p>Soms hoeft slechts een deel van het veld met een waarde overeen te komen in plaats van het gehele veld, zoals de eerste letter van een straat. In deze gevallen kan de LIKE-operator worden gebruikt.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>LIKE</td>
+                                <td>Is true als het veld met het gespecificeerde patroon overeenkomt.</td>
+                                <td><pre>SELECT * FROM people
+WHERE state_code LIKE 'C%';</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De LIKE operator maakt gebruik van '%' om delen van een veld te matchen. 'C%' betekent dat alle velden die met een 'C' beginnen gekwalificeerd zijn, terwijl '%C' de velden die met 'C' eindigen kwalificeert. "%C%" kwalificeert velden die een 'C' bevatten en 'B%N' de velden die met een 'B' beginnen en met een 'N' eindigen.</p>
+                    <p>De LIKE-operator is standaard niet hoofdlettergevoelig, maar dit kan afhangen van de database- en kolominstellingen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>LIMIT</td>
+                                <td>Specificeert hoeveel resultaten maximaal worden weergeven.</td>
+                                <td><pre>SELECT * FROM people
+WHERE state_code LIKE 'C%'
+LIMIT 5;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>OFFSET</td>
+                                <td>Specificeert hoeveel velden worden overgeslagen voordat het resultaat wordt weergeven.</td>
+                                <td><pre>SELECT * FROM people
+WHERE state_code LIKE 'C%'
+LIMIT 5 OFFSET 5;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Reacties organiseren met ORDER BY</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>ORDER BY</td>
+                                <td>Specificeert hoe resultaten worden gesorteerd.</td>
+                                <td><pre>SELECT first_name, last_name 
+FROM people
+ORDER BY first_name DESC;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Standaard wordt er oplopend gesorteerd (ASC). Dit kan naar aflopend worden veranderd met DESC.</p>
+                    <p>Het is mogelijk om op meerdere velden te sorteren, bijvoorbeeld:</p>
+                    <pre><code>SELECT state_code, last_name, first_name 
+FROM people
+ORDER BY state_code, last_name DESC;</code></pre>
+                    <p>In het bovenstaande wordt de state_code eerst alfabetisch gesorteerd en wordt last_name vervolgens in aflopende volgorde gesorteerd.</p>
+                    <p>Het sorteren van gegevens is handig voor rapportages en toepassingen, zoals het weergeven van gevallen van klantenondersteuning op datum of ticket-ID.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Informatie over de data vinden</h3>
+                    <p>Sommige functies worden gebruikt om meer te weten te komen over de gegevens zelf, in plaats van alleen records terug te geven die overeenkomen met query's.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>LENGTH</td>
+                                <td>Specificeert de hoeveelheid karakters in een veld.</td>
+                                <td><pre>SELECT first_name, LENGTH(first_name)
+FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>DISTINCT</td>
+                                <td>Haalt alleen de unieke waardes op.</td>
+                                <td><pre>SELECT DISTINCT(first_name)
+FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>COUNT</td>
+                                <td>Weergeeft hoeveel velden aan een specifiek criteria voldoen.</td>
+                                <td><pre>SELECT COUNT(*)
+FROM people
+WHERE state_code = 'CA';</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Data opvragen uit twee of meer tabellen</h2>
+                
+                <div class="chapter__group">
+                    <h3>Data opvragen uit twee of meer tabellen</h3>
+                    <p>Het is mogelijk om een query te beantwoorden met data uit meer dan één tabel door middel van een gemeenschappelijk stuk informatie.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>JOIN</td>
+                                <td>Voegt data uit meerdere tabellen samen op basis van een gerelateerde kolom.</td>
+                                <td><pre>SELECT people.first_name, people.state_code, states.division
+FROM people
+JOIN states ON people.state_code = states.state_abbrev;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is een best practice om met puntnotatie aan te geven bij welke tabel een veld hoort. Dit voorkomt errors in het geval dat de tabellen een overeenkomende kolomnaam delen.</p>
+                    <p>Het is mogelijk om gegevens uit verschillende tabellen op te vragen zonder het JOIN-sleutelwoord te gebruiken, wat een impliciete join wordt genoemd.</p>
+                    <pre><code>SELECT ppl.first_name, st.state_name
+FROM people ppl, states st
+WHERE ppl.state_code = st.state_abbrev;</code></pre>
+                    <p>Het is meestal het beste om de expliciete join syntax te gebruiken, om alles duidelijk te houden. Daarnaast kan een impliciete join ook tot onbedoelde gevolgen leiden, zoals een cross join.</p>
+                    <p>Aliassen kunnen aan een tabel worden toegewezen om query's te vereenvoudigen en leesbaarder te maken, vooral bij lange tabel namen.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>JOIN types begrijpen</h3>
+                    <p>Met een JOIN wordt data tussen verschillende tabellen aan elkaar geassocieerd. Dit kan op verschillende manieren worden bereikt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>CROSS JOIN</td>
+                                <td>Combineert elke record van de eerste tabel met alle records van de tweede tabel.</td>
+                                <td><pre>SELECT * FROM people CROSS JOIN states;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>INNER JOIN</td>
+                                <td>Voegt data uit meerdere tabellen samen op basis van een gerelateerde kolom.</td>
+                                <td><pre>SELECT * FROM people INNER JOIN states 
+ON people.state_code = states.state_abbrev;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>LEFT JOIN</td>
+                                <td>Voegt data uit meerdere tabellen samen op basis van een gerelateerde kolom en weergeeft alle linker waarden.</td>
+                                <td><pre>SELECT * FROM people LEFT JOIN states 
+ON people.state_code = states.state_abbrev;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>RIGHT JOIN</td>
+                                <td>Voegt data uit meerdere tabellen samen op basis van een gerelateerde kolom en weergeeft alle rechter waarden.</td>
+                                <td><pre>SELECT * FROM people RIGHT JOIN states 
+ON people.state_code = states.state_abbrev;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>FULL OUTER JOIN</td>
+                                <td>Combineert twee tabellen op basis van een gerelateerde kolom en geeft de overlappende en niet overlappende waarden.</td>
+                                <td><pre>SELECT * FROM people FULL OUTER JOIN states 
+ON people.state_code = states.state_abbrev;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een INNER JOIN geeft alleen de overlappende records terug. Het kan echter voortkomen dat een record geen overeenkomende sleutel waarde heeft in de andere tabel. De verschillende vormen van OUTER JOIN worden gebruikt, om deze waarden alsnog te kunnen weergeven. De niet records die geen overeenkomst hebben met records uit de andere tabel worden in dit geval aan NULL-waarden verbonden.</p>
+                    <p>Sommige van de JOIN vormen die beschikbaar zijn in SQL worden niet in alle software ondersteunt. MySQL biedt bijvoorbeeld geen ondersteuning voor de FULL OUTER JOIN, terwijl SQLite de RIGHT JOIN en de FULL OUTER JOIN niet ondersteund.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Resultaten groeperen</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>GROUP BY</td>
+                                <td>Groepeert records op basis van de kolom waarde.</td>
+                                <td><pre>SELECT first_name, COUNT(first_name)
+FROM people
+GROUP BY first_name;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De bovenstaande query laat zien hoe vaak een voornaam in de database voor komt. Zonder het GROUP BY-sleutelwoord, worden alleen de voornaam van de laatste record en de totale hoeveelheid voornamen in een database weergeven:</p>
+                    <p>De gegroepeerde velden moeten op elkaar aansluiten, om onbruikbare gegevens te voorkomen zoals hieronder het geval is:</p>
+                    <pre><code>SELECT first_name, COUNT(first_name)
+FROM people
+GROUP BY last_name;</code></pre>
+                    <p>Hier wordt het aantal voornamen per achternaam gegroepeerd, waarbij alleen de eerste voornaam per achternaam zichtbaar is, wat niet zinvol is.</p>
+                    <p>Het mogelijk om meerdere velden te groeperen om gedetailleerde resultaten te verkrijgen. De onderstaande query weergeeft hoe vaak een bepaald aantal quizpunten is behaald per staat:</p>
+                    <pre><code>SELECT state_code, quiz_points, COUNT(quiz_points)
+FROM people
+GROUP BY state_code, quiz_points;</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Datatypes, wiskunde en handige features</h2>
+                
+                <div class="chapter__group">
+                    <h3>Datatypes in SQL</h3>
+                    <p>De datatype van een veld geeft aan waarvoor het is geoptimaliseerd en welke bewerkingen erop mogelijk zijn. De datatypes kunnen in de volgende categorieën worden onderverdeeld:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Binary</th>
+                                <th>Date/Time</th>
+                                <th>Numbers</th>
+                                <th>Text</th>
+                            </tr>
+                            <tr>
+                                <td>BINARY</td>
+                                <td>DATE</td>
+                                <td>BIGINT</td>
+                                <td>CHARACTER</td>
+                            </tr>
+                            <tr>
+                                <td>BINARY LARGE OBJECT</td>
+                                <td>INTERVAL</td>
+                                <td>DECIMAL</td>
+                                <td>CHARACTER LARGE OBJECT</td>
+                            </tr>
+                            <tr>
+                                <td>BINARY VARYING</td>
+                                <td>TIME</td>
+                                <td>DOUBLE PRECISION</td>
+                                <td>VARCHAR</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>TIMESTAMP</td>
+                                <td>FLOAT</td>
+                                <td>NCHAR</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>INTEGER</td>
+                                <td>NCHAR VARYING</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>NUMERIC</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Anders</th>
+                                <td></td>
+                                <td>SMALLINT</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>BOOLEAN</td>
+                                <td></td>
+                                <td>REAL</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Niet elke implementatie van SQL biedt ondersteuning voor alle verschillende datatypes. Het is daarom van belang om de documentatie van de SQL-tools door te nemen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Datatype</th>
+                                <th>Toelichting</th>
+                            </tr>
+                            <tr>
+                                <td>Binary</td>
+                                <td>Deze datatype is geoptimaliseerd om reeksen van enen en nullen op te slaan, vaak voor bitmasks of bestanden zoals afbeeldingen en zip-bestanden.</td>
+                            </tr>
+                            <tr>
+                                <td>Date/Time</td>
+                                <td>Geeft aan dat het veld als een tijdwaarde behandeld wordt.</td>
+                            </tr>
+                            <tr>
+                                <td>Numbers</td>
+                                <td>Representeert de verschillende numerieke waarden, waaronder integers, floats en precisions.</td>
+                            </tr>
+                            <tr>
+                                <td>Text</td>
+                                <td>Representeert tekst met variabele of vaste lengte, zoals namen. Voorbeelden zijn varchar voor variabele lengte en char voor vaste lengte.</td>
+                            </tr>
+                            <tr>
+                                <td>Boolean</td>
+                                <td>Specificeert of een waarde true of false is.</td>
+                            </tr>
+                            <tr>
+                                <td>NULL</td>
+                                <td>Vertegenwoordigt de afwezigheid van een waarde en wordt anders behandeld dan false, no en zero.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Berekeningen in SQL</h3>
+                    <p>SQL ondersteunt aritmetische bewerkingen zoals optellen, aftrekken, vermenigvuldigen, delen en modulo:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Betekenis</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>Optellen</td>
+                                <td>SELECT 1 + 1; //2</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Aftrekken</td>
+                                <td>SELECT 3 - 2; //1</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Vermenigvuldigen</td>
+                                <td>SELECT 7 * 9; //63</td>
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Delen</td>
+                                <td>SELECT 68 / 4; //17</td>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Modulo</td>
+                                <td>SELECT 5 % 2; //1</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>SQL neemt aan dat bewerkingen integers gebruiken, behalve als er bijvoorbeeld expliciet wordt gespecificeerd dat een float wordt gebruikt. Dit is van belang aangezien de precisie van de resultaten kan worden beïnvloed, wat niet wenselijk is bij financiële of wetenschappelijke berekeningen.</p>
+                    <p>Daarnaast ondersteunt SQL logische vergelijkingsoperatoren die het mogelijk maken om gegevens te filteren op basis van voorwaarden.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Betekenis</th>
+                            </tr>
+                            <tr>
+                                <td>></td>
+                                <td>Groter dan.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;</td>
+                                <td>Kleiner dan.</td>
+                            </tr>
+                            <tr>
+                                <td>>=</td>
+                                <td>Groter of gelijk aan.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;=</td>
+                                <td>Kleiner of gelijk aan.</td>
+                            </tr>
+                            <tr>
+                                <td>=</td>
+                                <td>Gelijk aan.</td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Niet gelijk aan.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;&gt;</td>
+                                <td>Niet gelijk aan.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>SQL biedt functies zoals MAX, MIN, SUM en AVG om geaggregeerde berekeningen uit te voeren op numerieke velden.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>MAX</td>
+                                <td>Retourneert de grootste waarde.</td>
+                                <td><pre>SELECT MAX(quiz_points)
+FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>MIN</td>
+                                <td>Retourneert de kleinste waarde.</td>
+                                <td><pre>SELECT MIN(quiz_points)
+FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>SUM</td>
+                                <td>Retourneert een optelling van alle waarden.</td>
+                                <td><pre>SELECT SUM(quiz_points)
+FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>AVG</td>
+                                <td>Retourneert het gemiddelde van alle waarden.</td>
+                                <td><pre>SELECT team, COUNT(*), SUM(quiz_points), AVG(quiz_points)
+FROM people
+GROUP BY team;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Compound Select</h3>
+                    <p>Een subquery of sub-selectie is een secundaire SELECT-functie binnen een query, die wordt gebruikt om gegevens voor de hoofdquery verder te specificeren:</p>
+                    <pre><code>SELECT first_name, last_name, quiz_points
+FROM people
+WHERE quiz_points = (SELECT MAX(quiz_points) FROM people);</code></pre>
+                    <p>Geaggregeerde functies zoals MAX, MIN en AVG functioneren niet als een onderdeel van een WHERE-functie en leiden normaliter tot een error. Daarom maakt het bovenstaande voorbeeld gebruik van een subquery om fouten te voorkomen.</p>
+                    <p>Een subquery kan ook worden ingezet om de informatie uit een tabel als informatie voor een zoekopdracht in een andere tabel te gebruiken.</p>
+                    <pre><code>SELECT *
+FROM people
+WHERE state_code = (SELECT state_abbrev FROM states WHERE state_name = 'Minnesota');</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Data transformeren</h3>
+                    <p>Met SQL kan de data uit de database worden getransformeerd aan de hand van query's:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>LOWER</td>
+                                <td>Transformeert de karakters in de string naar kleine letters.</td>
+                                <td><pre>SELECT LOWER(first_name), last_name
+FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>UPPER</td>
+                                <td>Transformeert de karakters in de string naar hoofdletters.</td>
+                                <td><pre>SELECT first_name, UPPER(last_name)
+FROM people;</pre></td>
+                            </tr>
+                            <tr>
+                                <td>SUBSTR(ING)</td>
+                                <td>Extraheert karakters uit een string.</td>
+                                <td><pre>SELECT first_name, SUBSTR(last_name, 1, 5)
+FROM people;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het SUBSTRING-sleutelwoord bevat twee additionele parameters naast een veldnaam: Een nummer dat aangeeft vanaf welk karakter er wordt geteld en een nummer die het aantal karakters representeert. In het bovenstaande voorbeeld worden de eerste vijf karakters geëxtraheerd.</p>
+                    <p>De parameter die aangeeft vanaf welk nummer wordt geteld, mag een negatief getal zijn. Dit geeft aan dat er vanaf het einde van de string wordt geteld.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>REPLACE</td>
+                                <td>Vervangt tekst in een string.</td>
+                                <td><pre>SELECT REPLACE(first_name, "a", "-")
+FROM people;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In het bovenstaande voorbeeld vervangt het REPLACE-sleutelwoord alle kleine letters "a" met een "-". Hoofdletters worden niet beïnvloed.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>CAST</td>
+                                <td>Converteert een datatype naar een ander datatype.</td>
+                                <td><pre>SELECT quiz_points
+FROM people
+ORDER BY CAST(quiz_points AS CHAR);</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het CAST-sleutelwoord komt van pas als er geen controle is over het schema van de database of als de manier waarop gegevens worden opgeslagen niet kan worden gewijzigd. Het AS-sleutelwoord wordt gebruikt om de gewenste datatype te specificeren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Aliassen creëren met AS</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>AS</td>
+                                <td>Hernoemt de naam van een veld</td>
+                                <td><pre>SELECT first_name AS firstname, UPPER(last_name) AS surname
+FROM people
+WHERE firstname = 'Laura';</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het gebruik van aliassen kan de queryresultaten verduidelijken, wat wenselijk kan zijn als de data direct naar een spreadsheet of een toepassingen wordt geëxporteerd.</p>
+                    <p>De gespecificeerde aliasnaam kan tevens als plaatsvervanger worden gebruikt voor de originele veldnaam binnen de query.</p>
+                    <p>Een aliasnaam hoort geen spaties te bevatten en wanneer spaties nodig zijn worden apostroffen (") gebruikt.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Data toevoegen of aanpassen</h2>
+                
+                <div class="chapter__group">
+                    <h3>Data toevoegen aan een tabel</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>INSERT</td>
+                                <td>Voegt nieuwe data toe aan een bestaande tabel.</td>
+                                <td><pre>INSERT INTO people (first_name)
+VALUES ('Bob');</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In het bovenstaande voorbeeld is er een waarde voor één veld opgegeven. De overige velden die leeg zijn gelaten krijgen een waarde van NULL als plaatsvervanger.</p>
+                    <p>Het is mogelijk om meer dan één record tegelijk toe te voegen door de veldnamen en de reeks van gewenste data na het VALUES-sleutelwoord op te geven:</p>
+                    <pre><code>INSERT INTO people
+(first_name, last_name)
+VALUES
+('George', 'White'),
+('Jenn', 'Smith'),
+('Carol', NULL);</code></pre>
+                    <p>De bovenstaande NULL-waarde zal niet in elk veld worden geaccepteerd. Soms hebben tabellen vastgestelde regels die dicteren dat gegevens in een bepaald formaat moeten worden aangeleverd. Er kan bijvoorbeeld worden bepaald dat een specifiek veld een unieke waarde moet bevatten of geen NULL-waarde mag hebben.</p>
+                    <p>Daarnaast kan er in een kolom worden vastgesteld dat er automatisch nieuwe waarden voor nieuwe records worden gegenereerd.</p>
+                    <p>In de DB Browser worden wijzigingen pas permanent gemaakt nadat er op "Write Changes" wordt geklikt, waardoor er zonder de werkelijke gegevens te beïnvloeden kan worden geoefend.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Data aanpassen in een tabel</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>UPDATE</td>
+                                <td>Wijzigt bestaande gegevens in een tabel.</td>
+                                <td><pre>UPDATE people
+SET first_name = 'Bob', last_name = 'Morrison'
+WHERE id_number = 175;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het WHERE-sleutelwoord wordt gebruikt om de te bewerken records te specificeren. Zonder WHERE zouden de wijzigingen op alle records in de tabel worden toegepast.</p>
+                    <p>Het is van belang om zo specifiek mogelijk te zijn tijdens wijzigen van records, zodat onbedoelde wijzigingen kunnen worden voorkomen. Het gebruik van het SELECT-sleutelwoord, additionele velden en unieke identificeerders zoals ID-nummers kunnen helpen om precies de juiste record te vinden.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Data verwijderen uit een tabel</h3>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeelden</th>
+                            </tr>
+                            <tr>
+                                <td>DELETE</td>
+                                <td>Verwijdert een record uit een tabel.</td>
+                                <td><pre>DELETE FROM people 
+WHERE id_number = 1001;</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Net als bij het aanpassen van data is het van belang om specifiek te zijn tijdens het verwijderen van gegevens. Het WHERE-sleutelwoord in het bovenstaande voorbeeld voorkomt dat alle records uit de people tabel worden verwijderd.</p>
+                    <p>Het SELECT-sleutelwoord wordt gebruikt om de voorwaarde te testen, zodat deze op de juiste records is gericht.</p>
+                    <p>Bij het verwijderen van NULL-waarden worden IS NULL of IS NOT NULL in plaats van operatoren gebruikt:</p>
+                    <pre><code>DELETE FROM people WHERE quiz_points IS NULL;</code></pre>
+                </div>                
+            </div>           
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

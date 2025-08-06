@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Learning Python (2021)</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="pythonconcepts.html" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>Learning Python (2021)</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Van start gaan</h2>
+                
+                <div class="chapter__group">
+                    <h3>Python installeren op Windows</h3>
+                    <p>Op een Windows-computer kan worden gecontroleerd of Python correct is geïnstalleerd door in een terminalvenster het commando <code>py --version</code> uit te voeren. Indien het resultaat niet de melding "Python 3.x" (minimaal 3.9) weergeeft of er een foutmelding verschijnt, is installatie van de juiste versie noodzakelijk.</p>
+                    <p>Ga naar de officiële Python-website via python.org en klik op de knop Downloads, waarbij automatisch de aanbevolen versie voor Windows wordt geselecteerd (minimaal Python 3.9). Download vervolgens de installer en voer deze uit. De installatie duurt doorgaans enkele minuten.</p>
+                    <p>Open een nieuw terminalvenster na de installatie en voert men wederom <code>py --version</code> uit om te bevestigen dat Python nu correct is geïnstalleerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Python installeren op de MAC</h3>
+                    <p>Veel macOS- en Linux-systemen komen met Python 2 én Python 3. Controleer in de terminal met <code>python3 --version</code> of de geïnstalleerde Python-versie ten minste 3.9 is. Zo niet, download en installeer Python 3 vanaf de officiële website en test vervolgens opnieuw in de terminal.</p>
+                    <p>Op een Mac (of Linux) staat vaak standaard een oudere versie van Python geïnstalleerd. Om te controleren of de geïnstalleerde versie voldoet wordt de terminal geopend en wordt het <code>python3 --version</code> commando uitgevoerd. Indien het resultaat niet "Python 3.x" (minimaal 3.9) toont of er een foutmelding verschijnt, moet een nieuwere versie worden geïnstalleerd.</p>
+                    <p>Ga naar python.org en klik op Downloads en selecteer de installer voor Mac (de pagina past zich meestal automatisch aan op je besturingssysteem). Download en voer de installer uit. Dit proces duurt doorgaans enkele minuten. Het <code>python3 --version</code> commando wordt opnieuw uitgevoerd om te verifiëren dat nu "Python 3.9 (...)" of hoger wordt gerapporteerd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Een editor of IDE kiezen</h3>
+                    <p>Hoewel elke teksteditor kan worden gebruikt, wordt Visual Studio Code (VS Code) aanbevolen vanwege de uitgebreide ondersteuning voor Python. Daarnaast is VS Code gratis, draait het op Windows, Mac en Linux, en beschikt het over uitbreidingen die debugging en linting gemakkelijk maken.</p>
+                    <p>Ga naar code.visualstudio.com en download de versie voor het eigen besturingssysteem. Voer de installer uit en start VS Code na afronding van de installatie.</p>
+                    <p>Om de Python-extensie te installeren wordt er op het "Extentions" tab geklikt, op "Python" gezocht en vervolgens voor de Microsoft extensie gekozen. Deze extensie installeert automatisch ook de Pylance-taalserver.</p>
+                    <p>Open de map met oefenbestanden als een project in VS Code (via Open Folder of drag-&-drop). Onderin de statusbalk verschijnt de melding met de gekozen Python-versie. Klik hierop om een pop-up te openen en selecteer de juiste Python-interpreter (bijv. Python 3.9).</p>
+                    <p>Indien de statusbalk-melding niet zichtbaar is, gebruik dan de Command Palette (Ctrl+Shift+P op Windows, Cmd+Shift+P op Mac) en voer "Python: Select Interpreter" uit. Kies vervolgens de gewenste interpreter.</p>
+                    <p>Open de instellingen (Ctrl+, op Windows, Cmd+, op Mac) en zoek in het zoekvak naar executeInFileDir. Vink deze voorkeur aan. Dit zorgt ervoor dat VS Code bij het uitvoeren van scripts standaard naar bestanden zoekt in dezelfde map als het bronbestand.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Voorbeelden van hoe Python wordt uitgevoerd</h3>
+                    <p>Bestanden kunnen ook buiten een IDE worden uitgevoerd, door via de terminal (op Windows PowerShell of Opdrachtprompt; op Mac/Linux Terminal) te werk te gaan. Het cd-commando wordt gebruikt om naar de locatie van de map te navigeren. Als de map op het bureaublad staat ziet dit er bijvoorbeeld als volgt uit: <code>cd %USERPROFILE%\Desktop\ExerciseFiles</code></p>
+                    <p>De inhoud van de map kan met <code>ls</code> (Mac/Linux) of <code>dir</code> (Windows) worden gecontroleerd. Vervolgens kan naar de gewenste submap worden genavigeerd door bijvoorbeeld het volgende de toen: <code>cd Chapter2</code></p>
+                    <p>Een bestand kan worden uitgevoerd door <code>py</code> of <code>python</code> te typen gevolgd door de bestandsnaam (zonder extensie als .py opgenomen is in de instellingen). Bijvoorbeeld: <code>python helloworld_finished.py</code>.</p>
+                    <p>Voor de Mac wordt altijd gebruik gemaakt van het <code>python3</code> commando om de Python 3-interpreter aan te roepen: <code>python3 helloworld_finished.py</code></p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Python basiskennis</h2>
+                
+                <div class="chapter__group">
+                    <h3>Hello World bouwen</h3>
+                    <p>In de terminal wordt python gestart met het <code>py</code> of <code>python</code> commando op Windows en met het <code>python3</code> commando op macOS en Linux. Code kan direct in de terminal worden geschreven en uitgevoerd, bijvoorbeeld:</p>
+                    <pre><code>>>> print("Hello world")
+Hello world</code></pre>
+                    <p>Met <code>exit()</code> of <code>quit()</code> wordt de geïnterpreteerde modus afgesloten en keert de gebruiker terug.</p>
+                    <p>Met behulp van de Python-extensie in VS Code kan het bestand direct in de ingebouwde terminal worden uitgevoerd via "Run Python File in Terminal". Vervolgens wordt de code in een functie opgedeeld om de logica te groeperen en herbruikbaarheid te versterken. Dit gebeurt door het aanmaken van een functie <code>main()</code> en het gebruik van een <code>if __name__ == "__main__":</code>-blokkering.</p>
+                    <p>Hierdoor wordt onderscheid gemaakt tussen het uitvoeren van het bestand als zelfstandig script en het importeren als module in een ander script. De meest relevante syntactische elementen zijn hieronder weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Syntax</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>def functieNaam():</code></td>
+                                <td>Definieert een functie. Alle daaropvolgende regels met identieke inspringing behoren tot die functie.</td>
+                                <td><pre>def main():
+    print("Hello World")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>if __name__ == "__main__":</code></td>
+                                <td>Controleert of het script als hoofdprogramma wordt uitgevoerd. De code in dit blok wordt alleen uitgevoerd bij direct starten, niet bij importeren.</td>
+                                <td><pre>if __name__ == "__main__":
+    main()</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>print()</code></td>
+                                <td>Roept de ingebouwde Python-functie aan om tekst of andere waarden naar de standaarduitvoer te sturen.</td>
+                                <td><pre>print("Hello World")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>input()</code></td>
+                                <td>Roept de ingebouwde Python-functie aan om een invoerprompt te tonen en de invoer als string terug te geven.</td>
+                                <td><pre>name = input("What is your name? ")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Inspringing (spaties of tabs)</td>
+                                <td>Geeft in Python de hiërarchie en codeblokken aan. Alle regels binnen een blok moeten exact dezelfde inspringing hebben.</td>
+                                <td><pre>    print("")  # Vier spaties</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>exit()</code> of <code>quit()</code></td>
+                                <td>Sluit de interactieve modus af en keert terug naar de opdrachtregel.</td>
+                                <td><pre>exit()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Variabelen en expressies</h3>
+                    <p>In Python zijn er vijf datatypen die gebruikt worden om informatie op te slaan en te manipuleren:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Datatype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>Numbers</td>
+                                <td>Gehele getallen (int) en kommagetallen (float)</td>
+                                <td><pre>42, 3.14</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Strings</td>
+                                <td>Reeksen van teksttekens</td>
+                                <td><pre>"Hello world"</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Booleans</td>
+                                <td>Waarheidswaarden</td>
+                                <td><pre>True, False</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Sequenties</td>
+                                <td>Verzamelingen zoals lijsten (list) en tuples (tuple)</td>
+                                <td><pre>[1, 2, 3], ("a", "b", "c")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>Dictionaries</td>
+                                <td>Sleutel/waarde-paren</td>
+                                <td><pre>{"een": 1, "twee": 2}</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De toekenning van datatypes is dynamisch in Python, wat inhoudt dat variabelen opnieuw kunnen worden toegekend met een ander gegevenstype, bijvoorbeeld:</p>
+                    <pre><code>myint = 5
+myint = "abc"</code></pre>
+                    <p>Sequentiële datatypen zoals lists en tuples maken gebruik van indexering en slicing:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Syntaxis</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>mylist[2]</code></td>
+                                <td>Toegang tot het derde element (index start bij 0)</td>
+                                <td><pre>[1, 2, 3, 4][2] → 3</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>mylist[1:5]</code></td>
+                                <td>Slicing van index 1 t/m 4</td>
+                                <td><pre>[2, 3, 4, 5]</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>mylist[1:5:2]</code></td>
+                                <td>Slicing met een stap van 2</td>
+                                <td><pre>[2, 4]</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>mylist[::-1]</code></td>
+                                <td>Keert de volgorde van de lijst om</td>
+                                <td><pre>[5, 4, 3, 2, 1]</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Dictionaries gebruiken sleutels in plaats van indexen, bijvoorbeeld:</p>
+                    <pre><code>mydict = {"een": 1, "twee": 2}
+print(mydict["een"])  # → 1</code></pre>
+                    <p>De sleutels moeten uniek zijn (waarden niet) en worden tussen aanhalingstekens genoteerd als het strings zijn.</p>
+                    <p>Python is sterk getypeerd, wat inhoudt dat verschillende typen niet zomaar gecombineerd kunnen worden. Het volgende is dus niet mogelijk binnen Python: <code>print("waarde: " + 123)</code>. In plaats daarvan moet dit worden gebruikt: <code>print("waarde: " + str(123))</code>.</p>
+                    <p>Variabelen kunnen zowel globaal als lokaal zijn gedefinieerd:</p>
+                    <pre><code>mystr = "globale waarde"
+
+def somefunction():
+    mystr = "lokale waarde"
+    print(mystr)
+
+somefunction()
+print(mystr)</code></pre>
+                    <p>VS</p>
+                    <pre><code>mystr = "globale waarde"
+
+def somefunction():
+    global mystr
+    mystr = "aangepaste globale waarde"
+    print(mystr)
+
+somefunction()
+print(mystr)</code></pre>
+                    <p>Een variabele binnen een functie overschrijft niet automatisch een globale variabele met dezelfde naam.</p>
+                    <p>Ten slot is het ook mogelijk om bestaande variabelen te verwijderen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Statement</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>del</code></td>
+                                <td>Verwijderd een variabele</td>
+                                <td><pre>del mystr</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Python functies</h3>
+                    <p>Functies in Python bieden een manier om code te organiseren in afzonderlijke, herbruikbare blokken. Elke functie wordt gedefinieerd met het sleutelwoord <code>def</code>, gevolgd door een functienaam, optionele parameters tussen ronde haakjes en een dubbele punt. Daarna volgt de functiebody, afgebakend door inspringing.</p>
+                    <p>Een functie zonder argumenten wordt gedefinieerd met <code>def functienaam():</code>. De statements binnen de functie worden ingesprongen ten opzichte van de regel met <code>def</code>.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>def</code></td>
+                                <td>Definieert een functie.</td>
+                                <td><pre>def func1():
+    print("I am a function")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Functies kunnen gedefinieerde parameters accepteren; deze worden in volgorde toegewezen aan de doorgegeven argumenten. Met het sleutelwoord <code>return</code> kan een waarde worden teruggegeven.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>return</code></td>
+                                <td>Geeft een waarde terug.</td>
+                                <td><pre>def func2(arg1, arg2):
+    print(arg1, arg2)
+
+def cube(x):
+    return x * x * x</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Parameters kunnen standaardwaarden krijgen met de notatie <code>param=standaardwaarde</code>. Wordt bij aanroep geen waarde voor dat argument opgegeven, dan wordt de standaardwaarde gebruikt. Bij aanroep via naam (keyword-argumenten) hoeven de argumenten niet in volgorde te staan.</p>
+                    <p>Met een sterretje (*) vóór een parameternaam kan een functie een variabel aantal niet-naamgegeven argumenten ontvangen. Deze verzamelt Python in een tuple.</p>
+                    <pre><code>def multi_add(*args):
+    result = 0
+    for x in args:
+        result += x
+    return result</code></pre>
+                    <p>De parameter met <code>*args</code> moet altijd als laatste staan.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Voorwaardelijke structuren</h3>
+                    <p>Voorwaardelijke logica speelt een cruciale rol in vrijwel elk programma: op basis van één of meer voorwaarden wordt bepaald welke code uitgevoerd wordt. In Python bestaan hiervoor verschillende mogelijkheden: de klassieke if-elif-else-blokken, de beknopte voorwaardelijke expressie (ternary operator) en sinds Python 3.10 de match case-constructor.</p>
+                    <p>Met een if-elif-else-structuur kan een programma voorwaarden achtereenvolgens evalueren en afhankelijk daarvan een bepaalde tak uitvoeren:</p>
+                    <pre><code>x = 10
+y = 100
+
+if x < y:
+    result = "x is less than y"
+else:
+    result = "x is greater than y"
+print(result)</code></pre>
+                    <p>Wanneer niet alleen de twee basistakken nodig zijn, maar ook een derde optie (bijvoorbeeld "gelijk aan"), worden er één of meer elif-takkken toegevoegd:</p>
+                    <pre><code>x = 100
+y = 100
+
+if x < y:
+    result = "x is less than y"
+elif x == y:
+    result = "x is the same as y"
+else:
+    result = "x is greater than y"
+
+print(result)</code></pre>
+                    <p>Voor simpele "als-dan-anders"-logica biedt Python de compacte syntax:</p>
+                    <pre><code>result = "x is less than y" if x < y else "x is greater or equal to y"
+print(result)</code></pre>
+                    <p>Het voordeel hiervan is dat er weinig regels code nodig zijn voor een eenvoudige voorwaarde. Deze syntax is echter minder geschikt bij complexere of geneste voorwaarden.</p>
+                    <p>Net als bij functies en lussen moet de code binnen if, elif, else en case steeds exact evenveel spaties (of tabs) ingesprongen zijn. Aangezien Python de voorwaarden van boven naar beneden controleert, dient de meest specifieke voorwaarde ook het eerst te komen wanneer een overlappende range mogelijk is en komt Else altijd als laatste.</p>
+                    <p>Vanaf Python 3.10 is de match case-constructor beschikbaar. Deze vervangt in veel gevallen opeenvolgende if-elif-takken, vooral wanneer één variabele tegen meerdere vaste waarden moet worden vergeleken:</p>
+                    <pre><code>value = "three"
+
+match value:
+    case "one":
+        result = 1
+    case "two":
+        result = 2
+    case "three" | "four":
+        result = (3, 4)
+    case _:
+        result = -1
+
+print(result)</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Structuur</th>
+                                <th>Toepassing</th>
+                                <th>Kenmerken</th>
+                            </tr>
+                            <tr>
+                                <td><code>if ...: ... elif ...: ... else ...:</code></td>
+                                <td>Klassieke vertakkingslogica</td>
+                                <td>- Flexibel, meerdere condities in volgorde.<br>- Elke elif-tak wordt alleen getest als alle voorgaande condities False waren.</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;expr1&gt; if &lt;cond&gt; else &lt;expr2&gt;</code></td>
+                                <td>Eéngeregelige voorwaarde</td>
+                                <td>- Compact voor simpele gevallen.<br>- Niet leesbaar bij ingewikkelde logica.</td>
+                            </tr>
+                            <tr>
+                                <td><code>match ...: case ...: ... case ...: ... case _: ...</code></td>
+                                <td>Veelvoudige vergelijkingen tegen één variabele</td>
+                                <td>- Zeer leesbaar bij vele vaste waardecontroles.<br>- Vereist Python 3.10 of hoger.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Loops</h3>
+                    <p>Python biedt twee soorten loops aan om herhaaldelijk een blok code uit te voeren: de while- en de for-loop:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Looptype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>while &lt;conditie&gt;:</code></td>
+                                <td>Voert de lusbody steeds opnieuw uit zolang de voorwaarde True is.</td>
+                                <td><pre>x = 0
+
+while x < 5:
+    print(x)
+    x = x + 1</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>for &lt;variabele&gt; in &lt;iterable&gt;:</code></td>
+                                <td>Itereert over alle items van een iterabel. Geen expliciete index nodig.</td>
+                                <td><pre>for x in range(5, 10):
+    print(x)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In Python is het mogelijk om loops te onderbreken of om een de rest van de lusbody over te slaan. Dit staat hieronder weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Constructor</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>break</code></td>
+                                <td>Stopt met de lus, ongeacht de oorspronkelijke conditie.</td>
+                                <td><pre>for x in range(5, 10):
+    if x == 7:
+        break
+    print(x)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>continue</code></td>
+                                <td>Slaat de rest van de lusbody over en ga direct naar de volgende iteratie.</td>
+                                <td><pre>for x in range(5, 10):
+    if x % 2 == 0:
+        continue
+    print(x)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Hoewel standaard geen teller gebruikt wordt in een Python-for-lus, kan <code>enumerate()</code> worden gecombineerd om zowel index als waarde op te halen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Constructor</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>for i, item in enumerate(iterable):</code></td>
+                                <td>Haalt zowel index als waarde op tijdens de iteratie.</td>
+                                <td><pre>days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+for i, d in enumerate(days):
+    print(i, d)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Klassen</h3>
+                    <p>In Python is object-georiënteerd programmeren de standaard. Klassen bieden een manier om gerelateerde gegevens en functies te groeperen tot herbruikbare, onderhoudbare modules. Een klasse wordt aangemaakt met het sleutelwoord <code>class</code>, gevolgd door de klassennaam en een mogelijke superklasse tussen haakjes. Daarna volgt een dubbele punt en de ingesprongen klassebody.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>class</code></td>
+                                <td>Definieert een nieuwe klasse. Tussen haakjes kan een (super)klasse staan voor overerving.</td>
+                                <td><pre>class Vehicle:
+    def __init__(self, body_style):
+        self.body_style = body_style</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Binnen een kunnen de volgende constructor's worden gebruikt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Constructor</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>__init__</code></td>
+                                <td>Wordt automatisch aangeroepen bij het maken van een object.</td>
+                                <td><pre>def __init__(self, body_style):</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>self</code></td>
+                                <td>Verwijst naar de instantie zelf (vergelijkbaar met this in andere talen).</td>
+                                <td><pre>self.body_style = body_style</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Wanneer meerdere klassen gemeenschappelijke eigenschappen delen, kan een nieuwe klasse erven van een bestaande (super)klasse:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>super()</code></td>
+                                <td>Roept de constructor of methode van de superklasse aan.</td>
+                                <td><pre>super().__init__(body_style)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Dit gebeurt door in de definitie van de subklasse de naam van de superklasse tussen haakjes te plaatsen:</p>
+                    <pre><code>class Motorcycle(Vehicle):
+    def __init__(self, body_style, engine_type, has_sidecar):
+        super().__init__(body_style)
+        if has_sidecar:
+            self.wheels = 3
+        else:
+            self.wheels = 2
+        self.doors = 0
+        self.engine_type = engine_type</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Importeren en modulen gebruiken</h3>
+                    <p>Python beschikt over een uitgebreide verzameling aan libraries die voorgebouwde functionaliteiten bevatten. Door deze modules te importeren, hoeven bestaande complexe functies niet opnieuw geschreven te worden. Het importeren van een module gaat als volgt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>import</code></td>
+                                <td>Laadt een module in en maakt het beschikbaar in het huidige script</td>
+                                <td><pre>import math</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Vervolgens kan er met <code>&lt;moduleNaam&gt;.&lt;functie&gt;</code> of <code>&lt;moduleNaam&gt;.&lt;constante&gt;</code> gebruik worden gemaakt van alle publieke functies en waarden uit die module, bijvoorbeeld:</p>
+                    <pre><code>import math
+print("De vierkantswortel van 16 is", math.sqrt(16))</code></pre>
+                    <p>De bovenstaande voorbeelden maakten beiden gebruik van de math-module. Hieronder worden nog een aantal modules toegelicht:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Module</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td>math</td>
+                                <td>Wiskundige functies en constante waarden, zoals vierkantswortel, trigonometrie, logaritmen en de wiskundige constante π.</td>
+                            </tr>
+                            <tr>
+                                <td>datetime & pathlib</td>
+                                <td>Data- en tijdmanipulaties zoals datums optellen, formaten omzetten, etc.</td>
+                            </tr>
+                            <tr>
+                                <td>os</td>
+                                <td>Werken met bestandensystemen zoals bestanden lezen, mappen aanmaken, paden bewerken.</td>
+                            </tr>
+                            <tr>
+                                <td>json & xml</td>
+                                <td>Inkomsten van en schrijven naar Internet-gebaseerde dataformaten.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Uitzonderingen gebruiken</h3>
+                    <p>Tijdens het uitvoeren van code kunnen diverse fouttypes zich voortdoen die tot onverwachte situaties zullen leiden:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Fouttype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>ZeroDivisionError</td>
+                                <td>Treedt op wanneer er door 0 wordt gedeeld.</td>
+                                <td><pre>10 / 0</pre></td>
+                            </tr>
+                            <tr>
+                                <td>ValueError</td>
+                                <td>Vindt plaats wanneer een conversie van string naar getal mislukt.</td>
+                                <td><pre>int("abc")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>FileNotFoundError</td>
+                                <td>Treedt op als geprobeerd wordt een niet-bestaand bestand te openen.</td>
+                                <td><pre>open("onbestaand.txt")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>KeyError</td>
+                                <td>Komt voor bij het opvragen van een niet-bestaande sleutel in een dict.</td>
+                                <td><pre>mijn_dict["nietbestaan"]</pre></td>
+                            </tr>
+                            <tr>
+                                <td>IndexError</td>
+                                <td>Treedt op wanneer een niet-bestaande index in een lijst of tuple wordt benaderd.</td>
+                                <td><pre>[1,2,3][5]</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Wanneer een onvoorziene situatie optreedt, is het beter om deze op gecontroleerde wijze af te handelen in plaats van het programma abrupt te laten crashen. Python heeft de try-except-finally-constructor om dit leesbaar en gestructureerd te doen:</p>
+                    <pre><code>try:
+    # Code die mogelijk een fout veroorzaakt
+    x = 10 / 0
+except:
+    # Foutafhandeling voor álle uitzonderingen
+    print("Er is iets misgegaan.")
+finally:
+    # Dit wordt altijd uitgevoerd, ongeacht of er een fout optrad
+    print("Dit deel draait altijd.")</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Constructor</th>
+                                <th>Uitleg</th>
+                            </tr>
+                            <tr>
+                                <td><code>try:</code></td>
+                                <td>Omringt code die wél of niet faalt. Indien er een uitzondering optreedt, springt Python naar het corresponderende except-blok.</td>
+                            </tr>
+                            <tr>
+                                <td><code>except &lt;FoutType&gt; as &lt;variabele&gt;:</code></td>
+                                <td>Vangt specifiek fouttype &lt;FoutType&gt; op. &lt;variabele&gt; bevat het bijbehorende uitzonderingobject (Exception) met details over de fout.</td>
+                            </tr>
+                            <tr>
+                                <td><code>except:</code></td>
+                                <td>Vangt alle niet eerder afgehandelde fouttypes op (een generieke vangnet-oplossing).</td>
+                            </tr>
+                            <tr>
+                                <td><code>finally:</code></td>
+                                <td>De code in dit blok wordt áltijd uitgevoerd, ook als het try- of except-blok abrupt eindigt of return-instructies bevat. Perfect voor cleanup.</td>
+                            </tr>
+                            <tr>
+                                <td><code>else:</code> (optioneel)</td>
+                                <td>Kan worden toegevoegd na alle except-blokken. De code in else loopt alleen als geen enkele uitzondering is opgetreden in het try-blok.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om verschillende fouten apart te behandelen, kan kunnen er meerdere except-blokken onder elkaar worden gezet, elk met een specifiek fouttype. Daarbij kan de uitzonderingsinformatie worden opgevangen in een lokale variabele (bijv. <code>except ValueError as e</code>).</p>
+                    <pre><code>try:
+    answer = input("Waarvan wil je 10 delen? ")
+    number = int(answer)
+    result = 10 / number
+    print("Uitkomst:", result)
+
+except ZeroDivisionError as e:
+    print("Je kunt niet door nul delen.")
+
+except ValueError as e:
+    print("Geen geldig getal ingevoerd:", e)
+
+finally:
+    print("Dit deel wordt altijd uitgevoerd, ongeacht of er een fout was.")</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Met bestanden werken</h2>
+                
+                <div class="chapter__group">
+                    <h3>Bestanden lezen en schrijven</h3>
+                    <p>Python bevat ingebouwde functies voor het werken met bestanden en mappen. Hiermee kunnen bestanden worden aangemaakt, beschreven, gelezen en uitgebreid. Het openen van een bestand gaat aan de hand van de onderstaande functie:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>open</code></td>
+                                <td>Opent een bestand</td>
+                                <td><pre>myfile = open("textfile.txt", "w+")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De open-functie accepteert twee argumenten: De bestandsnaam en de modus waarin het bestand geopend moet worden:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Modus</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>"w"</code></td>
+                                <td>Schrijft naar bestand, bestaande inhoud wordt overschreven</td>
+                                <td><pre>myfile = open("textfile.txt", "w")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>"w+"</code></td>
+                                <td>Schrijft en creëert het bestand indien het niet bestaat</td>
+                                <td><pre>myfile = open("textfile.txt", "w+")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De open-functie kan met diverse methodes worden uitgebreid, om in een bestand te schrijven, om inhoud toe te voegen of om een bestand te lezen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>.write()</code></td>
+                                <td>Schrijft een bestand</td>
+                                <td><pre>myfile = open("textfile.txt", "w+")
+for i in range(10):
+    myfile.write("Dit is een tekstregel.\n")
+myfile.close()</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>read()</code></td>
+                                <td>Leest de gehele inhoud van een bestand in een keer.</td>
+                                <td><pre>myfile = open("textfile.txt", "r")
+if myfile.mode == "r":
+    contents = myfile.read()
+    print(contents)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>readlines()</code></td>
+                                <td>Leest de gehele inhoud van een bestand regel per regel.</td>
+                                <td><pre>myfile = open("textfile.txt", "r")
+lines = myfile.readlines()
+for line in lines:
+    print(line)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Bestanden die met de <code>open()</code>-functie zijn geopend worden altijd afgesloten met <code>.close()</code>. Bij de <code>read()</code>-methode is <code>.close()</code> optioneel, maar wordt vaak toch gebruikt voor netheid en geheugenbeheer.</p>
+                    <p>Om regels toe te voegen aan een reeds bestaand bestand, wordt de a-modus gebruikt (append). De bestaande inhoud blijft behouden.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Modus</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>"a"</code></td>
+                                <td>Voegt een regel toe aan een bestaand bestand.</td>
+                                <td><pre>myfile = open("textfile.txt", "a")
+for i in range(10):
+    myfile.write("Dit is een nieuwe tekstregel.\n")
+myfile.close()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Werken met OS path utilities</h3>
+                    <p>Python biedt modules en functies om bestanden en mappen te onderzoeken, paden te verwerken en datum/tijdinformatie van bestanden op te halen. In deze sectie worden de belangrijkste stappen en functies samengevat.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Module</th>
+                                <th>Toepassing</th>
+                            </tr>
+                            <tr>
+                                <td><code>os</code></td>
+                                <td>Bevat algemene functies voor interactie met het besturingssysteem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>os.path</code></td>
+                                <td>Submodule van os voor padgerelateerde bewerkingen.</td>
+                            </tr>
+                            <tr>
+                                <td><code>time</code></td>
+                                <td>Voor conversies tussen tijdstempel en leesbare datum/tijd.</td>
+                            </tr>
+                            <tr>
+                                <td><code>datetime</code></td>
+                                <td>Voor geavanceerde datum/tijdmanipulaties.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met <code>os.name</code> kan worden bepaald welk type besturingssysteem wordt gebruikt. Op Windows geeft dit 'nt' weer (intern de officiële naam van Windows) en op Linux/macOS geeft dit meestal 'posix'.</p>
+                    <p>Met functies uit <code>os.path</code> kan worden getest of een item bestaat en of het een bestand of map is. Ook is het mogelijk om het volledige pad (incl. bestandsnaam) te achterhalen en vervolgens pad en bestandsnaam te splitsen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>exists()</code></td>
+                                <td>Controleert of het pad (bestand of map) bestaat</td>
+                                <td><pre>item = "textfile.txt"
+print("Bestaat:", path.exists(item))</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>isfile()</code></td>
+                                <td>Geeft True als het pad verwijst naar een bestaand regulier bestand</td>
+                                <td><pre>item = "textfile.txt"     
+print("Is bestand:", path.isfile(item))</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>isdir()</code></td>
+                                <td>Geeft True als het pad verwijst naar een bestaande map</td>
+                                <td><pre>item = "textfile.txt"
+print("Is map:", path.isdir(item))</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>realpath()</code></td>
+                                <td>Geeft het kanonieke (absolute) pad terug.</td>
+                                <td><pre>full_path = path.realpath("textfile.txt")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>split()</code></td>
+                                <td>Splitst een pad in een tuple (pad_zonder_bestandsnaam, bestandsnaam).</td>
+                                <td><pre>full_path = path.realpath("textfile.txt")
+dir_part, file_part = path.split(full_path)
+print("Volledig pad:", full_path)
+print("Pad zonder bestandsnaam:", dir_part)
+print("Alleen bestandsnaam:", file_part)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met modules is het tevens mogelijk om de wijzigingstijd van een bestand op te halen Met <code>path.getmtime()</code> wordt de wijzigingstijd (in seconden sinds de UNIX-epoch) opgehaald:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>getmtime()</code></td>
+                                <td>Geeft wijzigingstijd als UNIX-tijd (float, seconden sinds 1970-01-01).</td>
+                                <td><pre>mtime_ts = path.getmtime("textfile.txt")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>ctime()</code></td>
+                                <td>Zet UNIX-tijdstempel om naar een leesbare datum/tijdstring.</td>
+                                <td><pre>print("Wijzigingstijd (timestamp):", mtime_ts)
+leestijd = time.ctime(mtime_ts)
+print("Leesbare wijzigingstijd:", leestijd)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met <code>datetime.fromtimestamp()</code> wordt de timestamp omgezet naar een datetime-object:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>fromtimestamp()</code></td>
+                                <td>Converteert een UNIX-tijdstempel naar een datetime-object met datum en tijd.</td>
+                                <td><pre>dt_obj = datetime.datetime.fromtimestamp(path.getmtime("textfile.txt"))
+print("Wijzigingstijd als datetime:", dt_obj)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Bepalen hoe lang geleden een bestand is gewijzigd, is mogelijk door de huidige tijd te vergelijken met de wijzigingstijd ontstaat een timedelta-object:</p>
+                    <pre><code>now = datetime.datetime.now()
+modified = datetime.datetime.fromtimestamp(path.getmtime("textfile.txt"))
+delta = now - modified
+
+print("Het bestand is", delta, "geleden gewijzigd.")
+print("Dat is", delta.total_seconds(), "seconden geleden.")</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Bestandsysteem shellmethoden gebruiken</h3>
+                    <p>Python biedt de module <code>shutil</code> en andere hulpmiddelen om bestanden op een hoger niveau te beheren via de onderliggende shellfunctionaliteit. Hieronder volgt een samenvatting van de behandelde mogelijkheden: kopiëren, hernoemen en archiveren van bestanden.</p>
+                    <p>Met <code>copy()</code> kan een bestaand bestand worden gekopieerd:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>copy()</code></td>
+                                <td>Kopieert bestand van de bron naar de eindbestemming.</td>
+                                <td><pre>if path.exists("Textfile.txt"):
+    source = path.realpath("Textfile.txt")
+    destination = source + ".bak"
+    shutil.copy(source, destination)</pre>/td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In het bovenstaande voorbeeld wordt gecontroleerd of Textfile.txt bestaat; als dat zo is, wordt er een kopie gemaakt met de extensie .bak.</p>
+                    <p>Met <code>os.rename()</code> kan een bestand van naam worden veranderd. Hierbij moet het oorspronkelijke pad en de nieuwe naam als twee argumenten worden meegegeven.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>os.rename()</code></td>
+                                <td>Hernoemt of verplaatst bestand.</td>
+                                <td><pre>os.rename("Textfile.txt", "Newfile.txt")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met <code>make_archive()</code> wordt in één stap een ZIPbestand aangemaakt, gebaseerd op de inhoud van een hele map (inclusief submappen). Eerst wordt de map bepaald door <code>path.split()</code> toe te passen op een bestaand bestand, zodat de directorystructuur bewaakt blijft.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>make_archive()</code></td>
+                                <td>Maakt name.fmt aan (bijv. Archive.zip) met alle bestanden in root_dir.</td>
+                                <td><pre>if path.exists("Textfile.txt.bak"):
+    source = path.realpath("Textfile.txt.bak")
+    root_dir, _ = path.split(source)  # splitst pad en bestandsnaam
+    shutil.make_archive("Archive", "zip", root_dir)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Wanneer een enkel bestanden aan een ZIPbestand moet worden toegevoegd in plaats van aan een hele map, wordt de module <code>zipfile</code> gebruikt. Door middel van een contextmanager (with) wordt het ZIPbestand geopend en worden vervolgens specifieke bestanden toegevoegd.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>ZipFile()</code></td>
+                                <td>Opent of maakt ZIPbestand file met modus mode ("w" voor schrijven, "r" voor lezen, etc.).</td>
+                                <td><pre>from zipfile import ZipFile</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>zip.write()</code></td>
+                                <td>Voegt de naam van een bestand toe aan het geopende ZIPbestand.</td>
+                                <td><pre>from zipfile import ZipFile
+
+with ZipFile("Testzip.zip", "w") as newzip:
+    newzip.write("Newfile.txt")
+    newzip.write("Textfile.txt.bak")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Tijden en datums gebruiken</h2>
+                
+                <div class="chapter__group">
+                    <h3>De date-, time- en datetime-klassen</h3>
+                    <p>Om de datum- en tijdfunctionaliteit te kunnen gebruiken, worden de klassen date, time en datetime uit het datetime-module geïmporteerd. Het is niet nodig om de hele module in één keer te importeren; zo houdt men de naamruimte overzichtelijk:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Klasse</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>date</code></td>
+                                <td>Representeert een datum zonder tijdcomponent.</td>
+                                <td><pre>from datetime import date</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>time</code></td>
+                                <td>Representeert het tijdstip (uren, minuten, seconden, milliseconden).</td>
+                                <td><pre>from datetime import time</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>datetime</code></td>
+                                <td>Representeert de datum- als de tijdinformatie.</td>
+                                <td><pre>from datetime import datetime</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De volgende methoden kunnen aan de klassen worden toegevoegd om specifieke data en/of tijdinformatie te achterhalen:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>today()</code></td>
+                                <td>Haalt een date-object op met de huidige datum (jaar-maand-dag).</td>
+                                <td><pre>today = date.today()
+print(today)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>weekday()</code></td>
+                                <td>Retourneert een integer 0–6 (0 = maandag, ..., 6 = zondag).</td>
+                                <td><pre>weekday_index = today.weekday()
+print(weekday_index)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>now()</code></td>
+                                <td>Haalt een datetime-object op met de huidige datum én tijd (inclusief uren, minuten, seconden).</td>
+                                <td><pre>nu = datetime.now()
+print(nu)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>time()</code></td>
+                                <td>Extraheert de tijdcomponent (uren, minuten, seconden, microseconden) uit een datetime-object.</td>
+                                <td><pre>huidige_tijd = datetime.time(nu)
+print(huidige_tijd)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Tijd invoer formateren</h3>
+                    <p>Python's <code>strftime</code> biedt een uitgebreide set codes voor het formatteren van datum en tijd naar wens. De codes worden met gewone tekst in één string gecombineerd, waarna <code>strftime</code> elke code door de corresponderende waarde uit het datetime-object vervangt. Hieronder staan de meest gebruikte codes voor het formatteren van datumonderdelen weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Code</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>%Y</code></td>
+                                <td>Viercijferig jaartal (full year)</td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td><code>%y</code></td>
+                                <td>Tweecijferig jaartal (abbreviated year)</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td><code>%m</code></td>
+                                <td>Maandnummer met voorloopnul (01–12)</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td><code>%B</code></td>
+                                <td>Volledige maandnaam (volledig tekst)</td>
+                                <td>October</td>
+                            </tr>
+                            <tr>
+                                <td><code>%b</code></td>
+                                <td>Afgekorte maandnaam (3 letters)</td>
+                                <td>Oct</td>
+                            </tr>
+                            <tr>
+                                <td><code>%d</code></td>
+                                <td>Dag van de maand met voorloopnul (01–31)</td>
+                                <td>04</td>
+                            </tr>
+                            <tr>
+                                <td><code>%a</code></td>
+                                <td>Afgekorte weekdagnaam (3 letters)</td>
+                                <td>Mon</td>
+                            </tr>
+                            <tr>
+                                <td><code>%A</code></td>
+                                <td>Volledige weekdagnaam (volledig tekst)</td>
+                                <td>Monday</td>
+                            </tr>
+                            <tr>
+                                <td><code>%c</code></td>
+                                <td>Locale-specifieke datum + tijd</td>
+                                <td>Mon Oct 4 22:48:29 2021</td>
+                            </tr>
+                            <tr>
+                                <td><code>%x</code></td>
+                                <td>Locale-specifieke datum</td>
+                                <td>10/04/21</td>
+                            </tr>
+                            <tr>
+                                <td><code>%X</code></td>
+                                <td>Locale-specifieke tijd</td>
+                                <td>22:48:29</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Lokale codes zoals <code>%c</code>, <code>%x</code> en <code>%X</code> produceren formaten volgens de regionale instellingen van het besturingssysteem. In Europa zou <code>%x</code> bijvoorbeeld 04/10/25 afdrukken, terwijl in de VS de volgorde maand-dag-jaar gebruikelijk is. Hetzelfde is waar voor codes die worden gebruikt voor het formatteren van tijdscomponenten. Hieronder staan de meest gebruikte codes voor het formatteren van tijdscomponenten weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Code</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>%H</code></td>
+                                <td>Uur in 24-uursformaat met voorloopnul (00–23)</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td><code>%I</code></td>
+                                <td>Uur in 12-uursformaat met voorloopnul (01–12)</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td><code>%M</code></td>
+                                <td>Minuut met voorloopnul (00–59)</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td><code>%S</code></td>
+                                <td>Seconde met voorloopnul (00–59)</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td><code>%p</code></td>
+                                <td>AM-/PM-indicator (locale-gevoelig)</td>
+                                <td>PM</td>
+                            </tr>
+                            <tr>
+                                <td><code>%f</code></td>
+                                <td>Microseconden (000000–999999)</td>
+                                <td>123456</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Het is niet nodig om alle codes uit het hoofd te leren: voor een volledig overzicht kan de officiële documentatie worden geraadpleegd.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Timedelta objecten gebruiken</h3>
+                    <p>De <code>timedelta</code>-klasse vereenvoudigt datum‐ en tijdwiskunde gerelateerde bewerkingen, zoals het berekenen van een datum in de toekomst of in het verleden ten opzichte van een gegeven datum:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Klasse</th>
+                                <th>Omschrijving</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>timedelta</code></td>
+                                <td>Berekent het verschil tussen data en weergeeft deze hoeveelheid.</td>
+                                <td><pre>time_delt1 = timedelta(days=270, hours=9, minutes=18)
+print(time_delt1)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om <code>timedelta</code> te kunnen gebruiken, wordt deze specifieke klasse geïmporteerd uit de standaardmodule <code>datetime</code>: <code>from datetime import datetime, date, timedelta</code>.</p>
+                    <p>Een <code>timedelta</code> wordt gecreëerd door de gewenste eigenschappen (days, hours, minutes, etc.) door te geven als argumenten. Na het aanmaken van een <code>timedelta</code> is het mogelijk om een datum in de toekomst en in het verleden berekenen, wat als volgt gaat:</p>
+                    <pre><code>one_year = now + timedelta(days=365)
+print("Over één jaar (zelfde datum):", one_year)</code></pre>
+                    <p>Of</p>
+                    <pre><code>t = now - timedelta(weeks=1)
+s = t.strftime("%A %B %d %Y")
+print("Een week geleden was het:", s)</code></pre>
+                    <p>Dit gaat aan de hand van de onderstaande parameters:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Omschrijving</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>days</code></td>
+                                <td>Aantal dagen in de timedelta</td>
+                                <td><pre>timedelta(days=365)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>weeks</code></td>
+                                <td>Aantal weken in de timedelta</td>
+                                <td><pre>timedelta(weeks=2)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>hours</code></td>
+                                <td>Aantal uren in de timedelta</td>
+                                <td><pre>timedelta(hours=5)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>minutes</code></td>
+                                <td>Aantal minuten in de timedelta</td>
+                                <td><pre>timedelta(minutes=1)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>timedelta.days</code></td>
+                                <td>Wanneer men twee date-objecten van elkaar aftrekt, geeft deze eigenschap het aantal dagen als integer.</td>
+                                <td><pre>(afd - today).days</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>replace()</code></td>
+                                <td>Methode op een date-object om één of meer onderdelen (jaar, maand, dag) te vervangen.</td>
+                                <td><pre>afd = afd.replace(year=today.year + 1)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Werken met kalenders</h3>
+                    <p>De <code>calendar</code>-module bevat hulpmiddelen om kalenders in tekst‐ en HTML‐formaat weer te geven, om door datums te itereren en om locale‐afhankelijke maand‐ en weekdagnamen op te halen. De module wordt als volgt opgeroepen: <code>import calendar</code>.</p>
+                    <p>Binnen de <code>calendar</code>-module kunnen de volgende functies en constanten worden toegepast:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie / Constante</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>TextCalendar()</code></td>
+                                <td>Creëert een tekstuele kalender met opgegeven begindag van de week.</td>
+                                <td><pre>TextCalendar(6).formatmonth(2022, 1)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>HTMLCalendar()</code></td>
+                                <td>Creëert een HTML‐kalender met opgegeven begindag van de week.</td>
+                                <td><pre>HTMLCalendar(6).formatmonth(2022, 1)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>itermonthdays()</code></td>
+                                <td>Itereert over alle cellen van een maand (0 = buiten de maand, anders dagnummer).</td>
+                                <td><pre>for dag in c.itermonthdays(2022, 8):</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>monthcalendar()</code></td>
+                                <td>Geeft een lijst van lijsten; elke geneste lijst bevat 7 gehele getallen (dag 1–31 of 0).</td>
+                                <td><pre>weken = calendar.monthcalendar(2023, 5)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>month_name[]</code></td>
+                                <td>Naam van de maand (index 1–12; index 0 is lege string).</td>
+                                <td><pre>calendar.month_name[4] # "april" (bij NL‐locale)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>day_name[]</code></td>
+                                <td>Naam van de weekdag (index 0–6, beginnend bij maandag).</td>
+                                <td><pre>calendar.day_name[0] # "maandag" (bij NL‐locale)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Internetdataformaten</h2>
+                
+                <div class="chapter__group">
+                    <h3>Internetdata fetchen</h3>
+                    <p>Eén van de sterke punten van Python is het ophalen en verwerken van gegevens van internet, zoals JSON, XML en HTML. Het uitvoeren van een HTTP-verzoek en het verwerken van een respons gaat aan de hand van het urllib.request-module:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>urlopen()</code></td>
+                                <td>Maakt een HTTP-verzoek naar de opgegeven URL en retourneert een responsobject.</td>
+                                <td><pre>urllib.request.urlopen("https://...")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Na het openen van de URL wordt eerst de HTTP-statuscode opgehaald om te verifiëren of het verzoek is geslaagd. Dit gaat als volgt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>getcode()</code></td>
+                                <td>Haalt de HTTP-statuscode uit het responsobject (bijv. 200, 404, etc.).</td>
+                                <td><pre>weburl.getcode()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om de daadwerkelijke inhoud van de pagina te lezen, wordt de read()-methode gebruikt op het responsobject:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>read()</code></td>
+                                <td>Leest de volledige inhoud van de respons (typisch HTML of andere bron) en retourneert dit als bytes-object.</td>
+                                <td><pre>data = weburl.read()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Met JSON-data werken</h3>
+                    <p>Om JSON te kunnen verwerken, moet het json-module worden geïmporteerd en dient een HTTP-verzoek te worden uitgevoerd met urllib.request. De data die hiervoor in de cursus en hieronder wordt gebruikt, is afkomstig van de US Geological Survey (USGS) en bevat aardbevingsgegevens die continu worden bijgewerkt:</p>
+                    <pre><code>import json
+import urllib.request
+
+def main():
+    url_data = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson"
+    weburl = urllib.request.urlopen(url_data)
+    
+    if weburl.getcode() == 200:
+        data = weburl.read()
+        print_results(data)
+    else:
+        print("Ontvangen HTTP-foutcode:", weburl.getcode())
+
+def print_results(json_data):
+    pass
+
+if __name__ == "__main__":
+    main()</code></pre>
+                    <p>De functie print_results ontvangt de ruwe JSON-data (een bytes-object) en zet deze om naar een Python-dictionary met json.loads. Vervolgens wordt de titel en het aantal geregistreerde gebeurtenissen uit de metadata afgedrukt:</p>
+                    <pre><code>def print_results(json_data):
+    the_json = json.loads(json_data)
+    if "title" in the_json["metadata"]:
+        print(the_json["metadata"]["title"])
+    if "count" in the_json["metadata"]:
+        print(f"{the_json['metadata']['count']} events recorded")</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Beschrijving</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>load()</code></td>
+                                <td>Leest JSON direct uit een bestand en parseert naar Python-obj.</td>
+                                <td><pre>with open("data.json") as f: 
+    the_json = json.load(f)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>loads()</code></td>
+                                <td>Parseert een JSON-tekst (string of bytes) naar een Python-structuur (dict/lijst).</td>
+                                <td><pre>the_json = json.loads(json_data)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>dumps()</code></td>
+                                <td>Converteert een Python-structuur naar een JSON-string (optioneel met indeling via indent).</td>
+                                <td><pre>json_string = json.dumps(the_dict, indent=2)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In de JSON-structuur bevindt zich een sleutel "features", die een lijst is van individuele aardbevingobjecten. Elk object bevat in "properties" details zoals plaats, magnitude en aantal meldingen. Onderstaand voorbeeld toont hoe voor alle gebeurtenissen de plaatsnaam wordt geprint:</p>
+                    <pre><code>def print_results(json_data):
+    the_json = json.loads(json_data)
+    if "title" in the_json["metadata"]:
+        print(the_json["metadata"]["title"])
+    if "count" in the_json["metadata"]:
+        print(f"{the_json['metadata']['count']} events recorded")</code></pre>
+                    <p>Soms is het wenselijk om alleen gebeurtenissen met een bepaalde magnitude te tonen. Elke gebeurtenis heeft een sleutel "mag". Hieronder wordt een lijst afgedrukt van alle aardbevingen met magnitude 4.0 of hoger:</p>
+                    <pre><code>def print_results(json_data):
+    the_json = json.loads(json_data)
+        
+    print("Aardbevingen met magnitude ≥ 4.0:")
+    print("-------------------------------")
+    
+    for feature in the_json["features"]:
+        mag = feature["properties"]["mag"]
+        if mag is not None and mag >= 4.0:
+            place = feature["properties"]["place"]
+            print(f"{mag} – {place}")
+    print("\n---\n")</code></pre>
+                    <p>De JSON-gegevens bevatten in "properties" vaak een "felt"-eigenschap: het aantal meldingen van mensen die de aardbeving hebben gevoeld. Door alleen die gebeurtenissen te selecteren waarbij ten minste één persoon melding heeft gemaakt, ontstaat een lijst van 'gevoelde' bevingen:</p>
+                    <pre><code>def print_results(json_data):
+    the_json = json.loads(json_data)
+    
+    print("Aardbevingen die zijn gevoeld:")
+    print("-------------------------------")
+    
+    for feature in the_json["features"]:
+        felt_reports = feature["properties"]["felt"]
+        if felt_reports is not None and felt_reports > 0:
+            place = feature["properties"]["place"]
+            mag = feature["properties"]["mag"]
+            print(f"{place} – mag: {mag}, felt: {felt_reports} keer")</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>HTML parsen en verwerken</h3>
+                    <p>Python kan gestructureerde gegevens zoals HTML verwerken met behulp van de HTMLParser-klasse:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Klasse</th>
+                                <th>Beschrijving</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>htmlparser</code></td>
+                                <td>Maakt een parser-instantie die ongeldige markup kan parsen.</td>
+                                <td><pre>from html.parser import HTMLParser</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Hieronder wordt getoond hoe een aangepaste HTML-parser wordt gebouwd die elementen, tekst, en HTML-commentaar verwerkt uit een lokaal HTML-bestand:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Element</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>handle_comment</code></td>
+                                <td>Verwerkt HTML-commentaren (&lt;!-- ... --&gt;) en toont positie in het bestand.</td>
+                                <td><pre>def handle_comment(self, data):
+    pos = self.getpos()</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>handle_data</code></td>
+                                <td>Verwerkt tekst tussen tags. Witte regels worden genegeerd met isspace().</td>
+                                <td><pre>def handle_data(self, data):
+    if data.isspace():
+        return
+    pos = self.getpos()</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>handle_starttag</code></td>
+                                <td>Verwerkt starttags zoals &lt;p&gt; of &lt;a&gt; en toont eventueel aanwezige attributen.</td>
+                                <td><pre>def handle_starttag(self, tag, attrs):
+    global paragraphs
+    pos = self.getpos()</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>getpos()</code></td>
+                                <td>Levert de positie van het huidige element (regel, kolom) als tuple terug.</td>
+                                <td><pre>def handle_comment(self, data):
+    pos = self.getpos()
+    print("Commentaar gevonden:", data)
+    print(f"Regel: {pos[0]}, Positie: {pos[1]}")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>paragraphs</code></td>
+                                <td>Telt het aantal &lt;p&gt;-tags in het bestand.</td>
+                                <td><pre>def handle_starttag(self, tag, attrs):
+    global paragraphs
+    pos = self.getpos()
+    print("Start-tag gevonden:", tag)
+    print(f"Regel: {pos[0]}, Positie: {pos[1]}")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>XML manipuleren</h3>
+                    <p>Met het XML Mini DOM–module kan een XML-bestand in het geheugen worden geladen, waarna het document kan worden doorlopen en bewerkt. Er wordt gewerkt volgens het Document Object Model (DOM), zodat elementen, attributen en nieuwe nodes kunnen worden gemanipuleerd. Het inlezen & parsen van een XML-bestand en het ophalen van elementen in Python gaat als volgt:</p>
+                    <pre>import xml.dom.minidom
+doc = xml.dom.minidom.parse("samplexml.xml")</pre>
+                    <p>Het volledige document wordt in het geheugen geladen, waardoor willekeurige bewerkingen mogelijk zijn, zoals het ophalen van elementen en het aanmaken van nieuwe elementen:</p>
+                    <pre><code>skills = doc.getElementsByTagName("skill")
+print(skills.length, "skills gevonden")
+for skill in skills:
+    print("-", skill.getAttribute("name"))</code></pre>
+                    <p>En</p>
+                    <pre><code>new_skill = doc.createElement("skill")
+new_skill.setAttribute("name", "jQuery")
+doc.firstChild.appendChild(new_skill)</code></pre>
+                    <p>Om deze bewerkingen te kunnen maken heeft python diverse methoden ter beschikking. De belangrijkste methoden staan hieronder verder toegelicht:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td><code>parse()</code></td>
+                                <td>Parseert file en retourneert een DOM-document (Document).</td>
+                                <td><pre>def main():
+    doc = xml.dom.minidom.parse("samplexml.xml")
+    print("Root:", doc.nodeName)
+    print("Eerste element:", doc.firstChild.tagName)</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>getElementsByTagName()</code></td>
+                                <td>Geeft alle elementen met de tagnaam terug (NodeList).</td>
+                                <td><pre>skills = doc.getElementsByTagName("skill")
+    for s in skills:
+        print("-", s.getAttribute("name"))</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>getAttribute()</code></td>
+                                <td>Haalt de waarde van attribuut op uit het element.</td>
+                                <td><pre>new_skill = doc.createElement("skill")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>createElement()</code></td>
+                                <td>Maakt een nieuw element &lt;tag&gt; aan (nog niet in document).</td>
+                                <td><pre>new_skill.setAttribute("name", "jQuery")</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>setAttribute()</code></td>
+                                <td>Stelt attributen gelijk aan elkaar.</td>
+                                <td><pre>print("-", s.getAttribute("name"))</pre></td>
+                            </tr>
+                            <tr>
+                                <td><code>appendChild()</code></td>
+                                <td>Voegt child als nieuw kind toe onder parent in het DOM.</td>
+                                <td><pre>doc.firstChild.appendChild(new_skill)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>         
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

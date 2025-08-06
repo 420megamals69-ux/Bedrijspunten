@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Programming Concepts for Python</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo"><img src="assets/images/logo.jpg" alt="HVA Logo">Bedrijfspunten Website</a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Gevolgde Cursussen <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-shelf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Programmeer Fundamenten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fundamentals.html" class="dropdown__link">Fundamentals</a>
+                                            </li>
+                                            <li>
+                                                <a href="databases.html" class="dropdown__link">Databases</a>
+                                            </li>
+                                            <li>
+                                                <a href="websecurity.html" class="dropdown__link">Web Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-html5-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Basis Trainingen</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">CSS Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">HTML Essential Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript.html" class="dropdown__link">JavaScript Essential Training</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-s-slash-fill"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Talen & Concepten</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learning Python (2021)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Programming Concepts for Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="java.html" class="dropdown__link">Learning Java 11</a>
+                                            </li>
+                                            <li>
+                                                <a href="csharp.html" class="dropdown__link">Learning C#</a>
+                                            </li>
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learning SQL Programming</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-graduation-cap-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Slagen in Web Development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="fullstack.html" class="dropdown__link">Full Stack and Front End</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="uren.html" class="nav__link">Urenverantwoording</a>
+                        </li>
+
+                        <li>
+                            <a href="reflectie.html" class="nav__link">Reflectie</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->    
+        <main class="container">
+            
+            <h1>Programming Concepts for Python</h1>
+
+            <!--=============== CHAPTER 1 ===============-->
+            <div class="chapter__container">
+                <h2>Functies</h2>
+                
+                <div class="chapter__group">
+                    <h3>Functies</h3>
+                    <p>Een functie is een blok code dat een specifieke taak uitvoert en kan worden hergebruikt om herhalingen in de code te voorkomen. De belangrijkste voordelen van functies zijn herbruikbaarheid, vermindering van fouten en verhoging van leesbaarheid. Functies worden daarom voornamelijk aangemaakt voor taken die meerdere malen worden uitgevoerd, zodat de stappen die elke keer identiek zijn. Hieronder is een voorbeeld van een functie:</p>
+                    <pre><code>def make_omelette():
+    print("Ingrediënten mengen")
+    print("Mengsel in pan gieten")
+    print("Eerste kant bakken")
+    print("Omelet omdraaien")
+    print("Tweede kant bakken")
+    omelette = "Een smakelijke omelet"
+    return omelette</code></pre>
+                    <p>De sleutelwoorden die worden gebruikt om functies aan te roepen en om functies waarden terug te laten geven, staan hieronder beschreven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>def</td>
+                                <td>Geeft aan dat een nieuwe functie wordt gedefinieerd.</td>
+                                <td><pre>def make_omelette():</pre></td>
+                            </tr>
+                            <tr>
+                                <td>return</td>
+                                <td>Stelt een waarde beschikbaar als uitvoer van de functie. Zodra return wordt aangeroepen, verlaat het programma de functie en geeft het de waarde terug.</td>
+                                <td><pre>return omelette</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Gedupliceerde code</h3>
+                    <p>De duplicatie van code maakt de code moeilijker om te onderhouden en minder overzichtelijk. Identieke codefragmenten in meerdere functies kunnen eenvoudig worden voorkomen door die overeenkomende stappen in één functie onder te brengen. Dit gaat als volgt:</p>
+                    <pre><code>def make_omelette():
+    print('Mixing the ingredients')
+    print('Pouring the mixture')
+    print('Cooking the first side')
+    print('Flipping it')
+    print('Cooking the other side\n')
+    omelette = 'a tasty omelette'
+    return omelette
+
+def make_pancake():
+    print('Mixing the ingredients')
+    print('Pouring the mixture')
+    print('Cooking the first side')
+    print('Flipping it')
+    print('Cooking the other side\n')
+    pancake = 'a tasty pancake'
+    return pancake</code></pre>
+                    <p>De bovenstaande functies bevatten meerdere overeenkomende kernstappen, wat tot duplicatie van code leidt. Om dit tegen te gaan worden de gemeenschappelijke stappen geïsoleerd en in een aparte functie ondergebracht. Vervolgens kan de nieuwe functie worden aangeroepen in de bestaande functies met hetzelfde resultaat, maar zonder de nadelen van gedupliceerde code:</p>
+                    <pre><code>def mix_and_cook():
+    print('Mixing the ingredients')
+    print('Pouring the mixture')
+    print('Cooking the first side')
+    print('Flipping it')
+    print('Cooking the other side\n')
+
+def make_omelette():
+    mix_and_cook()
+    omelette = 'a tasty omelette'
+    return omelette
+
+def make_pancake():
+    mix_and_cook()
+    pancake = 'a tasty pancake'
+    return pancake</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Parameters en argumenten</h3>
+                    <p>Een parameter is een variabele naam in de functiedefinitie die tijdens uitvoering verwijst naar de waarde die is meegegeven. Een argument is de waarde die aan een parameter wordt toegewezen bij het aanroepen van de functie. Dit ziet er als volgt uit:</p>
+                    <pre><code>def make_omelette(ingredient):
+    mix_and_cook()
+    omelette = f"Een {ingredient} omelet"
+    return omelette
+
+bacon_omelette = make_omelette("bacon")
+spam_omelette = make_omelette("Spam")
+
+print(bacon_omelette)
+print(spam_omelette)</code></pre>
+                    <p>In het bovenstaande voorbeeld is ingredient een voorbeeld van een parameter terwijl bacon in make_omelette("bacon") een voorbeeld van een argument is.</p>
+                    <p>Door in de functiekop een parameter te definiëren kan dezelfde functie worden aangepast op basis van de argumenten die mee zijn geven. Deze aanpak vergroot de flexibiliteit en herbruikbaarheid van functies, omdat dezelfde code nu verschillende uitvoer kan opleveren afhankelijk van de invoerwaarde.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Meerdere parameters</h3>
+                    <p>Bij eenvoudige functies kan één parameter voldoende zijn, maar soms is het nodig om meerdere invoerwaarden door te geven. Hieronder staat een voorbeeld weergeven van een functie met meerdere parameters:</p>
+                    <pre><code>def make_omelette(ingredient1, ingredient2):
+    mix_and_cook()
+    omelette = f"Een omelet met {ingredient1} en {ingredient2}"
+    return omelette
+
+my_omelette = make_omelette("worst", "ui")</code></pre>
+                    <p>Wanneer het gewenste aantal argumenten niet twee is, werkt de bovenstaande aanpak echter niet. Voor bijvoorbeeld zeven ingrediënten ontstaat onhandig lange functiekop met zeven parameters. Om flexibel om te gaan met elk willekeurig aantal ingrediënten, wordt er gebruik gemaakt van variabele parameters met behulp van *args:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>*args</td>
+                                <td>Geeft aan dat alle extra argumenten die bij de functieaanroep worden meegegeven, worden verzameld in één tuple.</td>
+                                <td><pre>def make_fancy_omelette(*ingredients):
+    mix_and_cook()  # hergebruikt de gemeenschappelijke bakstappen
+    aantal = len(ingredients)
+    omelette = f"Een fancy omelet met {aantal} ingrediënten"
+    return omelette
+
+my_fancy_omelette = make_fancy_omelette(
+    "worst", "ui", "paprika", "spinazie", 
+    "champignons", "tomaten", "geitenkaas"
+)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Met variabele parameters kan elke functieaanroep een argument bevatten, zonder dat de functiedefinitie hoeft te worden aangepast. Daarnaast wordt duplicatie vermeden, blijft de code overzichtelijk en is het makkelijker om wijzigingen aan de code te maken.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Lokale en globale variabelen</h3>
+                    <p>Variabelen in Python hebben een scope: dit is een bereik waarbinnen de variabelen toegankelijk zijn. Lokale variabelen worden tijdelijk gemaakt voor de duur van één functieaanroep en verdwijnen daarna automatisch. Alle variabelen die in de functiekop (parameters) of binnen het lichaam van de functie worden aangemaakt, behoren tot de lokale scope van die functie:</p>
+                    <pre><code>def make_omelette(ingredient):
+    mix_and_cook()
+    omelette = f"Een {ingredient} omelet"
+    return omelette
+
+def make_pancake():
+    # Poging om 'ingredient' te gebruiken leidt tot fout
+    pancake = f"Een {ingredient} pannenkoek"
+    return pancake</code></pre>
+                    <p>Een variabele die buiten alle functies wordt aangemaakt, behoort tot de globale scope. Globale variabelen blijven beschikbaar in het hele script, tenzij een lokale variabele met dezelfde naam wordt gebruikt of expliciet wordt gewijzigd met global. Die variabele kan vanuit élke functie in het script gelezen worden (tenzij er lokaal met dezelfde naam een andere variabele bestaat).</p>
+                    <pre><code>cheese = "cheddar"  # Globale variabele
+
+def make_omelette():
+    mix_and_cook()
+    omelette = f"Een {cheese} omelet"  # Leest globale 'cheese'
+    return omelette
+
+def make_pancake():
+    mix_and_cook()
+    pancake = f"Een {cheese} pannenkoek"  # Leest dezelfde 'cheese'
+    return pancake</code></pre>
+                    <p>Wanneer binnen een functie een variabele wordt gedeclareerd met dezelfde naam als een globale variabele, zal Python vóórrang geven aan de lokale variant. Om wél de bestaande globale variabele te overschrijven, moet er expliciet worden aangeven dat de globale variabele wordt bedoeld:</p>
+                    <pre><code>cheese = "cheddar"  # Globale variabele
+
+def make_omelette():
+    global cheese               # Verwijst naar de globale variabele
+    cheese = "swiss"            # Wijzigt de globale variabele
+    mix_and_cook()
+    omelette = f"Een {cheese} omelet"  
+    return omelette
+
+def make_pancake():
+    mix_and_cook()
+    pancake = f"Een {cheese} pannenkoek"
+    return pancake</code></pre>
+                    <p>Om verwarring te voorkomen, is het raadzaam variabelen in verschillende scopes van elkaar te onderscheiden door duidelijke namen en alleen globale variabelen te wijzigen als dat écht noodzakelijk is.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 2 ===============-->
+            <div class="chapter__container">
+                <h2>Objecten</h2>
+                
+                <div class="chapter__group">
+                    <h3>Objecten</h3>
+                    <p>Object georiënteerd programmeren (OOP) is een programmeermodel waarbij elementen van een programma worden gemodelleerd als objecten. Objecten zijn entiteiten die attributen en methoden bezitten. Attributen beschrijven de toestand of kenmerken van een object, zoals kleur: rood of status: schoon. Methoden zijn acties die op een object kunnen worden uitgevoerd, zoals wear(), wash(), stretch().</p>
+                    <p>Niet alle objecten delen dezelfde eigenschappen en methoden. Bijvoorbeeld: schoenen hebben een tie() methode, terwijl een shirt die methode niet heeft. Objecten kunnen ook andere objecten bevatten, zoals een outfit die bestaat uit een shirt, broek en schoenen.</p>
+                    <p>Objecten worden vaak als instanties van een bepaald type aangemaakt. Twee objecten kunnen identiek lijken, maar zijn afzonderlijke instanties met een unieke identiteit. Denk bijvoorbeeld aan:</p>
+                    <pre><code>shirt1 = "red shirt"
+shirt2 = "red shirt"</code></pre>
+                    <p>In Python vallen objecttypes zoals strings en getallen ook onder objecten:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Objecttype</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeldattributen/methoden</th>
+                            </tr>
+                            <tr>
+                                <td>String</td>
+                                <td>Tekstreeksen</td>
+                                <td>.upper(), .split()</td>
+                            </tr>
+                            <tr>
+                                <td>Integer</td>
+                                <td>Getallen</td>
+                                <td>.bit_length(), .real</td>
+                            </tr>
+                            <tr>
+                                <td>Functie</td>
+                                <td>Uitvoerbare eenheid</td>
+                                <td>. __name__, . __doc__</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>In Python zijn niet alleen data zoals strings en getallen objecten, maar ook functies en methoden zelf zijn objecten. Dit betekent dat functies zoals id() en dir() ook een eigen ID en attributen bezitten.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Functie</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>type()</td>
+                                <td>Geeft het type van een object terug</td>
+                                <td>type("shirt") ➝ &lt;class 'str'&gt;</td>
+                            </tr>
+                            <tr>
+                                <td>dir()</td>
+                                <td>Geeft een lijst van beschikbare attributen</td>
+                                <td>dir("shirt")</td>
+                            </tr>
+                            <tr>
+                                <td>id()</td>
+                                <td>Geeft de unieke ID van een object</td>
+                                <td>id("shirt") ➝ 4483759328</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Klassen</h3>
+                    <p>Een klasse is een blauwdruk voor het creëren van objecten met een specifiek type en bijbehorende eigenschappen en methoden. Waar standaard Python-objecten al bestaan voor gegevens zoals getallen en strings, maakt een zelf gedefinieerde klasse het mogelijk om eigen, op maat gemaakte objecttypen te maken:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>class</td>
+                                <td>Creëert een klasse</td>
+                                <td><pre>class Jeans:
+    def __init__(self, waist, length, color):
+        ...</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Elke klasse kan een speciale constructor methode definiëren om nieuw aangemaakte objecten in te stellen. In Python gaat dit aan de hand van __init__. De eerste parameter in de constructor verwijst naar de gemaakte instantie van het object. Het is conventioneel om deze parameter self te noemen, hoewel elke andere naam mogelijk is. Dankzij self kan de methode binnen de klasse interne attributen definiëren en initialiseren.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Object namen</h3>
+                    <p>In Python worden objecten niet direct in variabelen opgeslagen: objecten krijgen een naam toegewezen die verwijst naar het object. Een variabele fungeert als alias voor het object en meerdere variabelen kunnen naar hetzelfde object verwijzen.</p>
+                    <p>Er wordt van aliassen gesproken wanneer twee namen naar exact hetzelfde object verwijzen. Wijzigingen via één alias (variabele) zijn onmiddellijk zichtbaar via alle andere aliassen en de is-operator kan worden gebruikt om te controleren of twee variabelen naar hetzelfde object verwijzen:</p>
+                    <pre><code>from shirt_module import Shirt 
+
+red = Shirt()    
+crimson = red 
+
+# Controle op gelijke object-ID's
+id(red) == id(crimson)      
+red is crimson  
+
+red.make_dirty()
+print(crimson.clean)</code></pre>
+                    <p>Wanneer twee variabelen verwijzen naar exact hetzelfde object wordt dit een identiteit genoemd. Gelijkheid verwijst naar twee afzonderlijke objecten die dezelfde inhoud of eigenschappen hebben, maar wel twee verschillende instanties kunnen zijn.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Veranderlijkheid</h3>
+                    <p>Een veranderlijk object is een object dat na aanmaak kan worden gewijzigd zonder dat er een nieuw object ontstaat. Wanneer waarden constant aangepast moeten worden (bijvoorbeeld in een loop of bij frequente updates), verdient een veranderlijk object de voorkeur:</p>
+                    <pre><code>>>> closet = ["shirt", "hat", "pants", "jacket", "socks"]
+>>> print(closet)
+['shirt', 'hat', 'pants', 'jacket', 'socks']
+
+# Unieke ID vóór wijziging
+>>> id_before = id(closet)
+>>> id_before
+140249599183424
+
+# Verwijderen van een element (mutatie gebeurt in‐place)
+>>> closet.remove("hat")
+>>> print(closet)
+['shirt', 'pants', 'jacket', 'socks']
+
+# ID na wijziging blijft gelijk
+>>> id_after = id(closet)
+>>> id_after
+140249599183424  #zelfde ID als voorheen</code></pre>
+                    <p>Een onveranderlijk object verwijst naar een object dat na aanmaak niet kan worden gewijzigd; elke bewerking resulteert in de creatie van een nieuw object. Voor onveranderlijke gegevens (bijvoorbeeld als sleutels in een dictionary) is een onveranderlijk type noodzakelijk.</p>
+                    <pre><code>>>> words = "You're wearing that"
+>>> print(words)
+You're wearing that
+
+# Unieke ID vóór wijziging
+>>> id_before = id(words)
+>>> id_before
+140249572124272
+
+# Toevoegen van een zin (concatenatie)
+>>> words = words + " because you look great!"
+>>> print(words)
+You're wearing that because you look great!
+
+# ID na wijziging is anders
+>>> id_after = id(words)
+>>> id_after
+140249572158896  #anders dan id_before</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 3 ===============-->
+            <div class="chapter__container">
+                <h2>Klassen overerven</h2>
+                
+                <div class="chapter__group">
+                    <h3>Klassen overerven</h3>
+                    <p>Wanneer nieuwe klassen worden aangemaakt, kunnen attributen en methoden van bestaande klassen worden overgenomen via overerving. Dit is komt van pas wanneer een nieuwe klasse een specifiekere variant is van een eerder gedefinieerde, meer generieke klasse.</p>
+                    <p>Een superklasse beschrijft eigenschappen en methoden die gelden voor alle afgeleide klassen. Voor een superklasse zoals vehicle kan dit bijvoorbeeld een kleur of een fabrikant zijn:</p>
+                    <pre><code>class Vehicle:
+    def __init__(self, color, manufacturer):
+        self.color = color
+        self.manufacturer = manufacturer
+        # Tank gevuld: standaardwaarde 4
+        self.gas = 4
+
+    def drive(self):
+        if self.gas > 0:
+            self.gas -= 1
+            print(f"{self.color} {self.manufacturer} goes vroom")
+        else:
+            print(f"{self.color} {self.manufacturer} sputters out of gas")
+
+class Car(Vehicle):
+    def turn_on_radio(self):
+        print("Radio aan: lekkere muziek afspelen")
+
+    def open_window(self):
+        print("Raam open: frisse lucht")
+
+class Motorcycle(Vehicle):
+    def put_on_helmet(self):
+        print("Helm op: veilig rijden")</code></pre>
+                    <p>Een subklasse erft automatisch alle attributen en methoden van de superklasse, waardoor herhaling van code wordt vermeden. Daarnaast kan de subklasse eigen attributen en methoden definiëren, zoals turn_on_radio en open_window in het bovenstaande voorbeeld.</p>
+                    <p>Bij het aanroepen van methoden wordt eerst gezocht binnen de eigen klasse; als een methode daar niet bestaat, wordt de methode opgezocht in de superklasse. Dit is de essentie van overerving in Python.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Overgeërfde methodes overschrijven</h3>
+                    <p>Door te overschrijven kan een subklasse in Python de geërfde methode van een superklasse vervangen door eigen logica. Dit houdt in dat de subklasse een eigen definitie van de methode implementeert, waardoor de oorspronkelijke versie uit de superklasse niet meer wordt gebruikt voor objecten van die subklasse. Dit kan er als volgt uitzien:</p>
+                    <pre><code>class Vehicle:
+    def __init__(self, color, manufacturer):
+        self.color = color
+        self.manufacturer = manufacturer
+        self.gas = 4  # volle tank bij aankoop
+
+    def drive(self):
+        if self.gas > 0:
+            self.gas -= 1
+            print(f"{self.color} {self.manufacturer} goes vroom")
+        else:
+            print(f"{self.color} {self.manufacturer} sputters out of gas")
+
+class Car(Vehicle):
+    def turn_on_radio(self):
+        print("Radio aan: lekkere muziek afspelen")
+
+    def open_window(self):
+        print("Raam open: frisse lucht")
+
+class ElectricCar(Car):
+    def drive(self):
+        print(f"{self.color} {self.manufacturer} goes shh")</code></pre>
+                    <p>In het bovenstaand voorbeeld vervangt ElectricCar.drive() de benzine-afhankelijke Vehicle.drive(). Tegelijkertijd kan de subklasse alle overige geërfde attributen en methoden blijven gebruiken, zoals turn_on_radio() en open_window(). Hierdoor blijft de code onderhoudbaar, uitbreidbaar en beheersbaar, zelfs wanneer het aantal voertuigvarianten toeneemt.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 4 ===============-->
+            <div class="chapter__container">
+                <h2>Modules en packages</h2>
+                
+                <div class="chapter__group">
+                    <h3>Modules</h3>
+                    <p>Modules en packages zijn verzamelingen van voorgeprogrammeerde routines en klas-definities die in een standaardbibliotheek of externe bibliotheken beschikbaar zijn. Door modules te hergebruiken hoeven veelvoorkomende taken niet vanaf nul te worden geïmplementeerd, wat tijd en onderhoud bespaart.</p>
+                    <p>Alle standaardmodules worden vermeld in de Global Module Index op docs.python.org en elke module bevat documentatie over de beschikbare functies en klassen, vaak met voorbeeldcode. Een voorbeeld van een module is de module random, die willekeurige getallen en gerelateerde functies biedt. Het importeren van een gehele module als random gaat als volgt:</p>
+                    <pre><code>import random</code></pre>
+                    <p>Wanneer slechts een aantal objecten uit de module benodigd zijn, kan er selectief worden geïmporteerd door het gewenste object te specificeren. Dit heeft de volgende opbouw:</p>
+                    <pre><code>from module_naam import object1[, object2, …]</code></pre>
+                    <p>In het geval van random kan dit er als volgt uitzien:</p>
+                    <pre>from random import randint</pre>
+                    <p>De module random bevat zowel een functie randint() als een functie random(). Bij import random is random de module; bij from random import random wordt random een functie, waardoor random.randint niet langer toegankelijk is. Om naamconflicten tegen te gaan worden daarom aliassen gebruikt, zoals hieronder:</p>
+                    <pre><code>import module_naam as alias_naam
+from module_naam import object as alias_naam</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Packages</h3>
+                    <p>Een module is een .py-bestand waarin een verzameling functies en klassen is ondergebracht die gerelateerd zijn aan één taak. Een package is een __init__.py-file die meerdere modules bevat die samen een bredere taak ondersteunen.</p>
+                    <p>Wanneer een module zich in een package bevindt volgt de import-syntaxis dezelfde logica als bij losse modules, maar met een extra laag hiërarchie:</p>
+                    <p>Import package.module haalt de volledige module binnen, waarna package.module.functie() wordt gebruikt voor het aanroepen. Voor het selectief importeren wordt from package.module import functie gebruikt. Daarnaast worden aliassen gebruikt om lange namen en conflicten tegen te gaan, wat er als volgt uit kan zien:</p>
+                    <pre><code>import urllib.request
+response = urllib.request.urlopen("https://www.google.com")
+
+from urllib.request import urlopen
+response = urlopen("https://www.google.com")
+
+import urllib.request as req
+response = req.urlopen("https://www.google.com")</code></pre>
+                    <p>Om precies te kunnen zien welke bestanden (modules) tot een package behoren, moet de map locatie zichtbaar zijn op de schijf. Om de map locatie op de schijf te kunnen tonen, wordt het volgende attribuut gebruikt:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Attribuut</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>__path__</td>
+                                <td>Toont de map locatie op de schijf</td>
+                                <td><pre>import urllib
+print(urllib.__path__)
+['/usr/local/lib/python3.10/urllib']</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 5 ===============-->
+            <div class="chapter__container">
+                <h2>Lijsten en Tuples</h2>
+                
+                <div class="chapter__group">
+                    <h3>Lijsten</h3>
+                    <p>Lijsten en tuples zijn datastructuren om een verzameling objecten in een specifieke volgorde op te slaan. In Python worden lijsten gevisualiseerd als een rij objecten op een lijn, waarbij elk object een index heeft, beginnend bij nul. In Python worden lijsten gemaakt met vierkante haken en komma's tussen de objecten, wat er als volgt uitziet:</p>
+                    <pre><code>lijst = ["Audi", "BMW", "VW", "Tesla"]</code></pre>
+                    <p>De lijst kan uitgebreid worden met nieuwe items, doormiddel van de volgende methode:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>append</td>
+                                <td>Voegt een nieuw item toe aan een lijst</td>
+                                <td><pre>lijst.append("Mercedes")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Om een bestaand element op een specifieke index te vervangen, wordt het nummer van de gewenste plek tussen de vierkante haken toegekend:</p>
+                    <pre><code>lijst[2] = "Jeep"</code></pre>
+                    <p>De belangrijkste methodes staan in de onderstaande tabel weergeven:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>insert()</td>
+                                <td>Voegt een nieuw object in op de opgegeven index; alle elementen vanaf de index schuiven één plaats naar achteren.</td>
+                                <td><pre>lijst.insert(0, "Kia")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>index()</td>
+                                <td>Zoekt lineair vanaf index 0 naar het object en geeft de index van de eerste match terug.</td>
+                                <td><pre>idx = lijst.index("Mercedes")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>pop()</td>
+                                <td>Verwijdert en retourneert het element op basis van het index nummer.</td>
+                                <td><pre>verwijderde_auto = lijst.pop(3)</pre></td>
+                            </tr>
+                            <tr>
+                                <td>remove()</td>
+                                <td>Verwijdert de eerste instantie van een object; geeft niets terug.</td>
+                                <td><pre>lijst.remove("Lexus")</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Multidimensionale lijsten</h3>
+                    <p>Multidimensionale lijsten ontstaan wanneer lijsten worden genesteld binnen andere lijsten, waardoor een structuur ontstaat met twee of meer dimensies. In Python kunnen lijsten worden genest zolang het geheugen van de computer dit toestaat.</p>
+                    <p>Een tweedimensionale (2D)-lijst is een lijst waarvan elk element zelf weer een lijst is, bijvoorbeeld:</p>
+                    <pre><code>lot_2d = [
+    ["Ford", "Chevy", "Dodge"],     # Rij 0
+    ["Toyota", "Nissan"],           # Rij 1
+    ["Honda", "Kia", "Mazda"]       # Rij 2
+]</code></pre>
+                    <p>Om een specifiek item in rij 2 op plek 1 (Kia) te halen, worden twee indexwaarden achter elkaar gebruikt:</p>
+                    <pre><code>lot_2d[2][1]</code></pre>
+                    <p>Een driedimensionale (3D)-lijst is een lijst waarvan elk element weer een 2D-lijst is, zoals:</p>
+                    <pre><code>lot_3d = [
+    [  # Verd: 0
+        ["BMW", "Audi"],          # Rij 0
+        ["VW", "Tesla"],          # Rij 1
+        []                        # Rij 2 (lege rij)
+    ],
+    [  # Verd: 1
+        ["Ford", "Chevy"],        # Rij 0
+        ["Toyota"]                # Rij 1
+    ],
+    [  # Verd: 2
+        [],                       # Rij 0 (lege rij)
+        ["Honda", "Kia", "Mazda"],# Rij 1
+        ["Hyundai"]               # Rij 2
+    ]
+]</code></pre>
+                    <p>Om een specifiek item in rij 2 op rij 1, plek 1 (Kia) te halen, worden drie indexwaarden achter elkaar gebruikt:</p>
+                    <pre><code>lot_3d[2][1][1]</code></pre>
+                    <p>Wanneer een enkele for-loop binnen een multidimensionale lijst wordt toegepast, zal de loop alleen één sublijst teruggeven, en niet de individuele items. Om alle items in een multidimensionale lijst te benaderen en te verwerken, moeten er meerdere for-lussen worden genest. Dit ziet er als volgt uit:</p>
+                    <pre><code>for verdieping in lot_3d:            # Itereert over elke verdieping (2D-lijst)
+    for rij in verdieping:           # Itereert over elke rij in die verdieping (1D-lijst)
+        for auto in rij:             # Itereert over elke auto in die rij
+            print(auto)              # Drukt de autonaam af</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Tuples</h3>
+                    <p>Een tuple is vergelijkbaar met een lijst, omdat beide een geordende verzameling objecten bevatten. Het belangrijkste verschil is dat een tuple onveranderlijk is: nadat een tuple is aangemaakt, kan deze niet meer worden aangepast (geen toegevoegingen, verwijderingen of vervangingen). Een tuple wordt als volgt gedefinieerd:</p>
+                    <pre><code>mijn_tuple = ("A", 1, "B", 2, "C", 3)</code></pre>
+                    <p>Net als bij een lijst behouden tuples de volgorde van de elementen en om een element in een tuple te lezen, wordt dezelfde syntax toegepast als bij lijsten:</p>
+                    <pre><code>mijn_tuple[2]</code></pre>
+                    <p>Wanneer een element binnen een tuple wordt gewijzigd, zal er echter een fout ontstaan doordat tuples niet aanpasbaar zijn. Dit maakt tuples de gewenste optie als bepaalde gegevens nooit mogen veranderen.</p>
+                    <p>Een veelvoorkomende toepassing van tuple's is tuple unpacking, waarmee afzonderlijke waarden direct worden toegewezen aan variabelen, bijvoorbeeld:</p>
+                    <pre><code>def get_coordinaat():
+    return (52.370216, 4.895168)
+
+lat, lon = get_coordinaat()</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 6 ===============-->
+            <div class="chapter__container">
+                <h2>Queues en Stacks</h2>
+                
+                <div class="chapter__group">
+                    <h3>Queues</h3>
+                    <p>Een queue is een datastructuur waarin objecten worden opgeslagen volgens het principe First In, First Out (FIFO). Hierbij wordt het eerste object dat in de queue wordt geplaatst, er als eerst uit gehaald. Python heeft geen ingebouwd queue-type; hiervoor wordt het standaardmodule queue gebruikt:</p>
+                    <pre><code>import queue</code></pre>
+                    <p>Een queue kent twee rollen: de producent en de consument. De producent voegt objecten toe aan de achterzijde van de queue met put(), terwijl de consument objecten haalt vanaf de voorzijde van de queue met get().</p>
+                    <p>Door middel van een queue kan de producer objecten blijven genereren (bijv. boodschappenzakken) en kunnen consumenten deze volgens FIFO verwerken, zonder direct afhankelijk te zijn van de snelheid waarmee de producent nieuwe items produceert. Als de producer sneller produceert dan de consument kan verwerken, blijft de queue groeien tot een ingestelde limiet. Dit voorkomt dat de consument "achterloopt" en biedt de mogelijkheid om piekmomenten op te vangen.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>put()</td>
+                                <td>Voegt een item achteraan de queue en blokkeert totdat een item geplaatst is (of ruimte vrij is bij maxsize).</td>
+                                <td><pre>q.put("bag1")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>put(item, block=False)</td>
+                                <td>Probeert een item toe te voegen zonder te blokkeren en geeft queue.Full als de queue vol is.</td>
+                                <td><pre>q.put("bag2", block=False)</pre></td>
+                            </tr>
+                            <tr>
+                                <td>put_nowait()</td>
+                                <td>Functioneel hetzelfde als q.put(item, block=False).</td>
+                                <td><pre>q.put_nowait("bag2")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>get()</td>
+                                <td>Verwijdert en retourneert het oudste item en blokkeert als de queue leeg is tot er een item verschijnt.</td>
+                                <td><pre>item = q.get()</pre></td>
+                            </tr>
+                            <tr>
+                                <td>get(block=False)</td>
+                                <td>Probeert een item te halen zonder te blokkeren en geeft queue.Empty als de queue leeg is.</td>
+                                <td><pre>item = q.get(block=False)</pre></td>
+                            </tr>
+                            <tr>
+                                <td>get_nowait()</td>
+                                <td>Functioneel hetzelfde als q.get(block=False); werpt queue.Empty als de queue leeg is.</td>
+                                <td><pre>item = q.get_nowait()</pre></td>
+                            </tr>
+                            <tr>
+                                <td>empty()</td>
+                                <td>Retourneert True als de queue leeg is (aantal items = 0).</td>
+                                <td><pre>q.empty()</pre></td>
+                            </tr>
+                            <tr>
+                                <td>full()</td>
+                                <td>Retourneert True als de queue het maximum aantal items (maxsize) bevat.</td>
+                                <td><pre>q.full()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Bij het aanmaken van een queue kan er een optionele parameter genaamd maxsize worden meegeven, samen met een geheel getal dat gelijk of groter is dan 0, waardoor een gelimiteerde queue ontstaat:</p>
+                    <pre><code>q2 = queue.Queue(maxsize=2)</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Stacks</h3>
+                    <p>Een stack is een datastructuur waarin objecten worden opgeslagen volgens het principe Last In, First Out (LIFO). Hierbij wordt het laatst toegevoegde object als eerst verwijderde. Python heeft geen ingebouwd stack-type. Er kan echter een lijst worden gemaakt, omdat deze eenvoudig objecten aan het einde kunnen toevoegen en van het einde kunnen verwijderen:</p>
+                    <pre><code>stack = []</code></pre>
+                    <p>Gebruik hiervoor de append()-methode van lijst. Dit plaatst het object "bovenop" de stack (einde van de lijst). Het maken van bewerkingen aan de lijst, zoals items toevoegen en verwijderen, gaat aan de hand van de append() en pop() methodes:</p>
+                    <pre><code>stack = []
+
+stack.append("bill1")
+stack.append("bill2")
+
+bill = stack.pop()  # "bill2"; stack wordt ["bill1"]
+
+stack.append("bill3")
+stack.append("bill4")
+
+bill = stack.pop()  # "bill4"; stack wordt ["bill1", "bill3"]
+bill = stack.pop()  # "bill3"; stack wordt ["bill1"]
+bill = stack.pop()  # "bill1"; stack wordt []</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 7 ===============-->
+            <div class="chapter__container">
+                <h2>Sets</h2>
+                
+                <div class="chapter__group">
+                    <h3>Een gecombineerde set maken</h3>
+                    <p>Een set is een datastructuur met de volgende kenmerken: een item mag slechts één keer voorkomen, de volgorde van de items is onbelangrijk is en daarnaast kunnen sets tijdens de runtime worden uitgebreid of ingekrompen. Een set maken in python gaat aan de hand van de set constructor:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Constructor</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>set()</td>
+                                <td>Creëert een set</td>
+                                <td><pre>college = set(vrienden_college)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een bestaande iterabele (bijvoorbeeld een lijst) door te geven aan de functie set(), is de meest gebruikelijke manier om een set te maken:</p>
+                    <pre><code>vrienden_college = ["Alice", "Bob", "Charlie", "Diana", "Eve", "Frank", "Grace", "Heidi"]
+
+college = set(vrienden_college)</code></pre>
+                    <p>Het is echter ook mogelijk om een lege set te maken en deze vervolgens te vullen met items aan de hand van de add() methode:</p>
+                    <pre><code>s = set()       
+s.add("Alice")   
+s.add("Bob")</code></pre>
+                    <p>Om items uit diverse sets te combineren zonder duplicaten, wordt er één uitgangsset gekozen (bv. college) en wordt de union methode aangeroepen met de andere sets als argumenten:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>union()</td>
+                                <td>Combineert items uit de verschillende sets zonder duplicaten</td>
+                                <td><pre>alle_vrienden = college.union(coworkers, familie)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Sets sorteren</h3>
+                    <p>Wanneer een grote set unieke objecten verder moet worden uitgesorteerd op basis van gemeenschappelijke of juist niet-gemeenschappelijke elementen, zijn de volgende bewerkingen beschikbaar: intersection, difference en symmetric_difference.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>intersection()</td>
+                                <td>Retourneert een nieuwe set met alleen de items die zowel in a als in b voorkomen.</td>
+                                <td><pre>college.intersection(coworkers)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De intersection methode is geschikt om gemeenschappelijke items uit sets te bepalen, wanneer de volgorde van aanroepen niet relevant is.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>difference()</td>
+                                <td>Retourneert een nieuwe set met de items die in a maar niet in b voorkomen.</td>
+                                <td><pre>college.difference(familie)</pre></td>
+                            </tr>
+                            <tr>
+                                <td>symmetric_difference()</td>
+                                <td>Retourneert een nieuwe set met items die in set a of b voorkomen, maar niet in beide (XOR).</td>
+                                <td><pre>college.symmetric_difference(familie)</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Difference verwijdert expliciet elementen uit de eerste set die in de tweede set voorkomen. De symmetric_difference verwijdert daarentegen alle elementen die in beide sets voorkomen, houdt uitsluitend de unieke elementen in elke set over.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Items aan een set toevoegen en verwijderen</h3>
+                    <p>Python biedt diverse mogelijkheden voor situaties waarin een verzameling van unieke, ongeordende objecten bewerkt moet worden. Voor het bewerken is het tevens mogelijk om te controleren of een bepaald item in een set voorkomt met de in-operator:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Effect</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>in</td>
+                                <td>Retourneert True als het item in de set zit, anders False.</td>
+                                <td><pre>"Alice" in college</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>De add() methode wordt gebruikt voor het toevoegen van een item binnen een set. De methode voegt echter geen duplicaten toe, omdat sets altijd slechts één exemplaar van elk object behouden.</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Methode</th>
+                                <th>Effect</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>add()</td>
+                                <td>Voegt het item toe; geen effect als het item al in de set zit.</td>
+                                <td><pre>college.add("Isaac")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>remove()</td>
+                                <td>Verwijdert het item en geeft een KeyError als het item níet in de set zit.</td>
+                                <td><pre>college.remove("Bob")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>discard()</td>
+                                <td>Verwijdert het item als het aanwezig is en geeft geen foutmelding als het ontbreekt.</td>
+                                <td><pre>college.discard("Charlie")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>pop()</td>
+                                <td>Verwijdert en retourneert een willekeurig item en geeft een KeyError als de set leeg is.</td>
+                                <td><pre>random_friend = college.pop()</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Items kunnen op drie manieren uit een set worden verwijderd: remove() wordt gebruikt wanneer het zeker is dat het item in de set zit, of er een KeyError gegeven moet worden als dit niet zo is. Als iemand wil vermijden dat de code crasht, kan discard() worden gebruikt, dat nooit een fout werpt. Ten slotte kan pop() worden gebruikt om een willekeurig item te verwijderen.</p>
+                    <p>Als er een bepaalde volgorde moet worden afgedwongen tijdens het gebruik van pop, moet de set eerst worden omgezet naar een gesorteerde lijst.</p>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 8 ===============-->
+            <div class="chapter__container">
+                <h2>Directionaries</h2>
+                
+                <div class="chapter__group">
+                    <h3>Dictionaries</h3>
+                    <p>Een dictionary verwijst naar een gegevensstructuur die een verzameling van key-value paren opslaat. Het is vergelijkbaar met een woordenboek, waarbij een term (de key) direct leidt naar een bijbehorende definitie of waarde. Dictionaries bieden snelle toegang tot waarden op basis van een sleutel en de key-value paren maken het mogelijk om semantisch duidelijke en toegankelijke data te structureren.</p>
+                    <p>De volgorde van opslag is echter niet alfabetisch, maar gebaseerd op hashing. Een hash-functie berekent op basis van de key een uniek getal dat als index fungeert in de opslagstructuur.</p>
+                    <p>Een dictionary in Python wordt gedefinieerd met behulp van accolades {}. Binnen de accolades worden de key-value paren genoteerd.</p>
+                    <pre><code>rolodex = {
+    "Olivia": "555-0101",
+    "Vern": "555-5309",
+    "Liam": "555-1122"
+}</code></pre>
+                    <p>Het opvragen en controleren van een waarde gaat als volgt:</p>
+                    <pre><code>rolodex["Vern"]</code></pre>
+                    <p>En</p>
+                    <pre><code>hash("Vern")</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Een item toevoegen aan een dictionary</h3>
+                    <p>Om een nieuw item in een dictionary te plaatsen, worden de vierkante haken gebruikt met de gewenste key, waarna er een waarde wordt toegewezen:</p>
+                    <pre><code>rolodex["Amanda"] = "555-9754"</code></pre>
+                    <p>Dictionaries staan geen dubbele keys toe en de eerdere waarde wordt overschreven als een key opnieuw wordt gebruikt. Hoewel keys uniek zijn, mogen de values complexe objecten zijn, zoals tuples of geneste dictionaries. Zo kunnen meerdere items onder één key worden gegroepeerd:</p>
+                    <pre><code>rolodex["David"] = ("555-8331", "555-0902")
+
+# Geneste dictionary met extra gegevens
+rolodex["David"] = {
+    "persoonlijk": "555-8331",
+    "werk":      "555-0902",
+}</code></pre>
+                    <p>Als verschillende items dezelfde naam hebben, kan de key-string worden uitgebreid voor uniekheid, bijvoorbeeld:</p>
+                    <pre><code># Origineel David
+rolodex["David"] = "555-8331"
+
+# Nieuwe David (vriend van Amanda)
+rolodex["David (Amanda)"] = "555-0902"</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Een omgekeerde lookup</h3>
+                    <p>Een standaard-dictionary biedt snelle toegang van de key naar de bijbehorende waarde, maar niet omgekeerd: er is geen directe manier om vanaf de waarde de key op te vragen, waardoor een handmatige doorloop van alle entries nodig zou zijn, wat bij grote dictionaries inefficiënt is.</p>
+                    <p>Het is echter mogelijk om een omgekeerde lookup te creëren aan de hand van een functie die itereert over alle key-value paren via de items()-methode. Vervolgens kan elke waarde met de opgegeven key worden vergeleken en kan het de bijbehorend key teruggeven zodra er een match is. Dit ziet er als volgt uit:</p>
+                    <pre><code>def caller_id(lookup_num):
+    for name, number in rolodex.items():
+        if number == lookup_num:
+            return name</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 9 ===============-->
+            <div class="chapter__container">
+                <h2>Voorwaardelijke executies</h2>
+                
+                <div class="chapter__group">
+                    <h3>If-else-statements</h3>
+                    <p>Met een if-elif-else-structuur kan een programma tijdens het maken van een besluit één van meerdere paden volgen op basis van gedefinieerde voorwaardes. Een if-elif-else statement kan er als volgt uitzien:</p>
+                    <pre><code>diet_restrictions = {"meat", "cheese"}
+
+if "meat" in diet_restrictions:
+    print("Order cheese pizza")
+elif "meat" in diet_restrictions and "cheese" in diet_restrictions:
+    print("Order vegan pizza")
+else:
+    print("Order meat pizza")</code></pre>
+                    <p>Elke expressie achter if of elif wordt tot een Boolean (True/False) geëvalueerd. Eerst wordt geëvalueerd of de if-voorwaarde true of false is. Als de waarde True is, wordt de bijbehorende code uitgevoerd en wordt de rest van de keten niet uitgevoerd. Omdat de rest van de keten niet uitgevoerd als een eerder statement een evaluatie van True heeft, is het van belang om de meest specifieke voorwaarden vóór de algemenere voorwaardes te zetten.</p>
+                    <p>Als de waarde False is evalueert de structuur de volgende elif en als geen enkele if of elif True is, wordt de else uitgevoerd (indien aanwezig).</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Match statements</h3>
+                    <p>Een match statement vergelijkt de waarde van een expressie met een reeks patronen ("cases"). Vanaf Python 3.10 is dit een alternatieve, vaak leesbaardere manier om meerdere mogelijke waarden te vergelijken in plaats van een lange if-elif-else-keten. Een match statement kan er als volgt uitzien:</p>
+                    <pre><code>def order_special(day):
+    match day:
+        case "Sunday":
+            return "spinach pizza"
+        case "Monday":
+            return "mushroom pizza"
+        case "Tuesday":
+            return "pepperoni pizza"
+        # … overige weekdagen …
+        case _:
+            print("No special today")
+            return None</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Effect</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>match</td>
+                                <td>Definieert een waarde waarop een match vergelijking wordt gestart.</td>
+                                <td><pre>def order_special(day):
+    match day:</pre></td>
+                            </tr>
+                            <tr>
+                                <td>case</td>
+                                <td>Definieert een waarde waarmee een match expressie wordt vergeleken. Bij gelijkheid wordt de bijbehorende code uitgevoerd.</td>
+                                <td><pre>case "Sunday":
+    return "spinach pizza"</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 10 ===============-->
+            <div class="chapter__container">
+                <h2>Loops</h2>
+                
+                <div class="chapter__group">
+                    <h3>For loops</h3>
+                    <p>Een for loop voert een bewerking voor elk element in een iterable uit, zoals een lijst, tuple of string. Het aantal iteraties is van tevoren bekend: één per item in de iterable. Een for loop kan er als volgt uitzien:</p>
+                    <pre><code>sink = ["bowl", "plate", "cup"]
+
+for dish in sink:
+    print(f"Putting {dish} into the dishwasher")</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Effect</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>for</td>
+                                <td>Definieert een for loop</td>
+                                <td><pre>for dish in sink:</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Itereer nooit direct over een lijst die tijdens de loop wordt gewijzigd, omdat aanpassingen aan de lijst de loop de volgorde verstoren. Maak daarom een kopie van de lijst voor de for-loop, zodat de originele lijst veilig kan worden aangepast:</p>
+                    <pre><code>for dish in list(sink):
+    sink.remove(dish)
+    print(f"Cleaned {dish}")
+
+print(sink)</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>While loops</h3>
+                    <p>Een while loop herhaalt een blok code zolang een opgegeven voorwaarde True is. Het aantal iteraties is niet van tevoren bekend en hangt af van wanneer de conditie False wordt. Een while loop kan er als volgt uitzien:</p>
+                    <pre><code>import random
+
+dirty = True
+scrub_count = 0
+
+while dirty:
+    scrub_count += 1
+    print(f"Scrub #{scrub_count}")
+    # Rinse en controle
+    if random.randint(0, 9) == 0:
+        print("Pan is clean!")
+        dirty = False</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Effect</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>while</td>
+                                <td>Definieert een while loop</td>
+                                <td><pre>while &lt;conditie&gt;:</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Een wijziging van de voorwaarde halverwege de loopbody neemt pas effect na afronding van de huidige iteratie.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Break statements</h3>
+                    <p>Met een break-statement kunnen lopende for- of while-loops vroegtijdig worden beëindigd wanneer er aan een onvoorziene voorwaarde wordt voldaan:</p>
+                    <pre><code>import random
+
+# Simuleer 20 borden
+dishwasher = [f"dish_{i}" for i in range(1, 21)]
+
+# For-loop over een kopie zodat we originele lijst kunnen aanpassen
+for dish in list(dishwasher):
+    # 1 op 20 kans dat de kast vol is (randint == 0)
+    if random.randint(0, 19) == 0:
+        print("Cabinet is full! Stopping early.")
+        break
+    else:
+        print(f"Putting away {dish}")
+        dishwasher.remove(dish)
+
+print(f"Remaining dishes: {len(dishwasher)}")</code></pre>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Effect</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>break</td>
+                                <td>Onderbreekt een loop</td>
+                                <td><pre>if random.randint(0, 19) == 0:
+    print("Cabinet is full! Stopping early.")
+    break</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                
+            </div>   
+            
+            <!--=============== CHAPTER 11 ===============-->
+            <div class="chapter__container">
+                <h2>Error handling</h2>
+                
+                <div class="chapter__group">
+                    <h3>Errors afvangen</h3>
+                    <p>Geen enkele code is immuun voor fouten. Er bestaan grofweg twee klassen fouten: syntaxfouten en runtime-excepties. Syntaxfouten zijn errors die ontstaan door tikfouten of ontbrekende tekens. De code is ongeldig en wordt al bij het laden afgekeurd. Runtime-excepties zijn fouten die pas optreden tijdens de uitvoering, bijvoorbeeld bij ongeldige bewerkingen (delen door nul) of mislukte netwerkverzoeken (URL niet gevonden).</p>
+                    <p>Zelfs perfecte code kan falen zodra externe bronnen zoals netwerksessies, gebruikersinput of bestanden niet doen wat verwacht wordt. Als fouten niet worden afgevangen blijft het programma "hangen" of crasht het volledig. Door expliciet te controleren of een operatie geslaagd is, kan het programma op een nette manier herstellen of de gebruiker informeren.</p>
+                    <p>Om runtime-fouten af te vangen en het verdere programma-verloop te sturen wordt de try/except/else constructie gebruikt, zie het voorbeeld hieronder:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Sleutelwoord</th>
+                                <th>Effect</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>try</td>
+                                <td>Definieert de code waarvan verwacht wordt dat deze kan falen.</td>
+                                <td><pre>try:
+    print(x)
+except:
+    print("An exception occurred")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>except</td>
+                                <td>Definieert de code die wordt uitgevoerd indien binnen het try een uitzondering optreedt.</td>
+                                <td><pre>try:
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except:
+    print("Something else went wrong")</pre></td>
+                            </tr>
+                            <tr>
+                                <td>else</td>
+                                <td>Definieert de code die alleen wordt uitgevoerd als het hele try-block zonder uitzondering voltooid is.</td>
+                                <td><pre>from urllib.request import urlopen
+
+url = 'https://godogle.com'  # foute URL om een uitzondering te forceren
+
+try:
+    response = urlopen(url)
+except Exception:
+    print('Kon webpagina niet openen')
+else:
+    for line in response:
+        print(line.decode('utf-8').rstrip())</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Input valideren</h3>
+                    <p>Voordat externe waarden een intern object aanpassen, horen de waarden die binnen toegestane grenzen vallen te worden gecontroleerd. Zonder zulke controles kan een object in een ongeldige staat terechtkomen, met onvoorspelbaar gedrag tot gevolg. Een controle kan als volgt worden gemaakt:</p>
+                    <pre><code>class CircuitBreaker:
+    def __init__(self, max_amps):
+        self.capacity = max_amps
+        self.load = 0
+
+    def connect(self, amps):
+        # Controle op overschrijding van de capaciteit
+        if self.load + amps > self.capacity:
+            raise Exception("Belasting overschrijdt capaciteit")
+        # Controle op negatieve belasting
+        if self.load + amps < 0:
+            raise Exception("Belasting wordt negatief")
+        # Alleen geldige waarden vergroten of verkleinen de load
+        self.load += amps</code></pre>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Error's aanpassen</h3>
+                    <p>Python heeft diverse ingebouwde exception-types voor veelvoorkomende fouten, waaronder ZeroDivisionError, NameError en TypeError:</p>
+                    <div class="table__group">
+                        <table>
+                            <tr>
+                                <th>Exception-type</th>
+                                <th>Uitleg</th>
+                                <th>Voorbeeld</th>
+                            </tr>
+                            <tr>
+                                <td>ZeroDivisionError</td>
+                                <td>Delen door nul</td>
+                                <td><pre>1 / 0</pre></td>
+                            </tr>
+                            <tr>
+                                <td>NameError</td>
+                                <td>Verwijzen naar een niet-gedefinieerde variabele/functie</td>
+                                <td><pre>print(spam)</pre></td>
+                            </tr>
+                            <tr>
+                                <td>TypeError</td>
+                                <td>Onverenigbare bewerkingen tussen types</td>
+                                <td><pre>'spam' + 1</pre></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Door subklassen te definiëren kunnen specifieke foutcondities helder gecommuniceerd worden, wat kan helpen bij het diagnosticeren en oplossen van onverwachte situaties. Denk bijvoorbeeld aan:</p>
+                    <pre><code>class ElectricalError(Exception):
+    def __init__(self, device, problem):
+        super().__init__(device, problem)
+        self.device = device
+        self.problem = problem
+
+    def __str__(self):
+        return f"{self.device}: elektrisch probleem ({self.problem})"
+
+class PlumbingError(Exception):
+    def __init__(self, device, problem):
+        super().__init__(device, problem)
+        self.device = device
+        self.problem = problem
+
+    def __str__(self):
+        return f"{self.device}: loodgietersprobleem ({self.problem})"</code></pre>
+                    <p>Daarnaast is het mogelijk om een selectieve fout afhandeling te creëren aan de hand van meerdere except-blokken:</p>
+                    <pre><code>try:
+    cause_error('electrical')  # óf 'plumbing' of iets anders
+except ElectricalError as e:
+    print(e)                         # Vangt alleen ElectricalError
+    print("Elektrisch verholpen")
+except PlumbingError as e:
+    print(e)                         # Vangt alleen PlumbingError
+    print("Loodgieter bellen")</code></pre>
+                    <p>Doordat de fouten afzonderlijk afgehandeld worden, is gerichte herstelactie makkelijker. Ten slot kan er een catch-all voor overige fouten worden toegevoegd. Dit verzekert dat onopgemerkte fouten worden afgehandeld, zodat het programma ook bij onverwachte problemen adequaat reageert in plaats van direct te crashen:</p>
+                    <pre><code>try:
+    cause_error('garden')            # geen electrical/plumbing
+except ElectricalError as e:
+    # …
+except PlumbingError as e:
+    # …
+except Exception as e:
+    print(f"Onbekend probleem: {e}")
+    print("Verhuurder inschakelen")</code></pre>
+                </div>                
+            </div>
+
+            <!--=============== CHAPTER 12 ===============-->
+            <div class="chapter__container">
+                <h2>Peiling en event-gedreven programmeren</h2>
+                
+                <div class="chapter__group">
+                    <h3>Peilingen</h3>
+                    <p>Wanneer een programma moet 'wachten' op een externe gebeurtenis, kan dat doormiddel twee aanpakken: de peiling of de event-gedreven aanpak. Met een peiling wordt continu herhaaldelijk gecontroleerd of een conditie is bereikt. Deze aanpak wordt gebruikt voor minder geavanceerde microcontrollers zonder interrupt-hardware en ziet er als volgt uit in Python.</p>
+                    <pre><code>import time
+
+# Simulatie: 'hungry' blijft True tot de pizzabezorger arriveert
+hungry = True
+
+while hungry:
+    with open('front_door.txt') as front_door:
+        content = front_door.read()
+    if 'delivery person' in content:
+        print("Pizzabezorger is er – tijd om de deur te openen!")
+        hungry = False
+    else:
+        print("Nog niet…")
+    time.sleep(1)  # wacht 1 seconde voor de volgende check</code></pre>
+                    <p>De nadelen van een vrijlopende while loop, zoals zichtbaar is in het bovenstaande voorbeeld zijn een hoge CPU-belasting, onnodige hoeveelheden energieverbruik en beperkte mogelijkheden voor multitasking. Gebruik daarom een vertraging (sleep) of event-gedreven mechanismen (interrupts, callbacks, watch-services) om onnodig CPU-gebruik te vermijden en andere processen soepel te laten draaien.</p>
+                </div>
+
+                <div class="chapter__group">
+                    <h3>Event-gedreven programmeren</h3>
+                    <p>De event-gedreven aanpak reageert op een signaal (interrupt, callback) zodra de gebeurtenis plaatsvindt. Deze aanpak wordt gebruikt voor GUI-applicaties, netwerksockets en moderne frameworks. Er is geen sprake van een continue loop; in plaats daarvan wekt een externe gebeurtenis het programma.</p>
+                    <p>Daarnaast bevat een event-gedreven aanpak een callback-functie die bij een specifiek signaal wordt aangeroepen. De handlers worden sequentieel afgehandeld in volgorde van optreden. Dit geheel kan er bijvoorbeeld zo uitzien:</p>
+                    <pre><code>import asyncio
+
+def alarm():
+    print("Timer: bel pizzabezorger!")
+    loop.call_later(1, alarm)       # opnieuw inplannen na 1 s
+
+def doorbell():
+    print("Deurbel: pizza bezorger staat voor de deur")
+    loop.stop()                     # stopt de event loop
+
+def phone_call():
+    print("Telefoon: inkomend gesprek")
+
+loop = asyncio.get_event_loop()
+loop.call_later(1, alarm)          # alarm na 1 s
+loop.call_later(4, doorbell)       # deurbel na 4 s
+loop.call_later(5, phone_call)     # telefoon na 5 s
+loop.run_forever()
+loop.close()</code></pre>
+                </div>                
+            </div>           
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
